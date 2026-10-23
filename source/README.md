@@ -38,4 +38,4 @@ python3 source/main/tools/package_release.py
 python3 source/test/verify_release.py
 ```
 
-打包脚本核对四个已接受 PKG，复制当前用户手册，生成 `release/UniBeijingX-1.0.0.zip`。ZIP 中严格只有四个安装文件和手册；完整许可文本放在手册附录。发布内容与字库检查见 [test 说明](test/README.md)。
+打包脚本核对四个已接受 PKG，复制当前用户手册，生成 `release/UniBeijingX-1.0.0.zip`。ZIP 包含四个安装文件、手册和它在 `image/` 中引用的截图；完整许可文本保存在 ZIP 的归档注释中，来源与许可说明集中在项目根目录。发布内容与字库检查见 [test 说明](test/README.md)。

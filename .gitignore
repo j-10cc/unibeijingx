@@ -6,9 +6,10 @@ __pycache__/
 /external/*
 !/external/README.md
 
-# Only the current end-user manual belongs in version control.
+# Track the current user manual and its illustration assets.
 /docs/*
 !/docs/USER_GUIDE_zh-CN.md
+!/docs/image/
 
 # Test sessions and local outputs.
 /source/test/.runtime/

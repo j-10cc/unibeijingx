@@ -25,8 +25,8 @@ UniBeijingX 为 Apple MessagePad 2000／2100、Newton OS 2.1 提供简体中文�
 | [ChineseRegion](source/main/ChineseRegion/README.md) | 中文区域、日期解析和邮政地址辅助 |
 | [source/test](source/test/README.md) | 发布校验、字库检查与隔离模拟器工具 |
 | [external](external/README.md) | 外部依赖、固定版本、获取方法及目录组织 |
-| docs | 仅[用户使用手册](docs/USER_GUIDE_zh-CN.md)进入 Git；其他本地记录忽略 |
-| release | 1.0.0 安装目录及 ZIP，每份介质只含四个 PKG 和使用手册 |
+| docs | [用户使用手册](docs/USER_GUIDE_zh-CN.md)及 `image/` 中的模拟器截图 |
+| release | 1.0.0 安装目录及 ZIP，每份介质包含四个 PKG、使用手册及其 `image/` 插图 |
 
 准备依赖后，在项目根目录执行：
 
@@ -40,6 +40,16 @@ python3 source/test/verify_release.py
 
 ## 许可与署名
 
-Copyright 2026 j10cc · [j10cc.site](https://j10cc.site)。项目代码采用 [Apache License 2.0](LICENSE)。
+Copyright 2026 j10cc · [j10cc.site](https://j10cc.site)。项目代码采用 [Apache License 2.0](LICENSE)。第三方材料保留各自许可，派生位图字库继续采用 SIL Open Font License 1.1。
 
-派生位图字库基于 [Noto Sans CJK SC](https://github.com/notofonts/noto-cjk) 和 [Noto Sans](https://github.com/notofonts/latin-greek-cyrillic)，保留 **SIL Open Font License 1.1**。词库生成使用的 [jieba](https://github.com/fxsjy/jieba) 和 [pypinyin](https://github.com/mozillazg/python-pinyin) 保留 **MIT** 许可。完整版权、许可文本和数据来源见 [第三方声明](THIRD_PARTY_NOTICES.md)，同样收录于发布包的使用手册附录。
+| 材料 | 来源与版权 | 本项目用途／许可 |
+| --- | --- | --- |
+| Noto Sans CJK SC Regular 2.004 | [Noto CJK](https://github.com/notofonts/noto-cjk)，© 2014–2021 Adobe | 裁剪字符集，转换为 Newton SFNT 多字号位图；SIL OFL 1.1 |
+| Noto Sans Regular 2.015 | [The Noto Project Authors](https://github.com/notofonts/latin-greek-cyrillic)，Copyright 2022；本机原字体来自 LibreOffice 随附资源 | 补充拉丁字母与符号，并合入派生位图字库；SIL OFL 1.1 |
+| jieba 0.42.1 | [jieba](https://github.com/fxsjy/jieba)，Copyright 2013 Sun Junyi | 词频与常用词数据；MIT |
+| pypinyin 0.55.0 | [pypinyin](https://github.com/mozillazg/python-pinyin)，Copyright 2016 mozillazg、闲耘 | 生成拼音读音和候选映射；MIT |
+| 中国邮政地名及邮编 | [中国邮政公开网点查询](https://iframe.chinapost.com.cn/jsp/type/institutionalsite/SiteSearchJTApi.jsp?community=ChinaPostJT)，2026-10-15 快照 | 辅助填写地址；覆盖大陆 31 个省级地区、363 组省市、2,867 组区县及 37,182 组地区邮编关系；不将其声明为 Apache／MIT 授权数据 |
+
+派生字体以 UniBeijingX 名称提供，保留上游字体版权。楷体“中”图标由本机 STKaiti 字形生成，项目仅保存已生成位图，不分发 STKaiti 字体文件。邮政网点邮编不代表逐门牌投递范围，使用时应核对实际地址。
+
+完整第三方版权和许可正文见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)，项目许可证全文见 [LICENSE](LICENSE)。发布 ZIP 的归档注释也保存这两份文件的完整文本，可用 `unzip -z release/UniBeijingX-1.0.0.zip` 查看；用户手册保留简短的许可说明。

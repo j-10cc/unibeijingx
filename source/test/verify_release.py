@@ -3,6 +3,7 @@
 import hashlib
 import json
 from pathlib import Path
+import re
 import struct
 import sys
 import zipfile
@@ -20,13 +21,21 @@ def main():
     config = json.loads((ROOT / 'source/main/tools/release_config.json').read_text())
     release = ROOT / 'release' / ('UniBeijingX-' + config['version'])
     manual_name = 'USER_GUIDE_zh-CN.md'
-    expected_names = {*config['packages'], manual_name}
-    assert {p.name for p in release.iterdir() if p.name != '.DS_Store'} == expected_names
     manual = (ROOT / 'docs' / manual_name).read_bytes()
     assert manual == (release / manual_name).read_bytes(), 'Manual copies differ'
     text = manual.decode()
-    assert (ROOT / 'LICENSE').read_text().strip() in text, 'Missing Apache license'
-    assert (ROOT / 'THIRD_PARTY_NOTICES.md').read_text().split('\n', 1)[1].strip() in text, 'Missing third-party notices'
+    images = set(re.findall(r'!\[[^\]]*\]\((image/[^)\s]+)\)', text))
+    assert images, 'Missing simulator screenshots'
+    assert {str(p.relative_to(ROOT / 'docs')) for p in (ROOT / 'docs/image').rglob('*') if p.is_file() and p.name != '.DS_Store'} == images
+    for name in images:
+        data = (ROOT / 'docs' / name).read_bytes()
+        assert data.startswith(b'\x89PNG\r\n\x1a\n'), name
+        assert data == (release / name).read_bytes(), name
+    expected_names = {*config['packages'], manual_name, *images}
+    assert {str(p.relative_to(release)) for p in release.rglob('*') if p.is_file() and p.name != '.DS_Store'} == expected_names
+    for notice in ('Apache License 2.0', 'SIL Open Font License 1.1', 'MIT'):
+        assert notice in text, notice
+    assert 'TERMS AND CONDITIONS FOR USE' not in text, 'Keep full license text outside the user manual'
     for token in ('-10061', 'Permission violation', '具体底层原因仍未查明'):
         assert token in text, token
     for token in ('5.3', 'dev15', 'experiments/', 'packages/', '验收报告', '旧版'):
@@ -45,8 +54,11 @@ def main():
         assert set(bundle.namelist()) == {release.name + '/' + n for n in expected_names}
         for name in expected_names:
             assert bundle.read(release.name + '/' + name) == (release / name).read_bytes(), name
+        notices = bundle.comment.decode('utf-8')
+        assert (ROOT / 'LICENSE').read_text() in notices, 'Missing Apache license in ZIP comment'
+        assert (ROOT / 'THIRD_PARTY_NOTICES.md').read_text() in notices, 'Missing third-party notices in ZIP comment'
     assert {p.name for p in (ROOT / 'release').iterdir() if p.name != '.DS_Store'} == {release.name, archive.name}
-    result = {'release_sha256': sha(archive), 'archive_files': len(expected_names), 'fonts': {}}
+    result = {'release_sha256': sha(archive), 'archive_files': len(expected_names), 'screenshots': len(images), 'fonts': {}}
     for variant, sizes in [('lite', [9, 12, 16]), ('full', [9, 10, 12, 14, 16, 18])]:
         source = ROOT / 'source/main/UniBeijingX' / ('font-' + variant) / 'UniBeijingX.sfnt'
         tables = sfnt_tables(source)
