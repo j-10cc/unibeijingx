@@ -247,7 +247,7 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--pixels", type=int, default=16)
     parser.add_argument("--strikes", default="9,12,16", help="Comma-separated bitmap strike sizes")
-    parser.add_argument("--output", type=pathlib.Path, default=ROOT / "release/build/base-GB2312.sfnt")
+    parser.add_argument("--output", type=pathlib.Path, default=ROOT / "external/.build/base-GB2312.sfnt")
     args = parser.parse_args()
     chars = gb2312_characters()
     strikes = [int(x) for x in args.strikes.split(",")] if args.strikes else [args.pixels]

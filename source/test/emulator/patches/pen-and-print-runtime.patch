@@ -1,0 +1,324 @@
+diff --git a/Emulator/Printer/TFLPrinterManager.cpp b/Emulator/Printer/TFLPrinterManager.cpp
+index c1bcdf2..aa5bd99 100644
+--- a/Emulator/Printer/TFLPrinterManager.cpp
++++ b/Emulator/Printer/TFLPrinterManager.cpp
+@@ -26,6 +26,11 @@
+ #include "Emulator/TMemory.h"
+ 
+ #include <FL/Fl_Printer.H>
++#include <FL/Fl_PDF_File_Surface.H>
++#include <ctime>
++#include <algorithm>
++#include <cstdio>
++#include <unistd.h>
+ #include <FL/Fl_RGB_Image.H>
+ #include <FL/fl_draw.H>
+ 
+@@ -146,7 +151,11 @@ TFLPrinterManager::AsyncOpen()
+ 	// Allocate the FLTK printer driver if there is none yet.
+ 	if (!mPrinter)
+ 	{
+-		mPrinter = new Fl_Printer();
++		// Capture is available only with both explicit QA settings.
++        const char* qaDir = getenv("UBX_PRINT_PDF_DIR");
++        mQAPdf = getenv("UBX_PEN_COMMAND_FILE") && qaDir && qaDir[0] == '/';
++        mPrinter = mQAPdf ? static_cast<Fl_Paged_Device*>(new Fl_PDF_File_Surface())
++                         : static_cast<Fl_Paged_Device*>(new Fl_Printer());
+ 		mState = State::Allocated;
+ 	}
+ 
+@@ -161,7 +170,27 @@ TFLPrinterManager::AsyncOpen()
+ 	// State must be Allocated at this point.
+ 	// The following call will open a dialog box on all platforms that allows
+ 	// the user to select a printer, the page size, etc. .
+-	int err = mPrinter->begin_job();
++	int err;
++    if (mQAPdf) {
++        char leaf[96];
++        do {
++            snprintf(leaf, sizeof(leaf), "/newton-print-%lld-%u.pdf",
++                     static_cast<long long>(time(nullptr)), ++mQAPdfJobs);
++            mQAPdfPath = std::string(getenv("UBX_PRINT_PDF_DIR")) + leaf;
++        } while (access(mQAPdfPath.c_str(), F_OK) == 0);
++        err = static_cast<Fl_PDF_File_Surface*>(mPrinter)->begin_document(
++            mQAPdfPath.c_str(), Fl_Paged_Device::A4, Fl_Paged_Device::PORTRAIT);
++        mQAPdfPages = 0;
++        if (!err) {
++            int width = 0, height = 0;
++            mPrinter->printable_rect(&width, &height);
++            mQAPdfFit = std::min(width / 529.0, height / 773.0);
++            fprintf(stderr, "UBXPRINT fit=%f logical=529x773 host=%dx%d\n", mQAPdfFit, width, height);
++        }
++        fprintf(stderr, "UBXPRINT begin path=%s error=%d paper=A4\n", mQAPdfPath.c_str(), err);
++    } else {
++        err = mPrinter->begin_job();
++    }
+ 	if (err == 1)
+ 	{
+ 		ret = kPR_ERR_UserCancel;
+@@ -208,7 +237,14 @@ TFLPrinterManager::AsyncClose()
+ 	if (mState == State::Open)
+ 	{
+ 		mPrinter->end_job();
+-		mState = State::Allocated;
++        if (mQAPdf) {
++            fprintf(stderr, "UBXPRINT end path=%s pages=%u\n", mQAPdfPath.c_str(), mQAPdfPages);
++            // FLTK's scale persists across begin_document calls. A fresh PDF
++            // surface keeps later jobs from measuring a previously scaled rect.
++            delete mPrinter;
++            mPrinter = nullptr;
++            mState = State::Uninitialized;
++        } else mState = State::Allocated;
+ 	}
+ 	return ret;
+ }
+@@ -239,8 +275,10 @@ TFLPrinterManager::AsyncOpenPage()
+ 	if (mState != State::Open)
+ 		return kPR_ERR_NewtonError;
+ 
+-	mPrinter->begin_page();
+-	mState = State::PageOpen;
++	int pageError = mPrinter->begin_page();
++    if (pageError) return kPR_ERR_PrinterError;
++    if (mQAPdf) fprintf(stderr, "UBXPRINT page=%u path=%s\n", ++mQAPdfPages, mQAPdfPath.c_str());
++    mState = State::PageOpen;
+ 	AsyncSetScale();
+ 
+ 	// FLTK expects more printing calls, but since we do this asynchronously,
+@@ -378,7 +416,7 @@ TFLPrinterManager::AsyncImageBand()
+ 	int h = mBand.bottom - mBand.top;
+ 	// KPrintf("T:%d, L:%d, B:%d, R:%d\n", band.top, band.left, band.bottom, band.right);
+ 
+-	Fl_Printer::push_current(mPrinter);
++	Fl_Surface_Device::push_current(mPrinter);
+ 	AsyncSetScale();
+ 	mPrinter->origin(0, 0);
+ 
+@@ -452,6 +490,14 @@ TFLPrinterManager::AsyncGetPageInfo()
+ 	}
+ 	int wdt = 0, hgt = 0;
+ 	mPrinter->printable_rect(&wdt, &hgt);
++    if (mQAPdf) {
++        // Newton's standard A4 logical imageable area is driver independent.
++        // Fit that complete raster into the PDF surface's default margins.
++        // This opt-in capture is a scaled virtual print, not a hardware test.
++        mPageInfo.width = static_cast<int>(529 * scale);
++        mPageInfo.height = static_cast<int>(773 * scale);
++        return 0;
++    }
+ 
+ 	// Check if the viewport is available and was already scaled correctly.
+ 	if (mState != State::PageOpen)
+@@ -508,13 +554,13 @@ TFLPrinterManager::AsyncSetScale()
+ 	switch (GetSubType(mDrvr))
+ 	{
+ 		case kSubtype72dpi:
+-			mPrinter->scale(1.0); // FLTK default is 72dpi
++			mPrinter->scale(mQAPdf ? mQAPdfFit : 1.0); // FLTK default is 72dpi
+ 			break;
+ 		case kSubtype150dpi:
+-			mPrinter->scale(72.0 / 150.0); // FLTK default is 72dpi
++			mPrinter->scale((mQAPdf ? mQAPdfFit : 1.0) * 72.0 / 150.0); // FLTK default is 72dpi
+ 			break;
+ 		case kSubtype300dpi:
+-			mPrinter->scale(72.0 / 300.0); // FLTK default is 72dpi
++			mPrinter->scale((mQAPdf ? mQAPdfFit : 1.0) * 72.0 / 300.0); // FLTK default is 72dpi
+ 			break;
+ 	}
+ }
+diff --git a/Emulator/Printer/TFLPrinterManager.h b/Emulator/Printer/TFLPrinterManager.h
+index ba6dc36..6f2e9a6 100644
+--- a/Emulator/Printer/TFLPrinterManager.h
++++ b/Emulator/Printer/TFLPrinterManager.h
+@@ -29,10 +29,11 @@
+ #include <FL/Fl.H>
+ 
+ #include <future>
++#include <string>
+ 
+ class TLog;
+ class TMemory;
+-class Fl_Printer;
++class Fl_Paged_Device;
+ 
+ ///
+ /// Class to handle a single printer.
+@@ -189,7 +190,11 @@ protected:
+ 	};
+ 	State mState { State::Uninitialized };
+ 
+-	Fl_Printer* mPrinter { nullptr };
++	Fl_Paged_Device* mPrinter { nullptr };
++	bool mQAPdf { false };
++	double mQAPdfFit { 1.0 };
++	unsigned mQAPdfJobs { 0 }, mQAPdfPages { 0 };
++	std::string mQAPdfPath;
+ 
+ 	KUInt32 mDrvr { 0 };
+ 
+diff --git a/Emulator/Screen/TFLScreenManager.cpp b/Emulator/Screen/TFLScreenManager.cpp
+index 3b865a2..3b78539 100644
+--- a/Emulator/Screen/TFLScreenManager.cpp
++++ b/Emulator/Screen/TFLScreenManager.cpp
+@@ -32,6 +32,7 @@
+ #include <FL/fl_draw.H>
+ 
+ #include <cctype>
++#include <cstring>
+ #include <stdio.h>
+ #include <stdlib.h>
+ 
+@@ -205,6 +206,7 @@ class Fl_Newton_Screen_Widget : public Fl_Box
+ 	TFLApp* mApp { nullptr };
+ 	int rgbWidth_ { 0 }, rgbHeight_ { 0 };
+ 	int penX { 0 }, penY { 0 }, penIsDown { 0 };
++	const char* penCommandFile { nullptr };
+ 	Boolean mPowerState { false };
+ 
+ public:
+@@ -217,6 +219,11 @@ public:
+ 		color(FL_BLACK);
+ 		rgbWidth_ = w;
+ 		rgbHeight_ = h;
++		// Opt-in QA ingress: send the same tablet samples as FL_PUSH/FL_RELEASE.
++		// This is deliberately outside NewtonScript and package code.
++		penCommandFile = getenv("UBX_PEN_COMMAND_FILE");
++		if (penCommandFile && *penCommandFile)
++			Fl::add_timeout(0.05, penCommandTimerCB, this);
+ #if SRC_BITMAP_FORMAT_RGBA
+ 		rgbData_ = (unsigned char*) calloc((size_t) (w * h), 4);
+ #else
+@@ -226,6 +233,8 @@ public:
+ 
+ 	~Fl_Newton_Screen_Widget()
+ 	{
++		Fl::remove_timeout(penCommandTimerCB, this);
++		Fl::remove_timeout(penCommandUpCB, this);
+ 		screenManager_->unlinkWidget();
+ 		if (rgbData_)
+ 			::free(rgbData_);
+@@ -468,6 +477,71 @@ public:
+ 		((Fl_Newton_Screen_Widget*) me)->penDownTimer();
+ 	}
+ 
++	static void
++	penCommandUpCB(void* me)
++	{
++		auto* self = (Fl_Newton_Screen_Widget*) me;
++		self->screenManager_->PenUp();
++		fprintf(stderr, "UBX pen up\n");
++	}
++
++	static void
++	penCommandTimerCB(void* me)
++	{
++		auto* self = (Fl_Newton_Screen_Widget*) me;
++		FILE* input = fopen(self->penCommandFile, "r");
++		if (input)
++		{
++			char line[1024] = { 0 };
++			fgets(line, sizeof(line), input);
++			int x = -1, y = -1;
++			int parsed = sscanf(line, "%d %d", &x, &y);
++			fclose(input);
++			remove(self->penCommandFile);
++			if (strncmp(line, "SHOT ", 5) == 0)
++			{
++				std::string path(line + 5);
++				while (!path.empty() && (path.back() == '\n' || path.back() == '\r'))
++					path.pop_back();
++				if (!path.empty())
++				{
++					int result = self->screenManager_->TakeSnapshot(path);
++					fprintf(stderr, "UBX snapshot %s result %d\n", path.c_str(), result);
++				}
++			}
++			else if (strncmp(line, "PKG ", 4) == 0)
++			{
++				std::string path(line + 4);
++				while (!path.empty() && (path.back() == '\n' || path.back() == '\r'))
++					path.pop_back();
++				if (!path.empty())
++				{
++					self->mApp->InstallPackagesFromURI(path.c_str());
++					fprintf(stderr, "UBX install package %s\n", path.c_str());
++				}
++			}
++			else if (strncmp(line, "NS ", 3) == 0)
++			{
++				// Existing Einstein evaluator accepts at most 255 source bytes.
++				if (strlen(line + 3) < 256)
++					self->mApp->GetPlatformManager()->EvalNewtonScript(line + 3);
++			}
++			else if (strncmp(line, "REBOOT", 6) == 0)
++			{
++				self->mApp->UserActionReset(1);
++				fprintf(stderr, "UBX NewtonScript reboot\n");
++			}
++			else if (parsed == 2 && x >= 0 && y >= 0 &&
++				x < self->rgbWidth_ && y < self->rgbHeight_)
++			{
++				self->screenManager_->PenDown(x, y);
++				fprintf(stderr, "UBX pen down %d %d\n", x, y);
++				Fl::add_timeout(0.12, penCommandUpCB, self);
++			}
++		}
++		Fl::repeat_timeout(0.05, penCommandTimerCB, self);
++	}
++
+ 	int
+ 	handle(int event) override
+ 	{
+diff --git a/Emulator/TEmulator.cpp b/Emulator/TEmulator.cpp
+index 16d4757..d23af9b 100644
+--- a/Emulator/TEmulator.cpp
++++ b/Emulator/TEmulator.cpp
+@@ -241,6 +241,8 @@ TEmulator::SystemBootUND(KUInt32 inPAddr)
+ 	{
+ 		KUInt8 theString[] = "SystemBoot";
+ 		KPrintf("%s\n", theString);
++		if (getenv("UBX_PEN_COMMAND_FILE"))
++			fprintf(stderr, "UBX MONITOR DEBUGGER %s\n", theString);
+ 		mLog->LogLine((const char*) theString);
+ 	}
+ }
+@@ -453,6 +455,9 @@ TEmulator::BreakInMonitor(const char* msg)
+ {
+ 	if (mMonitor)
+ 	{
++		if (getenv("UBX_PEN_COMMAND_FILE"))
++			fprintf(stderr, "UBX MONITOR BREAK pc=%08X lr=%08X msg=%s\n",
++				(unsigned) mProcessor.GetRegister(15), (unsigned) mProcessor.GetRegister(14), msg ? msg : "none");
+ 		mSignal.store(false);
+ 		mRunning = false;
+ 		mBPHalted = true;
+diff --git a/Emulator/TNativePrimitives.cpp b/Emulator/TNativePrimitives.cpp
+index dd6eca9..a0e01dc 100644
+--- a/Emulator/TNativePrimitives.cpp
++++ b/Emulator/TNativePrimitives.cpp
+@@ -952,6 +952,8 @@ TNativePrimitives::ExecutePlatformDriverNative(KUInt32 inInstruction)
+ 					mLog->LogLine(theLine);
+ 				} else
+ 				{
++					if (getenv("UBX_PEN_COMMAND_FILE"))
++						fprintf(stderr, "UBX NS %s\n", theLine);
+ 					KPrintf("Log: %s\n", theLine);
+ 				}
+ 			}
+diff --git a/app/FLTK/TFLApp.cpp b/app/FLTK/TFLApp.cpp
+index 8e26703..3e71d8f 100644
+--- a/app/FLTK/TFLApp.cpp
++++ b/app/FLTK/TFLApp.cpp
+@@ -628,7 +628,11 @@ TFLApp::UserActionReset(int inType)
+ 			mEmulator->GetProcessor()->Reset();
+ 			break;
+ 		case 1:
+-			mPlatformManager->EvalNewtonScript("Reboot();");
++			// The platform driver holds its event queue lock until this script
++			// event replies. Rebooting inside the event abandons that reply and
++			// leaves host script/package events locked after the guest restarts.
++			// Let the event return before rebooting from the Newton event loop.
++			mPlatformManager->EvalNewtonScript("AddDelayedCall(func() Reboot(), nil, 100);");
+ 			break;
+ 		case 2:
+ 			mEmulator->ZAPMemory(true);

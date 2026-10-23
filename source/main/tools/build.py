@@ -9,13 +9,9 @@ import subprocess
 import tempfile
 
 ROOT = Path(__file__).resolve().parents[3]
-REFERENCE = ROOT / 'release/UniBeijingX-1.0.0'
-COMPONENTS = {
-    'Font-Lite.pkg': ('UniBeijingX/font-lite', 'Font.nprj', 'Font.pkg'),
-    'Font-Full.pkg': ('UniBeijingX/font-full', 'Font.nprj', 'Font.pkg'),
-    'ChineseRegion.pkg': ('ChineseRegion', 'Region.nprj', 'Region.pkg'),
-    'Pinyin.pkg': ('PinyinIME', 'Pinyin.nprj', 'Pinyin.pkg'),
-}
+CONFIG = json.loads(Path(__file__).with_name('release_config.json').read_text())
+REFERENCE = ROOT / 'release' / ('UniBeijingX-' + CONFIG['version'])
+COMPONENTS = CONFIG['packages']
 FORBIDDEN = ('Einstein:', 'UBXHardwareQA', 'ubxChineseUI', 'ChineseUI.sfnt', 'Translations.zh-CN')
 
 
@@ -24,7 +20,8 @@ def digest(data):
 
 
 def compile_package(name, work):
-    component, project, output = COMPONENTS[name]
+    info = COMPONENTS[name]
+    component, project, output = (info[key] for key in ('component', 'project', 'output'))
     directory = work / name[:-4]
     shutil.copytree(ROOT / 'source/main' / component, directory)
     if name.startswith('Font-'):
@@ -40,11 +37,10 @@ def compile_package(name, work):
     if run.returncode:
         raise RuntimeError(run.stdout.decode(errors='replace'))
     data = bytearray((directory / output).read_bytes())
-    reference = (REFERENCE / name).read_bytes()
     if data[:8] not in (b'package0', b'package1'):
         raise RuntimeError(f'Invalid package: {name}')
     # Newton's build timestamp is the only nondeterministic package header field.
-    data[32:36] = reference[32:36]
+    data[32:36] = info['creation_time'].to_bytes(4, 'big')
     for token in FORBIDDEN:
         if any(token.encode(encoding) in data for encoding in ('ascii', 'utf-16-be', 'utf-16-le')):
             raise RuntimeError(f'Development symbol in product: {name}: {token}')
@@ -54,7 +50,7 @@ def compile_package(name, work):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--check', action='store_true', help='Rebuild twice; compare both results with 1.0.0')
-    parser.add_argument('--output', type=Path, default=ROOT / 'release/build')
+    parser.add_argument('--output', type=Path, default=ROOT / 'external/.build/packages')
     args = parser.parse_args()
     if not args.check:
         output = args.output.resolve()
@@ -65,14 +61,15 @@ def main():
     for name in COMPONENTS:
         with tempfile.TemporaryDirectory(prefix='ubx-compile-') as directory:
             data = compile_package(name, Path(directory))
-        reference = (REFERENCE / name).read_bytes()
+        expected = COMPONENTS[name]['sha256']
         if args.check:
             with tempfile.TemporaryDirectory(prefix='ubx-compile-') as directory:
                 assert compile_package(name, Path(directory)) == data, f'Non-reproducible: {name}'
-            assert data == reference, f'Source differs from accepted {name}: {digest(data)} != {digest(reference)}'
+            assert digest(data) == expected, f'Source differs from 1.0.0 {name}: {digest(data)} != {expected}'
+            assert (REFERENCE / name).read_bytes() == data, f'Release file differs: {name}'
         else:
             (output / name).write_bytes(data)
-        result[name] = {'bytes': len(data), 'sha256': digest(data), 'identical_to_1_0_0': data == reference}
+        result[name] = {'bytes': len(data), 'sha256': digest(data), 'identical_to_1_0_0': digest(data) == expected}
     print(json.dumps(result, indent=2))
 
 

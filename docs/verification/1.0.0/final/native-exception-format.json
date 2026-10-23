@@ -1,6 +1,0 @@
-{
-  "reference": "Apple Newton Programmers Reference2.0, Utility Functions23-80/81; PDFpages1249-1251",
-  "url": "https://machut.net/files/manuals/newton/NewtonProgrammerRef20.PDF",
-  "issue": "CurrentException ordinary native error is stored in error; old Font wrapper read data only and rethrew nil, masking originalcode.",
-  "change": "Only shared-identical Lite/Full Font.installScript error preservation. Rendering modules and bothsfnt unchangedfrom30."
-}

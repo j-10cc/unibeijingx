@@ -2,13 +2,13 @@
 __pycache__/
 *.py[cod]
 
-# Local third-party dependencies, SDK and ROMs are inventoried separately.
+# Local dependencies are never committed; only the acquisition guide is tracked.
 /external/*
 !/external/README.md
-!/external/DEPENDENCIES.json
-!/external/FILES.sha256
-!/external/requirements.txt
 
-# Disposable outputs; accepted releases remain tracked.
-/release/build/
+# Only the current end-user manual belongs in version control.
+/docs/*
+!/docs/USER_GUIDE_zh-CN.md
+
+# Test sessions and local outputs.
 /source/test/.runtime/

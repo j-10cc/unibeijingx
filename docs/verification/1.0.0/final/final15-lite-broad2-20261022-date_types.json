@@ -1,9 +1,0 @@
-{
-  "phase": "date_types",
-  "profile": "final15-lite-broad2-20261022",
-  "started": 1792655678.44556,
-  "states": [],
-  "passed": false,
-  "error": "Guest error or unexpected boot: UBX NS 52G WEEKLY BASE time=840 duration=60\nUBX NS UBXLOC\tM52ERROR\texception\tname\tevt.ex.fr\nUBX NS UBXLOC\tM52ERROR\texception\terror\t-48221\nUBX NS D52ACK 18e0cad8b55f0760\n",
-  "ended": 1792655684.200922
-}

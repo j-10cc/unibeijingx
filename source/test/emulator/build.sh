@@ -6,6 +6,9 @@ build="$root/external/.build/emulator"
 mkdir -p "$build"
 if [ ! -d "$build/source" ]; then
     cp -R "$deps/source/Einstein" "$build/source"
+    if ! grep -q 'UBX_PEN_COMMAND_FILE' "$build/source/Emulator/Screen/TFLScreenManager.cpp"; then
+        patch -s -p1 -d "$build/source" < "$root/source/test/emulator/patches/pen-and-print-runtime.patch"
+    fi
     patch -s -p1 -d "$build/source" < "$root/source/test/emulator/patches/isolated-runtime.patch"
 fi
 cmake -S "$build/source" -B "$build/build" \

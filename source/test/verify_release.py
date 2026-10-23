@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check immutable release media, relocated source provenance and all bitmap records."""
+"""Check release contents, accepted binary hashes and all bitmap records."""
 import hashlib
 import json
 from pathlib import Path
@@ -16,46 +16,37 @@ def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def strings(value):
-    if isinstance(value, str):
-        yield value
-    elif isinstance(value, dict):
-        for item in value.values():
-            yield from strings(item)
-    elif isinstance(value, list):
-        for item in value:
-            yield from strings(item)
-
-
 def main():
-    release = ROOT / 'release/UniBeijingX-1.0.0'
-    manifest = json.loads((release / 'MANIFEST.json').read_text())
-    migration = json.loads((ROOT / 'docs/source-migration.json').read_text())
-    migrated = {row['original']: row for row in migration}
-    product = json.loads((ROOT / 'docs/product-inputs.json').read_text())
-    for row in product:
-        assert sha(ROOT / row['path']) == row['sha256'], row['path']
-    for line in (release / 'SHA256SUMS').read_text().splitlines():
-        expected, name = line.split('  ', 1)
-        assert sha(release / name) == expected, name
-    archive = ROOT / 'release/UniBeijingX-1.0.0.zip'
-    expected, _ = (archive.with_suffix('.zip.sha256')).read_text().strip().split('  ', 1)
-    assert sha(archive) == expected
-    with zipfile.ZipFile(archive) as bundle:
-        assert bundle.testzip() is None
-        expected_names = {release.name + '/' + str(p.relative_to(release)) for p in release.rglob('*') if p.is_file()}
-        assert set(bundle.namelist()) == expected_names
-        for name in bundle.namelist():
-            assert bundle.read(name) == (release / Path(name).relative_to(release.name)).read_bytes(), name
-    for name, info in manifest['packages'].items():
+    config = json.loads((ROOT / 'source/main/tools/release_config.json').read_text())
+    release = ROOT / 'release' / ('UniBeijingX-' + config['version'])
+    manual_name = 'USER_GUIDE_zh-CN.md'
+    expected_names = {*config['packages'], manual_name}
+    assert {p.name for p in release.iterdir() if p.name != '.DS_Store'} == expected_names
+    manual = (ROOT / 'docs' / manual_name).read_bytes()
+    assert manual == (release / manual_name).read_bytes(), 'Manual copies differ'
+    text = manual.decode()
+    assert (ROOT / 'LICENSE').read_text().strip() in text, 'Missing Apache license'
+    assert (ROOT / 'THIRD_PARTY_NOTICES.md').read_text().split('\n', 1)[1].strip() in text, 'Missing third-party notices'
+    for token in ('-10061', 'Permission violation', '具体底层原因仍未查明'):
+        assert token in text, token
+    for token in ('5.3', 'dev15', 'experiments/', 'packages/', '验收报告', '旧版'):
+        assert token not in text, token
+    forbidden = ('Einstein:', 'UBXHardwareQA', 'ubxChineseUI', 'ChineseUI.sfnt', 'Translations.zh-CN')
+    for name, info in config['packages'].items():
         path = release / name
         assert sha(path) == info['sha256'] and path.stat().st_size == info['bytes'], name
-    evidence = sorted({s for s in strings(manifest) if s.startswith('experiments/') and s.endswith('.png')})
-    for name in evidence:
-        assert name in migrated, name
-        row = migrated[name]
-        assert sha(ROOT / row['path']) == row['sha256'], row['path']
-    result = {'release_sha256': sha(archive), 'product_sources': len(product), 'release_evidence_images': len(evidence), 'fonts': {}}
+        data = path.read_bytes()
+        assert data.startswith((b'package0', b'package1')), name
+        for token in forbidden:
+            assert not any(token.encode(e) in data for e in ('ascii', 'utf-16-be', 'utf-16-le')), (name, token)
+    archive = release.parent / (release.name + '.zip')
+    with zipfile.ZipFile(archive) as bundle:
+        assert bundle.testzip() is None
+        assert set(bundle.namelist()) == {release.name + '/' + n for n in expected_names}
+        for name in expected_names:
+            assert bundle.read(release.name + '/' + name) == (release / name).read_bytes(), name
+    assert {p.name for p in (ROOT / 'release').iterdir() if p.name != '.DS_Store'} == {release.name, archive.name}
+    result = {'release_sha256': sha(archive), 'archive_files': len(expected_names), 'fonts': {}}
     for variant, sizes in [('lite', [9, 12, 16]), ('full', [9, 10, 12, 14, 16, 18])]:
         source = ROOT / 'source/main/UniBeijingX' / ('font-' + variant) / 'UniBeijingX.sfnt'
         tables = sfnt_tables(source)

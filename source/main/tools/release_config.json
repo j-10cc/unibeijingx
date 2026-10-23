@@ -1,0 +1,37 @@
+{
+  "version": "1.0.0",
+  "packages": {
+    "Font-Lite.pkg": {
+      "component": "UniBeijingX/font-lite",
+      "project": "Font.nprj",
+      "output": "Font.pkg",
+      "bytes": 812096,
+      "sha256": "58f6bd9a0d5a8504b94d3bb1430153b767bc99ac6c1db2de42b20d794a77962a",
+      "creation_time": 3875212800
+    },
+    "Font-Full.pkg": {
+      "component": "UniBeijingX/font-full",
+      "project": "Font.nprj",
+      "output": "Font.pkg",
+      "bytes": 1571768,
+      "sha256": "c63ad1c567cd224564afb4cceec45a19533645f80ca1bd60dfa5c6fed02b3c20",
+      "creation_time": 3875212800
+    },
+    "ChineseRegion.pkg": {
+      "component": "ChineseRegion",
+      "project": "Region.nprj",
+      "output": "Region.pkg",
+      "bytes": 1168608,
+      "sha256": "5b8b98692414be178e202d4f99c8487b8d23043b6cd00cd0f36ccad162219524",
+      "creation_time": 3875040000
+    },
+    "Pinyin.pkg": {
+      "component": "PinyinIME",
+      "project": "Pinyin.nprj",
+      "output": "Pinyin.pkg",
+      "bytes": 436208,
+      "sha256": "a325a6219d0f214248e6ee8ff227ff6465f2a29c7a1f30553cf33314e2c9f822",
+      "creation_time": 3874963231
+    }
+  }
+}

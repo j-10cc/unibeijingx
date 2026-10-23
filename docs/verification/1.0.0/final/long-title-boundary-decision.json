@@ -1,9 +1,0 @@
-{
-  "accepted": true,
-  "classification": "User-approved readable extreme boundary; old strict geometric assertion is outside current acceptance",
-  "user_instruction": "长文件夹标题之类的极端边界，只要可读就可以认为成功。",
-  "source": "final15-lite-final35-20261022-long_folder.json",
-  "actual_screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Long-folder-title.png",
-  "visual_review": "Readable Chinese with ellipsis; clock readable. Native snapshot at image capture has title.left85, clock.right82. Later separate geometric reads are not the user criterion.",
-  "preserved_original_failure": true
-}
