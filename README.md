@@ -40,7 +40,7 @@ python3 source/test/verify_release.py
 
 ## 许可与署名
 
-Copyright 2026 j10cc · [j10cc.site](https://j10cc.site)。项目代码采用 [Apache License 2.0](LICENSE)。第三方材料保留各自许可，派生位图字库继续采用 SIL Open Font License 1.1。
+Copyright 2026 j-10cc · [j10cc.site](https://www.j10cc.site)。项目代码采用 [Apache License 2.0](LICENSE)。第三方材料保留各自许可，派生位图字库继续采用 SIL Open Font License 1.1。
 
 | 材料 | 来源与版权 | 本项目用途／许可 |
 | --- | --- | --- |
