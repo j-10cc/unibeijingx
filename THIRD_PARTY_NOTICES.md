@@ -15,6 +15,12 @@ UniBeijingX 的项目代码采用 Apache License 2.0。下面的字体及第三�
 - **pypinyin 0.55.0**：[上游](https://github.com/mozillazg/python-pinyin)，MIT 许可；用于生成汉字拼音与候选映射。
 - **中国邮政地址与邮编数据**：[公开网点查询](https://iframe.chinapost.com.cn/jsp/type/institutionalsite/SiteSearchJTApi.jsp?community=ChinaPostJT)，2026-10-15 快照，覆盖大陆 31 个省级地区、363 组省市、2,867 组区县和 37,182 组地区邮编关系。该说明是来源署名，不将中国邮政数据声明为 Apache 或 MIT 授权数据。网点邮编用于辅助填写，不能代表逐门牌投递范围。
 
+- **台湾地名与邮递区号**：[中华邮政下载专区](https://subservices.post.gov.tw/post/internet/Download/index.jsp?ID=220306) 中的「3码邮递区号与行政区中心点经纬度对应表」XML，文件生成日期 2016-08-12，2026-10-23 获取。只使用地名和三位地区前缀，不含完整逐门牌 3+3 数据；来源 URL／SHA-256 记录于源码 `source/main/ChineseRegion/geodata/supplemental.json`。
+- **香港地名**：[香港选举事务处 18 区名录](https://www.elections.gov.hk/dc2023/chi/dcgc.html)。邮政地址格式参照[万国邮联香港地址指南](https://www.upu.int/UPU/media/upu/PostalEntitiesFiles/addressingUnit/hkgEn.pdf)及香港邮政邮编说明；不提供虚构本地邮编。
+- **澳门地名与地址**：[地籍资讯网堂区名录](https://cadastre.gis.gov.mo/MGSP_Cad/chn/bak/main_20160628.html)、[教育及青年发展局地理课程指引](https://www.dsedj.gov.mo/crdc/guide/data/junior/Geography_guide_2024c.pdf)、[澳门邮电标准地址格式](https://www.ctt.gov.mo/MacauPost/Contents/AddressFormat.aspx?lang=en-us)。七堂区和路氹填海区用于地址辅助，不提供虚构本地邮编。
+
+以上地名／邮政资料为事实数据来源署名，未将其声明为 Apache 或 MIT 授权数据；原始网站及资料权利归各来源所有。2026-10-23 核对，实际投递仍应查询邮政部门。
+
 ## SIL Open Font License 1.1
 
 ```text

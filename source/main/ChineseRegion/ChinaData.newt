@@ -1,5 +1,5 @@
 // Generated atlas root.
-DefGlobalVar('ubxChinaAtlas,{version:"ChinaPost 2026-10-15",codes:LoadBinary("ChinaCodes.bin"),provinces:[ubxChinaProvince0,
+DefGlobalVar('ubxChinaAtlas,{version:"ChinaPost 2026-10-15 + regional supplement 2026-10-23",codes:LoadBinary("ChinaCodes.bin"),provinces:[ubxChinaProvince0,
 ubxChinaProvince1,
 ubxChinaProvince2,
 ubxChinaProvince3,
@@ -29,4 +29,7 @@ ubxChinaProvince26,
 ubxChinaProvince27,
 ubxChinaProvince28,
 ubxChinaProvince29,
-ubxChinaProvince30]});
+ubxChinaProvince30,
+ubxChinaProvince31,
+ubxChinaProvince32,
+ubxChinaProvince33]});

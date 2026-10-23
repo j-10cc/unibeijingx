@@ -39,5 +39,7 @@ def main():
  (OUT/'geodata').mkdir(exist_ok=True)
  (OUT/'geodata/manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
  (OUT/'geodata/atlas.json').write_text(json.dumps(tree,ensure_ascii=False,separators=(',',':'))+'\n')
+ from build_supplemental_atlas import generate
+ generate()
  print(counts)
 if __name__=='__main__':main()

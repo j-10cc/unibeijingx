@@ -2,14 +2,14 @@
 
 UniBeijingX 为 Apple MessagePad 2000／2100、Newton OS 2.1 提供简体中文显示、拼音输入及中文区域支持。项目目标是让 Newton 能够阅读、输入并保存中文，同时保留原生应用的操作方式和英文界面。
 
-**当前版本：1.0.0。** [下载发布包](release/UniBeijingX-1.0.0.zip) · [用户使用手册](docs/USER_GUIDE_zh-CN.md)
+**当前版本：1.0.0（2026-10-23 地区补充版，替换此前同号介质）。** [下载发布包](release/UniBeijingX-1.0.0.zip) · [用户使用手册](docs/USER_GUIDE_zh-CN.md)
 
 ## 当前能力
 
-- **中文显示**：8,309 个映射字符，包括 GB2312、部分扩展拉丁字母及符号；为 Notes、Names、Dates、原生列表和常见选择器中的中文内容提供自动字体适配。
+- **中文显示**：8,416 个映射字符，包括 GB2312、台湾／香港／澳门地名用字、部分扩展拉丁字母及符号；为 Notes、Names、Dates、原生列表和常见选择器中的中文内容提供自动字体适配。
 - **两种字体配置**：Lite 内置 9／12／16 位图字号，Full 内置 9／10／12／14／16／18；字符范围相同，安装时二选一。
 - **拼音输入**：全拼候选栏、汉字与常用词、候选翻页、数字键及空格选词，配合 Newton 原生字母键盘使用。
-- **中文区域**：中文日期时间、月份星期、人民币、公制、A4，以及省市区县／邮编填写辅助；通过 Prefs 的 Country 启用。
+- **中文区域**：中文日期时间、月份星期、人民币、公制、A4，以及含台湾、香港、澳门的地区／邮编填写辅助；通过 Prefs 的 Country 启用。
 - **独立组件**：一个字体包加按需安装的输入法和区域包；不修改 ROM。字体包包含 About 页面。
 
 本版在隔离模拟器中完成验证，真实 MessagePad 和实物打印仍待验证。字库不覆盖全部 Unicode；连续反复热装卸存在尚未解决的 `-10061` 风险，触发场景和规避方法见使用手册。
@@ -49,6 +49,8 @@ Copyright 2026 j-10cc · [j10cc.site](https://www.j10cc.site)。项目代码采�
 | jieba 0.42.1 | [jieba](https://github.com/fxsjy/jieba)，Copyright 2013 Sun Junyi | 词频与常用词数据；MIT |
 | pypinyin 0.55.0 | [pypinyin](https://github.com/mozillazg/python-pinyin)，Copyright 2016 mozillazg、闲耘 | 生成拼音读音和候选映射；MIT |
 | 中国邮政地名及邮编 | [中国邮政公开网点查询](https://iframe.chinapost.com.cn/jsp/type/institutionalsite/SiteSearchJTApi.jsp?community=ChinaPostJT)，2026-10-15 快照 | 辅助填写地址；覆盖大陆 31 个省级地区、363 组省市、2,867 组区县及 37,182 组地区邮编关系；不将其声明为 Apache／MIT 授权数据 |
+
+地区选择器另补充台湾 22 县市及 371 条邮政地区记录、香港 18 区、澳门 7 堂区及路氹填海区。台湾提供三位地区前缀（非完整逐门牌六位码），港澳邮编留空；地理分组不虚构市县。来源见 [第三方声明](THIRD_PARTY_NOTICES.md)。
 
 派生字体以 UniBeijingX 名称提供，保留上游字体版权。楷体“中”图标由本机 STKaiti 字形生成，项目仅保存已生成位图，不分发 STKaiti 字体文件。邮政网点邮编不代表逐门牌投递范围，使用时应核对实际地址。
 

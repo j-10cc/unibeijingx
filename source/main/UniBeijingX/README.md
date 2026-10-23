@@ -1,6 +1,6 @@
 # UniBeijingX 字体与显示支持
 
-本组件生成互斥的 Font-Lite.pkg 和 Font-Full.pkg。两版均有 8,309 个映射字符；Lite 内置 9／12／16 位图字号，Full 内置 9／10／12／14／16／18。
+本组件生成互斥的 Font-Lite.pkg 和 Font-Full.pkg。两版均有 8,416 个映射字符；Lite 内置 9／12／16 位图字号，Full 内置 9／10／12／14／16／18。
 
 ## 代码组织与架构
 
@@ -30,6 +30,7 @@ python3 source/main/tools/build.py --check
 
 - `tools/build_font.py` 生成基础 GB2312 位图字库，默认写入 `external/.build/base-GB2312.sfnt`。
 - `tools/display52_latin_extension.py`、`display52_extended_chars.py` 保存字符扩展算法，使用 `external/fonts/baselines/` 中的中间字库作为输入。
+- `tools/region_place_extension.py` 追加地区选择器繁体地名所需字形；可重复执行，已有字符不重画，并逐项确认旧字形和字宽不变。
 - `tools/build_package_icons.py` 使用已保存 PNG 生成两个版本的图标。
 - `tools/font_format.py` 提供 cmap、SFNT 表与位图记录解析，供资源工具和发布校验使用。
 

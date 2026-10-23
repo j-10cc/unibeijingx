@@ -11,6 +11,7 @@ import zipfile
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / 'source/main/UniBeijingX/tools'))
 from font_format import sfnt_tables, unicode_cmap, glyph_record
+from region_place_extension import required_characters
 
 
 def sha(path):
@@ -63,7 +64,8 @@ def main():
         source = ROOT / 'source/main/UniBeijingX' / ('font-' + variant) / 'UniBeijingX.sfnt'
         tables = sfnt_tables(source)
         cmap = unicode_cmap(tables)
-        assert len(cmap) == 8309
+        assert len(cmap) == 8416
+        assert required_characters() <= cmap.keys(), 'Missing regional place-name glyphs'
         strikes = struct.unpack_from('>I', tables['bloc'], 4)[0]
         assert [tables['bloc'][8 + 48 * i + 44] for i in range(strikes)] == sizes
         for row in range(0xA1, 0xF8):

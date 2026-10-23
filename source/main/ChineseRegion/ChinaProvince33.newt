@@ -1,0 +1,9 @@
+// Generated from geodata/supplemental.json; do not edit.
+DefGlobalVar('ubxChinaProvince33,'{name:"澳门特别行政区",postcodeKind:"none",cities:[{name:"澳門半島",areas:[{name:"花地瑪堂區",postalCodes:[""]},
+{name:"花王堂區",postalCodes:[""]},
+{name:"望德堂區",postalCodes:[""]},
+{name:"風順堂區",postalCodes:[""]},
+{name:"大堂區",postalCodes:[""]}]},
+{name:"氹仔",areas:[{name:"嘉模堂區",postalCodes:[""]}]},
+{name:"路環",areas:[{name:"聖方濟各堂區",postalCodes:[""]}]},
+{name:"路氹填海區",areas:[{name:"路氹填海區",postalCodes:[""]}]}]});

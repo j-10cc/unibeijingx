@@ -21,7 +21,8 @@ DefGlobalVar('ubxRegionSettings,{
  geoSet:func(path,text) begin
   local v:=self:geoLine(path);if not v then return nil;
   SetKeyView(v.entryLine,0);v.entryLine:SetHilite(0,StrLen(v.entryLine.text),true);
-  PostKeyString(v.entryLine,EnsureInternal(Clone(text)));
+  // A backspace commits an empty selection through the native field binding.
+  PostKeyString(v.entryLine,EnsureInternal(if StrLen(text)=0 then "\u0008" else Clone(text)));
  end,
  geoProvince:func(name) begin
   foreach p in self.atlas.provinces do if StrEqual(p.name,name) then return p;
@@ -49,6 +50,7 @@ DefGlobalVar('ubxRegionSettings,{
   s:openGeo(role,0);return nil;
  end,
  geoCodes:func(area) begin
+  if area.postalCodes then return area.postalCodes;
   local codes:=[];local data:=self.atlas.codes;
   for i:=0 to area.codesCount-1 do begin
    local offset:=area.codesOffset+i*3;
@@ -63,9 +65,12 @@ DefGlobalVar('ubxRegionSettings,{
   self:closeGeo();self.geoRole:=role;self.geoPage:=page;
   local all:=if role='province then self.atlas.provinces else if role='city then self.geoP.cities
     else if role='area then self.geoC.areas else self:geoCodes(self.geoA);
+  if role='code and Length(all)=0 then all:=[""];
   local rows:=[];local labels:=[];local start:=page*8;local last:=Min(start+7,Length(all)-1);
   for i:=start to last do begin
-   AddArraySlot(rows,all[i]);AddArraySlot(labels,if role='code then all[i] else all[i].name);
+   AddArraySlot(rows,all[i]);
+   AddArraySlot(labels,if role<>'code then all[i].name else if StrLen(all[i])=0 then "No postcode (leave blank)"
+     else if self.geoP.postcodeKind and StrEqual(self.geoP.postcodeKind,"prefix3") then all[i] & " (area prefix)" else all[i]);
   end;
   if page>0 then begin AddArraySlot(rows,'previous);AddArraySlot(labels,"Previous page");end;
   if last<Length(all)-1 then begin AddArraySlot(rows,'next);AddArraySlot(labels,"Next page");end;
@@ -81,8 +86,16 @@ DefGlobalVar('ubxRegionSettings,{
   self:closeGeo();
   if item='previous then self:openGeo(role,page-1)
   else if item='next then self:openGeo(role,page+1)
-  else if role='province then begin self.geoP:=item;self:geoSet('region,item.name);end
-  else if role='city then begin self.geoC:=item;self:geoSet('city,item.name);end
+  else if role='province then begin
+   if not self.geoP or not StrEqual(self.geoP.name,item.name) then begin
+    self:geoSet('city,"");self:geoSet('postal_code,"");self.geoC:=nil;self.geoA:=nil;
+   end;
+   self.geoP:=item;self:geoSet('region,item.name);
+  end
+  else if role='city then begin
+   if not self.geoC or not StrEqual(self.geoC.name,item.name) then begin self:geoSet('postal_code,"");self.geoA:=nil;end;
+   self.geoC:=item;self:geoSet('city,item.name);
+  end
   else if role='area then begin self.geoA:=item;self:openGeo('code,0);end
   else self:geoSet('postal_code,item);
  end,

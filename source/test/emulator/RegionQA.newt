@@ -1,0 +1,77 @@
+// Isolated test package; never include in product packages.
+{
+ log:func(s) |UBXHardwareQA:Log|(s),
+ check:func(s,b) self:log("REGCHECK "&s&" "&(if b then "PASS" else "FAIL")),
+ installScript:func(p) begin DefGlobalVar('UBXRegionQA,{_proto:p});p:log("REGQA READY");end,
+ summary:func() begin
+  local s:=GetGlobalVar('|ubxRegion:UBX|);local a:=s.atlas;
+  self:check("34 provinces",Length(a.provinces)=34);
+  self:check("22 Taiwan cities",Length(a.provinces[31].cities)=22);
+  local n:=0;local z:=0;local bad:=0;
+  foreach c in a.provinces[31].cities do foreach d in c.areas do begin
+   n:=n+1;local codes:=s:geoCodes(d);
+   if Length(codes)<>1 or StrLen(codes[0])<>3 then bad:=bad+1;z:=z+Length(codes);
+  end;
+  self:check("371 Taiwan postal areas",n=371 and z=371);
+  self:check("all 371 prefixes valid",bad=0);
+  foreach i in [32,33] do begin
+   n:=0;foreach c in a.provinces[i].cities do foreach d in c.areas do begin
+    n:=n+1;local codes:=s:geoCodes(d);
+    self:check("no invented zip",Length(codes)=1 and StrEqual(codes[0],""));
+   end;
+   self:check("district-count-"&NumberStr(i),n=(if i=32 then 18 else 8));
+  end;
+  self:check("Taipei 100",StrEqual(s:geoCodes(a.provinces[31].cities[0].areas[0])[0],"100"));
+  self:check("English State",StrEqual(GetLocale().regionLabel,"State"));
+  self:check("English City",StrEqual(GetLocale().cityLabel,"City"));
+  self:check("English Zip Code",StrEqual(GetLocale().postalCodeLabel,"Zip Code"));
+  self:check("font active",GetGlobalVar('|ubxFontPart:UBX|)<>nil);
+  self:check("main font shared",fonts.|BeijingRegion:UBX|.plainData=fonts.beijing.plainData);
+ end,
+ page:func(p,c,page) begin
+  local s:=GetGlobalVar('|ubxRegion:UBX|);s.geoP:=s.atlas.provinces[p];
+  if c=nil then s:openGeo('city,page)
+  else begin s.geoC:=s.geoP.cities[c];s:openGeo('area,page);end;
+  self:check("picker live",s.geoPicker.viewCObject<>nil);
+ end,
+ dump:func() begin
+  local n:=GetRoot().cardfile;foreach k,v in n do if IsFunction(v) then self:log("NAMES METHOD "&k);
+ end,
+ fields:func() begin
+  local s:=GetGlobalVar('|ubxRegion:UBX|);
+  foreach k in '[country,region,city,postal_code] do self:log("FIELD "&k&"="&s:geoInput(k));
+ end,
+ capture:func() begin
+  local n:=GetRoot().cardfile;
+  n.|qaOriginalShow:UBX|:=n.ShowEditSlip;
+  n.ShowEditSlip:=func(a,b,c,d,e) begin
+   GetGlobalVar('UBXRegionQA).editArgs:=[a,b,c,d,e];
+   return self:|qaOriginalShow:UBX|(a,b,c,d,e);
+  end;
+ end,
+ closeAddress:func() begin
+  local s:=GetGlobalVar('|ubxRegion:UBX|);
+  self.postalPath:=s:geoLine('postal_code).path;
+  self.cityPath:=s:geoLine('city).path;self.regionPath:=s:geoLine('region).path;
+  foreach v in GetRoot():ChildViewFrames() do
+   if v.viewCObject and v.appSymbol='cardfile and v.selectedLayout then v:Close();
+ end,
+ reopenAddress:func() begin
+  local a:=self.editArgs;GetRoot().cardfile:ShowEditSlip(a[0],a[1],a[2],a[3],a[4]);
+ end,
+ stored:func(expected) begin
+  local value:=GetSysEntryData(GetRoot().cardfile.target,self.postalPath);
+  self:check("saved postal",StrEqual(if value then value else "",expected));
+ end,
+ field:func(path,expected) self:check("field-"&path,StrEqual(GetGlobalVar('|ubxRegion:UBX|):geoInput(path),expected)),
+ choose:func(p,c,a) begin
+  local s:=GetGlobalVar('|ubxRegion:UBX|);s.geoP:=s:geoProvince(s:geoInput('region));
+  s:openGeo('province,p div 8);s:geoPick(p mod 8);
+ end,
+ city:func(c) begin
+  local s:=GetGlobalVar('|ubxRegion:UBX|);s:openGeo('city,c div 8);s:geoPick(c mod 8);
+ end,
+ area:func(a) begin
+  local s:=GetGlobalVar('|ubxRegion:UBX|);s:openGeo('area,a div 8);s:geoPick(a mod 8);
+ end
+}
