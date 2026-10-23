@@ -1,0 +1,55 @@
+{
+  "candidate": "dev15",
+  "attempt": 27,
+  "accepted": false,
+  "packages": {
+    "Font-Lite.pkg": {
+      "path": "packages/milestone52r2-display/artifacts/Font-Lite.pkg",
+      "bytes": 811480,
+      "sha256": "c94375726096154bbfd47f6144c40557ea590d1146fe037a9f172e13f8dbb5e9"
+    },
+    "Font-Full.pkg": {
+      "path": "packages/milestone52r2-display/artifacts/Font-Full.pkg",
+      "bytes": 1571152,
+      "sha256": "00c310f67ed982bb9d39ba405d3d4a93fbca39c35d84bb79dd1428c6cecb791b"
+    }
+  },
+  "sources": [
+    {
+      "path": "packages/milestone52r2-display/font-full/About.newt",
+      "sha256": "4d2b073b15e15d7d40887cd57f9ba77431fbaa91046076aeb1c543b84f5b06b8"
+    },
+    {
+      "path": "packages/milestone52r2-display/font-full/Font.newt",
+      "sha256": "1d74663a88774d810fb82b3761d63565cc310fc58283b7e971fb3fea410fc297"
+    },
+    {
+      "path": "packages/milestone52r2-display/font-full/Icon.newt",
+      "sha256": "ff80980d44b4fca035752e40886fb01c6c170242e955c907a218738a470aa68a"
+    },
+    {
+      "path": "packages/milestone52r2-display/font-lite/About.newt",
+      "sha256": "d74c1a60ce9a8d820668cca79805992a971e697514a92cf498da3b1f96b0e2a9"
+    },
+    {
+      "path": "packages/milestone52r2-display/font-lite/Font.newt",
+      "sha256": "1d74663a88774d810fb82b3761d63565cc310fc58283b7e971fb3fea410fc297"
+    },
+    {
+      "path": "packages/milestone52r2-display/font-lite/Icon.newt",
+      "sha256": "ff80980d44b4fca035752e40886fb01c6c170242e955c907a218738a470aa68a"
+    },
+    {
+      "path": "packages/milestone52r2-display/shared/AboutView.newt",
+      "sha256": "a2fa9750b75f2400cc8acfdbff7ab04616a86564699a40d27066ae4b4411e756"
+    },
+    {
+      "path": "packages/milestone52r2-display/shared/ContentDisplay.newt",
+      "sha256": "bf8c5e903ea969d6d3a6dceef24ac176ce3bde59e52fbf7f1c0d1b134ae2741c"
+    },
+    {
+      "path": "packages/milestone52r2-display/shared/ContentFont.newt",
+      "sha256": "8c15604e54cd38bd7276fce0bb4c745ccd0701bda56412db82fa913843b54f40"
+    }
+  ]
+}

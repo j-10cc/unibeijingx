@@ -1,0 +1,86 @@
+{
+  "candidate": "dev15",
+  "attempt": 15,
+  "accepted": false,
+  "directory": "packages/milestone52r2-display/artifacts/dev15",
+  "packages": {
+    "Font-Lite.pkg": {
+      "path": "packages/milestone52r2-display/artifacts/Font-Lite.pkg",
+      "bytes": 802216,
+      "sha256": "eafd1c5b41b4eec5c81f3b4ac5210928d134d3d79a0af481fcbab70b9dbdb3db"
+    },
+    "Font-Full.pkg": {
+      "path": "packages/milestone52r2-display/artifacts/Font-Full.pkg",
+      "bytes": 1561888,
+      "sha256": "606453d6a7dcb233392ad8886b729d44e91db4c6b91785269bbd62b37329e621"
+    }
+  },
+  "sources": [
+    {
+      "path": "packages/milestone52r2-display/font-full/About.newt",
+      "bytes": 89,
+      "sha256": "4d2b073b15e15d7d40887cd57f9ba77431fbaa91046076aeb1c543b84f5b06b8"
+    },
+    {
+      "path": "packages/milestone52r2-display/font-full/Font.newt",
+      "bytes": 19817,
+      "sha256": "1d74663a88774d810fb82b3761d63565cc310fc58283b7e971fb3fea410fc297"
+    },
+    {
+      "path": "packages/milestone52r2-display/font-full/Font.nprj",
+      "bytes": 381,
+      "sha256": "20a5bc257a37b60b8b6bb1f999f9be8bf9b12baf7a57b2a0eadbfdd6f235b7b6"
+    },
+    {
+      "path": "packages/milestone52r2-display/font-full/Icon.newt",
+      "bytes": 691,
+      "sha256": "ff80980d44b4fca035752e40886fb01c6c170242e955c907a218738a470aa68a"
+    },
+    {
+      "path": "packages/milestone52r2-display/font-full/UniBeijingX.sfnt",
+      "bytes": 1505508,
+      "sha256": "7957b8bac6c88e2ed3dec89f09d7cc893a1744ff0d0c12e51969f662474c354e"
+    },
+    {
+      "path": "packages/milestone52r2-display/font-lite/About.newt",
+      "bytes": 89,
+      "sha256": "d74c1a60ce9a8d820668cca79805992a971e697514a92cf498da3b1f96b0e2a9"
+    },
+    {
+      "path": "packages/milestone52r2-display/font-lite/Font.newt",
+      "bytes": 19817,
+      "sha256": "1d74663a88774d810fb82b3761d63565cc310fc58283b7e971fb3fea410fc297"
+    },
+    {
+      "path": "packages/milestone52r2-display/font-lite/Font.nprj",
+      "bytes": 381,
+      "sha256": "20a5bc257a37b60b8b6bb1f999f9be8bf9b12baf7a57b2a0eadbfdd6f235b7b6"
+    },
+    {
+      "path": "packages/milestone52r2-display/font-lite/Icon.newt",
+      "bytes": 691,
+      "sha256": "ff80980d44b4fca035752e40886fb01c6c170242e955c907a218738a470aa68a"
+    },
+    {
+      "path": "packages/milestone52r2-display/font-lite/UniBeijingX.sfnt",
+      "bytes": 745836,
+      "sha256": "194b806a15ce96c8229d4ceace1294aa5b2c5c8acc2a160f276c4400caf4adbc"
+    },
+    {
+      "path": "packages/milestone52r2-display/shared/AboutView.newt",
+      "bytes": 2272,
+      "sha256": "a2fa9750b75f2400cc8acfdbff7ab04616a86564699a40d27066ae4b4411e756"
+    },
+    {
+      "path": "packages/milestone52r2-display/shared/ContentDisplay.newt",
+      "bytes": 53673,
+      "sha256": "99a824ebb712215d42c83c43ab39aa4c63c8cd5df4f2730ee69ced5de74ec795"
+    },
+    {
+      "path": "packages/milestone52r2-display/shared/ContentFont.newt",
+      "bytes": 8386,
+      "sha256": "b9aa12770ae5ddb90d77516267da1d142cdf8adc924135de83aa893cbcc6293c"
+    }
+  ],
+  "previous_freeze": "candidate-frozen.json withdrawn; bytes retained at artifacts/dev15-rejected-attempt11"
+}

@@ -1,0 +1,50 @@
+{
+  "phase": "country_native",
+  "profile": "final15-full-final35-tail-20261023",
+  "started": 1792689643.0001411,
+  "states": [
+    {
+      "state": "Country-native-China",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Country-native-China.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Country-native-menu-to-USA",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Country-native-menu-to-USA.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Country-native-USA",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Country-native-USA.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Country-native-menu-to-China",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Country-native-menu-to-China.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Country-native-China-again",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Country-native-China-again.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Style-history-Fancy-Mixed-settled3",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Style-history-Fancy-Mixed-settled3.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Style-history-Fancy-Mixed-settled10",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Style-history-Fancy-Mixed-settled10.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Style-history-Fancy-Mixed-redraw",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Style-history-Fancy-Mixed-redraw.png",
+      "adapter_errors": 0
+    }
+  ],
+  "passed": true,
+  "runner_sha256": "a0d2532fc54ac6a8d10b57a889e42725e4e9d79dde103031d6479e552779ae18",
+  "ended": 1792689749.214894
+}

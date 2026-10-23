@@ -1,0 +1,584 @@
+{
+    _proto: ubxRegionSettings,
+    localeSymbol: '|zhCN:Beijing|,
+    prefsSymbol: '|Chinese Region:UBX|,
+    uiFontInfo: {
+        name: "Beijing Regional", encoding: 0, macFontID: 4114,
+        screenSym: '|BeijingRegion:UBX|, psName: '|BeijingRegion:UBX|, psScale: 288356,
+        plainData: SetClass(LoadBinary("LocalizationUI.sfnt"),'sfnt),
+        boldData: nil, italicData: nil, boldItalicData: nil,
+    },
+    installScript: func(partFrame) begin
+        // Runtime state keeps package references only while installed. Do not
+        // internalize the prototype's embedded UI font into the Newton heap.
+        local state := {_proto: partFrame, changes: [], panel: nil,
+            localeBundle: nil, prefs: nil, watcher: nil, removing: nil, countryPicker: nil};
+        state.prefs := GetAppPrefs(partFrame.prefsSymbol,
+            {uiEnabled: nil, regionEnabled: nil, previousLocale: nil, boots: 0});
+        state.prefs.uiEnabled := nil;
+        state.prefs.boots := state.prefs.boots + 1;
+        EntryChange(state.prefs);
+        DefGlobalVar('|ubxRegion:UBX|, state);
+        local fontInfo := Clone(partFrame.uiFontInfo);
+        local fontData := fontInfo.plainData;
+        fontInfo.plainData := nil;
+        // Native font caches outlive individual views. Keep their small
+        // metadata and symbol names internal; leave bitmap data in the package.
+        fontInfo := EnsureInternal(fontInfo);
+        fontInfo.plainData := fontData;
+        fonts.(EnsureInternal('|BeijingRegion:UBX|)) := fontInfo;
+        nil;
+        state:makeLocale();
+        // Country still lists China when both persisted switches are off.
+        state:ensureHook();
+        nil;
+        state.activating := true;
+        if state.prefs.regionEnabled then state:setRegion(true);
+        state.activating := nil;
+        nil;
+        // Clear only the runtime clone of the teardown closure before making
+        // it internal. Its compile-time environment contains the UI font.
+        local remover := Clone(partFrame.removeScript);
+        remover.argFrame := nil;
+        return EnsureInternal({removeScript: remover});
+    end,
+    makeLocale: func() begin
+        local baseLocale := FindLocale('USA);
+        local loc := EnsureInternal({_proto: baseLocale,
+            localeSym: self.localeSymbol, title: "中国",
+            cityLabel: baseLocale.cityLabel, regionLabel: baseLocale.regionLabel, postalCodeLabel: baseLocale.postalCodeLabel,
+            postalCodeNumeric: true, distanceMeasure:'kilometers, distanceLabel:"公里",
+            distanceLabelShort:"km", firstDayofWeek:1, defaultPaperSize:'a4,
+        });
+        loc.longDateFormat := Clone(baseLocale.longDateFormat);
+        loc.longDateFormat.longDofWeek := ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
+        loc.longDateFormat.abbrDofWeek := ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
+        loc.longDateFormat.terseDofWeek := ["日", "一", "二", "三", "四", "五", "六"];
+        loc.longDateFormat.shortDofWeek := Clone(loc.longDateFormat.terseDofWeek);
+        loc.longDateFormat.longMonth := ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"];
+        loc.longDateFormat.abbrMonth := ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"];
+        // Each date element is a six-bit (format << 3 | type) field.
+        // [year/numeric=44, month/long=11, day/numeric=41, weekday/long=10].
+        // Precomputed: tntk emits non-Newton ShiftLeft for runtime <<.
+        loc.longDateFormat.longDateOrder := 2790124;
+        loc.longDateFormat.longDateDelim := ["", "年", "", "日 ", ""];
+        loc.shortDateFormat := Clone(baseLocale.shortDateFormat);
+        loc.shortDateFormat.shortDateOrder := 170732; // [44, 43, 41].
+        loc.shortDateFormat.shortDateDelim := ["", "-", "-", ""];
+        loc.shortDateFormat.dayLeadingZ := kLeadZero;
+        loc.shortDateFormat.monthLeadingZ := kLeadZero;
+        loc.shortDateFormat.yearLeading := kLeadZero;
+        loc.timeFormat := Clone(baseLocale.timeFormat);
+        loc.timeFormat.timeCycle := kCycle24;
+        loc.timeFormat.midNightForm := kUseHourZero;
+        loc.timeFormat.morningStr := "上午";
+        loc.timeFormat.eveningStr := "下午";
+        loc.timeFormat.suffixStr := "";
+        loc.numberFormat := Clone(baseLocale.numberFormat);
+        loc.numberFormat.currencyPrefix := "￥";
+        loc.numberFormat.currencySuffix := "";
+        self.localeBundle := loc;
+        // 717006 exports these public functions directly. Its platform wrappers
+        // trigger a reproducible tntk compiler crash; do not embed those wrappers.
+        if not GlobalFnExists('AddLocale) or not GlobalFnExists('RemoveLocale) then
+            Throw('|evt.ex.msg|, "Locale API unavailable on this ROM");
+        AddLocale(loc);
+    end,
+    setRegion: func(enabled) begin
+        local oldWeek := self:effectiveWeek();
+        self:syncRegionDefaults(enabled);
+        local current := GetLocale().localeSym;
+        if enabled then begin
+            if current <> self.localeSymbol and (not self.activating or not self.prefs.previousLocale) then self.prefs.previousLocale := current;
+            SetLocale(self.localeSymbol);
+        end else if current = self.localeSymbol then begin
+            local previous := self.prefs.previousLocale;
+            if not FindLocale(previous) then previous := 'USA;
+            SetLocale(previous);
+        end else self.prefs.previousLocale := current;
+        self.weekChanged := self.forceWeekRefresh or oldWeek <> self:effectiveWeek();
+        self.forceWeekRefresh := nil;
+        self.prefs.regionEnabled := enabled;
+        self:syncDateParser(enabled and not self.removing);
+        if enabled then self:registerAddressPrint() else begin self:closeGeo();self:unregisterAddressPrint();end;
+        if not enabled then self:restoreNamesDateGuards();
+        EntryChange(self.prefs);
+        nil;
+        if not enabled then self:restoreGroup('region);
+        nil;
+        self:ensureHook();
+        nil;
+        self:applyNotes();
+        nil;
+        self:refreshClock();
+        self:refreshNative();
+        self.weekChanged := nil;
+    end,
+    refreshClock: func() begin
+        local notes := GetRoot().paperroll;
+        if notes and notes.viewCObject and notes.filterBar then begin
+            local clock := notes.filterBar.title;
+            if clock and clock.viewCObject then
+                SetValue(clock,EnsureInternal('text),
+                    TimeStr(Time(), ROM_dateTimeStrSpecs.shortestTimeStrSpec) & " " & ShortDate(Time()));
+        end;
+    end,
+    restoreShapeArray:func(c) begin
+        local now:=c.view.(c.slot);local old:=c.original;local ours:=c.replacement;
+        if now=ours then return old;
+        if not IsArray(now) or not IsArray(old) or not IsArray(ours) or
+            Length(now)<>Length(old) or Length(now)<>Length(ours) then return nil;
+        local result:=nil;
+        foreach i,r in ours do if r<>old[i] then begin
+            local n:=now[i];local o:=old[i];local replacement:=nil;
+            if n=r then replacement:=o
+            else if IsFrame(n) and IsFrame(r) and IsFrame(o) then begin
+                if n.font and r.font and o.font and GetFontFamilySym(n.font)='|BeijingRegion:UBX| and
+                    GetFontFamilySym(r.font)='|BeijingRegion:UBX| then begin
+                    replacement:=Clone(n);replacement.font:=o.font;
+                end else if n.class='text and r.class='text and o.class='text then begin
+                    local a:=GetShapeInfo(n);local b:=GetShapeInfo(r);
+                    if StrEqual(a.text,b.text) and a.bounds.top=b.bounds.top and a.bounds.left=b.bounds.left then replacement:=o;
+                end;
+            end;
+            if replacement then begin if not result then result:=Clone(now);result[i]:=replacement;end;
+        end;
+        return result;
+    end,
+    remember: func(view, slot, replacement, group) begin
+        slot := EnsureInternal(slot);
+        local current := view.(slot);
+        if current = replacement then return nil;
+        // Keep live view references shallow. EnsureInternal on this frame
+        // traverses the whole open view graph, including other packages.
+        AddArraySlot(self.changes, {view: view, slot: slot,
+            own: HasSlot(view, slot), original: current, replacement: replacement, group: group});
+        SetValue(view, slot, replacement);
+    end,
+    ownsChange:func(change) begin
+        local current:=change.view.(change.slot);
+        if current=change.replacement then return true;
+        foreach slot in '[viewFont,labelFont,datesFont,titleFont,HourFont,entryFont] do
+            if slot=change.slot and current and change.replacement then
+                return GetFontFamilySym(current)='|BeijingRegion:UBX| and
+                    GetFontSize(current)=GetFontSize(change.replacement) and
+                    GetFontFace(current)=GetFontFace(change.replacement);
+        return nil;
+    end,
+    pruneClosedChanges:func() begin
+        // Closed cached views can be reused by the ROM. Restore their owned
+        // slots before dropping references; no native renderer is alive here.
+        // Keep the Names base-method hook even while its application is closed.
+        for i:=Length(self.changes)-1 to 0 by -1 do begin
+            local c:=self.changes[i];
+            if c.group<>'namesLifecycle and not c.view.viewCObject then begin
+                if c.slot='shapeArray then begin
+                    local a:=self:restoreShapeArray(c);if a then c.view.shapeArray:=a;
+                end else if self:ownsChange(c) then begin
+                    if c.own then c.view.(c.slot):=c.original else RemoveSlot(c.view,c.slot);
+                end;
+                if c.view.GetTitle and c.view.pieces then c.view.pieces:=nil;
+                RemoveSlot(self.changes,i);
+            end;
+        end;
+    end,
+    restoreGroup: func(group) begin
+        local i := Length(self.changes) - 1;
+        while i >= 0 do begin
+            local change := self.changes[i];
+            if change.group = group then begin
+                local view := change.view;
+                local owned := self:ownsChange(change);
+                if change.slot='shapeArray then begin
+                    local a:=self:restoreShapeArray(change);
+                    if a then begin SetValue(view,EnsureInternal('shapeArray),a);if view.viewCObject then view:Dirty();end;
+                    owned:=nil;
+                end;
+                if owned then begin
+                    // SetValue also resets the native renderer's font cache.
+                    // Removing the NS slot alone leaves the old native font.
+                    SetValue(view, change.slot, change.original);
+                    if not change.own then RemoveSlot(view, change.slot);
+                    if (change.slot='entryFont or change.slot='label or change.slot='labelFont or change.slot='TextSetup) and view.viewCObject and view.TextSetup and view.MakePickLine then begin
+                        view:viewSetupChildrenScript(); view:Dirty();
+                    end;
+                    if change.slot = 'viewFont and HasVariable(view,'GetTitle) and HasVariable(view,'pieces) then
+                        SetValue(view,EnsureInternal('pieces),nil);
+                    if view.viewCObject and view.SetLabelText and
+                            (change.slot = 'label or change.slot = 'labelFont) then begin
+                        SetValue(view,EnsureInternal('pix),nil); view:SetLabelText(view.label);
+                    end;
+                    if view.viewCObject and view.viewClass=91 and
+                        (change.slot='pickItems or change.slot='viewFont) then view:SyncView();
+                    if view.viewCObject then view:Dirty();
+                end;
+                RemoveSlot(self.changes, i);
+            end;
+            i := i - 1;
+        end;
+    end,
+    setFont: func(view, slot) begin
+        self:setFontIn(view, slot, 'region);
+    end,
+    setFontIn: func(view, slot, group) begin
+        if not view or not view.viewCObject or not view.(slot) then return nil;
+        local original := view.(slot);
+        if GetFontFamilySym(original) = '|BeijingRegion:UBX| then return nil;
+        local size := GetFontSize(original);
+        if size < 9 then size := 9;
+        if size > 12 then size := 12;
+        local replacement := EnsureInternal({family: '|BeijingRegion:UBX|, size: size, face: 0});
+        self:remember(view, slot, replacement, group);
+        view:Dirty();
+        return true;
+    end,
+    noteHeaders: func(refresh) begin
+        local notes := GetRoot().paperroll;
+        if not notes or not notes.viewCObject or not notes.layout then return nil;
+        local queue := [notes.layout]; local i := 0;
+        while i < Length(queue) and i < 150 do begin
+            local view := queue[i];
+            if HasVariable(view, 'GetTitle) and HasVariable(view, 'pieces) then begin
+                local changed := nil;
+                if self.prefs.regionEnabled then changed := self:setFont(view, 'viewFont);
+                if refresh or changed then begin
+                    SetValue(view, EnsureInternal('pieces), nil);
+                    view:Dirty();
+                end;
+            end;
+            local kids := view:ChildViewFrames();
+            if kids then foreach child in kids do
+                if IsFrame(child) and child.viewCObject then AddArraySlot(queue, child);
+            i := i+1;
+        end;
+    end,
+    applyDates: func() begin
+        local cal := GetRoot().calendar;
+        if not self.prefs.regionEnabled or not cal or not cal.viewCObject then return nil;
+        self:setFont(cal.DateView, 'viewFont);
+        if cal.DateView then begin
+            local v := cal.DateView; local b := v:LocalBox();
+            local delta := FontHeight(v.viewFont) - (b.bottom-b.top);
+            if delta > 0 then begin
+                b := Clone(v.viewBounds); b.top := b.top-delta;
+                self:remember(v, 'viewBounds, b, 'region);
+            end;
+        end;
+        local month := cal.monthController;
+        if month and month.viewCObject then begin
+            foreach slot in '[titleFont, labelFont] do self:setFont(month, slot);
+            local h := FontHeight(month.titleFont);
+            if month.titleHeight <> h then self:remember(month, 'titleHeight, h, 'region);
+            if month.monthYearLabel then begin
+                local bar := month.monthYearLabel._parent;
+                if bar.titleHeight <> h then begin
+                    self:remember(bar, 'titleHeight, h, 'region); bar:SyncView();
+                end;
+            end;
+            if month:LocalBox().bottom < 62+h then begin
+                local b := Clone(month.viewBounds); b.bottom := 62+h;
+                self:remember(month, 'viewBounds, b, 'region);
+            end;
+            if month.monthYearLabel then self:setFont(month.monthYearLabel, 'viewFont);
+            if month.monthView then begin
+                self:setFont(month.monthView, 'labelFont);
+                if month.monthView.viewBounds.top <> h then month.monthView:SyncView();
+            end;
+        end;
+        if cal.scheduleView then begin
+            self:setFont(cal.scheduleView, 'labelFont);
+            self:setFont(cal.scheduleView, 'HourFont);
+        end;
+        self:setFont(cal.MonthOverView,'labelFont);
+        local year := cal.YearView;
+        if year and year.viewCObject then begin
+            self:setFont(year,'labelFont);
+            local months := year:ChildViewFrames(); local count := 0;
+            if months then foreach m in months do
+                if IsFrame(m) and m.viewCObject and count < 16 then begin
+                    self:setFont(m.monthName,'viewFont);
+                    local kids := m:ChildViewFrames();
+                    if kids then foreach k in kids do
+                        if IsFrame(k) and k.viewCObject and k.viewClass = clMonthView then
+                            self:setFont(k,'labelFont);
+                    count := count+1;
+                end;
+        end;
+        self:refreshAgenda();
+        self:applyDatesFields();
+    end,
+    // Native Meeting/To Do date text pickers cache MakeText shapes in pix.
+    // Preserve their date/pick callbacks; rebuild the ROM cache after fonts or
+    // locale change, including restoring an already-open line on uninstall.
+    applyDatesFields: func() begin
+        if not self.prefs.regionEnabled then return nil;
+        local q := [GetRoot().calendar]; local i := 0;
+        foreach f in GetRoot():ChildViewFrames() do if f.viewCObject and
+            (f.formulaSymbol='DateCalculator or f.formulaSymbol='DateConversion) then begin
+            AddArraySlot(q,f);
+            if f.formulaSymbol='DateConversion and f.DayOfWeekField and f.DayOfWeekField.value then
+                if self:setFont(f.DayOfWeekField.value,'viewFont) then
+                    SetValue(f.DayOfWeekField.value,EnsureInternal('text),Clone(f.DayOfWeekField.value.text));
+        end;
+        while i < Length(q) and i < 180 do begin
+            local v := q[i];
+            if v.viewCObject then begin
+                if ((IsString(v.debug) and (StrEqual(v.debug,"DateValue") or StrEqual(v.debug,"FirstLastDateValue"))) or v.debug = 16503 or
+                        (v._parent and v._parent.LabelField=v and HasVariable(v,'Date) and v.Popit)) and
+                        v.entryFont and v.TextSetup and v.MakePickLine then begin
+                    local changed := self:setFont(v,'entryFont);
+                    local text := v:TextSetup();
+                    // UI may have set the font before the regional cache exists.
+                    if changed or not IsString(v.|ubxDateText:UBX|) or not StrEqual(v.|ubxDateText:UBX|,text) then begin
+                        self:remember(v,'|ubxDateText:UBX|,text,'region);
+                        v:viewSetupChildrenScript(); v:Dirty();
+                    end;
+                end;
+                local kids := v:ChildViewFrames();
+                if kids then foreach k in kids do if k.viewCObject then AddArraySlot(q,k);
+            end;
+            i := i+1;
+        end;
+    end,
+    refreshAgenda: func() begin
+        local cal := GetRoot().calendar;
+        local a := cal.AgendaView;
+        // 717006's empty Agenda caches a MakeText shape and draws it with a
+        // fixed Roman font. Preserve its native DrawScript and callbacks; use
+        // an ordinary shape-array style only for this known empty-date label.
+        if a and a.boringDay and IsInteger(a.displaydate) then begin
+            local old := a.boringDay;
+            local wrapped := IsArray(old);
+            local shape := if wrapped then old[1] else old;
+            local info := GetShapeInfo(shape);
+            local text := ParamStr("No agenda for ^0.",[LongDateStr(a.displaydate,cal.DateSpecLong)]);
+            if not StrEqual(info.text,text) or wrapped <> (not not (self.prefs.regionEnabled)) then begin
+                local b := info.bounds;
+                local replacement := MakeText(text,b.left,b.top,b.right,b.bottom);
+                if self.prefs.regionEnabled then replacement := [
+                    EnsureInternal({font:{family:'|BeijingRegion:UBX|,size:12,face:0},justification:'center}), replacement];
+                SetValue(a,EnsureInternal('boringDay),replacement);
+                if a.viewCObject then a:Dirty();
+            end;
+        end;
+    end,
+    refreshNative: func() begin
+        self:refreshDatePopups(true);
+        // Date Conversion stores a rendered weekday, not just the date.
+        // Let its own solver regenerate that output for the active Locale.
+        foreach f in GetRoot():ChildViewFrames() do if f.viewCObject and f.formulaSymbol='DateConversion and
+            f.DateField and IsInteger(f.DateField.calcLineValue) then f:SolveFormula(nil);
+        local world := GetRoot().worldClock;
+        if world and world.viewCObject and world.UpdateLocationFields then world:UpdateLocationFields();
+        self:noteHeaders(true);
+        self:applyDates();
+        self:applyPrefs();
+        self:applyNames();
+        local cal := GetRoot().calendar;
+        if cal and cal.viewCObject then begin
+            local yearStart := if cal.YearView and cal.YearView.viewCObject then cal.YearView.startDate else nil;
+            // DateChangedScript exits the temporary MonthOverView on 717006.
+            // A locale change needs new labels, not a new date selection.
+            if cal.DateView and cal.DateView.viewCObject then
+                SetValue(cal.DateView,EnsureInternal('text),cal:CreateDateString());
+            cal:Dirty();
+            if self.weekChanged then begin
+                // clMonthView caches its first weekday at native construction.
+                // SyncView/Dirty update labels but keep the old column layout.
+                if cal.monthController and cal.monthController.viewCObject then cal.monthController:RedoChildren();
+                local main := cal.mainDisplay;
+                if main and main.viewCObject and main.viewClass = clMonthView then begin
+                    local dates := Clone(cal.selectedDates);
+                    main:Close(); main.selectedDates := dates; main:Open(); main:Show();
+                end;
+                self:applyDates();
+            end;
+            if cal.monthController and cal.monthController.viewCObject then begin
+                local m := cal.monthController;
+                if m.monthYearLabel then m.monthYearLabel._parent:SyncView();
+                if m.monthView then m.monthView:SyncView();
+                m:Refresh();
+            end;
+            if yearStart then cal.YearView:setupChildMonths(yearStart);
+            self:refreshAgenda();
+        end;
+    end,
+    applyPrefs: func() begin
+        // Only shallow floating/root siblings are inspected. Application data
+        // views (Notes, Names, Dates) are excluded from this Prefs search.
+        local root := GetRoot(); local queue := []; local depths := [];
+        foreach v in root:ChildViewFrames() do
+            if IsFrame(v) and v.viewCObject and v <> root.paperroll and v <> root.calendar and v <> root.cardfile and
+                    v <> root.buttons and v <> root.ExtrasDrawer and v <> self.panel then begin
+                AddArraySlot(queue,v); AddArraySlot(depths,0);
+            end;
+        local i := 0;
+        while i < Length(queue) and i < 80 do begin
+            local v := queue[i];
+            if v.viewCObject and v.RebuildIndexes and IsFrame(v.entryLine) and v.entryLine.viewCObject and IsArray(v.configPath) and
+                    IsString(v.text) and EndsWith(v.text,"Country") then begin
+                if v.items <> international.locales then begin
+                    SetValue(v,EnsureInternal('items),international.locales);
+                    local commands := [];
+                    foreach loc in international.locales do AddArraySlot(commands,loc.title);
+                    SetValue(v,EnsureInternal('labelCommands),commands);
+                end;
+                if not IsString(v.entryLine.text) or not StrEqual(v.entryLine.text,GetLocale().title) then
+                    v:UpdateText(GetLocale().title);
+                if not self.removing then begin
+                    self:setFontIn(v.entryLine,'viewFont,'localeDisplay);
+                    if v.PickActionScript <> self.countryPicked then begin
+                        self:remember(v,'|ubxCountryPicked:UBX|,v.PickActionScript,'localeDisplay);
+                        self:remember(v,'PickActionScript,self.countryPicked,'localeDisplay);
+                    end;
+                    if v.PickerSetup <> self.countryPickerSetup then
+                        self:remember(v,'PickerSetup,self.countryPickerSetup,'localeDisplay);
+                end;
+            end;
+            if depths[i] < 3 and not v.pickItems then begin
+                local kids := v:ChildViewFrames();
+                if kids then foreach child in kids do
+                    if IsFrame(child) and child.viewCObject then begin
+                        AddArraySlot(queue,child); AddArraySlot(depths,depths[i]+1);
+                    end;
+            end;
+            i := i+1;
+        end;
+    end,
+    countryPicked: func(index) begin
+        local s := GetGlobalVar('|ubxRegion:UBX|);
+        local before := if s then s:effectiveWeek() else nil;
+        local chinese := s and self.items[index].localeSym = s.localeSymbol;
+        // The ROM Country callback can apply its new paper default before
+        // notesIdle observes the locale change. Capture the old choice first.
+        if chinese and not s.prefs.regionEnabled then s:captureRegionDefaults();
+        if chinese and GetLocale().localeSym<>s.localeSymbol then s.prefs.previousLocale:=GetLocale().localeSym;
+        local result := self:|ubxCountryPicked:UBX|(index);
+        if s and not s.removing then begin
+            s.forceWeekRefresh := before <> (if chinese then 1 else s:effectiveWeek());
+            s:setRegion(chinese); s:refreshPanel();
+        end;
+        return result;
+    end,
+    countryPickerSetup: func() begin
+        local s := GetGlobalVar('|ubxRegion:UBX|);
+        if not s or s.removing then return true;
+        if s.countryPicker and s.countryPicker.viewCObject then s.countryPicker:Close();
+        s.countryPicker := BuildContext({
+            _proto: protoPicker,
+            bounds: self.entryLine:GlobalBox(), callbackContext: self,
+            pickItems: Clone(self.labelCommands),
+            viewFont: EnsureInternal({family:'|BeijingRegion:UBX|,size:10,face:0}),
+            pickTextItemHeight: 16, pickAutoClose: true,
+        });
+        s.countryPicker:Open();
+        return nil;
+    end,
+    ensureHook: func() begin
+        self:ensureNamesHook();
+        if self.removing then begin
+            self.pollToken := nil;
+            return nil;
+        end;
+        if not self.pollToken then begin
+            self.pollToken := EnsureInternal(Clone({}));
+            local f := Clone(self.regionPoll); f.argFrame := nil;
+            self.pollFn := EnsureInternal(f);
+            AddDelayedCall(self.pollFn,[self.pollToken],300);
+        end;
+    end,
+    regionPoll: func(token) begin
+        local s := GetGlobalVar('|ubxRegion:UBX|);
+        if not s or s.removing or s.pollToken<>token then return nil;
+        s:notesIdle();
+        AddDelayedCall(s.pollFn,[token],300);
+    end,
+    applyNotes: func() begin
+        local phase := "enter";
+        try begin
+        local state := GetGlobalVar('|ubxRegion:UBX|);
+        if not state then return nil;
+        local notes := GetRoot().paperroll;
+        if not notes or not notes.viewCObject then return nil;
+        if state.prefs.regionEnabled and notes.filterBar then begin
+            phase := "clock-font";
+            local clock := notes.filterBar.title;
+            if clock and clock.viewCObject and
+                    GetFontFamilySym(clock.viewFont) <> '|BeijingRegion:UBX| then begin
+                // SetFontFamily can mutate a frame specification in place.
+                // Clone before calling it, so remember sees the original.
+                phase := "clock-remember";
+                state:setFont(clock, 'viewFont);
+                local b := Clone(clock.viewBounds);
+                local h := FontHeight(clock.viewFont);
+                if b.right < 210 or b.bottom-b.top < h then begin
+                    b.right := 210; b.bottom := b.top+h;
+                    state:remember(clock,'viewBounds,b,'region);
+                end;
+                clock:Dirty();
+            end;
+        end;
+        end onexception |evt.ex| do begin
+            self.lastError:=EnsureInternal({phase:phase,name:CurrentException().name});
+        end;
+    end,
+    notesIdle: func() begin
+        local state := GetGlobalVar('|ubxRegion:UBX|);
+        local phase := "prune";
+        if state then
+            try begin
+                state:pruneClosedChanges(); phase:="locale";
+                local active := GetLocale().localeSym = state.localeSymbol;
+                if state.prefs.regionEnabled <> active then begin
+                    state:setRegion(active); state:refreshPanel();
+                end;
+                phase := "notes"; state:applyNotes();
+                phase := "headers"; state:noteHeaders(nil);
+                phase := "dates"; state:applyDates(); state:applyDatesFields(); state:refreshDatePopups(nil);
+                phase := "prefs"; state:applyPrefs();
+                phase := "names"; state:applyNames();
+                if state.prefs.regionEnabled then state:applyRouting();
+            end onexception |evt.ex| do begin
+                if not state.errorCount then state.errorCount := 0;
+                state.errorCount := state.errorCount+1;
+                if state.errorCount <= 3 then begin
+                    local ex := CurrentException();
+                    state.lastError:=EnsureInternal({phase:phase,name:ex.name});
+                    if GlobalVarExists('|ubxLocDev:UBX|) then begin
+                        GetGlobalVar('|ubxLocDev:UBX|):values("idle-error",phase,ex);
+                        GetGlobalVar('|ubxLocDev:UBX|):values("idle-data",phase,ex.data);
+                    end;
+                end;
+            end;
+        return 300;
+    end,
+    currency: func(n) begin
+        local format := GetLocale().numberFormat;
+        format.currencyPrefix & FormattedNumberStr(n, "%.2f") & format.currencySuffix;
+    end,
+    refreshPanel:func() nil,
+    removeScript: func(removeFrame) begin
+        local state := GetGlobalVar('|ubxRegion:UBX|);
+        if state then begin
+            state.removing := true;
+            state:ensureHook();
+            if state.countryPicker and state.countryPicker.viewCObject then state.countryPicker:Close();
+            if state.panel and state.panel.viewCObject then state.panel:Close();
+            // Keep the persisted user choices while releasing runtime overrides.
+            local region := state.prefs.regionEnabled;
+            state:setRegion(nil);
+            RemoveLocale(state.localeSymbol);
+            state:restoreGroup('localeDisplay);
+            state:restoreGroup('namesLifecycle);
+            state:applyPrefs();
+            if GlobalVarExists('|ubxNamesContent:UBX|) then GetGlobalVar('|ubxNamesContent:UBX|):apply();
+            RemoveSlot(fonts,'|BeijingRegion:UBX|);
+            // Native header pieces were invalidated by setRegion. Keep the
+            // user's open Notes view and let its own renderer rebuild them.
+            state.prefs.uiEnabled := nil;
+            state.prefs.regionEnabled := region;
+            EntryChange(state.prefs);
+            UnDefGlobalVar('|ubxRegion:UBX|);
+        end;
+    end,
+};

@@ -1,0 +1,2 @@
+DefGlobalVar('ubxAboutBuildPart,ubxAboutPart("Full"));
+GetGlobalVar('ubxAboutBuildPart);

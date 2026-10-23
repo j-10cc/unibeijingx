@@ -1,0 +1,219 @@
+Cannot open symbol files '/Users/chengyiqun/Documents/UniBeijingX/experiments/emulator/runtime/mp2000-rom/mp2000.symbols'
+UBX NS LIFE52b activation 4 locale USA
+UBX NS UBXM52 QA ready
+UBX NS LIFE52b heartbeat 4/1
+UBX NS LIFE52b heartbeat 4/2
+UBX NS LIFE52b heartbeat 4/3
+UBX NS D52ACK 18e0e4a76a1c0530
+UBX NS D52ACK 18e0e4a77d725670
+UBX NS D52ACK 18e0e4a78f6f3618
+UBX NS D52ACK 18e0e4a7a1301a48
+UBX NS D52ACK 18e0e4a7b29618f0
+UBX NS NATIVE_ABSENT
+UBX NS D52ACK 18e0e4a7c4b2b980
+UBX NS D52ACK 18e0e4a7d6d09290
+UBX NS D52ACK 18e0e4a7fa4adcf8
+UBX NS D52ACK 18e0e4a80bd6f1a0
+UBX NS NATIVE_ABSENT
+UBX NS D52ACK 18e0e4a81d754df8
+UBX NS D52ACK 18e0e4a82f3cf0b8
+UBX NS D52ACK 18e0e4a85fb50d48
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-order-20261022/qa-packages/DisplayQA.pkg
+UBX NS D52 QA ready
+UBX NS PACKAGE READY
+UBX NS D52ACK 18e0e4a8e93e6708
+UBX NS D52ACK 18e0e4a8fa8e6cb0
+UBX NS D52ACK 18e0e4a90ba66a98
+UBX NS NATIVE_ACTIVE
+UBX NS D52ACK 18e0e4a91d3434c0
+UBX NS D52ACK 18e0e4a92eb9b5d0
+UBX NS PACKAGE READY
+UBX NS D52ACK 18e0e4a95eb4f970
+UBX NS D52ACK 18e0e4a970b17f40
+UBX NS D52ACK 18e0e4a9823f35e0
+UBX NS NATIVE_ACTIVE
+UBX NS D52ACK 18e0e4a9941e67e0
+UBX NS D52ACK 18e0e4a9a6290ee0
+UBX NS D52ACK 18e0e4a9b7486798
+UBX NS D52ACK 18e0e4a9cb3a3970
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-order-20261022/qa-packages/AuditProbe/AuditProbe.pkg
+UBX NS D52ACK 18e0e4aa54fb6828
+UBX NS D52ACK 18e0e4aa68fdfef8
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-order-20261022/qa-packages/ContentRepairQA.pkg
+UBX NS D52ACK 18e0e4aaf21b5078
+UBX NS D52ACK 18e0e4ab03320e10
+UBX NS D52ASSERT	repair	QA-active	PASS
+UBX NS D52ACK 18e0e4ab14a4b300
+UBX NS D52ACK 18e0e4ab28486ca8
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-order-20261022/qa-packages/LatinDev11QA.pkg
+UBX NS D52ACK 18e0e4abb21a29a8
+UBX NS D52ACK 18e0e4abc3cf80d0
+UBX NS D52ACK 18e0e4abd73a7738
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-order-20261022/qa-packages/TypographyDev9QA.pkg
+UBX NS D52ACK 18e0e4ac6113ae48
+UBX NS D52ACK 18e0e4ac7315ae70
+UBX NS D52ACK 18e0e4ac87650998
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-order-20261022/qa-packages/MenuQA/MenuQA.pkg
+UBX NS UBXLOC	IME-TYPES	expected	Chr	char
+UBX NS UBXLOC	IME-TYPES	expected	literal	string
+UBX NS D52ACK 18e0e4ad107eb580
+UBX NS D52ACK 18e0e4ad224ab570
+UBX NS D52ACK 18e0e4ad344b90a0
+UBX NS D52ACK 18e0e4ad463f67c8
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/packages/milestone52r1/region/Region.pkg
+UBX NS PACKAGE READY
+UBX NS D52ACK 18e0e4add01ff1d8
+UBX NS D52ACK 18e0e4b38c2227e8
+UBX NS D52ACK 18e0e4b3a8bb6e00
+UBX NS NATIVE_ACTIVE
+UBX NS D52ACK 18e0e4b3c03681f0
+UBX NS D52ACK 18e0e4b3d1d595e0
+UBX NS SETTLED
+UBX NS D52ACK 18e0e4b3eddeffd8
+UBX NS PACKAGE READY
+UBX NS D52ACK 18e0e4b41d817518
+UBX NS D52ACK 18e0e4b42ed704b8
+UBX NS D52ACK 18e0e4b4407bcd98
+UBX NS NATIVE_ACTIVE
+UBX NS D52ACK 18e0e4b4525cad48
+UBX NS D52ACK 18e0e4b469a66480
+UBX NS SETTLED
+UBX NS D52ACK 18e0e4b480666da0
+UBX NS D52ACK 18e0e4b492748770
+UBX NS D52ACK 18e0e4b4ae9af718
+UBX NS FINAL_CLEAN
+UBX NS D52ACK 18e0e4b4c60e7d70
+UBX NS D52ACK 18e0e4b4d801c7f8
+UBX NS D52ACK 18e0e4b4e9a7f450
+UBX NS D52ACK 18e0e4b5204ebcf0
+UBX NS D52ACK 18e0e4b532696d68
+UBX NS D52ACK 18e0e4b549b439f8
+UBX NS UBXLOC	FOCUSPICK	view	index	0
+UBX NS UBXLOC	FOCUSPICK	view	count	4
+UBX NS D52ACK 18e0e4b55b8a7ed0
+UBX NS UBXLOC	FOCUSBOX	view	left	115
+UBX NS UBXLOC	FOCUSBOX	view	top	355
+UBX NS UBXLOC	FOCUSBOX	view	right	204
+UBX NS UBXLOC	FOCUSBOX	view	bottom	431
+UBX NS D52ACK 18e0e4b577e63330
+UBX pen down 125 366
+UBX pen up
+UBX NS D52ACK 18e0e4b6017af2e8
+UBX pen down 35 66
+UBX pen up
+UBX NS D52ACK 18e0e4b68b80e718
+UBX NS D52ASSERT	new-Note	exact-target	PASS
+UBX NS D52ACK 18e0e4b6d9d5b6a0
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-order-20261022/Region-first-before-font.png result 0
+UBX NS D52ACK 18e0e4b6f8de81d0
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/packages/milestone52r2-display/artifacts/dev15/Font-Lite.pkg
+UBX NS PACKAGE READY
+UBX NS D52ACK 18e0e4b78da67958
+UBX NS D52ACK 18e0e4bddf2410a0
+UBX NS D52ACK 18e0e4bdf13dabc0
+UBX NS NATIVE_ACTIVE
+UBX NS D52ACK 18e0e4be030e04f8
+UBX NS D52ACK 18e0e4be1a598538
+UBX NS SETTLED
+UBX NS D52ACK 18e0e4be521995a8
+UBX NS PACKAGE READY
+UBX NS D52ACK 18e0e4be8242cb00
+UBX NS D52ACK 18e0e4be93c4d940
+UBX NS D52ACK 18e0e4beaac6f088
+UBX NS NATIVE_ACTIVE
+UBX NS D52ACK 18e0e4bebc479b50
+UBX NS D52ACK 18e0e4bed8b944c8
+UBX NS SETTLED
+UBX NS D52ACK 18e0e4beefbd09c0
+UBX NS D52ACK 18e0e4bf01548460
+UBX NS UI_READY
+UBX NS D52ACK 18e0e4bf131c7158
+UBX NS UI_READY
+UBX NS D52ACK 18e0e4bf36cf1d58
+UBX NS D52ASSERT	Region-first	same-text	PASS
+UBX NS D52ACK 18e0e4bf48bc41a8
+UBX NS D52ASSERT	Region-first-menu	no-Regional-family	PASS
+UBX NS D52ASSERT	Region-first-menu	no-Regional-caption	PASS
+UBX NS D52ASSERT	Region-first-menu	no-Regional-family	PASS
+UBX NS D52ASSERT	Region-first-menu	no-Regional-caption	PASS
+UBX NS D52ASSERT	Region-first-menu	no-Regional-family	PASS
+UBX NS D52ASSERT	Region-first-menu	no-Regional-caption	PASS
+UBX NS D52ASSERT	Region-first-menu	no-Regional-family	PASS
+UBX NS D52ASSERT	Region-first-menu	no-Regional-caption	PASS
+UBX NS D52ASSERT	Region-first-menu	no-Regional-family	PASS
+UBX NS D52ASSERT	Region-first-menu	no-Regional-caption	PASS
+UBX NS D52ASSERT	Region-first-menu	no-Regional-family	PASS
+UBX NS D52ASSERT	Region-first-menu	no-Regional-caption	PASS
+UBX NS D52ASSERT	Region-first-menu	no-Regional-family	PASS
+UBX NS D52ASSERT	Region-first-menu	no-Regional-caption	PASS
+UBX NS D52ASSERT	Region-first-menu	canonical-family	PASS
+UBX NS D52ASSERT	Region-first-menu	no-Regional-family	PASS
+UBX NS D52ASSERT	Region-first-menu	no-Regional-caption	PASS
+UBX NS D52ASSERT	Region-first-menu	exactly-one-UniBeijingX	PASS
+UBX NS D52ASSERT	Region-first-menu	one-bitmap	PASS
+UBX NS D52ASSERT	Region-first-ROM	espy-encoding	PASS
+UBX NS D52ASSERT	Region-first-ROM	espy-macFontID	PASS
+UBX NS D52ASSERT	Region-first-ROM	espy-screenSym	PASS
+UBX NS D52ASSERT	Region-first-ROM	espy-psName	PASS
+UBX NS D52ASSERT	Region-first-ROM	espy-psScale	PASS
+UBX NS D52ASSERT	Region-first-ROM	espy-tsID	PASS
+UBX NS D52ASSERT	Region-first-ROM	espy-badFontMap	PASS
+UBX NS D52ASSERT	Region-first-ROM	espy-native-data	PASS
+UBX NS D52ASSERT	Region-first-ROM	newyork-encoding	PASS
+UBX NS D52ASSERT	Region-first-ROM	newyork-macFontID	PASS
+UBX NS D52ASSERT	Region-first-ROM	newyork-screenSym	PASS
+UBX NS D52ASSERT	Region-first-ROM	newyork-psName	PASS
+UBX NS D52ASSERT	Region-first-ROM	newyork-psScale	PASS
+UBX NS D52ASSERT	Region-first-ROM	newyork-tsID	PASS
+UBX NS D52ASSERT	Region-first-ROM	newyork-badFontMap	PASS
+UBX NS D52ASSERT	Region-first-ROM	newyork-native-data	PASS
+UBX NS D52ASSERT	Region-first-ROM	geneva-encoding	PASS
+UBX NS D52ASSERT	Region-first-ROM	geneva-macFontID	PASS
+UBX NS D52ASSERT	Region-first-ROM	geneva-screenSym	PASS
+UBX NS D52ASSERT	Region-first-ROM	geneva-psName	PASS
+UBX NS D52ASSERT	Region-first-ROM	geneva-psScale	PASS
+UBX NS D52ASSERT	Region-first-ROM	geneva-tsID	PASS
+UBX NS D52ASSERT	Region-first-ROM	geneva-badFontMap	PASS
+UBX NS D52ASSERT	Region-first-ROM	geneva-native-data	PASS
+UBX NS D52ASSERT	Region-first-ROM	handwriting-encoding	PASS
+UBX NS D52ASSERT	Region-first-ROM	handwriting-macFontID	PASS
+UBX NS D52ASSERT	Region-first-ROM	handwriting-screenSym	PASS
+UBX NS D52ASSERT	Region-first-ROM	handwriting-psName	PASS
+UBX NS D52ASSERT	Region-first-ROM	handwriting-psScale	PASS
+UBX NS D52ASSERT	Region-first-ROM	handwriting-tsID	PASS
+UBX NS D52ASSERT	Region-first-ROM	handwriting-badFontMap	PASS
+UBX NS D52ASSERT	Region-first-ROM	handwriting-native-data	PASS
+UBX NS D52ACK 18e0e4bf5a004518
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-order-20261022/Region-first-live-after-font.png result 0
+UBX NS D52ASSERT	Region-first-final	no-public-logger	PASS
+UBX NS D52ASSERT	Region-first-final	font-global	PASS
+UBX NS D52ASSERT	Region-first-final	content-global	PASS
+UBX NS D52ASSERT	Region-first-final	font-registration	PASS
+UBX NS D52ASSERT	Region-first-final	no-ui-font	PASS
+UBX NS D52ASSERT	Region-first-final	no-ui-runtime	PASS
+UBX NS D52ASSERT	Region-first-final	no-separate-compat	PASS
+UBX NS D52ASSERT	Region-first-final	font-observer-no-error	PASS
+UBX NS D52ASSERT	Region-first-final	integrated-module-state	PASS
+UBX NS D52ASSERT	Region-first-final	single-token	PASS
+UBX NS D52ASSERT	Region-first-final	baseline-idler-preserved	PASS
+UBX NS D52ASSERT	Region-first-final	region-installed	PASS
+UBX NS D52ASSERT	Region-first-final	region-no-error	PASS
+UBX NS D52ASSERT	Region-first-final	regional-methods	PASS
+UBX NS D52ASSERT	Region-first-final	locale-symbol	PASS
+UBX NS D52ASSERT	Region-first-final	English-cityLabel	PASS
+UBX NS D52ASSERT	Region-first-final	English-regionLabel	PASS
+UBX NS D52ASSERT	Region-first-final	English-postalCodeLabel	PASS
+UBX NS D52ASSERT	Region-first-final	Chinese-month	PASS
+UBX NS D52ASSERT	Region-first-final	RMB	PASS
+UBX NS D52ASSERT	Region-first-final	Chinese-date-API	PASS
+UBX NS D52ASSERT	Region-first-final	New-paperroll	PASS
+UBX NS D52ASSERT	Region-first-final	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	Region-first-final	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	Region-first-final	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	Region-first-final	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	Region-first-final	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	Region-first-final	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	Region-first-final	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	Region-first-final	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	Region-first-final	no-ui-font-in-viewFont	PASS
+UBX NS D52ACK 18e0e4bf77388280

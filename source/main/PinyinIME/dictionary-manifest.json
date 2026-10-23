@@ -1,0 +1,13 @@
+{
+  "encoding": "Unicode inside Newton; GB2312 defines repertoire",
+  "gb2312_hanzi": 6763,
+  "hanzi_with_pinyin": 6763,
+  "phrases": 3006,
+  "phrase_limit": 3000,
+  "keys": 3256,
+  "candidates": 12191,
+  "source": [
+    "jieba 0.42.1 dict.txt (MIT)",
+    "pypinyin 0.55.0 (MIT)"
+  ]
+}

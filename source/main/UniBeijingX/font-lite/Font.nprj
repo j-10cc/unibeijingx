@@ -1,0 +1,9 @@
+{
+    name: "UniBeijingX:UBX",
+    copyright: "Copyright 2026 j10cc; j10cc.site; Powered by GPT6.1-Sol; Noto CJK and Noto Sans sources under SIL OFL 1.1",
+    platform: "Newton 2.1",
+    parts: [
+        { type: 'auto, main: "Font.newt", files: ["Icon.newt","ContentDisplay.newt","ContentFont.newt"] },
+        { main: "About.newt", files: ["Icon.newt","AboutView.newt"] }
+    ]
+}

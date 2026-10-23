@@ -1,0 +1,10 @@
+VERIFIED STATE Address-0-AllInfo
+ADDRESS {'characters': 0, 'seed_seconds': 0.4831509579671547, 'menu_select_and_settle_seconds': 3.8119440840091556}
+VERIFIED STATE Address-1-AllInfo
+ADDRESS {'characters': 1, 'seed_seconds': 0.48371575004421175, 'menu_select_and_settle_seconds': 3.8218617499805987}
+VERIFIED STATE Address-64-AllInfo
+ADDRESS {'characters': 64, 'seed_seconds': 0.4667264580493793, 'menu_select_and_settle_seconds': 3.899939417024143}
+VERIFIED STATE Address-255-AllInfo
+ADDRESS {'characters': 255, 'seed_seconds': 0.652161541976966, 'menu_select_and_settle_seconds': 3.808025124948472}
+VERIFIED STATE Address-256-AllInfo
+ADDRESS {'characters': 256, 'seed_seconds': 0.749360290938057, 'menu_select_and_settle_seconds': 3.811415957985446}

@@ -1,0 +1,21 @@
+{
+  "candidate": "dev15-attempt15",
+  "reviewed": [
+    "Filing-Chinese-row",
+    "Folder-filed-title",
+    "Mixed-folder-radio",
+    "Mixed-folder-menu",
+    "Mixed-folder-title",
+    "Geo-province-page2"
+  ],
+  "result": "native radio CJK boxes and rounded title clipping fixed; mixed Roman label and private icon preserved; postal paging now ROM font",
+  "remaining": "complete broad/core Lite and Full validation",
+  "qa_corrections": [
+    {
+      "profile": "final15-lite-final15-20261022",
+      "phase": "mixed_folder",
+      "classification": "QA fixture assumed selection value 1; actual new folder is2; newly created folder already selected; raw failure retained",
+      "continuation": "mixed_folder_tail; all remaining menu/identity states passed"
+    }
+  ]
+}

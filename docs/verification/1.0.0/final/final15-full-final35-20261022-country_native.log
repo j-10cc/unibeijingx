@@ -1,0 +1,12 @@
+VERIFIED STATE Country-native-China
+VERIFIED STATE Country-native-menu-to-USA
+Traceback (most recent call last):
+  File "/Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/final-dev15-20261022/expanded.py", line 338, in <module>
+    globals()[phase]();result['passed']=True
+    ^^^^^^^^^^^^^^^^^^
+  File "/Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/final-dev15-20261022/expanded.py", line 326, in country_native
+    q.wait_native_ui('GetLocale().localeSym=\'USA','Country-native-USA');snap('Country-native-USA')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chengyiqun/Documents/UniBeijingX/scripts/display52_qa.py", line 207, in wait_native_ui
+    raise TimeoutError('Native UI did not become ready: ' + stage)
+TimeoutError: Native UI did not become ready: Country-native-USA

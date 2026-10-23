@@ -1,0 +1,29 @@
+{
+  "phase": "routing",
+  "profile": "final15-lite-broad4-20261022",
+  "started": 1792661298.940914,
+  "states": [
+    {
+      "state": "Routing-initial",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-broad4-20261022/Routing-initial.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Routing-formats",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-broad4-20261022/Routing-formats.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Routing-Chinese-Address",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-broad4-20261022/Routing-Chinese-Address.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Routing-Preview-first",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-broad4-20261022/Routing-Preview-first.png",
+      "adapter_errors": 0
+    }
+  ],
+  "passed": true,
+  "ended": 1792661315.169481
+}

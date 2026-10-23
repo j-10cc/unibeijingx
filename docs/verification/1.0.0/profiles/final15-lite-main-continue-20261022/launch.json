@@ -1,0 +1,22 @@
+{
+  "profile": "final15-lite-main-continue-20261022",
+  "source": "experiments/qa/milestone52r1/no-logger-clean-final.flash",
+  "source_sha256": "2cc350382ae009b691882a9ccfea504a9c4049dc5ab07514a281511ce0c49bfb",
+  "fresh": false,
+  "flash_before_sha256": "7be1cb6c5df40fda499fd88a178bd35aafaf7e09c4b472bd9e41f0ce380d116b",
+  "rom_sha256": "2f2ce27d59203d0ce48165b20d6b578749f10a7e5fbded552ee7d104eb776b76",
+  "emulator_sha256": "173591c6f27f2bd74f941c978df513ada41cb1e9afd520cd0f349968347195e8",
+  "fault_trace": false,
+  "fault_ring": false,
+  "fault_ram": false,
+  "fault_throw": false,
+  "fault_pte": false,
+  "lifecycle_ram": false,
+  "channel": "/Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-continue-20261022/command",
+  "pte_watch": false,
+  "pte_watch_v3": false,
+  "rdm_sentinel_control": false,
+  "prefs_path": "/Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-continue-20261022/einstein.prefs",
+  "started_at": 1792680265.581996,
+  "runtime_log_start": 0
+}

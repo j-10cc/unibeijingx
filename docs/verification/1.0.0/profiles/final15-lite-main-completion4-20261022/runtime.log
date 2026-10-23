@@ -1,0 +1,568 @@
+Cannot open symbol files '/Users/chengyiqun/Documents/UniBeijingX/experiments/emulator/runtime/mp2000-rom/mp2000.symbols'
+UBX NS LIFE52b activation 4 locale USA
+UBX NS UBXM52 QA ready
+UBX NS LIFE52b heartbeat 4/1
+UBX NS LIFE52b heartbeat 4/2
+UBX NS LIFE52b heartbeat 4/3
+UBX NS D52ACK 18e0e2a306042920
+UBX NS D52ACK 18e0e2a3198635b0
+UBX NS D52ACK 18e0e2a32b7ec7c8
+UBX NS D52ACK 18e0e2a33d5d8498
+UBX NS D52ACK 18e0e2a34f49a718
+UBX NS NATIVE_ABSENT
+UBX NS D52ACK 18e0e2a3611020f8
+UBX NS D52ACK 18e0e2a3732b4e70
+UBX NS D52ACK 18e0e2a397741ff0
+UBX NS D52ACK 18e0e2a3a9710380
+UBX NS NATIVE_ABSENT
+UBX NS D52ACK 18e0e2a3ba8b10c0
+UBX NS D52ACK 18e0e2a3cb919600
+UBX NS D52ACK 18e0e2a3fbcd5188
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-completion4-20261022/qa-packages/DisplayQA.pkg
+UBX NS D52 QA ready
+UBX NS PACKAGE READY
+UBX NS D52ACK 18e0e2a4853b7670
+UBX NS D52ACK 18e0e2a496d89660
+UBX NS D52ACK 18e0e2a4a8070a48
+UBX NS NATIVE_ACTIVE
+UBX NS D52ACK 18e0e2a4b9e86ec8
+UBX NS D52ACK 18e0e2a4cb68f280
+UBX NS PACKAGE READY
+UBX NS D52ACK 18e0e2a4fb672bf0
+UBX NS D52ACK 18e0e2a50d4ce1e8
+UBX NS D52ACK 18e0e2a51f225f88
+UBX NS NATIVE_ACTIVE
+UBX NS D52ACK 18e0e2a530287f38
+UBX NS D52ACK 18e0e2a5423502c8
+UBX NS D52ACK 18e0e2a5540d1c60
+UBX NS D52ACK 18e0e2a56826b5d0
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-completion4-20261022/qa-packages/ContentRepairQA.pkg
+UBX NS D52ACK 18e0e2a5f1505f78
+UBX NS D52ACK 18e0e2a602f99140
+UBX NS D52ASSERT	repair	QA-active	PASS
+UBX NS D52ACK 18e0e2a614e35e18
+UBX NS D52ACK 18e0e2a628e210d0
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-completion4-20261022/qa-packages/LatinDev11QA.pkg
+UBX NS D52ACK 18e0e2a6b2696ad8
+UBX NS D52ACK 18e0e2a6c3946bf0
+UBX NS D52ACK 18e0e2a6d6eb78b0
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-completion4-20261022/qa-packages/TypographyDev9QA.pkg
+UBX NS D52ACK 18e0e2a760ddb600
+UBX NS D52ACK 18e0e2a772737b20
+UBX NS D52ACK 18e0e2a78676ecb0
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-completion4-20261022/qa-packages/MenuQA/MenuQA.pkg
+UBX NS UBXLOC	IME-TYPES	expected	Chr	char
+UBX NS UBXLOC	IME-TYPES	expected	literal	string
+UBX NS D52ACK 18e0e2a81035fc70
+UBX NS D52ACK 18e0e2a821cdb590
+UBX NS D52ACK 18e0e2a835041708
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-completion4-20261022/qa-packages/NewQA/NewQA.pkg
+UBX NS D52ACK 18e0e2a8be5764d8
+UBX NS D52ACK 18e0e2a8d1e2e748
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-completion4-20261022/qa-packages/AboutQA/AboutQA.pkg
+UBX NS D52ACK 18e0e2a95b6f8110
+UBX NS D52ACK 18e0e2a96f16fba8
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-completion4-20261022/qa-packages/AuditProbe/AuditProbe.pkg
+UBX NS D52ACK 18e0e2a9f889bc40
+UBX NS D52ACK 18e0e2aa2a2bc658
+UBX NS FINAL_CLEAN
+UBX NS D52ACK 18e0e2aa4620c1d8
+UBX NS D52ACK 18e0e2aa580d0780
+UBX NS D52ASSERT	New-baseline	native-button	PASS
+UBX NS D52ACK 18e0e2aa93216f28
+UBX NS D52ASSERT	completion-bare-New-paperroll	native-button	PASS
+UBX NS D52ASSERT	completion-bare-New-paperroll	English-caption	PASS
+UBX NS D52ASSERT	completion-bare-New-paperroll	native-callback	PASS
+UBX NS D52ASSERT	completion-bare-New-paperroll	native-key	PASS
+UBX NS D52ASSERT	completion-bare-New-paperroll	packed-ROM	PASS
+UBX NS D52ASSERT	completion-bare-New-paperroll	same-family	PASS
+UBX NS D52ASSERT	completion-bare-New-paperroll	same-size	PASS
+UBX NS D52ASSERT	completion-bare-New-paperroll	same-face	PASS
+UBX NS D52ASSERT	completion-bare-New-paperroll	bounds-left	PASS
+UBX NS D52ASSERT	completion-bare-New-paperroll	bounds-top	PASS
+UBX NS D52ASSERT	completion-bare-New-paperroll	bounds-right	PASS
+UBX NS D52ASSERT	completion-bare-New-paperroll	bounds-bottom	PASS
+UBX NS D52ASSERT	completion-bare-New-paperroll	slot-ownership-restored	PASS
+UBX NS UBXLOC	NQBOX	completion-bare-New-paperroll	left	81
+UBX NS UBXLOC	NQBOX	completion-bare-New-paperroll	top	418
+UBX NS UBXLOC	NQBOX	completion-bare-New-paperroll	right	113
+UBX NS UBXLOC	NQBOX	completion-bare-New-paperroll	bottom	431
+UBX NS D52ACK 18e0e2aaafcbe3b0
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-completion4-20261022/completion-bare-New-paperroll.png result 0
+UBX NS FINAL_CLEAN
+UBX NS D52ACK 18e0e2aad9937de8
+UBX NS D52ACK 18e0e2aaeb7eb9f0
+UBX NS D52ASSERT	New-baseline	native-button	PASS
+UBX NS D52ACK 18e0e2ab415e71f8
+UBX NS D52ASSERT	completion-bare-New-cardfile	native-button	PASS
+UBX NS D52ASSERT	completion-bare-New-cardfile	English-caption	PASS
+UBX NS D52ASSERT	completion-bare-New-cardfile	native-callback	PASS
+UBX NS D52ASSERT	completion-bare-New-cardfile	native-key	PASS
+UBX NS D52ASSERT	completion-bare-New-cardfile	packed-ROM	PASS
+UBX NS D52ASSERT	completion-bare-New-cardfile	same-family	PASS
+UBX NS D52ASSERT	completion-bare-New-cardfile	same-size	PASS
+UBX NS D52ASSERT	completion-bare-New-cardfile	same-face	PASS
+UBX NS D52ASSERT	completion-bare-New-cardfile	bounds-left	PASS
+UBX NS D52ASSERT	completion-bare-New-cardfile	bounds-top	PASS
+UBX NS D52ASSERT	completion-bare-New-cardfile	bounds-right	PASS
+UBX NS D52ASSERT	completion-bare-New-cardfile	bounds-bottom	PASS
+UBX NS D52ASSERT	completion-bare-New-cardfile	slot-ownership-restored	PASS
+UBX NS UBXLOC	NQBOX	completion-bare-New-cardfile	left	66
+UBX NS UBXLOC	NQBOX	completion-bare-New-cardfile	top	410
+UBX NS UBXLOC	NQBOX	completion-bare-New-cardfile	right	98
+UBX NS UBXLOC	NQBOX	completion-bare-New-cardfile	bottom	423
+UBX NS D52ACK 18e0e2ab536bc0a8
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-completion4-20261022/completion-bare-New-cardfile.png result 0
+UBX NS FINAL_CLEAN
+UBX NS D52ACK 18e0e2ab6bbb1488
+UBX NS D52ACK 18e0e2ab88328a60
+UBX NS D52ACK 18e0e2ab9ee60c78
+UBX NS D52ASSERT	New-baseline	native-button	PASS
+UBX NS D52ACK 18e0e2abdadfc728
+UBX NS D52ASSERT	completion-bare-New-calendar	native-button	PASS
+UBX NS D52ASSERT	completion-bare-New-calendar	English-caption	PASS
+UBX NS D52ASSERT	completion-bare-New-calendar	native-callback	PASS
+UBX NS D52ASSERT	completion-bare-New-calendar	native-key	PASS
+UBX NS D52ASSERT	completion-bare-New-calendar	packed-ROM	PASS
+UBX NS D52ASSERT	completion-bare-New-calendar	same-family	PASS
+UBX NS D52ASSERT	completion-bare-New-calendar	same-size	PASS
+UBX NS D52ASSERT	completion-bare-New-calendar	same-face	PASS
+UBX NS D52ASSERT	completion-bare-New-calendar	bounds-left	PASS
+UBX NS D52ASSERT	completion-bare-New-calendar	bounds-top	PASS
+UBX NS D52ASSERT	completion-bare-New-calendar	bounds-right	PASS
+UBX NS D52ASSERT	completion-bare-New-calendar	bounds-bottom	PASS
+UBX NS D52ASSERT	completion-bare-New-calendar	slot-ownership-restored	PASS
+UBX NS UBXLOC	NQBOX	completion-bare-New-calendar	left	94
+UBX NS UBXLOC	NQBOX	completion-bare-New-calendar	top	418
+UBX NS UBXLOC	NQBOX	completion-bare-New-calendar	right	127
+UBX NS UBXLOC	NQBOX	completion-bare-New-calendar	bottom	431
+UBX NS D52ACK 18e0e2abecfc7370
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-completion4-20261022/completion-bare-New-calendar.png result 0
+UBX NS D52ACK 18e0e2ac05c7a640
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/packages/milestone52r2-display/artifacts/dev15/Font-Lite.pkg
+UBX NS PACKAGE READY
+UBX NS D52ACK 18e0e2ac8f96c748
+UBX NS D52ACK 18e0e2b267e36408
+UBX NS D52ACK 18e0e2b284b3fa48
+UBX NS NATIVE_ACTIVE
+UBX NS D52ACK 18e0e2b29657b1b8
+UBX NS D52ACK 18e0e2b2ad8a8d60
+UBX NS SETTLED
+UBX NS D52ACK 18e0e2b2bf6ee3c8
+UBX NS PACKAGE READY
+UBX NS D52ACK 18e0e2b2f4ef87a0
+UBX NS D52ACK 18e0e2b30bd12e38
+UBX NS D52ACK 18e0e2b322c708b0
+UBX NS NATIVE_ACTIVE
+UBX NS D52ACK 18e0e2b38e34fcb0
+UBX NS D52ACK 18e0e2b39fd8cf78
+UBX NS SETTLED
+UBX NS D52ACK 18e0e2b3b15d3360
+UBX NS D52ASSERT	completion-ROM	espy-encoding	PASS
+UBX NS D52ASSERT	completion-ROM	espy-macFontID	PASS
+UBX NS D52ASSERT	completion-ROM	espy-screenSym	PASS
+UBX NS D52ASSERT	completion-ROM	espy-psName	PASS
+UBX NS D52ASSERT	completion-ROM	espy-psScale	PASS
+UBX NS D52ASSERT	completion-ROM	espy-tsID	PASS
+UBX NS D52ASSERT	completion-ROM	espy-badFontMap	PASS
+UBX NS D52ASSERT	completion-ROM	espy-native-data	PASS
+UBX NS D52ASSERT	completion-ROM	newyork-encoding	PASS
+UBX NS D52ASSERT	completion-ROM	newyork-macFontID	PASS
+UBX NS D52ASSERT	completion-ROM	newyork-screenSym	PASS
+UBX NS D52ASSERT	completion-ROM	newyork-psName	PASS
+UBX NS D52ASSERT	completion-ROM	newyork-psScale	PASS
+UBX NS D52ASSERT	completion-ROM	newyork-tsID	PASS
+UBX NS D52ASSERT	completion-ROM	newyork-badFontMap	PASS
+UBX NS D52ASSERT	completion-ROM	newyork-native-data	PASS
+UBX NS D52ASSERT	completion-ROM	geneva-encoding	PASS
+UBX NS D52ASSERT	completion-ROM	geneva-macFontID	PASS
+UBX NS D52ASSERT	completion-ROM	geneva-screenSym	PASS
+UBX NS D52ASSERT	completion-ROM	geneva-psName	PASS
+UBX NS D52ASSERT	completion-ROM	geneva-psScale	PASS
+UBX NS D52ASSERT	completion-ROM	geneva-tsID	PASS
+UBX NS D52ASSERT	completion-ROM	geneva-badFontMap	PASS
+UBX NS D52ASSERT	completion-ROM	geneva-native-data	PASS
+UBX NS D52ASSERT	completion-ROM	handwriting-encoding	PASS
+UBX NS D52ASSERT	completion-ROM	handwriting-macFontID	PASS
+UBX NS D52ASSERT	completion-ROM	handwriting-screenSym	PASS
+UBX NS D52ASSERT	completion-ROM	handwriting-psName	PASS
+UBX NS D52ASSERT	completion-ROM	handwriting-psScale	PASS
+UBX NS D52ASSERT	completion-ROM	handwriting-tsID	PASS
+UBX NS D52ASSERT	completion-ROM	handwriting-badFontMap	PASS
+UBX NS D52ASSERT	completion-ROM	handwriting-native-data	PASS
+UBX NS D52ASSERT	completion-font-only	no-Regional-family	PASS
+UBX NS D52ASSERT	completion-font-only	no-Regional-caption	PASS
+UBX NS D52ASSERT	completion-font-only	no-Regional-family	PASS
+UBX NS D52ASSERT	completion-font-only	no-Regional-caption	PASS
+UBX NS D52ASSERT	completion-font-only	no-Regional-family	PASS
+UBX NS D52ASSERT	completion-font-only	no-Regional-caption	PASS
+UBX NS D52ASSERT	completion-font-only	no-Regional-family	PASS
+UBX NS D52ASSERT	completion-font-only	no-Regional-caption	PASS
+UBX NS D52ASSERT	completion-font-only	no-Regional-family	PASS
+UBX NS D52ASSERT	completion-font-only	no-Regional-caption	PASS
+UBX NS D52ASSERT	completion-font-only	no-Regional-family	PASS
+UBX NS D52ASSERT	completion-font-only	no-Regional-caption	PASS
+UBX NS D52ASSERT	completion-font-only	no-Regional-family	PASS
+UBX NS D52ASSERT	completion-font-only	no-Regional-caption	PASS
+UBX NS D52ASSERT	completion-font-only	canonical-family	PASS
+UBX NS D52ASSERT	completion-font-only	no-Regional-family	PASS
+UBX NS D52ASSERT	completion-font-only	no-Regional-caption	PASS
+UBX NS D52ASSERT	completion-font-only	exactly-one-UniBeijingX	PASS
+UBX NS D52ACK 18e0e2b3c839e858
+UBX NS FINAL_CLEAN
+UBX NS D52ACK 18e0e2b3e9f757f0
+UBX NS D52ACK 18e0e2b40c0c9fd0
+UBX NS D52ASSERT	About-initial	native-form-open	PASS
+UBX NS D52ASSERT	About-initial	version	PASS
+UBX NS D52ASSERT	About-initial	inside-screen	PASS
+UBX NS D52ASSERT	About-initial	text-0	PASS
+UBX NS D52ASSERT	About-initial	native-Roman-0	PASS
+UBX NS D52ASSERT	About-initial	text-width-0	PASS
+UBX NS D52ASSERT	About-initial	text-bounds-0	PASS
+UBX NS D52ASSERT	About-initial	text-1	PASS
+UBX NS D52ASSERT	About-initial	native-Roman-1	PASS
+UBX NS D52ASSERT	About-initial	text-width-1	PASS
+UBX NS D52ASSERT	About-initial	text-bounds-1	PASS
+UBX NS D52ASSERT	About-initial	text-2	PASS
+UBX NS D52ASSERT	About-initial	native-Roman-2	PASS
+UBX NS D52ASSERT	About-initial	text-width-2	PASS
+UBX NS D52ASSERT	About-initial	text-bounds-2	PASS
+UBX NS D52ASSERT	About-initial	text-3	PASS
+UBX NS D52ASSERT	About-initial	native-Roman-3	PASS
+UBX NS D52ASSERT	About-initial	text-width-3	PASS
+UBX NS D52ASSERT	About-initial	text-bounds-3	PASS
+UBX NS D52ASSERT	About-initial	text-4	PASS
+UBX NS D52ASSERT	About-initial	native-Roman-4	PASS
+UBX NS D52ASSERT	About-initial	text-width-4	PASS
+UBX NS D52ASSERT	About-initial	text-bounds-4	PASS
+UBX NS D52ASSERT	About-initial	text-5	PASS
+UBX NS D52ASSERT	About-initial	native-Roman-5	PASS
+UBX NS D52ASSERT	About-initial	text-width-5	PASS
+UBX NS D52ASSERT	About-initial	text-bounds-5	PASS
+UBX NS D52ASSERT	About-initial	text-6	PASS
+UBX NS D52ASSERT	About-initial	native-Roman-6	PASS
+UBX NS D52ASSERT	About-initial	text-width-6	PASS
+UBX NS D52ASSERT	About-initial	text-bounds-6	PASS
+UBX NS D52ASSERT	About-initial	text-7	PASS
+UBX NS D52ASSERT	About-initial	native-Roman-7	PASS
+UBX NS D52ASSERT	About-initial	text-width-7	PASS
+UBX NS D52ASSERT	About-initial	text-bounds-7	PASS
+UBX NS D52ASSERT	About-initial	text-8	PASS
+UBX NS D52ASSERT	About-initial	native-Roman-8	PASS
+UBX NS D52ASSERT	About-initial	text-width-8	PASS
+UBX NS D52ASSERT	About-initial	text-bounds-8	PASS
+UBX NS D52ASSERT	About-initial	all-fields	PASS
+UBX NS D52ASSERT	About-initial	native-close	PASS
+UBX NS UBXLOC	ABOUTBOX	About-initial	left	20
+UBX NS UBXLOC	ABOUTBOX	About-initial	top	66
+UBX NS UBXLOC	ABOUTBOX	About-initial	right	300
+UBX NS UBXLOC	ABOUTBOX	About-initial	bottom	368
+UBX NS UBXLOC	CLOSEBOX	About-initial	left	284
+UBX NS UBXLOC	CLOSEBOX	About-initial	top	350
+UBX NS UBXLOC	CLOSEBOX	About-initial	right	300
+UBX NS UBXLOC	CLOSEBOX	About-initial	bottom	368
+UBX NS D52ACK 18e0e2b4278650d0
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-completion4-20261022/About-initial.png result 0
+UBX pen down 292 359
+UBX pen up
+UBX NS D52ASSERT	About-initial	native-closed	PASS
+UBX NS D52ACK 18e0e2b4b79fe730
+UBX NS D52ACK 18e0e2b4c98216d0
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/packages/milestone52r1/region/Region.pkg
+UBX NS PACKAGE READY
+UBX NS D52ACK 18e0e2b55881ec48
+UBX NS D52ACK 18e0e2bfc0722390
+UBX NS D52ACK 18e0e2bfd28c08e8
+UBX NS NATIVE_ACTIVE
+UBX NS D52ACK 18e0e2bfe45e8118
+UBX NS D52ACK 18e0e2bffba95d48
+UBX NS SETTLED
+UBX NS D52ACK 18e0e2c00d7d5448
+UBX NS PACKAGE READY
+UBX NS D52ACK 18e0e2c0424fce30
+UBX NS D52ACK 18e0e2c054301588
+UBX NS D52ACK 18e0e2c065eabc10
+UBX NS NATIVE_ACTIVE
+UBX NS D52ACK 18e0e2c077f2cb00
+UBX NS D52ACK 18e0e2c08a114ff0
+UBX NS SETTLED
+UBX NS D52ACK 18e0e2c09b2cff28
+UBX NS D52ACK 18e0e2c0b7cc5408
+UBX NS FINAL_CLEAN
+UBX NS D52ACK 18e0e2c0d9da54a0
+UBX NS D52ACK 18e0e2c13e706828
+UBX NS D52ACK 18e0e2c150030c80
+UBX NS D52ACK 18e0e2c1872cc4a8
+UBX NS D52ACK 18e0e2c19881bfd8
+UBX NS D52ACK 18e0e2c1aa35b770
+UBX NS UBXLOC	FOCUSPICK	view	index	0
+UBX NS UBXLOC	FOCUSPICK	view	count	4
+UBX NS D52ACK 18e0e2c1c1abaec8
+UBX NS UBXLOC	FOCUSBOX	view	left	115
+UBX NS UBXLOC	FOCUSBOX	view	top	355
+UBX NS UBXLOC	FOCUSBOX	view	right	204
+UBX NS UBXLOC	FOCUSBOX	view	bottom	431
+UBX NS D52ACK 18e0e2c1d8eff760
+UBX pen down 125 366
+UBX pen up
+UBX NS D52ACK 18e0e2c2626fcf88
+UBX pen down 35 66
+UBX pen up
+UBX NS D52ACK 18e0e2c2ec3799a8
+UBX NS D52ASSERT	new-Note	exact-target	PASS
+UBX NS D52ACK 18e0e2c33a8792e8
+UBX NS D52ASSERT	normal	target-text	PASS
+UBX NS D52ACK 18e0e2c3511f3060
+UBX NS D52ACK 18e0e2c3633ec6c0
+UBX NS D52ASSERT	normal-closed	same-id	PASS
+UBX NS D52ASSERT	normal-closed	stored-Unicode	PASS
+UBX NS D52ACK 18e0e2c3b16c2888
+UBX NS D52ACK 18e0e2c3c32cfd18
+UBX NS D52ASSERT	normal	reopened	PASS
+UBX NS D52ACK 18e0e2c411205f38
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-completion4-20261022/normal-reopened.png result 0
+UBX NS D52ACK 18e0e2c42ffb5fc0
+UBX NS D52ACK 18e0e2c441536060
+UBX NS FINAL_CLEAN
+UBX NS D52ACK 18e0e2c458b1a550
+UBX NS D52ACK 18e0e2c47adddc48
+UBX NS D52ACK 18e0e2c4925a3c40
+UBX NS D52ACK 18e0e2c4c41d9998
+UBX NS D52ACK 18e0e2c4d5fed708
+UBX NS D52ACK 18e0e2c4ed603cc0
+UBX NS UBXLOC	FOCUSPICK	view	index	0
+UBX NS UBXLOC	FOCUSPICK	view	count	4
+UBX NS D52ACK 18e0e2c503c930e8
+UBX NS UBXLOC	FOCUSBOX	view	left	115
+UBX NS UBXLOC	FOCUSBOX	view	top	355
+UBX NS UBXLOC	FOCUSBOX	view	right	204
+UBX NS UBXLOC	FOCUSBOX	view	bottom	431
+UBX NS D52ACK 18e0e2c520afa4d0
+UBX pen down 125 366
+UBX pen up
+UBX NS D52ACK 18e0e2c5b5684690
+UBX pen down 35 66
+UBX pen up
+UBX NS D52ACK 18e0e2c63f4b1e78
+UBX NS D52ASSERT	new-Note	exact-target	PASS
+UBX NS D52ACK 18e0e2c68d254790
+UBX NS FINAL_CLEAN
+UBX NS D52ACK 18e0e2c69efe43b8
+UBX NS D52ACK 18e0e2c6bb6a3840
+UBX NS D52ASSERT	overview-settled	native-overview	PASS
+UBX NS D52ASSERT	overview-settled	draw-hook	PASS
+UBX NS D52ASSERT	overview-settled	native-Roman-title-font	PASS
+UBX NS D52ASSERT	overview-settled	composite-abstract	PASS
+UBX NS D52ASSERT	overview-settled	native-extraction	PASS
+UBX NS D52ASSERT	overview-settled	date-fallback-descriptor	PASS
+UBX NS D52ASSERT	overview-settled	width-hook	PASS
+UBX NS D52ASSERT	overview-settled	package-backed-font	PASS
+UBX NS D52ASSERT	overview-settled	heap-native-copy	PASS
+UBX NS D52ASSERT	overview-settled	heap-or-ROM-object	PASS
+UBX NS D52ASSERT	overview-settled	internal-slot	PASS
+UBX NS D52ASSERT	overview-settled	internal-slot	PASS
+UBX NS D52ASSERT	overview-settled	internal-slot	PASS
+UBX NS D52ASSERT	overview-settled	internal-slot	PASS
+UBX NS D52ASSERT	overview-settled	internal-slot	PASS
+UBX NS D52ASSERT	overview-settled	internal-slot	PASS
+UBX NS D52ASSERT	overview-settled	internal-slot	PASS
+UBX NS D52ASSERT	overview-settled	internal-slot	PASS
+UBX NS D52ASSERT	overview-settled	internal-slot	PASS
+UBX NS D52ASSERT	overview-settled	internal-slot	PASS
+UBX NS D52ASSERT	overview-settled	internal-slot	PASS
+UBX NS D52ASSERT	overview-settled	internal-slot	PASS
+UBX NS D52ASSERT	overview-settled	internal-slot	PASS
+UBX NS D52ASSERT	overview-settled	internal-slot	PASS
+UBX NS D52ASSERT	overview-settled	internal-slot	PASS
+UBX NS D52ASSERT	overview-settled	internal-slot	PASS
+UBX NS D52ASSERT	overview-settled	internal-slot	PASS
+UBX NS D52ASSERT	overview-settled	internal-slot	PASS
+UBX NS D52ASSERT	overview-settled	internal-slot	PASS
+UBX NS D52ASSERT	overview-settled	internal-slot	PASS
+UBX NS D52ASSERT	overview-settled	heap-or-ROM-object	PASS
+UBX NS D52ASSERT	overview-settled	internal-slot	PASS
+UBX NS D52ASSERT	overview-settled	internal-slot	PASS
+UBX NS D52ASSERT	overview-settled	heap-or-ROM-object	PASS
+UBX NS D52ASSERT	overview-settled	internal-slot	PASS
+UBX NS D52ASSERT	overview-settled	internal-slot	PASS
+UBX NS D52ASSERT	overview-settled	heap-or-ROM-object	PASS
+UBX NS D52ASSERT	overview-settled	internal-slot	PASS
+UBX NS D52ASSERT	overview-settled	internal-slot	PASS
+UBX NS D52ASSERT	overview-settled	heap-or-ROM-object	PASS
+UBX NS D52ASSERT	overview-settled	internal-slot	PASS
+UBX NS D52ASSERT	overview-settled	internal-draw-callback	PASS
+UBX NS D52ASSERT	overview-settled	internal-draw-literal	PASS
+UBX NS D52ASSERT	overview-settled	internal-draw-literal	PASS
+UBX NS D52ASSERT	overview-settled	internal-draw-literal	PASS
+UBX NS D52ASSERT	overview-settled	internal-draw-literal	PASS
+UBX NS D52ASSERT	overview-settled	internal-draw-literal	PASS
+UBX NS D52ASSERT	overview-settled	internal-draw-literal	PASS
+UBX NS D52ACK 18e0e2c709ace728
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-completion4-20261022/overview-settled.png result 0
+UBX NS FINAL_CLEAN
+UBX NS D52ACK 18e0e2c73d9b9c78
+UBX NS D52ACK 18e0e2c7544afbf8
+UBX NS D52ASSERT	About-final	native-form-open	PASS
+UBX NS D52ASSERT	About-final	version	PASS
+UBX NS D52ASSERT	About-final	inside-screen	PASS
+UBX NS D52ASSERT	About-final	text-0	PASS
+UBX NS D52ASSERT	About-final	native-Roman-0	PASS
+UBX NS D52ASSERT	About-final	text-width-0	PASS
+UBX NS D52ASSERT	About-final	text-bounds-0	PASS
+UBX NS D52ASSERT	About-final	text-1	PASS
+UBX NS D52ASSERT	About-final	native-Roman-1	PASS
+UBX NS D52ASSERT	About-final	text-width-1	PASS
+UBX NS D52ASSERT	About-final	text-bounds-1	PASS
+UBX NS D52ASSERT	About-final	text-2	PASS
+UBX NS D52ASSERT	About-final	native-Roman-2	PASS
+UBX NS D52ASSERT	About-final	text-width-2	PASS
+UBX NS D52ASSERT	About-final	text-bounds-2	PASS
+UBX NS D52ASSERT	About-final	text-3	PASS
+UBX NS D52ASSERT	About-final	native-Roman-3	PASS
+UBX NS D52ASSERT	About-final	text-width-3	PASS
+UBX NS D52ASSERT	About-final	text-bounds-3	PASS
+UBX NS D52ASSERT	About-final	text-4	PASS
+UBX NS D52ASSERT	About-final	native-Roman-4	PASS
+UBX NS D52ASSERT	About-final	text-width-4	PASS
+UBX NS D52ASSERT	About-final	text-bounds-4	PASS
+UBX NS D52ASSERT	About-final	text-5	PASS
+UBX NS D52ASSERT	About-final	native-Roman-5	PASS
+UBX NS D52ASSERT	About-final	text-width-5	PASS
+UBX NS D52ASSERT	About-final	text-bounds-5	PASS
+UBX NS D52ASSERT	About-final	text-6	PASS
+UBX NS D52ASSERT	About-final	native-Roman-6	PASS
+UBX NS D52ASSERT	About-final	text-width-6	PASS
+UBX NS D52ASSERT	About-final	text-bounds-6	PASS
+UBX NS D52ASSERT	About-final	text-7	PASS
+UBX NS D52ASSERT	About-final	native-Roman-7	PASS
+UBX NS D52ASSERT	About-final	text-width-7	PASS
+UBX NS D52ASSERT	About-final	text-bounds-7	PASS
+UBX NS D52ASSERT	About-final	text-8	PASS
+UBX NS D52ASSERT	About-final	native-Roman-8	PASS
+UBX NS D52ASSERT	About-final	text-width-8	PASS
+UBX NS D52ASSERT	About-final	text-bounds-8	PASS
+UBX NS D52ASSERT	About-final	all-fields	PASS
+UBX NS D52ASSERT	About-final	native-close	PASS
+UBX NS UBXLOC	ABOUTBOX	About-final	left	20
+UBX NS UBXLOC	ABOUTBOX	About-final	top	66
+UBX NS UBXLOC	ABOUTBOX	About-final	right	300
+UBX NS UBXLOC	ABOUTBOX	About-final	bottom	368
+UBX NS UBXLOC	CLOSEBOX	About-final	left	284
+UBX NS UBXLOC	CLOSEBOX	About-final	top	350
+UBX NS UBXLOC	CLOSEBOX	About-final	right	300
+UBX NS UBXLOC	CLOSEBOX	About-final	bottom	368
+UBX NS D52ACK 18e0e2c78acafed0
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-completion4-20261022/About-final.png result 0
+UBX pen down 292 359
+UBX pen up
+UBX NS D52ASSERT	About-final	native-closed	PASS
+UBX NS D52ACK 18e0e2c825879af0
+UBX NS FINAL_CLEAN
+UBX NS D52ACK 18e0e2c837bb3a38
+UBX NS D52ACK 18e0e2c849ae9078
+UBX NS D52ACK 18e0e2c87aa80650
+UBX NS D52ACK 18e0e2c88ca09480
+UBX NS D52ACK 18e0e2c8a3171180
+UBX NS D52ACK 18e0e2c90cbc3818
+UBX NS REMOVED
+UBX NS D52ACK 18e0e2c91e7490c8
+UBX NS D52ACK 18e0e2c93087bb78
+UBX NS D52ACK 18e0e2c94210a3a0
+UBX NS D52ACK 18e0e2c9593496e0
+UBX NS NATIVE_ABSENT
+UBX NS D52ACK 18e0e2c96ac48fa0
+UBX NS D52ACK 18e0e2c97cad8d70
+UBX NS D52ACK 18e0e2c9a0c5c970
+UBX NS D52ACK 18e0e2c9b7a6cbf8
+UBX NS NATIVE_ABSENT
+UBX NS D52ACK 18e0e2c9c986e470
+UBX NS D52ACK 18e0e2c9e4fd2688
+UBX NS D52ASSERT	unload	width-hook-gone	PASS
+UBX NS D52ACK 18e0e2ca142ed4b0
+UBX NS D52ASSERT	unload	Region-setFont	PASS
+UBX NS D52ACK 18e0e2ca25d22e60
+UBX NS D52ASSERT	unload	Region-applyNames	PASS
+UBX NS D52ACK 18e0e2ca37b06e30
+UBX NS D52ASSERT	unloaded	form-unregistered	PASS
+UBX NS D52ASSERT	unloaded	font-global-absent	PASS
+UBX NS D52ASSERT	unloaded	font-observer-absent	PASS
+UBX NS D52ACK 18e0e2ca5436e3e0
+UBX NS D52ASSERT	unload	original-enumerator	PASS
+UBX NS D52ACK 18e0e2ca66564778
+UBX NS FINAL_CLEAN
+UBX NS D52ACK 18e0e2ca77e050b0
+UBX NS D52ACK 18e0e2ca93cce7c0
+UBX NS D52ASSERT	uninstalled-New-paperroll	native-button	PASS
+UBX NS D52ASSERT	uninstalled-New-paperroll	English-caption	PASS
+UBX NS D52ASSERT	uninstalled-New-paperroll	native-callback	PASS
+UBX NS D52ASSERT	uninstalled-New-paperroll	native-key	PASS
+UBX NS D52ASSERT	uninstalled-New-paperroll	packed-ROM	PASS
+UBX NS D52ASSERT	uninstalled-New-paperroll	same-family	PASS
+UBX NS D52ASSERT	uninstalled-New-paperroll	same-size	PASS
+UBX NS D52ASSERT	uninstalled-New-paperroll	same-face	PASS
+UBX NS D52ASSERT	uninstalled-New-paperroll	bounds-left	PASS
+UBX NS D52ASSERT	uninstalled-New-paperroll	bounds-top	PASS
+UBX NS D52ASSERT	uninstalled-New-paperroll	bounds-right	PASS
+UBX NS D52ASSERT	uninstalled-New-paperroll	bounds-bottom	PASS
+UBX NS D52ASSERT	uninstalled-New-paperroll	slot-ownership-restored	PASS
+UBX NS UBXLOC	NQBOX	uninstalled-New-paperroll	left	81
+UBX NS UBXLOC	NQBOX	uninstalled-New-paperroll	top	418
+UBX NS UBXLOC	NQBOX	uninstalled-New-paperroll	right	113
+UBX NS UBXLOC	NQBOX	uninstalled-New-paperroll	bottom	431
+UBX NS D52ACK 18e0e2cacf1d8960
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-completion4-20261022/uninstalled-New-paperroll.png result 0
+UBX NS FINAL_CLEAN
+UBX NS D52ACK 18e0e2caf2641998
+UBX NS D52ACK 18e0e2cb03db3ee0
+UBX NS D52ASSERT	uninstalled-New-cardfile	native-button	PASS
+UBX NS D52ASSERT	uninstalled-New-cardfile	English-caption	PASS
+UBX NS D52ASSERT	uninstalled-New-cardfile	native-callback	PASS
+UBX NS D52ASSERT	uninstalled-New-cardfile	native-key	PASS
+UBX NS D52ASSERT	uninstalled-New-cardfile	packed-ROM	PASS
+UBX NS D52ASSERT	uninstalled-New-cardfile	same-family	PASS
+UBX NS D52ASSERT	uninstalled-New-cardfile	same-size	PASS
+UBX NS D52ASSERT	uninstalled-New-cardfile	same-face	PASS
+UBX NS D52ASSERT	uninstalled-New-cardfile	bounds-left	PASS
+UBX NS D52ASSERT	uninstalled-New-cardfile	bounds-top	PASS
+UBX NS D52ASSERT	uninstalled-New-cardfile	bounds-right	PASS
+UBX NS D52ASSERT	uninstalled-New-cardfile	bounds-bottom	PASS
+UBX NS D52ASSERT	uninstalled-New-cardfile	slot-ownership-restored	PASS
+UBX NS UBXLOC	NQBOX	uninstalled-New-cardfile	left	66
+UBX NS UBXLOC	NQBOX	uninstalled-New-cardfile	top	410
+UBX NS UBXLOC	NQBOX	uninstalled-New-cardfile	right	98
+UBX NS UBXLOC	NQBOX	uninstalled-New-cardfile	bottom	423
+UBX NS D52ACK 18e0e2cb5426f880
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-completion4-20261022/uninstalled-New-cardfile.png result 0
+UBX NS FINAL_CLEAN
+UBX NS D52ACK 18e0e2cb6cc49370
+UBX NS D52ACK 18e0e2cb8941d990
+UBX NS D52ACK 18e0e2cba5612518
+UBX NS D52ASSERT	uninstalled-New-calendar	native-button	PASS
+UBX NS D52ASSERT	uninstalled-New-calendar	English-caption	PASS
+UBX NS D52ASSERT	uninstalled-New-calendar	native-callback	PASS
+UBX NS D52ASSERT	uninstalled-New-calendar	native-key	PASS
+UBX NS D52ASSERT	uninstalled-New-calendar	packed-ROM	PASS
+UBX NS D52ASSERT	uninstalled-New-calendar	same-family	PASS
+UBX NS D52ASSERT	uninstalled-New-calendar	same-size	PASS
+UBX NS D52ASSERT	uninstalled-New-calendar	same-face	PASS
+UBX NS D52ASSERT	uninstalled-New-calendar	bounds-left	PASS
+UBX NS D52ASSERT	uninstalled-New-calendar	bounds-top	PASS
+UBX NS D52ASSERT	uninstalled-New-calendar	bounds-right	PASS
+UBX NS D52ASSERT	uninstalled-New-calendar	bounds-bottom	PASS
+UBX NS D52ASSERT	uninstalled-New-calendar	slot-ownership-restored	PASS
+UBX NS UBXLOC	NQBOX	uninstalled-New-calendar	left	94
+UBX NS UBXLOC	NQBOX	uninstalled-New-calendar	top	418
+UBX NS UBXLOC	NQBOX	uninstalled-New-calendar	right	127
+UBX NS UBXLOC	NQBOX	uninstalled-New-calendar	bottom	431
+UBX NS D52ACK 18e0e2cbe13f06e0
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-completion4-20261022/uninstalled-New-calendar.png result 0
+UBX NS FINAL_CLEAN
+UBX NS D52ACK 18e0e2cbf9f1cfb0
+UBX NS D52ACK 18e0e2cc16917e68
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/packages/milestone52r2-display/artifacts/dev15/Font-Lite.pkg
+UBX NS PACKAGE WAIT
+UBX NS D52ACK 18e0e2cca0a9e540
+UBX NS UBXLOC	INSTALLFAIL	font	name	evt.ex.fr
+UBX NS UBXLOC	INSTALLFAIL	font	code	-48221
+UBX NS D52ACK 18e0e2d1154921f0
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-completion4-20261022/audit-failure.png result 0

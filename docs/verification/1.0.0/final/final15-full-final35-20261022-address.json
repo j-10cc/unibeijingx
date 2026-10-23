@@ -1,0 +1,92 @@
+{
+  "phase": "address",
+  "profile": "final15-full-final35-20261022",
+  "started": 1792688672.140661,
+  "states": [
+    {
+      "state": "Dates-reopened-multi-settled3",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-reopened-multi-settled3.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Dates-reopened-multi-settled10",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-reopened-multi-settled10.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Dates-reopened-multi-redraw",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-reopened-multi-redraw.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Dates-reopened-annual-settled3",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-reopened-annual-settled3.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Dates-reopened-annual-settled10",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-reopened-annual-settled10.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Dates-reopened-annual-redraw",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-reopened-annual-redraw.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Address-0-AllInfo",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Address-0-AllInfo.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Address-1-AllInfo",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Address-1-AllInfo.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Address-64-AllInfo",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Address-64-AllInfo.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Address-255-AllInfo",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Address-255-AllInfo.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Address-256-AllInfo",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Address-256-AllInfo.png",
+      "adapter_errors": 0
+    }
+  ],
+  "passed": true,
+  "runner_sha256": "7b5878902c401ed5a5455d24d2cb6b6f9de852f7ec949ec3d9498d65a6cdc1d8",
+  "timings": [
+    {
+      "characters": 0,
+      "seed_seconds": 0.4798633330501616,
+      "menu_select_and_settle_seconds": 3.8983463750919327
+    },
+    {
+      "characters": 1,
+      "seed_seconds": 0.4774622089462355,
+      "menu_select_and_settle_seconds": 3.8024434170220047
+    },
+    {
+      "characters": 64,
+      "seed_seconds": 0.47984883305616677,
+      "menu_select_and_settle_seconds": 3.8128643749514595
+    },
+    {
+      "characters": 255,
+      "seed_seconds": 0.6494167499477044,
+      "menu_select_and_settle_seconds": 3.8096245829947293
+    },
+    {
+      "characters": 256,
+      "seed_seconds": 0.7416385000105947,
+      "menu_select_and_settle_seconds": 3.825093708001077
+    }
+  ],
+  "ended": 1792688795.690122
+}

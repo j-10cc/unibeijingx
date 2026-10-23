@@ -1,0 +1,7 @@
+START full-tail-setup
+END full-tail-setup
+START full-tail-country
+END full-tail-country
+START full-regression
+END full-regression
+FINAL FULL ACCEPTANCE FINISHED

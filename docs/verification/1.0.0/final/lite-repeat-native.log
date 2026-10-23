@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/final-dev15-20261022/expanded.py", line 296, in <module>
+    globals()[phase]();result['passed']=True
+  File "/Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/final-dev15-20261022/expanded.py", line 288, in repeat_native
+    q.ns('F15.radios:=F15.rg:ChildViewFrames();Q14:assert("Repeat-native","eight",Length(F15.radios)=8);')
+  File "/Users/chengyiqun/Documents/UniBeijingX/scripts/display52_qa.py", line 87, in ns
+    raise RuntimeError('Guest error or unexpected boot: ' + chunk[-1800:])
+RuntimeError: Guest error or unexpected boot: UBX NS D52ASSERT	Repeat-native	eight	FAIL
+UBX NS UBXLOC	M52ERROR	exception	name	evt.ex.msg
+UBX NS UBXLOC	M52ERROR	exception	message	Repeat-native eight
+UBX NS D52ACK 18e0d85cdf6ddb58
+

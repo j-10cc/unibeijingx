@@ -1,0 +1,46 @@
+START lite-rest-setup
+END lite-rest-setup
+START lite-rest-repeat_reopen
+END lite-rest-repeat_reopen
+START lite-rest-popups
+END lite-rest-popups
+START lite-rest-formulas
+END lite-rest-formulas
+START lite-rest-system_roots
+END lite-rest-system_roots
+START lite-rest-preferences
+END lite-rest-preferences
+START lite-rest-date_types
+END lite-rest-date_types
+START lite-rest-address
+END lite-rest-address
+START lite-rest-style_state
+END lite-rest-style_state
+START lite-rest-routing
+END lite-rest-routing
+START lite-rest-clock_set
+END lite-rest-clock_set
+START lite-rest-clock_modes
+END lite-rest-clock_modes
+START lite-rest-extras_states
+END lite-rest-extras_states
+START lite-rest-calls_states
+END lite-rest-calls_states
+START lite-rest-repeat_native3
+END lite-rest-repeat_native3
+START lite-rest-country_native
+END lite-rest-country_native
+START full-expanded-setup
+END full-expanded-setup
+START full-overview
+END full-overview
+START full-expanded
+END full-expanded
+Traceback (most recent call last):
+  File "/Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/final-dev15-20261022/finish-matrix.py", line 34, in <module>
+    exec(compile(prefix+'\n'.join(lines[start:]),str(O/'finish-matrix.py'),'exec'),r.__dict__);r.finish_full()
+                                                                                               ^^^^^^^^^^^^^^^
+  File "/Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/final-dev15-20261022/finish-matrix.py", line 14, in finish_full
+    (O/'matrix-evidence-sources.json').write_text(json.dumps(mapping,indent=2)+'\n')
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: [{'phase': 'address_roman', 'returncode': 0}, {'phase': 'geography', 'returncode': 0}, {'phase': 'folders', 'returncode': 0}, {'phase': 'mixed_folder', 'returncode': 0}, {'phase': 'long_folder', 'returncode': 0}, {'phase': 'repeat_reopen', 'returncode': 0}, {'phase': 'popups', 'returncode': 0}, {'phase': 'formulas', 'returncode': 0}, {'phase': 'system_roots', 'returncode': 0}, {'phase': 'preferences', 'returncode': 0}, {'phase': 'date_types', 'returncode': 0}, {'phase': 'address', 'returncode': 0}, {'phase': 'style_state', 'returncode': 0}, {'phase': 'routing', 'returncode': 0}, {'phase': 'clock_set', 'returncode': 0}, {'phase': 'clock_modes', 'returncode': 0}, {'phase': 'extras_states', 'returncode': 0}, {'phase': 'calls_states', 'returncode': 0}, {'phase': 'repeat_native3', 'returncode': 0}, {'phase': 'country_native', 'returncode': 1}]

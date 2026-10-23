@@ -1,0 +1,184 @@
+// Live Names input lines only. Keep the ROM filters, paths and soup data intact.
+DefGlobalVar('ubxRegionNames, {
+    _proto: ubxRegionDateParser,
+    ensureNamesHook: func() begin
+        if self.namesHookInstalled then return nil;
+        local n := GetRoot().cardfile;
+        if not self.removing and n and n.ShowEditSlip <> self.namesShowEditSlip then begin
+            self:remember(n,'|ubxNamesShowEditSlip:UBX|,n.ShowEditSlip,'namesLifecycle);
+            self:remember(n,'ShowEditSlip,self.namesShowEditSlip,'namesLifecycle);
+            self.namesHookInstalled := true;
+        end;
+    end,
+    namesShowEditSlip: func(a,b,c,d,e) begin
+        local result := self:|ubxNamesShowEditSlip:UBX|(a,b,c,d,e);
+        local state := GetGlobalVar('|ubxRegion:UBX|);
+        if state and not state.removing then state:applyNames();
+        return result;
+    end,
+    restoreNamesDateGuards: func() begin
+        self:restoreNamesCountry();
+        if self.namesDateHooks then foreach hook in self.namesDateHooks do begin
+            local f := hook.filter;
+            if f.|ubxRejectedDate:UBX| then begin
+                f.validDate := true;
+                RemoveSlot(f,'|ubxRejectedDate:UBX|);
+            end;
+            if f.TextToPath = self.namesDateToPath then begin
+                if hook.own then f.TextToPath := hook.original else RemoveSlot(f,'TextToPath);
+                if f.|ubxNativeDateText:UBX| = hook.original then RemoveSlot(f,'|ubxNativeDateText:UBX|);
+            end;
+            if f.QuitFilter = self.namesDateQuit then begin
+                if hook.ownQuit then f.QuitFilter := hook.originalQuit else RemoveSlot(f,'QuitFilter);
+                if f.|ubxNativeDateQuit:UBX| = hook.originalQuit then RemoveSlot(f,'|ubxNativeDateQuit:UBX|);
+            end;
+            if f.PathToText = self.namesDatePathToText then begin
+                if hook.ownPath then f.PathToText := hook.originalPath else RemoveSlot(f,'PathToText);
+                RemoveSlot(f,'|ubxDatePath:UBX|);
+                if hook.view.viewCObject and IsFrame(hook.view.entryLine) and hook.view.entryLine.viewCObject then begin
+                    local value := GetSysEntryData(GetRoot().cardfile.target,hook.view.path);
+                    SetValue(hook.view.entryLine,EnsureInternal('text),if IsInteger(value) then
+                        LongDateStr(value,ROM_dateTimeStrSpecs.yearMonthDayStrSpec) else "");
+                end;
+            end;
+        end;
+        self.namesDateHooks := nil;
+    end,
+    guardNamesCountry: func(v) begin
+        local f := v.filter;
+        if not f or HasSlot(f,'|ubxNativeCountryText:UBX|) then return nil;
+        if not self.namesCountryHooks then self.namesCountryHooks := [];
+        AddArraySlot(self.namesCountryHooks,{filter:f,own:HasSlot(f,'TextToPath),original:f.TextToPath});
+        f.(EnsureInternal('|ubxNativeCountryText:UBX|)) := f.TextToPath;
+        f.(EnsureInternal('TextToPath)) := self.namesCountryToPath;
+    end,
+    namesCountryToPath: func(text) begin
+        local value := self:|ubxNativeCountryText:UBX|(text);
+        if IsString(value) and not IsRichString(value) then begin
+            // Replacing a classified country string in the ROM input line can
+            // retain the old country's class. Match the actual new name first.
+            local canonical := SetClass(Clone(value),'string);
+            local matches := GetCountryEntry(canonical);
+            if matches and Length(matches)>0 then begin
+                SetCountryClass(canonical); return canonical;
+            end;
+        end;
+        return value;
+    end,
+    restoreNamesCountry: func() begin
+        if self.namesCountryHooks then foreach h in self.namesCountryHooks do
+            if h.filter.TextToPath = self.namesCountryToPath then begin
+                if h.own then h.filter.TextToPath := h.original else RemoveSlot(h.filter,'TextToPath);
+                if h.filter.|ubxNativeCountryText:UBX| = h.original then RemoveSlot(h.filter,'|ubxNativeCountryText:UBX|);
+            end;
+        self.namesCountryHooks := nil;
+    end,
+    guardNamesDate: func(v) begin
+        local f := v.filter;
+        if not f or f.TextToPath = self.namesDateToPath or HasSlot(f,'|ubxNativeDateText:UBX|) then return nil;
+        if not self.namesDateHooks then self.namesDateHooks := [];
+        AddArraySlot(self.namesDateHooks,{filter:f,view:v,own:HasSlot(f,'TextToPath),original:f.TextToPath,
+            ownQuit:HasSlot(f,'QuitFilter),originalQuit:f.QuitFilter,
+            ownPath:HasSlot(f,'PathToText),originalPath:f.PathToText});
+        f.(EnsureInternal('|ubxDatePath:UBX|)) := v.path;
+        f.(EnsureInternal('|ubxNativeDateText:UBX|)) := f.TextToPath;
+        f.(EnsureInternal('|ubxNativeDateQuit:UBX|)) := f.QuitFilter;
+        f.(EnsureInternal('PathToText)) := self.namesDatePathToText;
+        f.(EnsureInternal('TextToPath)) := self.namesDateToPath;
+        f.(EnsureInternal('QuitFilter)) := self.namesDateQuit;
+        local value := GetSysEntryData(GetRoot().cardfile.target,v.path);
+        if IsInteger(value) then SetValue(v.entryLine,EnsureInternal('text),ShortDateStr(value,kIncludeAllElements));
+    end,
+    namesDatePathToText: func() begin
+        local value := GetSysEntryData(GetRoot().cardfile.target,self.|ubxDatePath:UBX|);
+        return if IsInteger(value) then ShortDateStr(value,kIncludeAllElements) else "";
+    end,
+    namesDateToPath: func(text) begin
+        local state := GetGlobalVar('|ubxRegion:UBX|);
+        local parsed := if state and state.prefs.regionEnabled then state:parseLocalDate(text) else nil;
+        if parsed and not parsed.frame then begin
+            // The ROM simple-date filter returns a sentinel date even when
+            // validDate is nil. Names writes that return value immediately.
+            // Preserve the stored value for rejected extended-format input.
+            self.validDate := nil;
+            self.(EnsureInternal('|ubxRejectedDate:UBX|)) := true;
+            return GetSysEntryData(GetRoot().cardfile.target,self.|ubxDatePath:UBX|);
+        end;
+        if HasSlot(self,'|ubxRejectedDate:UBX|) then RemoveSlot(self,'|ubxRejectedDate:UBX|);
+        return self:|ubxNativeDateText:UBX|(text);
+    end,
+    namesDateQuit: func() begin
+        if self.|ubxRejectedDate:UBX| then begin
+            RemoveSlot(self,'|ubxRejectedDate:UBX|);
+            // ROM QuitFilter erases invalid dates. The guarded converter has
+            // already kept the prior value; do not let teardown erase it.
+            self.validDate := true;
+            self:|ubxNativeDateQuit:UBX|();
+            GetRoot():Notify(kNotifyQAlert,"Date Entry","Invalid date. The previous date was kept.");
+            return nil;
+        end;
+        return self:|ubxNativeDateQuit:UBX|();
+    end,
+    applyNames: func() begin
+        local root := GetRoot(); local queue := [];
+        if root.cardfile and root.cardfile.viewCObject then AddArraySlot(queue,root.cardfile);
+        foreach v in root:ChildViewFrames() do
+            if v <> root.cardfile and v.viewCObject and v.appSymbol = 'cardfile and v.selectedLayout then
+                AddArraySlot(queue,v);
+        local i := 0; local loc := GetLocale();
+        while i < Length(queue) and i < 180 do begin
+            local v := queue[i];
+            if v.viewCObject then begin
+                // Names obtains these labels during setup, so an already open
+                // form also needs them refreshed after SetLocale/uninstall.
+                local label := nil;
+                if v.entryLine and v.entryLine.viewCObject and v.addPath then begin
+                    self:applyGeo(v);
+                    if self.prefs.regionEnabled and (v.addPath = 'bday or v.addPath = 'anniversary) then
+                        self:guardNamesDate(v);
+                    if self.prefs.regionEnabled and v.addPath = 'country then self:guardNamesCountry(v);
+                    if v.addPath = 'city then label := loc.cityLabel
+                    else if v.addPath = 'region then label := loc.regionLabel
+                    else if v.addPath = 'postal_code then label := loc.postalCodeLabel;
+                    if IsString(label) and not StrEqual(v.label,label) then begin
+                        SetValue(v,EnsureInternal('label),label); SetValue(v,EnsureInternal('pix),nil); v:SetLabelText(label);
+                    end;
+                    local group := if self.prefs.regionEnabled then 'region else 'ui;
+                    if self.prefs.regionEnabled then begin
+                        local changed := self:setFontIn(v,'labelFont,group);
+                        self:setFontIn(v.entryLine,'viewFont,group);
+                        if changed then begin
+                            SetValue(v,EnsureInternal('pix),nil); v:SetLabelText(v.label); v:Dirty();
+                        end;
+                    end;
+                end;
+                // All Info and card viewers cache explicit style runs before
+                // Font.pkg changes viewFont. Copy only those style frames;
+                // preserve shapes, hit targets and the native drawing method.
+                if (self.prefs.regionEnabled) and IsArray(v.shapeArray) and v.hitArray then begin
+                    local shapes := nil;
+                    foreach j,style in v.shapeArray do
+                        if IsFrame(style) and style.font and GetFontFamilySym(style.font) = 'newyork then begin
+                            if not shapes then shapes := Clone(v.shapeArray);
+                            local s := Clone(style); local size := GetFontSize(style.font);
+                            if size < 9 then size := 9;
+                            if size > 12 then size := 12;
+                            s.font := EnsureInternal({family:'|BeijingRegion:UBX|,size:size,face:0});
+                            shapes[j] := s;
+                        end;
+                    if shapes then self:remember(v,'shapeArray,shapes,
+                        if self.prefs.regionEnabled then 'region else 'ui);
+                end;
+                if v.entryView and v.entryView.viewCObject then begin
+                    local found := nil;
+                    foreach seen in queue do if seen = v.entryView then found := true;
+                    if not found then AddArraySlot(queue,v.entryView);
+                end;
+                local kids := v:ChildViewFrames();
+                if kids then foreach child in kids do
+                    if IsFrame(child) and child.viewCObject then AddArraySlot(queue,child);
+            end;
+            i := i+1;
+        end;
+    end,
+});

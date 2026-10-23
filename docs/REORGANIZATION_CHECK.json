@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-23",
+  "original_files": 23961,
+  "original_logical_bytes": 4531028479,
+  "retained_main_files_before_git": 5979,
+  "retained_main_logical_bytes_before_git": 359024004,
+  "validation": {
+    "four_packages_rebuilt_twice_byte_identical": true,
+    "compiler_rebuilt_from_local_dependencies": true,
+    "emulator_rebuilt_from_local_dependencies": true,
+    "product_input_hashes_verified": 58,
+    "font_bitmap_records_verified": 74781,
+    "final_release_screenshots_retained": 311,
+    "feature_frozen_files_preserved": 254,
+    "feature_two_packages_rebuilt_byte_identical": true,
+    "postal_regeneration_identical": true,
+    "pinyin_regeneration_data_identical": true,
+    "font_regeneration_in_scratch_verified": true,
+    "GUI_acceptance_rerun": false
+  },
+  "removed": [
+    "older/repeated release media",
+    "intermediate candidate packages",
+    "obsolete one-off probe code",
+    "fault-injection emulators",
+    "temporary emulator and toolchain build trees",
+    "test flash copies",
+    "process screenshots and galleries outside final acceptance",
+    "superseded planning documents",
+    "print intermediates and caches"
+  ],
+  "dependency_files_inventoried": 4391
+}

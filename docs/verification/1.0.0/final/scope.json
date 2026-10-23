@@ -1,0 +1,268 @@
+{
+  "version": "1.0.0",
+  "candidate": "dev15 (dev14 plus final-round repairs)",
+  "decision_rule": "Final conclusion for this version is based on the bounded reachable matrix below; later newly discovered defects go to a later version. Unvisited or unavailable states are disclosed, never counted as passes.",
+  "environment": "Original MP2000 ROM, Newton OS 2.1 (712000)-1, fixed S0, private profiles, Lite then Full serially",
+  "excluded": [
+    "-10061 investigation and stress triggering",
+    "8-hour soak (removed)",
+    "loading first-frame boxes if readable after settling",
+    "readable bottom crop of 周",
+    "old Notes compatibility",
+    "address lengths greater than 256"
+  ],
+  "matrix": [
+    {
+      "area": "Notes",
+      "widgets": [
+        "New menu and key",
+        "Note",
+        "Checklist",
+        "Outline",
+        "body",
+        "overview title/date/folder",
+        "Text menu",
+        "Styles font/size/face menus",
+        "action menu",
+        "folder menu",
+        "filing slip",
+        "folder editor",
+        "native class76 filing radio label"
+      ],
+      "states": [
+        "empty",
+        "Roman",
+        "Chinese",
+        "mixed extended Latin/symbols",
+        "whole/partial selection",
+        "reopen",
+        "overview settled",
+        "pagination",
+        "font-only",
+        "with Region",
+        "ordinary unload/reinstall",
+        "soft/cold restart",
+        "mixed Chinese/ASCII folder name"
+      ]
+    },
+    {
+      "area": "Names",
+      "widgets": [
+        "Person",
+        "Company",
+        "Group",
+        "Worksite",
+        "All Info",
+        "field labels and values",
+        "Add/Show/action menus",
+        "address city/province/postcode picker",
+        "folder menu",
+        "routing slip and Chinese Address preview"
+      ],
+      "states": [
+        "empty",
+        "Chinese/mixed",
+        "edited/reopened",
+        "overview",
+        "picker pagination",
+        "0/1/64/255/256-char address",
+        "selection callback and stored identity"
+      ]
+    },
+    {
+      "area": "Selectors/Quick entry",
+      "widgets": [
+        "people",
+        "meetingPlace",
+        "phone",
+        "fax",
+        "email",
+        "Quick Person",
+        "Quick Place"
+      ],
+      "states": [
+        "English and Chinese rows",
+        "icons and numbers",
+        "no results",
+        "selection",
+        "new entry",
+        "save/reopen"
+      ]
+    },
+    {
+      "area": "Dates",
+      "widgets": [
+        "Agenda empty/nonempty",
+        "Day",
+        "Week",
+        "Month",
+        "Year",
+        "Meeting editor",
+        "To Do editor",
+        "Invitees/Location",
+        "Repeat native menu",
+        "Repeat Other 8 rules",
+        "embedded calendar title and weekdays",
+        "month picker",
+        "date field",
+        "time field",
+        "alarm",
+        "cleanup-date field",
+        "Show/New/action menus"
+      ],
+      "states": [
+        "Chinese date",
+        "Chinese title",
+        "seven title weekdays",
+        "3/10-second settled",
+        "redraw",
+        "previous/next month/year",
+        "selection",
+        "record unchanged",
+        "close/reopen"
+      ]
+    },
+    {
+      "area": "Public date popups",
+      "widgets": [
+        "date",
+        "date/time",
+        "interval",
+        "multi-date"
+      ],
+      "states": [
+        "Chinese month title/weekdays",
+        "month menu",
+        "previous/next",
+        "select",
+        "confirm",
+        "cancel",
+        "China-USA-China while open"
+      ]
+    },
+    {
+      "area": "Calls",
+      "widgets": [
+        "Name",
+        "phone",
+        "notes",
+        "New/Add/Show",
+        "Other phone picker",
+        "overview/action/folder"
+      ],
+      "states": [
+        "empty",
+        "English",
+        "Chinese/mixed",
+        "reopen"
+      ]
+    },
+    {
+      "area": "Find",
+      "widgets": [
+        "query",
+        "owner selection",
+        "five-source result list",
+        "three-source results",
+        "result jump",
+        "empty result"
+      ],
+      "states": [
+        "English query and Chinese records",
+        "Chinese query",
+        "sources mixed",
+        "settled",
+        "reopen"
+      ]
+    },
+    {
+      "area": "System/Region",
+      "widgets": [
+        "Extras",
+        "Prefs list",
+        "Country",
+        "Date/Time",
+        "Formats",
+        "Owner",
+        "World Clock",
+        "Formulas list",
+        "Date Calculation",
+        "Date Conversion",
+        "currency/metric formulas",
+        "Memory Info",
+        "In/Out",
+        "Assist",
+        "Calculator",
+        "keyboard",
+        "Clock four Set modes",
+        "Owner Info list",
+        "Writing Practice",
+        "Card/Setup native icon taps"
+      ],
+      "states": [
+        "English captions",
+        "Chinese locale data",
+        "China-USA-China",
+        "date picker open",
+        "stored value",
+        "bounded host/native interface availability"
+      ]
+    },
+    {
+      "area": "Fonts and About",
+      "widgets": [
+        "canonical UniBeijingX chooser",
+        "System/Fancy/Simple/Casual/Hand/Switzerland/USA",
+        "four original Roman registries",
+        "main/private alias bitmap",
+        "About"
+      ],
+      "states": [
+        "7 families whole/partial",
+        "9/10/12/18 point",
+        "5 faces",
+        "9/10/12/14/16/18 alias samples",
+        "Roman glyph pixel controls",
+        "stale palette same/different-family target",
+        "all 9 About fields",
+        "open/close/reopen"
+      ]
+    },
+    {
+      "area": "Package compatibility",
+      "widgets": [
+        "Font-Lite",
+        "Font-Full",
+        "ChineseRegion",
+        "Pinyin"
+      ],
+      "states": [
+        "font-only",
+        "Region first",
+        "font first",
+        "all components",
+        "IME actual ni -> 你 commit and saved alias",
+        "one ordinary removal/reinstall",
+        "soft restart",
+        "independent cold restart",
+        "optional component removal",
+        "locale/font registry restoration"
+      ]
+    }
+  ],
+  "out_of_reach": [
+    "physical hardware",
+    "external network/fax/modem/serial services",
+    "physical printer output",
+    "arbitrary third-party packages not installed in fixed S0",
+    "infinite arbitrary Unicode/content combinations; repertoire is 8309 mapped characters",
+    "QA/probe package icon interfaces are test infrastructure, not release UI"
+  ],
+  "accepted_boundaries": [
+    {
+      "case": "extreme longfolder titles",
+      "criterion": "Readable actual pixels are sufficient; strict control-box gap or perfect geometry is not required.",
+      "user_instruction": "长文件夹标题之类的极端边界，只要可读就可以认为成功。"
+    }
+  ]
+}

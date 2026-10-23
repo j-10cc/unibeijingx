@@ -1,0 +1,50 @@
+{
+  "phase": "repeat_native3",
+  "profile": "final15-lite-final29-20261022",
+  "started": 1792676312.735679,
+  "states": [
+    {
+      "state": "Native-rule-v3-none",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final29-20261022/Native-rule-v3-none.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Native-rule-v3-day",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final29-20261022/Native-rule-v3-day.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Native-rule-v3-week",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final29-20261022/Native-rule-v3-week.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Native-rule-v3-other-week",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final29-20261022/Native-rule-v3-other-week.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Native-rule-v3-month",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final29-20261022/Native-rule-v3-month.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Native-rule-v3-year",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final29-20261022/Native-rule-v3-year.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Native-rule-v3-week-month",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final29-20261022/Native-rule-v3-week-month.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Native-rule-v3-week-year",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final29-20261022/Native-rule-v3-week-year.png",
+      "adapter_errors": 0
+    }
+  ],
+  "passed": true,
+  "runner_sha256": "1ca980d924d55e28f22e6cd299aa31cfea2f1bf859b2bb21e3bd48ae4b0ae04a",
+  "ended": 1792676407.62905
+}

@@ -1,0 +1,26 @@
+{
+  "phase": "long_folder",
+  "profile": "final15-lite-final35-20261022",
+  "started": 1792685098.398587,
+  "states": [
+    {
+      "state": "Long-folder-radio",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Long-folder-radio.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Long-folder-menu",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Long-folder-menu.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Long-folder-title",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Long-folder-title.png",
+      "adapter_errors": 0
+    }
+  ],
+  "passed": false,
+  "runner_sha256": "c2854e305ed15bc0ff9882ea9f0cdb55eb3a6619464c774f50d40e8b320dab27",
+  "error": "Guest error or unexpected boot: UBX NS D52ASSERT\tlong-folder\ttitle-clock-gap\tFAIL\nUBX NS UBXLOC\tM52ERROR\texception\tname\tevt.ex.msg\nUBX NS UBXLOC\tM52ERROR\texception\tmessage\tlong-folder title-clock-gap\nUBX NS D52ACK 18e0e5a1041496f8\n",
+  "ended": 1792685131.9414861
+}

@@ -1,0 +1,30 @@
+{
+  "phase": "formulas",
+  "profile": "final15-lite-broad4-20261022",
+  "started": 1792661186.976026,
+  "states": [
+    {
+      "state": "Formula-Loan-filled",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-broad4-20261022/Formula-Loan-filled.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Formula-NPV-filled",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-broad4-20261022/Formula-NPV-filled.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Formula-Currency-filled",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-broad4-20261022/Formula-Currency-filled.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Formula-DateCalc-picker",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-broad4-20261022/Formula-DateCalc-picker.png",
+      "adapter_errors": 0
+    }
+  ],
+  "passed": false,
+  "error": "Guest error or unexpected boot: UBX NS UBXASSERT\t52f-Formula-DateCalc\tcaptured-picker-count\tPASS\nUBX NS UBXASSERT\t52f-Formula-DateCalc\tpicker-still-open-0\tPASS\nUBX NS UBXASSERT\t52f-Formula-DateCalc\tdisplayed-month-preserved-0\tPASS\nUBX NS UBXASSERT\t52f-Formula-DateCalc\tselection-preserved-0\tPASS\nUBX NS UBXASSERT\t52f-Formula-DateCalc\tlabel-font-0\tPASS\nUBX NS UBXLOC\tpopupBounds\tFormula-DateCalc\tleft\t144\nUBX NS UBXLOC\tpopupBounds\tFormula-DateCalc\ttop\t94\nUBX NS UBXLOC\tpopupBounds\tFormula-DateCalc\tright\t275\nUBX NS UBXLOC\tpopupBounds\tFormula-DateCalc\tbottom\t184\nUBX NS POPUP52F CLOSE 267 222\nUBX NS UBXASSERT\t52f-Formula-DateCalc\tno-confirm\tFAIL\nUBX NS UBXASSERT\t52f-Formula-DateCalc\tno-cancel\tPASS\nUBX NS D52ACK 18e0cfdea45ff1d0\n",
+  "ended": 1792661207.2391858
+}

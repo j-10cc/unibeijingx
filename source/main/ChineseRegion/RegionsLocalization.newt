@@ -1,0 +1,298 @@
+// Public routing-format registration, owned Names pickers and locale defaults.
+DefGlobalVar('ubxRegionSettings,{
+ _proto:ubxRegionNames, atlas:ubxChinaAtlas,
+ closeGeo:func() begin
+  if self.geoPicker and self.geoPicker.viewCObject then self.geoPicker:Close();
+  self.geoPicker:=nil;self.geoRows:=nil;
+ end,
+ geoLine:func(path) begin
+  foreach v in GetRoot():ChildViewFrames() do if v.viewCObject and v.appSymbol='cardfile and v.selectedLayout then begin
+   local q:=[v];local i:=0;
+   while i<Length(q) and i<160 do begin
+    local x:=q[i];if x.addPath=path and x.entryLine and x.entryLine.viewCObject then return x;
+    local kids:=x:ChildViewFrames();if kids then foreach c in kids do if c.viewCObject then AddArraySlot(q,c);
+    i:=i+1;
+   end;
+  end;return nil;
+ end,
+ geoInput:func(path) begin
+  local v:=self:geoLine(path);return if v and IsString(v.entryLine.text) then v.entryLine.text else "";
+ end,
+ geoSet:func(path,text) begin
+  local v:=self:geoLine(path);if not v then return nil;
+  SetKeyView(v.entryLine,0);v.entryLine:SetHilite(0,StrLen(v.entryLine.text),true);
+  PostKeyString(v.entryLine,EnsureInternal(Clone(text)));
+ end,
+ geoProvince:func(name) begin
+  foreach p in self.atlas.provinces do if StrEqual(p.name,name) then return p;
+  return nil;
+ end,
+ geoCity:func(p,name) begin
+  if p then foreach c in p.cities do if StrEqual(c.name,name) then return c;
+  return nil;
+ end,
+ geoAllowed:func() begin
+  local country:=self:geoInput('country);
+  return self.prefs.regionEnabled and (StrEqual(country,"China") or StrEqual(country,"中国"));
+ end,
+ geoPickerSetup:func() begin
+  local s:=GetGlobalVar('|ubxRegion:UBX|);
+  if not s or s.removing or not s:geoAllowed() then begin
+   if IsFunction(self.|ubxGeoPicker:UBX|) then return self:|ubxGeoPicker:UBX|();
+   return true;
+  end;
+  s.geoTarget:=self;s.geoP:=s:geoProvince(s:geoInput('region));
+  s.geoC:=s:geoCity(s.geoP,s:geoInput('city));
+  local role:=if self.addPath='region then 'province else if self.addPath='city then 'city else 'area;
+  if role<>'province and not s.geoP then role:='province;
+  if role='area and not s.geoC then role:='city;
+  s:openGeo(role,0);return nil;
+ end,
+ geoCodes:func(area) begin
+  local codes:=[];local data:=self.atlas.codes;
+  for i:=0 to area.codesCount-1 do begin
+   local offset:=area.codesOffset+i*3;
+   local code:=NumberStr(ExtractByte(data,offset)*10000+ExtractByte(data,offset+1)*100+ExtractByte(data,offset+2));
+   while StrLen(code)<6 do code:="0" & code;
+   AddArraySlot(codes,code);
+  end;
+  return codes;
+ end,
+ PickActionScript:func(index) self:geoPick(index),
+ openGeo:func(role,page) begin
+  self:closeGeo();self.geoRole:=role;self.geoPage:=page;
+  local all:=if role='province then self.atlas.provinces else if role='city then self.geoP.cities
+    else if role='area then self.geoC.areas else self:geoCodes(self.geoA);
+  local rows:=[];local labels:=[];local start:=page*8;local last:=Min(start+7,Length(all)-1);
+  for i:=start to last do begin
+   AddArraySlot(rows,all[i]);AddArraySlot(labels,if role='code then all[i] else all[i].name);
+  end;
+  if page>0 then begin AddArraySlot(rows,'previous);AddArraySlot(labels,"Previous page");end;
+  if last<Length(all)-1 then begin AddArraySlot(rows,'next);AddArraySlot(labels,"Next page");end;
+  self.geoRows:=rows;
+  self.geoPicker:=BuildContext({_proto:protoPicker,
+   bounds:{left:40,top:65,right:280,bottom:70},callbackContext:self,
+   pickItems:labels,viewFont:EnsureInternal({family:'|BeijingRegion:UBX|,size:10,face:0}),
+   pickTextItemHeight:18,pickAutoClose:true});
+  self.geoPicker:Open();
+ end,
+ geoPick:func(index) begin
+  local item:=self.geoRows[index];local role:=self.geoRole;local page:=self.geoPage;
+  self:closeGeo();
+  if item='previous then self:openGeo(role,page-1)
+  else if item='next then self:openGeo(role,page+1)
+  else if role='province then begin self.geoP:=item;self:geoSet('region,item.name);end
+  else if role='city then begin self.geoC:=item;self:geoSet('city,item.name);end
+  else if role='area then begin self.geoA:=item;self:openGeo('code,0);end
+  else self:geoSet('postal_code,item);
+ end,
+ geoStroke:func(unit) begin
+  local s:=GetGlobalVar('|ubxRegion:UBX|);local points:=GetPointsArray(unit);
+  local gb:=self:GlobalBox();local label:=self.labelBox;
+  if s and not s.removing and s:geoAllowed() and label and
+     IsPtInRect(points[1]-gb.left,points[0]-gb.top,label) then begin
+   self:PickerSetup();return true;
+  end;
+  return self:|ubxGeoStroke:UBX|(unit);
+ end,
+ applyGeo:func(v) begin
+  if not self.removing and self.prefs.regionEnabled and
+     (v.addPath='city or v.addPath='region or v.addPath='postal_code) and v.PickerSetup<>self.geoPickerSetup then begin
+   self:remember(v,'|ubxGeoPicker:UBX|,v.PickerSetup,'region);
+   self:remember(v,'PickerSetup,self.geoPickerSetup,'region);
+   self:remember(v,'|ubxGeoStroke:UBX|,v.viewStrokeScript,'region);
+   self:remember(v,'viewStrokeScript,self.geoStroke,'region);
+  end;
+ end,
+ effectiveWeek:func() begin
+  local value:=GetUserConfig('firstDayOfWeek);
+  return if IsInteger(value) then value else GetLocale().firstDayofWeek;
+ end,
+ captureRegionDefaults:func() begin
+  if self.prefs.regionDefaults then return self.prefs.regionDefaults;
+  local before:=nil;local a4:=nil;
+  foreach i,p in GetUserConfig('paperSizes) do begin
+   if StrEqual(p.title,GetUserConfig('paperSize).title) then before:=i;
+   if StrEqual(p.title,"A4 Letter") or StrEqual(p.title,"A4") then a4:=i;
+  end;
+  local old:={paper:before,week:GetUserConfig('firstDayOfWeek),a4:a4,pending:true};
+  self.prefs.regionDefaults:=old;EntryChange(self.prefs);return old;
+ end,
+ syncRegionDefaults:func(enabled) begin
+  local old:=self.prefs.regionDefaults;local sizes:=GetUserConfig('paperSizes);
+  if enabled then begin
+   if not old then old:=self:captureRegionDefaults();
+   if old.pending then begin
+    if old.a4<>nil then SetUserConfig('paperSize,sizes[old.a4]);
+    SetUserConfig('firstDayOfWeek,1);old.pending:=nil;EntryChange(self.prefs);
+   end;
+  end else if old then begin
+   if old.a4<>nil and StrEqual(GetUserConfig('paperSize).title,sizes[old.a4].title) and old.paper<>nil then
+    SetUserConfig('paperSize,sizes[old.paper]);
+   if GetUserConfig('firstDayOfWeek)=1 then SetUserConfig('firstDayOfWeek,old.week);
+   self.prefs.regionDefaults:=nil;EntryChange(self.prefs);
+  end;
+ end,
+ // Public date popups can live outside calendar's view tree.
+ refreshDatePopups:func(refresh) begin
+  if not self.prefs.regionEnabled and not refresh then return nil;
+  local root:=GetRoot();local q:=[];local i:=0;
+  if refresh then foreach v in root:ChildViewFrames() do
+   if v.viewCObject and v.pickItems and v.callbackContext and v.callbackContext.viewCObject then begin
+    local label:=v.callbackContext;local picker:=label:Parent();local steps:=0;
+    while picker and not picker.monthView and steps<4 do begin picker:=picker:Parent();steps:=steps+1;end;
+    // Native month menus cache their strings. Dismiss only that submenu on
+    // a locale change; the owning date popup and selected dates remain live.
+    if picker and picker.monthYearLabel=label and picker.monthView and picker.SetTitle then v:Close();
+   end;
+  foreach v in root:ChildViewFrames() do if v.viewCObject and v<>root.calendar and v<>root.paperroll and
+     v:GlobalBox().right>0 and v:GlobalBox().bottom>0 then AddArraySlot(q,v);
+  while i<Length(q) and i<180 do begin
+   local v:=q[i];
+   if v.monthView and v.monthView.viewCObject and v.monthView.viewClass=clMonthView and
+      v.monthYearLabel and v.SetTitle then begin
+    if self.prefs.regionEnabled then begin
+     self:setFont(v,'titleFont);self:setFont(v,'labelFont);self:setFont(v.monthView,'labelFont);
+     if not v.monthYearLabel.viewFont or GetFontFamilySym(v.monthYearLabel.viewFont)<>'|BeijingRegion:UBX| then
+      self:remember(v.monthYearLabel,'viewFont,EnsureInternal({family:'|BeijingRegion:UBX|,size:12,face:0}),'region);
+    end;
+    if refresh then begin
+     if self.weekChanged then begin
+      local m:=v.monthView;local y:=m.year;local month:=m.month;
+      m:Close();m:Open();m:Show();
+      m.year:=y;m.month:=month;m:SyncView();
+     end;
+     v:SetTitle();v.monthView:Dirty();
+    end;
+   end;
+   local kids:=v:ChildViewFrames();if kids then foreach c in kids do if c.viewCObject then AddArraySlot(q,c);
+   i:=i+1;
+  end;
+ end,
+ chinaAddress:func(e) begin
+  return e and IsString(e.country) and (StrEqual(e.country,"China") or StrEqual(e.country,"中国"));
+ end,
+ addressLines:func(e) begin
+  local out:=[];
+  local place:="";
+  if IsString(e.region) then place:=e.region;
+  if IsString(e.city) and not StrEqual(e.city,place) then place:=place & e.city;
+  if IsString(e.postal_code) and StrLen(e.postal_code)>0 then place:=e.postal_code & " " & place;
+  if StrLen(place)>0 then AddArraySlot(out,place);
+  if IsString(e.address) and StrLen(e.address)>0 then AddArraySlot(out,e.address);
+  if IsString(e.address2) and StrLen(e.address2)>0 then AddArraySlot(out,e.address2);
+  local name:="";
+  if e.name then begin
+   if IsString(e.name.last) then name:=e.name.last;
+   if IsString(e.name.first) then name:=name & e.name.first;
+  end;
+  if e.class='company and IsString(e.company) and StrLen(e.company)>0 then
+   name:=e.company & (if StrLen(name)>0 then " " & name else "");
+  if StrLen(name)>0 then AddArraySlot(out,name & " 收");
+  return out;
+ end,
+ // Use native font metrics and preserve every character, including spaces.
+ wrapAddress:func(lines,width,font) begin
+  local rows:=[];
+  foreach text in lines do begin
+   local start:=0;local n:=StrLen(text);
+   while start<n do begin
+    local stop:=start;
+    while stop<n and text[stop]<>$\n and text[stop]<>$\r do stop:=stop+1;
+    if stop=start then AddArraySlot(rows,"");
+    while start<stop do begin
+     local low:=1;local high:=stop-start;local fit:=1;
+     while low<=high do begin
+      local count:=(low+high) div 2;local b:={left:0,top:0,right:0,bottom:0};
+      TextBounds(SubStr(text,start,count),font,b);
+      if b.right-b.left<=width then begin fit:=count;low:=count+1;end
+      else high:=count-1;
+     end;
+     if fit<stop-start then begin
+      local j:=fit-1;
+      while j>0 and text[start+j]<>$  do j:=j-1;
+      if j>0 and j>=fit div 2 then fit:=j+1;
+     end;
+     AddArraySlot(rows,SubStr(text,start,fit));start:=start+fit;
+    end;
+    start:=stop+1;
+    if stop<n and text[stop]=$\r and start<n and text[start]=$\n then start:=start+1;
+   end;
+   if n=0 then AddArraySlot(rows,"");
+  end;return rows;
+ end,
+ registerAddressPrint:func() begin
+  if self.printRegistered then return nil;
+  self.printRegistered:=[];
+  foreach kind in '[person,company] do begin
+   RegisterViewDef(self.chineseAddressPrint,kind);AddArraySlot(self.printRegistered,kind);
+  end;
+ end,
+ trackPrint:func(view) begin
+  local top:=view;local parent:=top:Parent();local n:=0;
+  while parent and parent<>GetRoot() and n<12 do begin top:=parent;parent:=top:Parent();n:=n+1;end;
+  if parent=GetRoot() then begin
+   local live:=[];
+   if self.printRoots then foreach old in self.printRoots do if old.viewCObject then AddArraySlot(live,old);
+   self.printRoots:=live;
+   local found:=nil;foreach old in self.printRoots do if old=top then found:=true;
+   if not found then AddArraySlot(self.printRoots,top);
+  end;
+ end,
+ applyRouting:func() begin
+  foreach v in GetRoot():ChildViewFrames() do
+   if v.viewCObject and v.formatPicker and v.activeFormat and v.activeFormat.symbol='|ChineseAddress:UBX| then begin
+    foreach c in v.formatPicker:ChildViewFrames() do if c.viewCObject then self:setFontIn(c,'viewFont,'region);
+   end;
+ end,
+ closePrint:func() begin
+  if self.printRoots then foreach v in self.printRoots do if v.viewCObject then v:Close();
+  self.printRoots:=nil;
+  foreach v in GetRoot():ChildViewFrames() do
+   if v.viewCObject and v.activeFormat and v.activeFormat.symbol='|ChineseAddress:UBX| then v:Close();
+ end,
+ unregisterAddressPrint:func() begin
+  self:closePrint();
+  if self.printRegistered then begin
+   foreach kind in self.printRegistered do UnRegisterViewDef('|ChineseAddress:UBX|,kind);
+   self.printRegistered:=nil;
+  end;
+ end,
+ chineseAddressPrint:{_proto:protoPrintFormat,title:"Chinese Address",symbol:'|ChineseAddress:UBX|,
+  name:"Chinese Address",version:2,routingType:'Print,storeCursors:true,usesCursors:nil,
+  viewFont:{family:'beijing,size:14,face:0},margins:{left:24,top:24,right:24,bottom:24},
+  FormatInitScript:func(item,reserved) begin
+   self.target:=self:ResolveBody(item);
+   self.printOffset:=0;self.printRows:=nil;
+  end,
+  ViewSetupDoneScript:func() begin
+   inherited:?ViewSetupDoneScript();
+   local s:=GetGlobalVar('|ubxRegion:UBX|);if s then s:trackPrint(self);
+  end,
+  ViewSetupChildrenScript:func() begin
+   inherited:?ViewSetupChildrenScript();
+   local s:=GetGlobalVar('|ubxRegion:UBX|);local rows:=[];
+   self.rowHeight:=Max(26,FontHeight(self.viewFont)+2);
+   // Newton can reuse the live format view for the next cursor item. Its
+   // own slots shadow the new FormatInitScript temporary frame's slots.
+   if self.rowsTarget<>self.target or self.wrapWidth<>self.pageWidth or not self.printRows then begin
+    self.rowsTarget:=self.target;self.wrapWidth:=self.pageWidth;self.printOffset:=0;
+    local lines:=if s and s:chinaAddress(self.target) then s:addressLines(self.target)
+     else ["Chinese address format requires country China."];
+    self.printRows:=s:wrapAddress(lines,self.pageWidth-2,self.viewFont);
+   end;
+   local capacity:=Max(1,self.pageHeight div self.rowHeight);
+   local last:=Min(self.printOffset+capacity,Length(self.printRows));
+   for i:=self.printOffset to last-1 do AddArraySlot(rows,{_proto:protoStaticText,
+    viewBounds:{left:0,top:(i-self.printOffset)*self.rowHeight,
+     right:self.pageWidth,bottom:(i-self.printOffset+1)*self.rowHeight-1},
+    viewFont:self.viewFont,text:self.printRows[i]});
+   self.printEnd:=last;self.stepChildren:=rows;
+   nil;
+  end,
+  PrintNextPageScript:func() begin
+   if self.printEnd>=Length(self.printRows) then return nil;
+   self.printOffset:=self.printEnd;self:RedoChildren();return true;
+  end,
+ },
+});

@@ -1,0 +1,127 @@
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0	class	74
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0	context	paperroll
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0	app	paperroll
+UBX NS F15TEXT	after-popup-close-error/0	title	Notepad
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/1	class	74
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/1	context	buttons
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/1	app	buttons
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/1	Debug	5075
+UBX NS F15TEXT	after-popup-close-error/1	title	Button Bar
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/2	class	81
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/2	Debug	1448480
+UBX NS F15TEXT	after-popup-close-error/2	text	
+UBX NS UBXLOC	F15FONT	after-popup-close-error/2/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	after-popup-close-error/2/viewFont	size	9
+UBX NS UBXLOC	F15FONT	after-popup-close-error/2/viewFont	face	1
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/3	class	91
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/3	Debug	90204
+UBX NS UBXLOC	F15FONT	after-popup-close-error/3/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	after-popup-close-error/3/viewFont	size	10
+UBX NS UBXLOC	F15FONT	after-popup-close-error/3/viewFont	face	1
+UBX NS F15PICK	after-popup-close-error/3	0	 2026
+UBX NS F15PICK	after-popup-close-error/3	1	k
+UBX NS F15PICK	after-popup-close-error/3	2	]
+UBX NS F15PICK	after-popup-close-error/3	3	A
+UBX NS F15PICK	after-popup-close-error/3	4	A
+UBX NS F15PICK	after-popup-close-error/3	5	A�
+UBX NS F15PICK	after-popup-close-error/3	7	
+UBX NS F15PICK	after-popup-close-error/3	8	�
+UBX NS F15PICK	after-popup-close-error/3	9		
+UBX NS F15PICK	after-popup-close-error/3	10	�
+UBX NS F15PICK	after-popup-close-error/3	11	�
+UBX NS F15PICK	after-popup-close-error/3	12	m
+UBX NS F15PICK	after-popup-close-error/3	14	Today
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/4	class	76
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/4	context	notification
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/4	Debug	78008
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0/0	class	74
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0/1	class	74
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0/2	class	74
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0/2	context	status
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0/2	Debug	90529
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/1/0	class	74
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/1/1	class	74
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/1/2	class	74
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/1/3	class	74
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/1/4	class	74
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/1/5	class	74
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/1/6	class	74
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/1/7	class	74
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/4/0	class	74
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/4/0	context	roll
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/4/0	Debug	2542296
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/4/1	class	76
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/4/1	Debug	362838
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0/0/0	class	74
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0/1/0	class	98
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0/1/0	context	showBarText
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0/1/0	Debug	1444304
+UBX NS F15TEXT	after-popup-close-error/0/1/0	text	Unfiled Notes
+UBX NS UBXLOC	F15FONT	after-popup-close-error/0/1/0/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	after-popup-close-error/0/1/0/viewFont	size	10
+UBX NS UBXLOC	F15FONT	after-popup-close-error/0/1/0/viewFont	face	1
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0/1/1	class	98
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0/1/1	context	title
+UBX NS F15TEXT	after-popup-close-error/0/1/1	text	14:40 h� 10-22
+UBX NS UBXLOC	F15FONT	after-popup-close-error/0/1/1/viewFont	family	BeijingRegion:UBX
+UBX NS UBXLOC	F15FONT	after-popup-close-error/0/1/1/viewFont	size	9
+UBX NS UBXLOC	F15FONT	after-popup-close-error/0/1/1/viewFont	face	0
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0/2/0	class	76
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0/2/0	Debug	11538576
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0/2/1	class	76
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0/2/1	Debug	1444304
+UBX NS UBXLOC	F15FONT	after-popup-close-error/0/2/1/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	after-popup-close-error/0/2/1/viewFont	size	9
+UBX NS UBXLOC	F15FONT	after-popup-close-error/0/2/1/viewFont	face	1
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0/2/2	class	76
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0/2/2	Debug	11538576
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0/2/3	class	98
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0/2/3	Debug	1444304
+UBX NS F15TEXT	after-popup-close-error/0/2/3	text	  New
+UBX NS UBXLOC	F15FONT	after-popup-close-error/0/2/3/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	after-popup-close-error/0/2/3/viewFont	size	9
+UBX NS UBXLOC	F15FONT	after-popup-close-error/0/2/3/viewFont	face	1
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/1/7/0	class	74
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/1/7/0	Debug	574352
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/1/7/1	class	74
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/1/7/1	Debug	714576
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/1/7/2	class	74
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/1/7/2	Debug	2862800
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/4/0/0	class	74
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/4/0/0	Debug	360639
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0/0/0/0	class	74
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0/0/0/1	class	74
+UBX NS F15TEXT	after-popup-close-error/0/0/0/1	headerText	Note
+UBX NS UBXLOC	F15FONT	after-popup-close-error/0/0/0/1/viewFont	family	BeijingRegion:UBX
+UBX NS UBXLOC	F15FONT	after-popup-close-error/0/0/0/1/viewFont	size	10
+UBX NS UBXLOC	F15FONT	after-popup-close-error/0/0/0/1/viewFont	face	0
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/4/0/0/0	class	81
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/4/0/0/0	Debug	1448480
+UBX NS F15TEXT	after-popup-close-error/4/0/0/0	text	Newton
+UBX NS UBXLOC	F15FONT	after-popup-close-error/4/0/0/0/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	after-popup-close-error/4/0/0/0/viewFont	size	10
+UBX NS UBXLOC	F15FONT	after-popup-close-error/4/0/0/0/viewFont	face	1
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/4/0/0/1	class	81
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/4/0/0/1	Debug	1448480
+UBX NS F15TEXT	after-popup-close-error/4/0/0/1	text	Sorry, a problem has occurred.(-48406)
+UBX NS UBXLOC	F15FONT	after-popup-close-error/4/0/0/1/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	after-popup-close-error/4/0/0/1/viewFont	size	9
+UBX NS UBXLOC	F15FONT	after-popup-close-error/4/0/0/1/viewFont	face	1
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0/0/0/0/0	class	77
+UBX NS UBXLOC	F15FONT	after-popup-close-error/0/0/0/0/0/viewFont	family	handwriting
+UBX NS UBXLOC	F15FONT	after-popup-close-error/0/0/0/0/0/viewFont	size	18
+UBX NS UBXLOC	F15FONT	after-popup-close-error/0/0/0/0/0/viewFont	face	0
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0/0/0/1/0	class	76
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0/0/0/1/0	Debug	2888314
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0/0/0/1/1	class	76
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0/0/0/1/1	Debug	11538576
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0/0/0/0/0/0	class	65617
+UBX NS UBXLOC	F15VIEW	after-popup-close-error/0/0/0/0/0/0	Debug	21708
+UBX NS F15TEXT	after-popup-close-error/0/0/0/0/0/0	text	`
+UBX NS UBXLOC	F15FONT	after-popup-close-error/0/0/0/0/0/0/viewFont	family	beijing
+UBX NS UBXLOC	F15FONT	after-popup-close-error/0/0/0/0/0/0/viewFont	size	18
+UBX NS UBXLOC	F15FONT	after-popup-close-error/0/0/0/0/0/0/viewFont	face	0
+UBX NS F15END	after-popup-close-error	37/37
+UBX NS D52ACK 18e0c6c7f8566ed8
+
+COMPLETE ns

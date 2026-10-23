@@ -1,0 +1,36 @@
+START address_roman
+END address_roman 0
+START geography
+END geography 0
+START folders
+END folders 0
+START mixed_folder
+END mixed_folder 0
+START long_folder
+END long_folder 0
+START repeat_reopen
+END repeat_reopen 0
+START popups
+END popups 0
+START formulas
+END formulas 0
+START system_roots
+END system_roots 0
+START preferences
+END preferences 0
+START date_types
+END date_types 0
+START address
+END address 0
+START style_state
+END style_state 0
+START routing
+END routing 0
+START clock_set
+END clock_set 0
+START clock_modes
+END clock_modes 0
+START extras_states
+END extras_states 0
+START calls_states
+END calls_states 0

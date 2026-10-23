@@ -1,0 +1,55 @@
+{
+  "phase": "geography",
+  "profile": "final15-lite-final29-20261022",
+  "started": 1792676039.033694,
+  "states": [
+    {
+      "state": "Geo-Address-editor",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final29-20261022/Geo-Address-editor.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Geo-province-page1",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final29-20261022/Geo-province-page1.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Geo-province-page2",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final29-20261022/Geo-province-page2.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Geo-province-return",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final29-20261022/Geo-province-return.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Geo-city-page1",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final29-20261022/Geo-city-page1.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Geo-district-page1",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final29-20261022/Geo-district-page1.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Geo-postcode-page",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final29-20261022/Geo-postcode-page.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Geo-chosen-address",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final29-20261022/Geo-chosen-address.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Geo-address-reopened",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final29-20261022/Geo-address-reopened.png",
+      "adapter_errors": 0
+    }
+  ],
+  "passed": true,
+  "runner_sha256": "1ca980d924d55e28f22e6cd299aa31cfea2f1bf859b2bb21e3bd48ae4b0ae04a",
+  "ended": 1792676076.1973171
+}

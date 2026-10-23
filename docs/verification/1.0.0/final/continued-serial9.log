@@ -1,0 +1,8 @@
+START lite-resume-regression
+Traceback (most recent call last):
+  File "/Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/final-dev15-20261022/continue-serial.py", line 6, in <module>
+    r.call('resume-lite.py',[],'lite-resume-regression')
+  File "/Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/final-dev15-20261022/run-remaining.py", line 9, in call
+    assert r.returncode==0,(label,r.returncode)
+           ^^^^^^^^^^^^^^^
+AssertionError: ('lite-resume-regression', 1)

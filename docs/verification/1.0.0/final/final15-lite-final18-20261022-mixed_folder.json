@@ -1,0 +1,25 @@
+{
+  "phase": "mixed_folder",
+  "profile": "final15-lite-final18-20261022",
+  "started": 1792664921.850635,
+  "states": [
+    {
+      "state": "Mixed-folder-radio",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final18-20261022/Mixed-folder-radio.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Mixed-folder-menu",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final18-20261022/Mixed-folder-menu.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Mixed-folder-title",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final18-20261022/Mixed-folder-title.png",
+      "adapter_errors": 0
+    }
+  ],
+  "passed": true,
+  "runner_sha256": "5801db5280999f01be624cb5fbc7b090ae8e9f65848a0149e2e639a9837bb099",
+  "ended": 1792664952.265142
+}

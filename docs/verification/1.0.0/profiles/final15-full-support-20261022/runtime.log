@@ -1,0 +1,745 @@
+Cannot open symbol files '/Users/chengyiqun/Documents/UniBeijingX/experiments/emulator/runtime/mp2000-rom/mp2000.symbols'
+UBX NS LIFE52b activation 4 locale USA
+UBX NS UBXM52 QA ready
+UBX NS LIFE52b heartbeat 4/1
+UBX NS LIFE52b heartbeat 4/2
+UBX NS LIFE52b heartbeat 4/3
+UBX NS D52ACK 18e0eb95c35c9ef8
+UBX NS D52ACK 18e0eb95d6d558d0
+UBX NS D52ACK 18e0eb95e7d221e0
+UBX NS D52ACK 18e0eb95f93c4320
+UBX NS D52ACK 18e0eb960b0d82d0
+UBX NS NATIVE_ABSENT
+UBX NS D52ACK 18e0eb961d263b60
+UBX NS D52ACK 18e0eb962e977508
+UBX NS D52ACK 18e0eb9652ac4608
+UBX NS D52ACK 18e0eb9664026e00
+UBX NS NATIVE_ABSENT
+UBX NS D52ACK 18e0eb9675e9cdc0
+UBX NS D52ACK 18e0eb9687750f78
+UBX NS D52ACK 18e0eb96b74b0068
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-full-support-20261022/qa-packages/DisplayQA.pkg
+UBX NS D52 QA ready
+UBX NS PACKAGE READY
+UBX NS D52ACK 18e0eb974131d7c0
+UBX NS D52ACK 18e0eb9752f8cab8
+UBX NS D52ACK 18e0eb9764bb1a30
+UBX NS NATIVE_ACTIVE
+UBX NS D52ACK 18e0eb97763c8c30
+UBX NS D52ACK 18e0eb9787cc5610
+UBX NS PACKAGE READY
+UBX NS D52ACK 18e0eb97b7c57ab8
+UBX NS D52ACK 18e0eb97c97cc5e0
+UBX NS D52ACK 18e0eb97db9697b0
+UBX NS NATIVE_ACTIVE
+UBX NS D52ACK 18e0eb97ed60f1c0
+UBX NS D52ACK 18e0eb97fed1e130
+UBX NS D52ACK 18e0eb9810f13cf8
+UBX NS D52ACK 18e0eb98249ddbf8
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-full-support-20261022/qa-packages/ContentRepairQA.pkg
+UBX NS D52ACK 18e0eb98ae6684c0
+UBX NS D52ACK 18e0eb98c0006890
+UBX NS D52ASSERT	repair	QA-active	PASS
+UBX NS D52ACK 18e0eb98d1ecd160
+UBX NS D52ACK 18e0eb98e55779a8
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-full-support-20261022/qa-packages/LatinDev11QA.pkg
+UBX NS D52ACK 18e0eb996ec36c10
+UBX NS D52ACK 18e0eb9980cde818
+UBX NS D52ACK 18e0eb9993cf7238
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-full-support-20261022/qa-packages/TypographyDev9QA.pkg
+UBX NS D52ACK 18e0eb9a1d9d7a00
+UBX NS D52ACK 18e0eb9a2ec0bea0
+UBX NS D52ACK 18e0eb9a42d2e1e8
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-full-support-20261022/qa-packages/MenuQA/MenuQA.pkg
+UBX NS UBXLOC	IME-TYPES	expected	Chr	char
+UBX NS UBXLOC	IME-TYPES	expected	literal	string
+UBX NS D52ACK 18e0eb9acc909600
+UBX NS D52ACK 18e0eb9adea17aa8
+UBX NS D52ACK 18e0eb9af045a360
+UBX NS D52ACK 18e0eb9b02628a40
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/packages/milestone52r2-display/artifacts/dev15/Font-Full.pkg
+UBX NS PACKAGE READY
+UBX NS D52ACK 18e0eb9b8c030db0
+UBX NS D52ACK 18e0eba25ccd34d8
+UBX NS D52ACK 18e0eba26eb5d4e8
+UBX NS NATIVE_ACTIVE
+UBX NS D52ACK 18e0eba2902b8168
+UBX NS D52ACK 18e0eba2a7a69940
+UBX NS SETTLED
+UBX NS D52ACK 18e0eba2b92c6c58
+UBX NS PACKAGE READY
+UBX NS D52ACK 18e0eba2e977fe90
+UBX NS D52ACK 18e0eba2fb155148
+UBX NS D52ACK 18e0eba30d178050
+UBX NS NATIVE_ACTIVE
+UBX NS D52ACK 18e0eba329e46158
+UBX NS D52ACK 18e0eba3410487f0
+UBX NS SETTLED
+UBX NS D52ACK 18e0eba3531dec60
+UBX NS D52ACK 18e0eba3690ef550
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/packages/milestone52r1/region/Region.pkg
+UBX NS PACKAGE READY
+UBX NS D52ACK 18e0eba446503d48
+UBX NS D52ACK 18e0ebae94c8bdb0
+UBX NS D52ACK 18e0ebaea6e6c1b8
+UBX NS NATIVE_ACTIVE
+UBX NS D52ACK 18e0ebaebe5c5f38
+UBX NS D52ACK 18e0ebaed5d21040
+UBX NS SETTLED
+UBX NS D52ACK 18e0ebaee6d0dcf0
+UBX NS PACKAGE READY
+UBX NS D52ACK 18e0ebaf21e04f10
+UBX NS D52ACK 18e0ebaf38cb7740
+UBX NS D52ACK 18e0ebaf4a3c5328
+UBX NS NATIVE_ACTIVE
+UBX NS D52ACK 18e0ebaf5be84028
+UBX NS D52ACK 18e0ebaf6dc343d8
+UBX NS SETTLED
+UBX NS D52ACK 18e0ebaf8a9fa1b8
+UBX NS D52ACK 18e0ebafa73f8720
+UBX NS UBXFMT52	month-1	PASS
+UBX NS UBXFMT52	month-2	PASS
+UBX NS UBXFMT52	month-3	PASS
+UBX NS UBXFMT52	month-4	PASS
+UBX NS UBXFMT52	month-5	PASS
+UBX NS UBXFMT52	month-6	PASS
+UBX NS UBXFMT52	month-7	PASS
+UBX NS UBXFMT52	month-8	PASS
+UBX NS UBXFMT52	month-9	PASS
+UBX NS UBXFMT52	month-10	PASS
+UBX NS UBXFMT52	month-11	PASS
+UBX NS UBXFMT52	month-12	PASS
+UBX NS UBXFMT52	weekday-1	PASS
+UBX NS UBXFMT52	weekday-2	PASS
+UBX NS UBXFMT52	weekday-3	PASS
+UBX NS UBXFMT52	weekday-4	PASS
+UBX NS UBXFMT52	weekday-5	PASS
+UBX NS UBXFMT52	weekday-6	PASS
+UBX NS UBXFMT52	weekday-7	PASS
+UBX NS UBXFMT52	parse-ISO-leap	PASS
+UBX NS UBXFMT52	parse-ISO-year-end	PASS
+UBX NS UBXFMT52	parse-ISO-year-start	PASS
+UBX NS UBXFMT52	parse-Chinese-long-date	PASS
+UBX NS UBXFMT52	parse-native-us	PASS
+UBX NS UBXFMT52	parse-time-00:00	PASS
+UBX NS UBXFMT52	parse-time-12:00	PASS
+UBX NS UBXFMT52	parse-time-23:59	PASS
+UBX NS UBXFMT52	RMB-zero	PASS
+UBX NS UBXFMT52	RMB-negative	PASS
+UBX NS D52ACK 18e0ebafc8cf5320
+UBX NS UBXASSERT	final-parser	parser-active	PASS
+UBX NS UBXASSERT	final-parser	valid-frame-0	PASS
+UBX NS UBXASSERT	final-parser	valid-minutes-0	PASS
+UBX NS UBXASSERT	final-parser	valid-check-0	PASS
+UBX NS UBXASSERT	final-parser	input-unchanged-0	PASS
+UBX NS UBXASSERT	final-parser	valid-frame-1	PASS
+UBX NS UBXASSERT	final-parser	valid-minutes-1	PASS
+UBX NS UBXASSERT	final-parser	valid-check-1	PASS
+UBX NS UBXASSERT	final-parser	input-unchanged-1	PASS
+UBX NS UBXASSERT	final-parser	valid-frame-2	PASS
+UBX NS UBXASSERT	final-parser	valid-minutes-2	PASS
+UBX NS UBXASSERT	final-parser	valid-check-2	PASS
+UBX NS UBXASSERT	final-parser	input-unchanged-2	PASS
+UBX NS UBXASSERT	final-parser	valid-frame-3	PASS
+UBX NS UBXASSERT	final-parser	valid-minutes-3	PASS
+UBX NS UBXASSERT	final-parser	valid-check-3	PASS
+UBX NS UBXASSERT	final-parser	input-unchanged-3	PASS
+UBX NS UBXASSERT	final-parser	valid-frame-4	PASS
+UBX NS UBXASSERT	final-parser	valid-minutes-4	PASS
+UBX NS UBXASSERT	final-parser	valid-check-4	PASS
+UBX NS UBXASSERT	final-parser	input-unchanged-4	PASS
+UBX NS UBXASSERT	final-parser	valid-frame-5	PASS
+UBX NS UBXASSERT	final-parser	valid-minutes-5	PASS
+UBX NS UBXASSERT	final-parser	valid-check-5	PASS
+UBX NS UBXASSERT	final-parser	input-unchanged-5	PASS
+UBX NS UBXASSERT	final-parser	valid-frame-6	PASS
+UBX NS UBXASSERT	final-parser	valid-minutes-6	PASS
+UBX NS UBXASSERT	final-parser	valid-check-6	PASS
+UBX NS UBXASSERT	final-parser	input-unchanged-6	PASS
+UBX NS UBXASSERT	final-parser	valid-frame-7	PASS
+UBX NS UBXASSERT	final-parser	valid-minutes-7	PASS
+UBX NS UBXASSERT	final-parser	valid-check-7	PASS
+UBX NS UBXASSERT	final-parser	input-unchanged-7	PASS
+UBX NS UBXASSERT	final-parser	valid-frame-8	PASS
+UBX NS UBXASSERT	final-parser	valid-minutes-8	PASS
+UBX NS UBXASSERT	final-parser	valid-check-8	PASS
+UBX NS UBXASSERT	final-parser	input-unchanged-8	PASS
+UBX NS UBXASSERT	final-parser	valid-frame-9	PASS
+UBX NS UBXASSERT	final-parser	valid-minutes-9	PASS
+UBX NS UBXASSERT	final-parser	valid-check-9	PASS
+UBX NS UBXASSERT	final-parser	input-unchanged-9	PASS
+UBX NS UBXASSERT	final-parser	valid-frame-10	PASS
+UBX NS UBXASSERT	final-parser	valid-minutes-10	PASS
+UBX NS UBXASSERT	final-parser	valid-check-10	PASS
+UBX NS UBXASSERT	final-parser	input-unchanged-10	PASS
+UBX NS UBXASSERT	final-parser	valid-frame-11	PASS
+UBX NS UBXASSERT	final-parser	valid-minutes-11	PASS
+UBX NS UBXASSERT	final-parser	valid-check-11	PASS
+UBX NS UBXASSERT	final-parser	input-unchanged-11	PASS
+UBX NS UBXASSERT	final-parser	valid-frame-12	PASS
+UBX NS UBXASSERT	final-parser	valid-minutes-12	PASS
+UBX NS UBXASSERT	final-parser	valid-check-12	PASS
+UBX NS UBXASSERT	final-parser	input-unchanged-12	PASS
+UBX NS UBXASSERT	final-parser	valid-frame-13	PASS
+UBX NS UBXASSERT	final-parser	valid-minutes-13	PASS
+UBX NS UBXASSERT	final-parser	valid-check-13	PASS
+UBX NS UBXASSERT	final-parser	input-unchanged-13	PASS
+UBX NS UBXASSERT	final-parser	valid-frame-14	PASS
+UBX NS UBXASSERT	final-parser	valid-minutes-14	PASS
+UBX NS UBXASSERT	final-parser	valid-check-14	PASS
+UBX NS UBXASSERT	final-parser	input-unchanged-14	PASS
+UBX NS UBXASSERT	final-parser	valid-frame-15	PASS
+UBX NS UBXASSERT	final-parser	valid-minutes-15	PASS
+UBX NS UBXASSERT	final-parser	valid-check-15	PASS
+UBX NS UBXASSERT	final-parser	input-unchanged-15	PASS
+UBX NS UBXASSERT	final-parser	valid-frame-16	PASS
+UBX NS UBXASSERT	final-parser	valid-minutes-16	PASS
+UBX NS UBXASSERT	final-parser	valid-check-16	PASS
+UBX NS UBXASSERT	final-parser	input-unchanged-16	PASS
+UBX NS UBXASSERT	final-parser	valid-frame-17	PASS
+UBX NS UBXASSERT	final-parser	valid-minutes-17	PASS
+UBX NS UBXASSERT	final-parser	valid-check-17	PASS
+UBX NS UBXASSERT	final-parser	input-unchanged-17	PASS
+UBX NS UBXASSERT	final-parser	invalid-minutes-0	PASS
+UBX NS UBXASSERT	final-parser	invalid-frame-0	PASS
+UBX NS UBXASSERT	final-parser	invalid-check-0	PASS
+UBX NS UBXASSERT	final-parser	invalid-minutes-1	PASS
+UBX NS UBXASSERT	final-parser	invalid-frame-1	PASS
+UBX NS UBXASSERT	final-parser	invalid-check-1	PASS
+UBX NS UBXASSERT	final-parser	invalid-minutes-2	PASS
+UBX NS UBXASSERT	final-parser	invalid-frame-2	PASS
+UBX NS UBXASSERT	final-parser	invalid-check-2	PASS
+UBX NS UBXASSERT	final-parser	invalid-minutes-3	PASS
+UBX NS UBXASSERT	final-parser	invalid-frame-3	PASS
+UBX NS UBXASSERT	final-parser	invalid-check-3	PASS
+UBX NS UBXASSERT	final-parser	invalid-minutes-4	PASS
+UBX NS UBXASSERT	final-parser	invalid-frame-4	PASS
+UBX NS UBXASSERT	final-parser	invalid-check-4	PASS
+UBX NS UBXASSERT	final-parser	invalid-minutes-5	PASS
+UBX NS UBXASSERT	final-parser	invalid-frame-5	PASS
+UBX NS UBXASSERT	final-parser	invalid-check-5	PASS
+UBX NS UBXASSERT	final-parser	invalid-minutes-6	PASS
+UBX NS UBXASSERT	final-parser	invalid-frame-6	PASS
+UBX NS UBXASSERT	final-parser	invalid-check-6	PASS
+UBX NS UBXASSERT	final-parser	invalid-minutes-7	PASS
+UBX NS UBXASSERT	final-parser	invalid-frame-7	PASS
+UBX NS UBXASSERT	final-parser	invalid-check-7	PASS
+UBX NS UBXASSERT	final-parser	invalid-minutes-8	PASS
+UBX NS UBXASSERT	final-parser	invalid-frame-8	PASS
+UBX NS UBXASSERT	final-parser	invalid-check-8	PASS
+UBX NS UBXASSERT	final-parser	invalid-minutes-9	PASS
+UBX NS UBXASSERT	final-parser	invalid-frame-9	PASS
+UBX NS UBXASSERT	final-parser	invalid-check-9	PASS
+UBX NS UBXASSERT	final-parser	invalid-minutes-10	PASS
+UBX NS UBXASSERT	final-parser	invalid-frame-10	PASS
+UBX NS UBXASSERT	final-parser	invalid-check-10	PASS
+UBX NS UBXASSERT	final-parser	invalid-minutes-11	PASS
+UBX NS UBXASSERT	final-parser	invalid-frame-11	PASS
+UBX NS UBXASSERT	final-parser	invalid-check-11	PASS
+UBX NS UBXASSERT	final-parser	invalid-minutes-12	PASS
+UBX NS UBXASSERT	final-parser	invalid-frame-12	PASS
+UBX NS UBXASSERT	final-parser	invalid-check-12	PASS
+UBX NS UBXASSERT	final-parser	invalid-minutes-13	PASS
+UBX NS UBXASSERT	final-parser	invalid-frame-13	PASS
+UBX NS UBXASSERT	final-parser	invalid-check-13	PASS
+UBX NS UBXASSERT	final-parser	invalid-minutes-14	PASS
+UBX NS UBXASSERT	final-parser	invalid-frame-14	PASS
+UBX NS UBXASSERT	final-parser	invalid-check-14	PASS
+UBX NS UBXASSERT	final-parser	invalid-minutes-15	PASS
+UBX NS UBXASSERT	final-parser	invalid-frame-15	PASS
+UBX NS UBXASSERT	final-parser	invalid-check-15	PASS
+UBX NS UBXASSERT	final-parser	invalid-minutes-16	PASS
+UBX NS UBXASSERT	final-parser	invalid-frame-16	PASS
+UBX NS UBXASSERT	final-parser	invalid-check-16	PASS
+UBX NS UBXASSERT	final-parser	invalid-minutes-17	PASS
+UBX NS UBXASSERT	final-parser	invalid-frame-17	PASS
+UBX NS UBXASSERT	final-parser	invalid-check-17	PASS
+UBX NS UBXASSERT	final-parser	invalid-minutes-18	PASS
+UBX NS UBXASSERT	final-parser	invalid-frame-18	PASS
+UBX NS UBXASSERT	final-parser	invalid-check-18	PASS
+UBX NS UBXASSERT	final-parser	invalid-minutes-19	PASS
+UBX NS UBXASSERT	final-parser	invalid-frame-19	PASS
+UBX NS UBXASSERT	final-parser	invalid-check-19	PASS
+UBX NS UBXASSERT	final-parser	invalid-minutes-20	PASS
+UBX NS UBXASSERT	final-parser	invalid-frame-20	PASS
+UBX NS UBXASSERT	final-parser	invalid-check-20	PASS
+UBX NS UBXASSERT	final-parser	invalid-minutes-21	PASS
+UBX NS UBXASSERT	final-parser	invalid-frame-21	PASS
+UBX NS UBXASSERT	final-parser	invalid-check-21	PASS
+UBX NS UBXASSERT	final-parser	invalid-minutes-22	PASS
+UBX NS UBXASSERT	final-parser	invalid-frame-22	PASS
+UBX NS UBXASSERT	final-parser	invalid-check-22	PASS
+UBX NS UBXASSERT	final-parser	invalid-minutes-23	PASS
+UBX NS UBXASSERT	final-parser	invalid-frame-23	PASS
+UBX NS UBXASSERT	final-parser	invalid-check-23	PASS
+UBX NS UBXASSERT	final-parser	invalid-minutes-24	PASS
+UBX NS UBXASSERT	final-parser	invalid-frame-24	PASS
+UBX NS UBXASSERT	final-parser	invalid-check-24	PASS
+UBX NS UBXASSERT	final-parser	invalid-minutes-25	PASS
+UBX NS UBXASSERT	final-parser	invalid-frame-25	PASS
+UBX NS UBXASSERT	final-parser	invalid-check-25	PASS
+UBX NS UBXASSERT	final-parser	invalid-minutes-26	PASS
+UBX NS UBXASSERT	final-parser	invalid-frame-26	PASS
+UBX NS UBXASSERT	final-parser	invalid-check-26	PASS
+UBX NS UBXASSERT	final-parser	long-roundtrip-1	PASS
+UBX NS UBXASSERT	final-parser	short-roundtrip-1	PASS
+UBX NS UBXASSERT	final-parser	long-roundtrip-2	PASS
+UBX NS UBXASSERT	final-parser	short-roundtrip-2	PASS
+UBX NS UBXASSERT	final-parser	long-roundtrip-3	PASS
+UBX NS UBXASSERT	final-parser	short-roundtrip-3	PASS
+UBX NS UBXASSERT	final-parser	long-roundtrip-4	PASS
+UBX NS UBXASSERT	final-parser	short-roundtrip-4	PASS
+UBX NS UBXASSERT	final-parser	long-roundtrip-5	PASS
+UBX NS UBXASSERT	final-parser	short-roundtrip-5	PASS
+UBX NS UBXASSERT	final-parser	long-roundtrip-6	PASS
+UBX NS UBXASSERT	final-parser	short-roundtrip-6	PASS
+UBX NS UBXASSERT	final-parser	long-roundtrip-7	PASS
+UBX NS UBXASSERT	final-parser	short-roundtrip-7	PASS
+UBX NS UBXASSERT	final-parser	long-roundtrip-8	PASS
+UBX NS UBXASSERT	final-parser	short-roundtrip-8	PASS
+UBX NS UBXASSERT	final-parser	long-roundtrip-9	PASS
+UBX NS UBXASSERT	final-parser	short-roundtrip-9	PASS
+UBX NS UBXASSERT	final-parser	long-roundtrip-10	PASS
+UBX NS UBXASSERT	final-parser	short-roundtrip-10	PASS
+UBX NS UBXASSERT	final-parser	long-roundtrip-11	PASS
+UBX NS UBXASSERT	final-parser	short-roundtrip-11	PASS
+UBX NS UBXASSERT	final-parser	long-roundtrip-12	PASS
+UBX NS UBXASSERT	final-parser	short-roundtrip-12	PASS
+UBX NS UBXASSERT	final-parser	native-fallback-0-0	PASS
+UBX NS UBXASSERT	final-parser	native-fallback-0-1	PASS
+UBX NS UBXASSERT	final-parser	native-fallback-0-2	PASS
+UBX NS UBXASSERT	final-parser	native-fallback-1-0	PASS
+UBX NS UBXASSERT	final-parser	native-fallback-1-1	PASS
+UBX NS UBXASSERT	final-parser	native-fallback-1-2	PASS
+UBX NS UBXASSERT	final-parser	native-fallback-2-0	PASS
+UBX NS UBXASSERT	final-parser	native-fallback-2-1	PASS
+UBX NS UBXASSERT	final-parser	native-fallback-2-2	PASS
+UBX NS UBXASSERT	final-parser	native-fallback-3-0	PASS
+UBX NS UBXASSERT	final-parser	native-fallback-3-1	PASS
+UBX NS UBXASSERT	final-parser	native-fallback-3-2	PASS
+UBX NS UBXASSERT	final-parser	native-fallback-4-0	PASS
+UBX NS UBXASSERT	final-parser	native-fallback-4-1	PASS
+UBX NS UBXASSERT	final-parser	native-fallback-4-2	PASS
+UBX NS UBXASSERT	final-parser	native-fallback-5-0	PASS
+UBX NS UBXASSERT	final-parser	native-fallback-5-1	PASS
+UBX NS UBXASSERT	final-parser	native-fallback-5-2	PASS
+UBX NS UBXASSERT	final-parser	native-fallback-6-0	PASS
+UBX NS UBXASSERT	final-parser	native-fallback-6-1	PASS
+UBX NS UBXASSERT	final-parser	native-fallback-6-2	PASS
+UBX NS UBXASSERT	final-parser	native-fallback-7-0	PASS
+UBX NS UBXASSERT	final-parser	native-fallback-7-1	PASS
+UBX NS UBXASSERT	final-parser	native-fallback-7-2	PASS
+UBX NS UBXASSERT	final-parser	native-fallback-8-0	PASS
+UBX NS UBXASSERT	final-parser	native-fallback-8-1	PASS
+UBX NS UBXASSERT	final-parser	native-fallback-8-2	PASS
+UBX NS UBXASSERT	final-parser	native-valid-frame	PASS
+UBX NS UBXASSERT	final-parser	native-invalid-frame	PASS
+UBX NS UBXASSERT	final-parser	native-filter-date-US	PASS
+UBX NS FILTER52b result date-US VALID return 64581945
+UBX NS UBXASSERT	final-parser	native-filter-simple-US	PASS
+UBX NS FILTER52b result simple-US VALID return 64581945
+UBX NS UBXASSERT	final-parser	native-filter-date-ISO	PASS
+UBX NS FILTER52b result date-ISO VALID return 63200985
+UBX NS UBXASSERT	final-parser	native-filter-date-CN	PASS
+UBX NS FILTER52b result date-CN VALID return 64581945
+UBX NS UBXASSERT	final-parser	native-filter-date-invalid	PASS
+UBX NS FILTER52b result date-invalid INVALID return 
+UBX NS UBXASSERT	final-parser	native-filter-simple-ISO	PASS
+UBX NS FILTER52b result simple-ISO VALID return 64694265
+UBX NS UBXASSERT	final-parser	native-filter-simple-CN	PASS
+UBX NS FILTER52b result simple-CN VALID return 64581945
+UBX NS UBXASSERT	final-parser	native-filter-simple-invalid	PASS
+UBX NS FILTER52b result simple-invalid INVALID return 534376185
+UBX NS D52ACK 18e0ebafe5036310
+UBX NS UBXASSERT	52e-final-atlas	provinces31	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-0	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-0	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-0	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-0	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-1	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-1	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-1	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-1	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-2	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-2	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-2	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-2	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-3	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-3	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-3	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-3	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-4	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-4	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-4	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-4	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-5	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-5	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-5	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-5	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-6	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-6	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-6	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-6	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-7	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-7	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-7	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-7	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-8	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-8	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-8	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-8	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-9	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-9	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-9	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-9	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-10	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-10	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-10	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-10	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-11	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-11	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-11	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-11	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-12	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-12	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-12	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-12	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-13	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-13	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-13	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-13	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-14	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-14	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-14	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-14	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-15	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-15	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-15	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-15	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-16	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-16	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-16	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-16	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-17	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-17	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-17	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-17	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-18	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-18	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-18	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-18	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-19	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-19	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-19	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-19	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-20	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-20	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-20	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-20	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-21	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-21	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-21	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-21	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-22	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-22	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-22	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-22	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-23	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-23	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-23	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-23	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-24	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-24	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-24	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-24	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-25	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-25	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-25	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-25	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-26	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-26	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-26	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-26	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-27	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-27	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-27	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-27	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-28	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-28	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-28	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-28	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-29	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-29	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-29	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-29	PASS
+UBX NS UBXASSERT	52e-final-atlas	cities-present-30	PASS
+UBX NS UBXASSERT	52e-final-atlas	districts-present-30	PASS
+UBX NS UBXASSERT	52e-final-atlas	postcode-tuples-present-30	PASS
+UBX NS UBXASSERT	52e-final-atlas	all-six-ASCII-digits-30	PASS
+UBX NS D52ACK 18e0ebb0641cdcd0
+UBX NS UBXASSERT	52e-final-China	paper-matches-native-choice	PASS
+UBX NS UBXASSERT	52e-final-China	paper-size	PASS
+UBX NS UBXASSERT	52e-final-China	week-override	PASS
+UBX NS UBXASSERT	52e-final-China	locale	PASS
+UBX NS UBXASSERT	52e-final-China	distance	PASS
+UBX NS UBXASSERT	52e-final-China	locale-week	PASS
+UBX NS UBXASSERT	52e-final-China	default-paper	PASS
+UBX NS UBXASSERT	52e-final-China	metric-label	PASS
+UBX NS UBXASSERT	52e-final-China	metric-short	PASS
+UBX NS UBXASSERT	52e-final-China	postal-numeric	PASS
+UBX NS D52ACK 18e0ebb5be2fa5b8
+UBX NS D52ACK 18e0ebb5da215578
+UBX NS D52ACK 18e0ebb5ec1bd3c0
+UBX NS D52ACK 18e0ebb603974188
+UBX NS D52ACK 18e0ebb61a8f2f40
+UBX pen down 95 152
+UBX pen up
+UBX NS D52ACK 18e0ebb6c9163360
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-full-support-20261022/Country-China-listed.png result 0
+UBX NS D52ACK 18e0ebb6eb73f5f0
+UBX NS UBXASSERT	52e-final-USA	paper-matches-native-choice	PASS
+UBX NS UBXASSERT	52e-final-USA	paper-size	PASS
+UBX NS UBXASSERT	52e-final-USA	week-override	PASS
+UBX NS UBXASSERT	52e-final-USA	locale	PASS
+UBX NS UBXASSERT	52e-final-USA	distance	PASS
+UBX NS UBXASSERT	52e-final-USA	locale-week	PASS
+UBX NS UBXASSERT	52e-final-USA	default-paper	PASS
+UBX NS D52ACK 18e0ebb7374e5f38
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-full-support-20261022/Country-USA.png result 0
+UBX NS D52ACK 18e0ebb75bd35340
+UBX NS D52ACK 18e0ebb78e0ad310
+UBX NS UBXASSERT	52e-final-China-again	paper-matches-native-choice	PASS
+UBX NS UBXASSERT	52e-final-China-again	paper-size	PASS
+UBX NS UBXASSERT	52e-final-China-again	week-override	PASS
+UBX NS UBXASSERT	52e-final-China-again	locale	PASS
+UBX NS UBXASSERT	52e-final-China-again	distance	PASS
+UBX NS UBXASSERT	52e-final-China-again	locale-week	PASS
+UBX NS UBXASSERT	52e-final-China-again	default-paper	PASS
+UBX NS UBXASSERT	52e-final-China-again	metric-label	PASS
+UBX NS UBXASSERT	52e-final-China-again	metric-short	PASS
+UBX NS UBXASSERT	52e-final-China-again	postal-numeric	PASS
+UBX NS D52ACK 18e0ebb7e9914e30
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-full-support-20261022/Country-China-again.png result 0
+UBX NS D52ASSERT	Country-font-menu	no-Regional-family	PASS
+UBX NS D52ASSERT	Country-font-menu	no-Regional-caption	PASS
+UBX NS D52ASSERT	Country-font-menu	no-Regional-family	PASS
+UBX NS D52ASSERT	Country-font-menu	no-Regional-caption	PASS
+UBX NS D52ASSERT	Country-font-menu	no-Regional-family	PASS
+UBX NS D52ASSERT	Country-font-menu	no-Regional-caption	PASS
+UBX NS D52ASSERT	Country-font-menu	no-Regional-family	PASS
+UBX NS D52ASSERT	Country-font-menu	no-Regional-caption	PASS
+UBX NS D52ASSERT	Country-font-menu	no-Regional-family	PASS
+UBX NS D52ASSERT	Country-font-menu	no-Regional-caption	PASS
+UBX NS D52ASSERT	Country-font-menu	no-Regional-family	PASS
+UBX NS D52ASSERT	Country-font-menu	no-Regional-caption	PASS
+UBX NS D52ASSERT	Country-font-menu	no-Regional-family	PASS
+UBX NS D52ASSERT	Country-font-menu	no-Regional-caption	PASS
+UBX NS D52ASSERT	Country-font-menu	canonical-family	PASS
+UBX NS D52ASSERT	Country-font-menu	no-Regional-family	PASS
+UBX NS D52ASSERT	Country-font-menu	no-Regional-caption	PASS
+UBX NS D52ASSERT	Country-font-menu	exactly-one-UniBeijingX	PASS
+UBX NS D52ASSERT	Country-font-menu	one-bitmap	PASS
+UBX NS D52ASSERT	Country-ROM	espy-encoding	PASS
+UBX NS D52ASSERT	Country-ROM	espy-macFontID	PASS
+UBX NS D52ASSERT	Country-ROM	espy-screenSym	PASS
+UBX NS D52ASSERT	Country-ROM	espy-psName	PASS
+UBX NS D52ASSERT	Country-ROM	espy-psScale	PASS
+UBX NS D52ASSERT	Country-ROM	espy-tsID	PASS
+UBX NS D52ASSERT	Country-ROM	espy-badFontMap	PASS
+UBX NS D52ASSERT	Country-ROM	espy-native-data	PASS
+UBX NS D52ASSERT	Country-ROM	newyork-encoding	PASS
+UBX NS D52ASSERT	Country-ROM	newyork-macFontID	PASS
+UBX NS D52ASSERT	Country-ROM	newyork-screenSym	PASS
+UBX NS D52ASSERT	Country-ROM	newyork-psName	PASS
+UBX NS D52ASSERT	Country-ROM	newyork-psScale	PASS
+UBX NS D52ASSERT	Country-ROM	newyork-tsID	PASS
+UBX NS D52ASSERT	Country-ROM	newyork-badFontMap	PASS
+UBX NS D52ASSERT	Country-ROM	newyork-native-data	PASS
+UBX NS D52ASSERT	Country-ROM	geneva-encoding	PASS
+UBX NS D52ASSERT	Country-ROM	geneva-macFontID	PASS
+UBX NS D52ASSERT	Country-ROM	geneva-screenSym	PASS
+UBX NS D52ASSERT	Country-ROM	geneva-psName	PASS
+UBX NS D52ASSERT	Country-ROM	geneva-psScale	PASS
+UBX NS D52ASSERT	Country-ROM	geneva-tsID	PASS
+UBX NS D52ASSERT	Country-ROM	geneva-badFontMap	PASS
+UBX NS D52ASSERT	Country-ROM	geneva-native-data	PASS
+UBX NS D52ASSERT	Country-ROM	handwriting-encoding	PASS
+UBX NS D52ASSERT	Country-ROM	handwriting-macFontID	PASS
+UBX NS D52ASSERT	Country-ROM	handwriting-screenSym	PASS
+UBX NS D52ASSERT	Country-ROM	handwriting-psName	PASS
+UBX NS D52ASSERT	Country-ROM	handwriting-psScale	PASS
+UBX NS D52ASSERT	Country-ROM	handwriting-tsID	PASS
+UBX NS D52ASSERT	Country-ROM	handwriting-badFontMap	PASS
+UBX NS D52ASSERT	Country-ROM	handwriting-native-data	PASS
+UBX NS D52ACK 18e0ebb80d1218a8
+UBX NS D52ACK 18e0ebb82e768ee8
+UBX NS D52ACK 18e0ebb8550cde90
+UBX NS D52ACK 18e0ebb8713c75f8
+UBX NS D52ACK 18e0ebb8bd1a59e0
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/milestone52/baseline/pinyin/Pinyin.pkg
+UBX NS PACKAGE READY
+UBX NS D52ACK 18e0ebb967226978
+UBX NS D52ACK 18e0ebbe0e8d8e28
+UBX NS D52ACK 18e0ebbe205a9f88
+UBX NS NATIVE_ACTIVE
+UBX NS D52ACK 18e0ebbe324260f0
+UBX NS D52ACK 18e0ebbe444cc1a0
+UBX NS PACKAGE READY
+UBX NS D52ACK 18e0ebbe793f2f38
+UBX NS D52ACK 18e0ebbe8b5f8cd0
+UBX NS D52ACK 18e0ebbea2d9c600
+UBX NS NATIVE_ACTIVE
+UBX NS D52ACK 18e0ebbeba5431f8
+UBX NS D52ACK 18e0ebbed6dca378
+UBX NS D52ASSERT	all-components	no-public-logger	PASS
+UBX NS D52ASSERT	all-components	font-global	PASS
+UBX NS D52ASSERT	all-components	content-global	PASS
+UBX NS D52ASSERT	all-components	font-registration	PASS
+UBX NS D52ASSERT	all-components	no-ui-font	PASS
+UBX NS D52ASSERT	all-components	no-ui-runtime	PASS
+UBX NS D52ASSERT	all-components	no-separate-compat	PASS
+UBX NS D52ASSERT	all-components	font-observer-no-error	PASS
+UBX NS D52ASSERT	all-components	integrated-module-state	PASS
+UBX NS D52ASSERT	all-components	single-token	PASS
+UBX NS D52ASSERT	all-components	baseline-idler-preserved	PASS
+UBX NS D52ASSERT	all-components	region-installed	PASS
+UBX NS D52ASSERT	all-components	region-no-error	PASS
+UBX NS D52ASSERT	all-components	regional-methods	PASS
+UBX NS D52ASSERT	all-components	locale-symbol	PASS
+UBX NS D52ASSERT	all-components	English-cityLabel	PASS
+UBX NS D52ASSERT	all-components	English-regionLabel	PASS
+UBX NS D52ASSERT	all-components	English-postalCodeLabel	PASS
+UBX NS D52ASSERT	all-components	Chinese-month	PASS
+UBX NS D52ASSERT	all-components	RMB	PASS
+UBX NS D52ASSERT	all-components	Chinese-date-API	PASS
+UBX NS D52ASSERT	all-components	New-paperroll	PASS
+UBX NS D52ASSERT	all-components	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	all-components	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	all-components	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	all-components	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	all-components	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	all-components	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	all-components	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	all-components	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	all-components	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	all-components	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	all-components	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	all-components	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	all-components	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	all-components	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	all-components	no-ui-font-in-viewFont	PASS
+UBX NS D52ACK 18e0ebbef352ae08
+UBX NS D52ACK 18e0ebbf150ef0d8
+UBX NS D52ACK 18e0ebbf89b638d8
+UBX NS REMOVED
+UBX NS D52ACK 18e0ebbf9bd31fb8
+UBX NS D52ACK 18e0ebbfad66cdb0
+UBX NS D52ACK 18e0ebbfc97417d8
+UBX NS D52ACK 18e0ebbfdb2446b0
+UBX NS NATIVE_ABSENT
+UBX NS D52ACK 18e0ebbff22b3440
+UBX NS D52ACK 18e0ebc003cfb6d0
+UBX NS D52ACK 18e0ebc02840c518
+UBX NS D52ACK 18e0ebc03f7d8400
+UBX NS NATIVE_ABSENT
+UBX NS D52ACK 18e0ebc056f2fe58
+UBX NS D52ACK 18e0ebc06e3ed0a0
+UBX NS D52ASSERT	IME-removal	gone	PASS
+UBX NS D52ACK 18e0ebc09e7c0710
+UBX NS D52ACK 18e0ebc0b00a5608
+UBX NS D52ACK 18e0ebc110476fb0
+UBX NS REMOVED
+UBX NS D52ACK 18e0ebc122646e00
+UBX NS D52ACK 18e0ebc139d27a00
+UBX NS D52ACK 18e0ebc14bbd6fb8
+UBX NS D52ACK 18e0ebc15d9959e0
+UBX NS NATIVE_ABSENT
+UBX NS D52ACK 18e0ebc17a6803f0
+UBX NS D52ACK 18e0ebc196e23118
+UBX NS D52ACK 18e0ebc1c08f5db0
+UBX NS D52ACK 18e0ebc1d2b0e810
+UBX NS NATIVE_ABSENT
+UBX NS D52ACK 18e0ebc1e9ca3c90
+UBX NS D52ACK 18e0ebc201223820
+UBX NS D52ASSERT	Region-removed	no-public-logger	PASS
+UBX NS D52ASSERT	Region-removed	font-global	PASS
+UBX NS D52ASSERT	Region-removed	content-global	PASS
+UBX NS D52ASSERT	Region-removed	font-registration	PASS
+UBX NS D52ASSERT	Region-removed	no-ui-font	PASS
+UBX NS D52ASSERT	Region-removed	no-ui-runtime	PASS
+UBX NS D52ASSERT	Region-removed	no-separate-compat	PASS
+UBX NS D52ASSERT	Region-removed	font-observer-no-error	PASS
+UBX NS D52ASSERT	Region-removed	integrated-module-state	PASS
+UBX NS D52ASSERT	Region-removed	single-token	PASS
+UBX NS D52ASSERT	Region-removed	baseline-idler-preserved	PASS
+UBX NS D52ASSERT	Region-removed	region-installed	PASS
+UBX NS D52ASSERT	Region-removed	New-paperroll	PASS
+UBX NS D52ASSERT	Region-removed	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	Region-removed	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	Region-removed	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	Region-removed	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	Region-removed	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	Region-removed	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	Region-removed	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	Region-removed	no-ui-font-in-viewFont	PASS
+UBX NS D52ACK 18e0ebc236e18308
+UBX NS D52ASSERT	Region-removal	locale	PASS
+UBX NS D52ACK 18e0ebc257bec7e8
+UBX NS D52ASSERT	Region-removal	unregistered	PASS
+UBX NS D52ACK 18e0ebc273246448
+UBX NS D52ASSERT	font-retained	no-Regional-family	PASS
+UBX NS D52ASSERT	font-retained	no-Regional-caption	PASS
+UBX NS D52ASSERT	font-retained	no-Regional-family	PASS
+UBX NS D52ASSERT	font-retained	no-Regional-caption	PASS
+UBX NS D52ASSERT	font-retained	no-Regional-family	PASS
+UBX NS D52ASSERT	font-retained	no-Regional-caption	PASS
+UBX NS D52ASSERT	font-retained	no-Regional-family	PASS
+UBX NS D52ASSERT	font-retained	no-Regional-caption	PASS
+UBX NS D52ASSERT	font-retained	no-Regional-family	PASS
+UBX NS D52ASSERT	font-retained	no-Regional-caption	PASS
+UBX NS D52ASSERT	font-retained	no-Regional-family	PASS
+UBX NS D52ASSERT	font-retained	no-Regional-caption	PASS
+UBX NS D52ASSERT	font-retained	no-Regional-family	PASS
+UBX NS D52ASSERT	font-retained	no-Regional-caption	PASS
+UBX NS D52ASSERT	font-retained	canonical-family	PASS
+UBX NS D52ASSERT	font-retained	no-Regional-family	PASS
+UBX NS D52ASSERT	font-retained	no-Regional-caption	PASS
+UBX NS D52ASSERT	font-retained	exactly-one-UniBeijingX	PASS
+UBX NS D52ACK 18e0ebc289757ef8
+UBX NS D52ACK 18e0ebc29b40fe00
+UBX NS D52ACK 18e0ebc30ec9b6a0
+UBX NS REMOVED
+UBX NS D52ACK 18e0ebc320ac0968
+UBX NS D52ACK 18e0ebc3329e3e98
+UBX NS D52ACK 18e0ebc349653cf8
+UBX NS D52ACK 18e0ebc35b0bd6b0
+UBX NS NATIVE_ABSENT
+UBX NS D52ACK 18e0ebc36cc48d20
+UBX NS D52ACK 18e0ebc37e3c3738
+UBX NS D52ACK 18e0ebc3acf9bb18
+UBX NS D52ACK 18e0ebc3c403a260
+UBX NS NATIVE_ABSENT
+UBX NS D52ACK 18e0ebc3d622a838
+UBX NS D52ACK 18e0ebc3f2376c70
+UBX NS D52ASSERT	all-removed	no-public-logger	PASS
+UBX NS D52ASSERT	all-removed	font-global	PASS
+UBX NS D52ASSERT	all-removed	content-global	PASS
+UBX NS D52ASSERT	all-removed	font-registration	PASS
+UBX NS D52ASSERT	all-removed	no-ui-font	PASS
+UBX NS D52ASSERT	all-removed	no-ui-runtime	PASS
+UBX NS D52ASSERT	all-removed	no-separate-compat	PASS
+UBX NS D52ASSERT	all-removed	region-installed	PASS
+UBX NS D52ASSERT	all-removed	New-paperroll	PASS
+UBX NS D52ASSERT	all-removed	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	all-removed	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	all-removed	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	all-removed	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	all-removed	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	all-removed	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	all-removed	no-ui-font-in-viewFont	PASS
+UBX NS D52ASSERT	all-removed	no-ui-font-in-viewFont	PASS
+UBX NS D52ACK 18e0ebc427209ad8
+UBX NS D52ASSERT	font-removal	enumerator	PASS
+UBX NS D52ACK 18e0ebc43e657bc8
+UBX NS D52ASSERT	font-removal	width-hook-gone	PASS
+UBX NS D52ACK 18e0ebc44fa7ba18

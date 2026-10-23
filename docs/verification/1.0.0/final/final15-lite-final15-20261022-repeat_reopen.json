@@ -1,0 +1,9 @@
+{
+  "phase": "repeat_reopen",
+  "profile": "final15-lite-final15-20261022",
+  "started": 1792662699.144243,
+  "states": [],
+  "passed": false,
+  "error": "Guest error or unexpected boot: UBX NS UBXLOC\tM52ERROR\texception\tname\tevt.ex.fr.store\nUBX NS UBXLOC\tM52ERROR\texception\terror\t-48009\nUBX NS D52ACK 18e0d13a29f33b20\n",
+  "ended": 1792662700.0864289
+}

@@ -1,0 +1,3634 @@
+{
+  "product": "UniBeijingX",
+  "version": "1.0.0",
+  "status": "official",
+  "candidate": "dev15-attempt35",
+  "date": "2026-10-23",
+  "author": "j10cc",
+  "author_site": "j10cc.site",
+  "powered_by": "GPT6.1-Sol",
+  "font_binary_revision": "5.2r2-display-dev15",
+  "binary_rebuild_during_promotion": false,
+  "packages": {
+    "Font-Lite.pkg": {
+      "source": "packages/milestone52r2-display/artifacts/dev15/Font-Lite.pkg",
+      "bytes": 812096,
+      "sha256": "58f6bd9a0d5a8504b94d3bb1430153b767bc99ac6c1db2de42b20d794a77962a"
+    },
+    "Font-Full.pkg": {
+      "source": "packages/milestone52r2-display/artifacts/dev15/Font-Full.pkg",
+      "bytes": 1571768,
+      "sha256": "c63ad1c567cd224564afb4cceec45a19533645f80ca1bd60dfa5c6fed02b3c20"
+    },
+    "ChineseRegion.pkg": {
+      "source": "packages/milestone52r1/region/Region.pkg",
+      "bytes": 1168608,
+      "sha256": "5b8b98692414be178e202d4f99c8487b8d23043b6cd00cd0f36ccad162219524"
+    },
+    "Pinyin.pkg": {
+      "source": "experiments/qa/milestone52/baseline/pinyin/Pinyin.pkg",
+      "bytes": 436208,
+      "sha256": "a325a6219d0f214248e6ee8ff227ff6465f2a29c7a1f30553cf33314e2c9f822"
+    }
+  },
+  "font_selection": "Lite OR Full",
+  "ui_language": "English",
+  "tested_system": "Newton OS 2.1 (712000)-1; original MP2000 ROM; isolated Einstein",
+  "physical_hardware_verified": false,
+  "region_and_ime": "Frozen formal binaries; byte-identical",
+  "acceptance": {
+    "version": "1.0.0",
+    "candidate": "dev15-attempt35",
+    "passed": true,
+    "visual_review_completed": true,
+    "unresolved_in_scope_defects": [],
+    "variants": {
+      "lite": {
+        "expanded_phases": 20,
+        "expanded_passed": true,
+        "expanded_states": 154,
+        "expanded_state_evidence": [
+          {
+            "state": "Address-Roman-China",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Address-Roman-China.png",
+            "adapter_errors": 0,
+            "phase": "address_roman",
+            "profile": "final15-lite-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Address-Roman-USA",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Address-Roman-USA.png",
+            "adapter_errors": 0,
+            "phase": "address_roman",
+            "profile": "final15-lite-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Address-Roman-China-again",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Address-Roman-China-again.png",
+            "adapter_errors": 0,
+            "phase": "address_roman",
+            "profile": "final15-lite-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Geo-Address-editor",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Geo-Address-editor.png",
+            "adapter_errors": 0,
+            "phase": "geography",
+            "profile": "final15-lite-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Geo-province-page1",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Geo-province-page1.png",
+            "adapter_errors": 0,
+            "phase": "geography",
+            "profile": "final15-lite-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Geo-province-page2",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Geo-province-page2.png",
+            "adapter_errors": 0,
+            "phase": "geography",
+            "profile": "final15-lite-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Geo-province-return",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Geo-province-return.png",
+            "adapter_errors": 0,
+            "phase": "geography",
+            "profile": "final15-lite-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Geo-city-page1",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Geo-city-page1.png",
+            "adapter_errors": 0,
+            "phase": "geography",
+            "profile": "final15-lite-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Geo-district-page1",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Geo-district-page1.png",
+            "adapter_errors": 0,
+            "phase": "geography",
+            "profile": "final15-lite-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Geo-postcode-page",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Geo-postcode-page.png",
+            "adapter_errors": 0,
+            "phase": "geography",
+            "profile": "final15-lite-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Geo-chosen-address",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Geo-chosen-address.png",
+            "adapter_errors": 0,
+            "phase": "geography",
+            "profile": "final15-lite-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Geo-address-reopened",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Geo-address-reopened.png",
+            "adapter_errors": 0,
+            "phase": "geography",
+            "profile": "final15-lite-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Filing-initial",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Filing-initial.png",
+            "adapter_errors": 0,
+            "phase": "folders",
+            "profile": "final15-lite-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Folder-new-empty",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Folder-new-empty.png",
+            "adapter_errors": 0,
+            "phase": "folders",
+            "profile": "final15-lite-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Folder-new-Chinese",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Folder-new-Chinese.png",
+            "adapter_errors": 0,
+            "phase": "folders",
+            "profile": "final15-lite-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Filing-Chinese-row",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Filing-Chinese-row.png",
+            "adapter_errors": 0,
+            "phase": "folders",
+            "profile": "final15-lite-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Folder-filed-next",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Folder-filed-next.png",
+            "adapter_errors": 0,
+            "phase": "folders",
+            "profile": "final15-lite-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Folder-native-chooser",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Folder-native-chooser.png",
+            "adapter_errors": 0,
+            "phase": "folders",
+            "profile": "final15-lite-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Folder-filed-title",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Folder-filed-title.png",
+            "adapter_errors": 0,
+            "phase": "folders",
+            "profile": "final15-lite-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Folder-overview",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Folder-overview.png",
+            "adapter_errors": 0,
+            "phase": "folders",
+            "profile": "final15-lite-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Folder-edit-Chinese",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Folder-edit-Chinese.png",
+            "adapter_errors": 0,
+            "phase": "folders",
+            "profile": "final15-lite-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Folder-edit-Roman",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Folder-edit-Roman.png",
+            "adapter_errors": 0,
+            "phase": "folders",
+            "profile": "final15-lite-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Mixed-folder-radio",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Mixed-folder-radio.png",
+            "adapter_errors": 0,
+            "phase": "mixed_folder",
+            "profile": "final15-lite-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Mixed-folder-menu",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Mixed-folder-menu.png",
+            "adapter_errors": 0,
+            "phase": "mixed_folder",
+            "profile": "final15-lite-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Mixed-folder-title",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Mixed-folder-title.png",
+            "adapter_errors": 0,
+            "phase": "mixed_folder",
+            "profile": "final15-lite-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Long-folder-radio",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Long-folder-radio.png",
+            "adapter_errors": 0,
+            "phase": "long_folder",
+            "profile": "final15-lite-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Long-folder-menu",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Long-folder-menu.png",
+            "adapter_errors": 0,
+            "phase": "long_folder",
+            "profile": "final15-lite-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Long-folder-title",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Long-folder-title.png",
+            "adapter_errors": 0,
+            "phase": "long_folder",
+            "profile": "final15-lite-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Repeat-final-settled3",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Repeat-final-settled3.png",
+            "adapter_errors": 0,
+            "phase": "repeat_reopen",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Repeat-final-settled10",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Repeat-final-settled10.png",
+            "adapter_errors": 0,
+            "phase": "repeat_reopen",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Rule-none",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Rule-none.png",
+            "adapter_errors": 0,
+            "phase": "repeat_reopen",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Rule-day",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Rule-day.png",
+            "adapter_errors": 0,
+            "phase": "repeat_reopen",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Rule-week",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Rule-week.png",
+            "adapter_errors": 0,
+            "phase": "repeat_reopen",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Rule-other-week",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Rule-other-week.png",
+            "adapter_errors": 0,
+            "phase": "repeat_reopen",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Rule-month",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Rule-month.png",
+            "adapter_errors": 0,
+            "phase": "repeat_reopen",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Rule-year",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Rule-year.png",
+            "adapter_errors": 0,
+            "phase": "repeat_reopen",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Rule-week-month",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Rule-week-month.png",
+            "adapter_errors": 0,
+            "phase": "repeat_reopen",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Rule-week-year",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Rule-week-year.png",
+            "adapter_errors": 0,
+            "phase": "repeat_reopen",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Rule-month-menu",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Rule-month-menu.png",
+            "adapter_errors": 0,
+            "phase": "repeat_reopen",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Rule-month-Today-confirmed",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Rule-month-Today-confirmed.png",
+            "adapter_errors": 0,
+            "phase": "repeat_reopen",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-date-Chinese",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Popup-date-Chinese.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-date-months",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Popup-date-months.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-date-month-selected",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Popup-date-month-selected.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-date-USA",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Popup-date-USA.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-date-China-again",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Popup-date-China-again.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-time-Chinese",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Popup-time-Chinese.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-time-months",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Popup-time-months.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-time-month-selected",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Popup-time-month-selected.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-time-USA",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Popup-time-USA.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-time-China-again",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Popup-time-China-again.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-interval-Chinese",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Popup-interval-Chinese.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-interval-months",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Popup-interval-months.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-interval-month-selected",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Popup-interval-month-selected.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-interval-USA",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Popup-interval-USA.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-interval-China-again",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Popup-interval-China-again.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-multi-Chinese",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Popup-multi-Chinese.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-multi-months",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Popup-multi-months.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-multi-month-selected",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Popup-multi-month-selected.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-multi-USA",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Popup-multi-USA.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-multi-China-again",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Popup-multi-China-again.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Formula-Loan-filled",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Formula-Loan-filled.png",
+            "adapter_errors": 0,
+            "phase": "formulas",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Formula-NPV-filled",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Formula-NPV-filled.png",
+            "adapter_errors": 0,
+            "phase": "formulas",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Formula-Currency-filled",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Formula-Currency-filled.png",
+            "adapter_errors": 0,
+            "phase": "formulas",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Formula-DateCalc-picker",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Formula-DateCalc-picker.png",
+            "adapter_errors": 0,
+            "phase": "formulas",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Formula-DateCalc-filled",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Formula-DateCalc-filled.png",
+            "adapter_errors": 0,
+            "phase": "formulas",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Formula-Conversion-picker",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Formula-Conversion-picker.png",
+            "adapter_errors": 0,
+            "phase": "formulas",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Formula-Conversion-filled",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Formula-Conversion-filled.png",
+            "adapter_errors": 0,
+            "phase": "formulas",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Formula-Metric-length",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Formula-Metric-length.png",
+            "adapter_errors": 0,
+            "phase": "formulas",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Formula-Metric-area",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Formula-Metric-area.png",
+            "adapter_errors": 0,
+            "phase": "formulas",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Formula-Metric-weight",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Formula-Metric-weight.png",
+            "adapter_errors": 0,
+            "phase": "formulas",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Formula-Metric-US-liquid",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Formula-Metric-US-liquid.png",
+            "adapter_errors": 0,
+            "phase": "formulas",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Formula-Metric-UK-liquid",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Formula-Metric-UK-liquid.png",
+            "adapter_errors": 0,
+            "phase": "formulas",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Formula-Metric-temperature",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Formula-Metric-temperature.png",
+            "adapter_errors": 0,
+            "phase": "formulas",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "System-WorldClock",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/System-WorldClock.png",
+            "adapter_errors": 0,
+            "phase": "system_roots",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "System-Formulas",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/System-Formulas.png",
+            "adapter_errors": 0,
+            "phase": "system_roots",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "System-Prefs",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/System-Prefs.png",
+            "adapter_errors": 0,
+            "phase": "system_roots",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "System-Calculator",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/System-Calculator.png",
+            "adapter_errors": 0,
+            "phase": "system_roots",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "System-InOut",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/System-InOut.png",
+            "adapter_errors": 0,
+            "phase": "system_roots",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "System-Assist",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/System-Assist.png",
+            "adapter_errors": 0,
+            "phase": "system_roots",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "System-Connection",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/System-Connection.png",
+            "adapter_errors": 0,
+            "phase": "system_roots",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Prefs-Security",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Prefs-Security.png",
+            "adapter_errors": 0,
+            "phase": "preferences",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Prefs-Locale",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Prefs-Locale.png",
+            "adapter_errors": 0,
+            "phase": "preferences",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Prefs-Sound",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Prefs-Sound.png",
+            "adapter_errors": 0,
+            "phase": "preferences",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Prefs-Recording",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Prefs-Recording.png",
+            "adapter_errors": 0,
+            "phase": "preferences",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Prefs-Alarm",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Prefs-Alarm.png",
+            "adapter_errors": 0,
+            "phase": "preferences",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Prefs-Sleep",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Prefs-Sleep.png",
+            "adapter_errors": 0,
+            "phase": "preferences",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Prefs-Recognition",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Prefs-Recognition.png",
+            "adapter_errors": 0,
+            "phase": "preferences",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Prefs-Modem",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Prefs-Modem.png",
+            "adapter_errors": 0,
+            "phase": "preferences",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Prefs-AutoDock",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Prefs-AutoDock.png",
+            "adapter_errors": 0,
+            "phase": "preferences",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Help-index",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Help-index.png",
+            "adapter_errors": 0,
+            "phase": "preferences",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Clock-main",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Clock-main.png",
+            "adapter_errors": 0,
+            "phase": "preferences",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-new-weekly",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-new-weekly.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-new-weekly-USA",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-new-weekly-USA.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-new-weekly-China",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-new-weekly-China.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-reopened-weekly",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-weekly.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-new-event",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-new-event.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-new-event-USA",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-new-event-USA.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-new-event-China",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-new-event-China.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-reopened-event",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-event.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-new-multi",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-new-multi.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "accepted-loading-frame",
+            "settled_evidence": [
+              "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-multi-settled10.png",
+              "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-multi-redraw.png"
+            ]
+          },
+          {
+            "state": "Dates-new-multi-USA",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-new-multi-USA.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "accepted-loading-frame",
+            "settled_evidence": [
+              "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-multi-settled10.png",
+              "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-multi-redraw.png"
+            ]
+          },
+          {
+            "state": "Dates-new-multi-China",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-new-multi-China.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "accepted-loading-frame",
+            "settled_evidence": [
+              "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-multi-settled10.png",
+              "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-multi-redraw.png"
+            ]
+          },
+          {
+            "state": "Dates-reopened-multi",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-multi.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-new-annual",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-new-annual.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "accepted-loading-frame",
+            "settled_evidence": [
+              "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-annual-settled10.png",
+              "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-annual-redraw.png"
+            ]
+          },
+          {
+            "state": "Dates-new-annual-USA",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-new-annual-USA.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "accepted-loading-frame",
+            "settled_evidence": [
+              "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-annual-settled10.png",
+              "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-annual-redraw.png"
+            ]
+          },
+          {
+            "state": "Dates-new-annual-China",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-new-annual-China.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "accepted-loading-frame",
+            "settled_evidence": [
+              "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-annual-settled10.png",
+              "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-annual-redraw.png"
+            ]
+          },
+          {
+            "state": "Dates-reopened-annual",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-annual.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-reopened-multi-settled3",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-multi-settled3.png",
+            "adapter_errors": 0,
+            "phase": "address",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "accepted-loading-frame",
+            "settled_evidence": [
+              "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-multi-settled10.png",
+              "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-multi-redraw.png"
+            ]
+          },
+          {
+            "state": "Dates-reopened-multi-settled10",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-multi-settled10.png",
+            "adapter_errors": 0,
+            "phase": "address",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-reopened-multi-redraw",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-multi-redraw.png",
+            "adapter_errors": 0,
+            "phase": "address",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-reopened-annual-settled3",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-annual-settled3.png",
+            "adapter_errors": 0,
+            "phase": "address",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-reopened-annual-settled10",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-annual-settled10.png",
+            "adapter_errors": 0,
+            "phase": "address",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-reopened-annual-redraw",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-annual-redraw.png",
+            "adapter_errors": 0,
+            "phase": "address",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Address-0-AllInfo",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Address-0-AllInfo.png",
+            "adapter_errors": 0,
+            "phase": "address",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Address-1-AllInfo",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Address-1-AllInfo.png",
+            "adapter_errors": 0,
+            "phase": "address",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Address-64-AllInfo",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Address-64-AllInfo.png",
+            "adapter_errors": 0,
+            "phase": "address",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Address-255-AllInfo",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Address-255-AllInfo.png",
+            "adapter_errors": 0,
+            "phase": "address",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Address-256-AllInfo",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Address-256-AllInfo.png",
+            "adapter_errors": 0,
+            "phase": "address",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Style-history-System-Roman",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Style-history-System-Roman.png",
+            "adapter_errors": 0,
+            "phase": "style_state",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Style-history-System-Mixed",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Style-history-System-Mixed.png",
+            "adapter_errors": 0,
+            "phase": "style_state",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Style-history-Fancy-Roman",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Style-history-Fancy-Roman.png",
+            "adapter_errors": 0,
+            "phase": "style_state",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Style-history-Fancy-Mixed",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Style-history-Fancy-Mixed.png",
+            "adapter_errors": 0,
+            "phase": "style_state",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Routing-initial",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Routing-initial.png",
+            "adapter_errors": 0,
+            "phase": "routing",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Routing-formats",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Routing-formats.png",
+            "adapter_errors": 0,
+            "phase": "routing",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Routing-Chinese-Address",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Routing-Chinese-Address.png",
+            "adapter_errors": 0,
+            "phase": "routing",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Routing-Preview-first",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Routing-Preview-first.png",
+            "adapter_errors": 0,
+            "phase": "routing",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Clock-Set-menu",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Clock-Set-menu.png",
+            "adapter_errors": 0,
+            "phase": "clock_set",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Clock-Daily-Alarm",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Clock-Daily-Alarm.png",
+            "adapter_errors": 0,
+            "phase": "clock_modes",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Clock-Minute-Timer",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Clock-Minute-Timer.png",
+            "adapter_errors": 0,
+            "phase": "clock_modes",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Clock-Time-Date",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Clock-Time-Date.png",
+            "adapter_errors": 0,
+            "phase": "clock_modes",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Clock-Options",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Clock-Options.png",
+            "adapter_errors": 0,
+            "phase": "clock_modes",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Extras-Card",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Extras-Card.png",
+            "adapter_errors": 0,
+            "phase": "extras_states",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Extras-Owner",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Extras-Owner.png",
+            "adapter_errors": 0,
+            "phase": "extras_states",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Extras-Region",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Extras-Region.png",
+            "adapter_errors": 0,
+            "phase": "extras_states",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Extras-Setup",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Extras-Setup.png",
+            "adapter_errors": 0,
+            "phase": "extras_states",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Extras-WritingPractice",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Extras-WritingPractice.png",
+            "adapter_errors": 0,
+            "phase": "extras_states",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Calls-mixed-name",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Calls-mixed-name.png",
+            "adapter_errors": 0,
+            "phase": "calls_states",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Calls-mixed-notes",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Calls-mixed-notes.png",
+            "adapter_errors": 0,
+            "phase": "calls_states",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Calls-notes-reopened",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Calls-notes-reopened.png",
+            "adapter_errors": 0,
+            "phase": "calls_states",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Calls-action-menu",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Calls-action-menu.png",
+            "adapter_errors": 0,
+            "phase": "calls_states",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Calls-overview",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Calls-overview.png",
+            "adapter_errors": 0,
+            "phase": "calls_states",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Native-rule-v3-none",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Native-rule-v3-none.png",
+            "adapter_errors": 0,
+            "phase": "repeat_native3",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Native-rule-v3-day",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Native-rule-v3-day.png",
+            "adapter_errors": 0,
+            "phase": "repeat_native3",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Native-rule-v3-week",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Native-rule-v3-week.png",
+            "adapter_errors": 0,
+            "phase": "repeat_native3",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Native-rule-v3-other-week",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Native-rule-v3-other-week.png",
+            "adapter_errors": 0,
+            "phase": "repeat_native3",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Native-rule-v3-month",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Native-rule-v3-month.png",
+            "adapter_errors": 0,
+            "phase": "repeat_native3",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Native-rule-v3-year",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Native-rule-v3-year.png",
+            "adapter_errors": 0,
+            "phase": "repeat_native3",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Native-rule-v3-week-month",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Native-rule-v3-week-month.png",
+            "adapter_errors": 0,
+            "phase": "repeat_native3",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Native-rule-v3-week-year",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Native-rule-v3-week-year.png",
+            "adapter_errors": 0,
+            "phase": "repeat_native3",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Country-native-China",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Country-native-China.png",
+            "adapter_errors": 0,
+            "phase": "country_native",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Country-native-menu-to-USA",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Country-native-menu-to-USA.png",
+            "adapter_errors": 0,
+            "phase": "country_native",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Country-native-USA",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Country-native-USA.png",
+            "adapter_errors": 0,
+            "phase": "country_native",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Country-native-menu-to-China",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Country-native-menu-to-China.png",
+            "adapter_errors": 0,
+            "phase": "country_native",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Country-native-China-again",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Country-native-China-again.png",
+            "adapter_errors": 0,
+            "phase": "country_native",
+            "profile": "final15-lite-final35-rest-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          }
+        ],
+        "visual_reviewed": true,
+        "overview_pixels_passed": true,
+        "address_pixels_passed": true,
+        "native_control_pixel_pairs": 28,
+        "zero_pixel_pairs": 28,
+        "profiles": [
+          "final15-lite-main-completion8-20261022",
+          "final15-lite-cold-20261022",
+          "final15-lite-order-20261022",
+          "final15-lite-support-20261022"
+        ],
+        "expanded_sources": {
+          "address_roman": "final15-lite-final35-20261022",
+          "geography": "final15-lite-final35-20261022",
+          "folders": "final15-lite-final35-20261022",
+          "mixed_folder": "final15-lite-final35-20261022",
+          "long_folder": "final15-lite-final35-20261022",
+          "repeat_reopen": "final15-lite-final35-rest-20261022",
+          "popups": "final15-lite-final35-rest-20261022",
+          "formulas": "final15-lite-final35-rest-20261022",
+          "system_roots": "final15-lite-final35-rest-20261022",
+          "preferences": "final15-lite-final35-rest-20261022",
+          "date_types": "final15-lite-final35-rest-20261022",
+          "address": "final15-lite-final35-rest-20261022",
+          "style_state": "final15-lite-final35-rest-20261022",
+          "routing": "final15-lite-final35-rest-20261022",
+          "clock_set": "final15-lite-final35-rest-20261022",
+          "clock_modes": "final15-lite-final35-rest-20261022",
+          "extras_states": "final15-lite-final35-rest-20261022",
+          "calls_states": "final15-lite-final35-rest-20261022",
+          "repeat_native3": "final15-lite-final35-rest-20261022",
+          "country_native": "final15-lite-final35-rest-20261022"
+        },
+        "address_timings": [
+          {
+            "characters": 0,
+            "seed_seconds": 0.5567665409762412,
+            "menu_select_and_settle_seconds": 3.814992707921192
+          },
+          {
+            "characters": 1,
+            "seed_seconds": 0.5527235829504207,
+            "menu_select_and_settle_seconds": 3.8133374999742955
+          },
+          {
+            "characters": 64,
+            "seed_seconds": 0.46997500001452863,
+            "menu_select_and_settle_seconds": 3.832026332966052
+          },
+          {
+            "characters": 255,
+            "seed_seconds": 0.6574132500682026,
+            "menu_select_and_settle_seconds": 3.8853173749521375
+          },
+          {
+            "characters": 256,
+            "seed_seconds": 0.7380170000251383,
+            "menu_select_and_settle_seconds": 3.7961146250599995
+          }
+        ],
+        "qa_superseded": [
+          {
+            "waived_loading_frame": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-new-multi.png",
+            "settled_evidence": [
+              "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-multi-settled10.png",
+              "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-multi-redraw.png"
+            ]
+          },
+          {
+            "waived_loading_frame": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-new-multi-USA.png",
+            "settled_evidence": [
+              "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-multi-settled10.png",
+              "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-multi-redraw.png"
+            ]
+          },
+          {
+            "waived_loading_frame": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-new-multi-China.png",
+            "settled_evidence": [
+              "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-multi-settled10.png",
+              "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-multi-redraw.png"
+            ]
+          },
+          {
+            "waived_loading_frame": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-new-annual.png",
+            "settled_evidence": [
+              "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-annual-settled10.png",
+              "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-annual-redraw.png"
+            ]
+          },
+          {
+            "waived_loading_frame": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-new-annual-USA.png",
+            "settled_evidence": [
+              "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-annual-settled10.png",
+              "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-annual-redraw.png"
+            ]
+          },
+          {
+            "waived_loading_frame": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-new-annual-China.png",
+            "settled_evidence": [
+              "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-annual-settled10.png",
+              "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-annual-redraw.png"
+            ]
+          },
+          {
+            "waived_loading_frame": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-multi-settled3.png",
+            "settled_evidence": [
+              "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-multi-settled10.png",
+              "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Dates-reopened-multi-redraw.png"
+            ]
+          }
+        ]
+      },
+      "full": {
+        "expanded_phases": 20,
+        "expanded_passed": true,
+        "expanded_states": 157,
+        "expanded_state_evidence": [
+          {
+            "state": "Address-Roman-China",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Address-Roman-China.png",
+            "adapter_errors": 0,
+            "phase": "address_roman",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Address-Roman-USA",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Address-Roman-USA.png",
+            "adapter_errors": 0,
+            "phase": "address_roman",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Address-Roman-China-again",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Address-Roman-China-again.png",
+            "adapter_errors": 0,
+            "phase": "address_roman",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Geo-Address-editor",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Geo-Address-editor.png",
+            "adapter_errors": 0,
+            "phase": "geography",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Geo-province-page1",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Geo-province-page1.png",
+            "adapter_errors": 0,
+            "phase": "geography",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Geo-province-page2",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Geo-province-page2.png",
+            "adapter_errors": 0,
+            "phase": "geography",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Geo-province-return",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Geo-province-return.png",
+            "adapter_errors": 0,
+            "phase": "geography",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Geo-city-page1",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Geo-city-page1.png",
+            "adapter_errors": 0,
+            "phase": "geography",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Geo-district-page1",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Geo-district-page1.png",
+            "adapter_errors": 0,
+            "phase": "geography",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Geo-postcode-page",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Geo-postcode-page.png",
+            "adapter_errors": 0,
+            "phase": "geography",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Geo-chosen-address",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Geo-chosen-address.png",
+            "adapter_errors": 0,
+            "phase": "geography",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Geo-address-reopened",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Geo-address-reopened.png",
+            "adapter_errors": 0,
+            "phase": "geography",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Filing-initial",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Filing-initial.png",
+            "adapter_errors": 0,
+            "phase": "folders",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Folder-new-empty",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Folder-new-empty.png",
+            "adapter_errors": 0,
+            "phase": "folders",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Folder-new-Chinese",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Folder-new-Chinese.png",
+            "adapter_errors": 0,
+            "phase": "folders",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Filing-Chinese-row",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Filing-Chinese-row.png",
+            "adapter_errors": 0,
+            "phase": "folders",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Folder-filed-next",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Folder-filed-next.png",
+            "adapter_errors": 0,
+            "phase": "folders",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Folder-native-chooser",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Folder-native-chooser.png",
+            "adapter_errors": 0,
+            "phase": "folders",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Folder-filed-title",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Folder-filed-title.png",
+            "adapter_errors": 0,
+            "phase": "folders",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Folder-overview",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Folder-overview.png",
+            "adapter_errors": 0,
+            "phase": "folders",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Folder-edit-Chinese",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Folder-edit-Chinese.png",
+            "adapter_errors": 0,
+            "phase": "folders",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Folder-edit-Roman",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Folder-edit-Roman.png",
+            "adapter_errors": 0,
+            "phase": "folders",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Mixed-folder-radio",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Mixed-folder-radio.png",
+            "adapter_errors": 0,
+            "phase": "mixed_folder",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Mixed-folder-menu",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Mixed-folder-menu.png",
+            "adapter_errors": 0,
+            "phase": "mixed_folder",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Mixed-folder-title",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Mixed-folder-title.png",
+            "adapter_errors": 0,
+            "phase": "mixed_folder",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Long-folder-radio",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Long-folder-radio.png",
+            "adapter_errors": 0,
+            "phase": "long_folder",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Long-folder-menu",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Long-folder-menu.png",
+            "adapter_errors": 0,
+            "phase": "long_folder",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Long-folder-title",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Long-folder-title.png",
+            "adapter_errors": 0,
+            "phase": "long_folder",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Repeat-final-settled3",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Repeat-final-settled3.png",
+            "adapter_errors": 0,
+            "phase": "repeat_reopen",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Repeat-final-settled10",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Repeat-final-settled10.png",
+            "adapter_errors": 0,
+            "phase": "repeat_reopen",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Rule-none",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Rule-none.png",
+            "adapter_errors": 0,
+            "phase": "repeat_reopen",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Rule-day",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Rule-day.png",
+            "adapter_errors": 0,
+            "phase": "repeat_reopen",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Rule-week",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Rule-week.png",
+            "adapter_errors": 0,
+            "phase": "repeat_reopen",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Rule-other-week",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Rule-other-week.png",
+            "adapter_errors": 0,
+            "phase": "repeat_reopen",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Rule-month",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Rule-month.png",
+            "adapter_errors": 0,
+            "phase": "repeat_reopen",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Rule-year",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Rule-year.png",
+            "adapter_errors": 0,
+            "phase": "repeat_reopen",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Rule-week-month",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Rule-week-month.png",
+            "adapter_errors": 0,
+            "phase": "repeat_reopen",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Rule-week-year",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Rule-week-year.png",
+            "adapter_errors": 0,
+            "phase": "repeat_reopen",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Rule-month-menu",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Rule-month-menu.png",
+            "adapter_errors": 0,
+            "phase": "repeat_reopen",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Rule-month-Today-confirmed",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Rule-month-Today-confirmed.png",
+            "adapter_errors": 0,
+            "phase": "repeat_reopen",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-date-Chinese",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Popup-date-Chinese.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-date-months",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Popup-date-months.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-date-month-selected",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Popup-date-month-selected.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-date-USA",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Popup-date-USA.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-date-China-again",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Popup-date-China-again.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-time-Chinese",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Popup-time-Chinese.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-time-months",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Popup-time-months.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-time-month-selected",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Popup-time-month-selected.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-time-USA",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Popup-time-USA.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-time-China-again",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Popup-time-China-again.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-interval-Chinese",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Popup-interval-Chinese.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-interval-months",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Popup-interval-months.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-interval-month-selected",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Popup-interval-month-selected.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-interval-USA",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Popup-interval-USA.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-interval-China-again",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Popup-interval-China-again.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-multi-Chinese",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Popup-multi-Chinese.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-multi-months",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Popup-multi-months.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-multi-month-selected",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Popup-multi-month-selected.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-multi-USA",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Popup-multi-USA.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Popup-multi-China-again",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Popup-multi-China-again.png",
+            "adapter_errors": 0,
+            "phase": "popups",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Formula-Loan-filled",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Formula-Loan-filled.png",
+            "adapter_errors": 0,
+            "phase": "formulas",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Formula-NPV-filled",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Formula-NPV-filled.png",
+            "adapter_errors": 0,
+            "phase": "formulas",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Formula-Currency-filled",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Formula-Currency-filled.png",
+            "adapter_errors": 0,
+            "phase": "formulas",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Formula-DateCalc-picker",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Formula-DateCalc-picker.png",
+            "adapter_errors": 0,
+            "phase": "formulas",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Formula-DateCalc-filled",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Formula-DateCalc-filled.png",
+            "adapter_errors": 0,
+            "phase": "formulas",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Formula-Conversion-picker",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Formula-Conversion-picker.png",
+            "adapter_errors": 0,
+            "phase": "formulas",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Formula-Conversion-filled",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Formula-Conversion-filled.png",
+            "adapter_errors": 0,
+            "phase": "formulas",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Formula-Metric-length",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Formula-Metric-length.png",
+            "adapter_errors": 0,
+            "phase": "formulas",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Formula-Metric-area",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Formula-Metric-area.png",
+            "adapter_errors": 0,
+            "phase": "formulas",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Formula-Metric-weight",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Formula-Metric-weight.png",
+            "adapter_errors": 0,
+            "phase": "formulas",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Formula-Metric-US-liquid",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Formula-Metric-US-liquid.png",
+            "adapter_errors": 0,
+            "phase": "formulas",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Formula-Metric-UK-liquid",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Formula-Metric-UK-liquid.png",
+            "adapter_errors": 0,
+            "phase": "formulas",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Formula-Metric-temperature",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Formula-Metric-temperature.png",
+            "adapter_errors": 0,
+            "phase": "formulas",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "System-WorldClock",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/System-WorldClock.png",
+            "adapter_errors": 0,
+            "phase": "system_roots",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "System-Formulas",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/System-Formulas.png",
+            "adapter_errors": 0,
+            "phase": "system_roots",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "System-Prefs",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/System-Prefs.png",
+            "adapter_errors": 0,
+            "phase": "system_roots",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "System-Calculator",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/System-Calculator.png",
+            "adapter_errors": 0,
+            "phase": "system_roots",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "System-InOut",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/System-InOut.png",
+            "adapter_errors": 0,
+            "phase": "system_roots",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "System-Assist",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/System-Assist.png",
+            "adapter_errors": 0,
+            "phase": "system_roots",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "System-Connection",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/System-Connection.png",
+            "adapter_errors": 0,
+            "phase": "system_roots",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Prefs-Security",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Prefs-Security.png",
+            "adapter_errors": 0,
+            "phase": "preferences",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Prefs-Locale",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Prefs-Locale.png",
+            "adapter_errors": 0,
+            "phase": "preferences",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Prefs-Sound",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Prefs-Sound.png",
+            "adapter_errors": 0,
+            "phase": "preferences",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Prefs-Recording",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Prefs-Recording.png",
+            "adapter_errors": 0,
+            "phase": "preferences",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Prefs-Alarm",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Prefs-Alarm.png",
+            "adapter_errors": 0,
+            "phase": "preferences",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Prefs-Sleep",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Prefs-Sleep.png",
+            "adapter_errors": 0,
+            "phase": "preferences",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Prefs-Recognition",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Prefs-Recognition.png",
+            "adapter_errors": 0,
+            "phase": "preferences",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Prefs-Modem",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Prefs-Modem.png",
+            "adapter_errors": 0,
+            "phase": "preferences",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Prefs-AutoDock",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Prefs-AutoDock.png",
+            "adapter_errors": 0,
+            "phase": "preferences",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Help-index",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Help-index.png",
+            "adapter_errors": 0,
+            "phase": "preferences",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Clock-main",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Clock-main.png",
+            "adapter_errors": 0,
+            "phase": "preferences",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-new-weekly",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-new-weekly.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-new-weekly-USA",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-new-weekly-USA.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-new-weekly-China",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-new-weekly-China.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-reopened-weekly",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-reopened-weekly.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-new-event",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-new-event.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-new-event-USA",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-new-event-USA.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-new-event-China",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-new-event-China.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-reopened-event",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-reopened-event.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-new-multi",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-new-multi.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-new-multi-USA",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-new-multi-USA.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-new-multi-China",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-new-multi-China.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-reopened-multi",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-reopened-multi.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-new-annual",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-new-annual.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "accepted-loading-frame",
+            "settled_evidence": [
+              "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-reopened-annual-settled10.png"
+            ]
+          },
+          {
+            "state": "Dates-new-annual-USA",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-new-annual-USA.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-new-annual-China",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-new-annual-China.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "accepted-loading-frame",
+            "settled_evidence": [
+              "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-reopened-annual-settled10.png"
+            ]
+          },
+          {
+            "state": "Dates-reopened-annual",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-reopened-annual.png",
+            "adapter_errors": 0,
+            "phase": "date_types",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "accepted-loading-frame",
+            "settled_evidence": [
+              "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-reopened-annual-settled10.png"
+            ]
+          },
+          {
+            "state": "Dates-reopened-multi-settled3",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-reopened-multi-settled3.png",
+            "adapter_errors": 0,
+            "phase": "address",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-reopened-multi-settled10",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-reopened-multi-settled10.png",
+            "adapter_errors": 0,
+            "phase": "address",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-reopened-multi-redraw",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-reopened-multi-redraw.png",
+            "adapter_errors": 0,
+            "phase": "address",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-reopened-annual-settled3",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-reopened-annual-settled3.png",
+            "adapter_errors": 0,
+            "phase": "address",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-reopened-annual-settled10",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-reopened-annual-settled10.png",
+            "adapter_errors": 0,
+            "phase": "address",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Dates-reopened-annual-redraw",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-reopened-annual-redraw.png",
+            "adapter_errors": 0,
+            "phase": "address",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Address-0-AllInfo",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Address-0-AllInfo.png",
+            "adapter_errors": 0,
+            "phase": "address",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Address-1-AllInfo",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Address-1-AllInfo.png",
+            "adapter_errors": 0,
+            "phase": "address",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Address-64-AllInfo",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Address-64-AllInfo.png",
+            "adapter_errors": 0,
+            "phase": "address",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Address-255-AllInfo",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Address-255-AllInfo.png",
+            "adapter_errors": 0,
+            "phase": "address",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Address-256-AllInfo",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Address-256-AllInfo.png",
+            "adapter_errors": 0,
+            "phase": "address",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Style-history-System-Roman",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Style-history-System-Roman.png",
+            "adapter_errors": 0,
+            "phase": "style_state",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Style-history-System-Mixed",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Style-history-System-Mixed.png",
+            "adapter_errors": 0,
+            "phase": "style_state",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Style-history-Fancy-Roman",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Style-history-Fancy-Roman.png",
+            "adapter_errors": 0,
+            "phase": "style_state",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Style-history-Fancy-Mixed",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Style-history-Fancy-Mixed.png",
+            "adapter_errors": 0,
+            "phase": "style_state",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "accepted-loading-frame",
+            "settled_evidence": [
+              "experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Style-history-Fancy-Mixed-settled3.png",
+              "experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Style-history-Fancy-Mixed-settled10.png",
+              "experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Style-history-Fancy-Mixed-redraw.png"
+            ]
+          },
+          {
+            "state": "Routing-initial",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Routing-initial.png",
+            "adapter_errors": 0,
+            "phase": "routing",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Routing-formats",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Routing-formats.png",
+            "adapter_errors": 0,
+            "phase": "routing",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Routing-Chinese-Address",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Routing-Chinese-Address.png",
+            "adapter_errors": 0,
+            "phase": "routing",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Routing-Preview-first",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Routing-Preview-first.png",
+            "adapter_errors": 0,
+            "phase": "routing",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Clock-Set-menu",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Clock-Set-menu.png",
+            "adapter_errors": 0,
+            "phase": "clock_set",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Clock-Daily-Alarm",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Clock-Daily-Alarm.png",
+            "adapter_errors": 0,
+            "phase": "clock_modes",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Clock-Minute-Timer",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Clock-Minute-Timer.png",
+            "adapter_errors": 0,
+            "phase": "clock_modes",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Clock-Time-Date",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Clock-Time-Date.png",
+            "adapter_errors": 0,
+            "phase": "clock_modes",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Clock-Options",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Clock-Options.png",
+            "adapter_errors": 0,
+            "phase": "clock_modes",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Extras-Card",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Extras-Card.png",
+            "adapter_errors": 0,
+            "phase": "extras_states",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Extras-Owner",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Extras-Owner.png",
+            "adapter_errors": 0,
+            "phase": "extras_states",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Extras-Region",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Extras-Region.png",
+            "adapter_errors": 0,
+            "phase": "extras_states",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Extras-Setup",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Extras-Setup.png",
+            "adapter_errors": 0,
+            "phase": "extras_states",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Extras-WritingPractice",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Extras-WritingPractice.png",
+            "adapter_errors": 0,
+            "phase": "extras_states",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Calls-mixed-name",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Calls-mixed-name.png",
+            "adapter_errors": 0,
+            "phase": "calls_states",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Calls-mixed-notes",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Calls-mixed-notes.png",
+            "adapter_errors": 0,
+            "phase": "calls_states",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Calls-notes-reopened",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Calls-notes-reopened.png",
+            "adapter_errors": 0,
+            "phase": "calls_states",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Calls-action-menu",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Calls-action-menu.png",
+            "adapter_errors": 0,
+            "phase": "calls_states",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Calls-overview",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Calls-overview.png",
+            "adapter_errors": 0,
+            "phase": "calls_states",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Native-rule-v3-none",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Native-rule-v3-none.png",
+            "adapter_errors": 0,
+            "phase": "repeat_native3",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Native-rule-v3-day",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Native-rule-v3-day.png",
+            "adapter_errors": 0,
+            "phase": "repeat_native3",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Native-rule-v3-week",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Native-rule-v3-week.png",
+            "adapter_errors": 0,
+            "phase": "repeat_native3",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Native-rule-v3-other-week",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Native-rule-v3-other-week.png",
+            "adapter_errors": 0,
+            "phase": "repeat_native3",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Native-rule-v3-month",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Native-rule-v3-month.png",
+            "adapter_errors": 0,
+            "phase": "repeat_native3",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Native-rule-v3-year",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Native-rule-v3-year.png",
+            "adapter_errors": 0,
+            "phase": "repeat_native3",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Native-rule-v3-week-month",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Native-rule-v3-week-month.png",
+            "adapter_errors": 0,
+            "phase": "repeat_native3",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Native-rule-v3-week-year",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Native-rule-v3-week-year.png",
+            "adapter_errors": 0,
+            "phase": "repeat_native3",
+            "profile": "final15-full-final35-20261022",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Country-native-China",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Country-native-China.png",
+            "adapter_errors": 0,
+            "phase": "country_native",
+            "profile": "final15-full-final35-tail-20261023",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Country-native-menu-to-USA",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Country-native-menu-to-USA.png",
+            "adapter_errors": 0,
+            "phase": "country_native",
+            "profile": "final15-full-final35-tail-20261023",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Country-native-USA",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Country-native-USA.png",
+            "adapter_errors": 0,
+            "phase": "country_native",
+            "profile": "final15-full-final35-tail-20261023",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Country-native-menu-to-China",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Country-native-menu-to-China.png",
+            "adapter_errors": 0,
+            "phase": "country_native",
+            "profile": "final15-full-final35-tail-20261023",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Country-native-China-again",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Country-native-China-again.png",
+            "adapter_errors": 0,
+            "phase": "country_native",
+            "profile": "final15-full-final35-tail-20261023",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Style-history-Fancy-Mixed-settled3",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Style-history-Fancy-Mixed-settled3.png",
+            "adapter_errors": 0,
+            "phase": "country_native",
+            "profile": "final15-full-final35-tail-20261023",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Style-history-Fancy-Mixed-settled10",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Style-history-Fancy-Mixed-settled10.png",
+            "adapter_errors": 0,
+            "phase": "country_native",
+            "profile": "final15-full-final35-tail-20261023",
+            "visual_status": "passed",
+            "settled_evidence": []
+          },
+          {
+            "state": "Style-history-Fancy-Mixed-redraw",
+            "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Style-history-Fancy-Mixed-redraw.png",
+            "adapter_errors": 0,
+            "phase": "country_native",
+            "profile": "final15-full-final35-tail-20261023",
+            "visual_status": "passed",
+            "settled_evidence": []
+          }
+        ],
+        "visual_reviewed": true,
+        "overview_pixels_passed": true,
+        "address_pixels_passed": true,
+        "native_control_pixel_pairs": 28,
+        "zero_pixel_pairs": 28,
+        "profiles": [
+          "final15-full-main-20261022",
+          "final15-full-cold-20261022",
+          "final15-full-order-20261022",
+          "final15-full-support-20261022"
+        ],
+        "expanded_sources": {
+          "address_roman": "final15-full-final35-20261022",
+          "geography": "final15-full-final35-20261022",
+          "folders": "final15-full-final35-20261022",
+          "mixed_folder": "final15-full-final35-20261022",
+          "long_folder": "final15-full-final35-20261022",
+          "repeat_reopen": "final15-full-final35-20261022",
+          "popups": "final15-full-final35-20261022",
+          "formulas": "final15-full-final35-20261022",
+          "system_roots": "final15-full-final35-20261022",
+          "preferences": "final15-full-final35-20261022",
+          "date_types": "final15-full-final35-20261022",
+          "address": "final15-full-final35-20261022",
+          "style_state": "final15-full-final35-20261022",
+          "routing": "final15-full-final35-20261022",
+          "clock_set": "final15-full-final35-20261022",
+          "clock_modes": "final15-full-final35-20261022",
+          "extras_states": "final15-full-final35-20261022",
+          "calls_states": "final15-full-final35-20261022",
+          "repeat_native3": "final15-full-final35-20261022",
+          "country_native": "final15-full-final35-tail-20261023"
+        },
+        "address_timings": [
+          {
+            "characters": 0,
+            "seed_seconds": 0.4798633330501616,
+            "menu_select_and_settle_seconds": 3.8983463750919327
+          },
+          {
+            "characters": 1,
+            "seed_seconds": 0.4774622089462355,
+            "menu_select_and_settle_seconds": 3.8024434170220047
+          },
+          {
+            "characters": 64,
+            "seed_seconds": 0.47984883305616677,
+            "menu_select_and_settle_seconds": 3.8128643749514595
+          },
+          {
+            "characters": 255,
+            "seed_seconds": 0.6494167499477044,
+            "menu_select_and_settle_seconds": 3.8096245829947293
+          },
+          {
+            "characters": 256,
+            "seed_seconds": 0.7416385000105947,
+            "menu_select_and_settle_seconds": 3.825093708001077
+          }
+        ],
+        "qa_superseded": [
+          {
+            "waived_loading_frame": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-new-annual.png",
+            "settled_evidence": [
+              "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-reopened-annual-settled10.png"
+            ]
+          },
+          {
+            "waived_loading_frame": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-new-annual-China.png",
+            "settled_evidence": [
+              "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-reopened-annual-settled10.png"
+            ]
+          },
+          {
+            "waived_loading_frame": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-reopened-annual.png",
+            "settled_evidence": [
+              "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Dates-reopened-annual-settled10.png"
+            ]
+          },
+          {
+            "waived_loading_frame": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Style-history-Fancy-Mixed.png",
+            "settled_evidence": [
+              "experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Style-history-Fancy-Mixed-settled3.png",
+              "experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Style-history-Fancy-Mixed-settled10.png",
+              "experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Style-history-Fancy-Mixed-redraw.png"
+            ]
+          }
+        ]
+      }
+    },
+    "excluded": [
+      "-10061 investigation and stress triggering",
+      "8-hour soak (removed)",
+      "loading first-frame boxes if readable after settling",
+      "readable bottom crop of 周",
+      "old Notes compatibility",
+      "address lengths greater than 256"
+    ],
+    "unavailable": [
+      "physical hardware",
+      "external network/fax/modem/serial services",
+      "physical printer output",
+      "arbitrary third-party packages not installed in fixed S0",
+      "infinite arbitrary Unicode/content combinations; repertoire is 8309 mapped characters",
+      "QA/probe package icon interfaces are test infrastructure, not release UI",
+      "Card and Setup native icon taps in the fixed S0 opened no additional interface; not counted as tested content."
+    ],
+    "decision": "This bounded reachable matrix and final repairs close version 1.0.0; later newly found defects belong to a later version.",
+    "qa_aborted_runs": [
+      {
+        "profile": "final15-lite-main-20261022",
+        "variant": "lite",
+        "kind": "main",
+        "started_at": 1792678569.038667,
+        "passed": false,
+        "stages": [
+          "Original ROM English controls, New and four body baselines",
+          "Font-only: native Roman metadata, automatic Chinese routing, canonical font and About",
+          "Region installation, Chinese locale/date/currency APIs, English labels, 712000 and real font picker",
+          "Native Quick people/place, exact saved record references",
+          "Native pen Styles: seven families whole/partial, four sizes, five faces; three note formats/reopen",
+          "Exact Unicode saved/reopened, Calls fixed-style Chinese name without manual switching",
+          "Find five/three mixed sources, Chinese query, result jump and empty results",
+          "Person/company/group/worksite, 256-character address, five selectors, Repeat Other and cleanup date",
+          "Nonempty Agenda, To Do, Day/Week/Month/Year, seven title weekdays and native Text menu"
+        ],
+        "error": "Guest error or unexpected boot: UBX NS D52ASSERT\toverview-settled\tnative-overview\tPASS\nUBX NS D52ASSERT\toverview-settled\tactual-page-draw-hook\tPASS\nUBX NS D52ASSERT\toverview-settled\tsummary-ready\tFAIL\nUBX NS UBXLOC\tM52ERROR\texception\tname\tevt.ex.msg\nUBX NS UBXLOC\tM52ERROR\texception\tmessage\toverview-settled summary-ready\nUBX NS D52ACK 18e0e0e6b5615078\n",
+        "ended_at": 1792679934.097713,
+        "launch_completed": true,
+        "protected_after": {
+          "frozen_53e_files": 254,
+          "protected_52_files": 432,
+          "development_snapshot_files": 21,
+          "concurrent_development_changes": []
+        },
+        "classification": "obsolete QA assertion requiring whole-title CJK frame; final design preserves native Roman font",
+        "continuation": "final15-lite-main-continue-20261022"
+      },
+      {
+        "profile": "final15-lite-main-continue-20261022",
+        "variant": "lite",
+        "kind": "main",
+        "started_at": 1792680265.471453,
+        "passed": false,
+        "stages": [],
+        "error": "Guest error or unexpected boot: UBX NS UBXLOC\tM52ERROR\texception\tname\tevt.ex.fr.intrp;type.ref.frame\nUBX NS UBXLOC\tM52ERROR\tdata\terrorCode\t-48808\nUBX NS UBXLOC\tM52ERROR\tdata\tsymbol\tD52L\nUBX NS D52ACK 18e0e13503fed4f0\n",
+        "ended_at": 1792680270.032568,
+        "launch_completed": true,
+        "protected_after": {
+          "frozen_53e_files": 254,
+          "protected_52_files": 432,
+          "development_snapshot_files": 21,
+          "concurrent_development_changes": []
+        },
+        "continued_from": "final15-lite-main-20261022",
+        "inherited_verified_stages": [
+          "Original ROM English controls, New and four body baselines",
+          "Font-only: native Roman metadata, automatic Chinese routing, canonical font and About",
+          "Region installation, Chinese locale/date/currency APIs, English labels, 712000 and real font picker",
+          "Native Quick people/place, exact saved record references",
+          "Native pen Styles: seven families whole/partial, four sizes, five faces; three note formats/reopen",
+          "Exact Unicode saved/reopened, Calls fixed-style Chinese name without manual switching",
+          "Find five/three mixed sources, Chinese query, result jump and empty results",
+          "Person/company/group/worksite, 256-character address, five selectors, Repeat Other and cleanup date",
+          "Nonempty Agenda, To Do, Day/Week/Month/Year, seven title weekdays and native Text menu"
+        ],
+        "checkpoint_flash_sha256": "7be1cb6c5df40fda499fd88a178bd35aafaf7e09c4b472bd9e41f0ce380d116b",
+        "classification": "QA cold-start logger D52L was not rebound before clean; no product operation reached"
+      },
+      {
+        "profile": "final15-lite-main-continue2-20261022",
+        "variant": "lite",
+        "kind": "main",
+        "started_at": 1792680335.766614,
+        "passed": false,
+        "stages": [],
+        "error": "Guest error or unexpected boot: UBX NS D52ASSERT\tresume\texisting-QA\tFAIL\nUBX NS UBXLOC\tM52ERROR\texception\tname\tevt.ex.msg\nUBX NS UBXLOC\tM52ERROR\texception\tmessage\tresume existing-QA\nUBX NS D52ACK 18e0e1459d77f598\n",
+        "ended_at": 1792680341.260536,
+        "launch_completed": true,
+        "protected_after": {
+          "frozen_53e_files": 254,
+          "protected_52_files": 432,
+          "development_snapshot_files": 21,
+          "concurrent_development_changes": []
+        },
+        "continued_from": "final15-lite-main-20261022",
+        "inherited_verified_stages": [
+          "Original ROM English controls, New and four body baselines",
+          "Font-only: native Roman metadata, automatic Chinese routing, canonical font and About",
+          "Region installation, Chinese locale/date/currency APIs, English labels, 712000 and real font picker",
+          "Native Quick people/place, exact saved record references",
+          "Native pen Styles: seven families whole/partial, four sizes, five faces; three note formats/reopen",
+          "Exact Unicode saved/reopened, Calls fixed-style Chinese name without manual switching",
+          "Find five/three mixed sources, Chinese query, result jump and empty results",
+          "Person/company/group/worksite, 256-character address, five selectors, Repeat Other and cleanup date",
+          "Nonempty Agenda, To Do, Day/Week/Month/Year, seven title weekdays and native Text menu"
+        ],
+        "checkpoint_flash_sha256": "7be1cb6c5df40fda499fd88a178bd35aafaf7e09c4b472bd9e41f0ce380d116b",
+        "classification": "QA cold-resume bootstrap lacked logger or install-only probe globals; no product operation reached"
+      },
+      {
+        "profile": "final15-lite-main-completion-20261022",
+        "variant": "lite",
+        "kind": "main",
+        "started_at": 1792680501.025789,
+        "passed": false,
+        "stages": [],
+        "error": "Command '['experiments/toolchain/bin/tntk', '-P', 'experiments/toolchain/platform', '-c', 'AuditProbe.nprj']' died with <Signals.SIGBUS: 10>.",
+        "ended_at": 1792680532.789238,
+        "launch_completed": true,
+        "protected_after": {
+          "frozen_53e_files": 254,
+          "protected_52_files": 432,
+          "development_snapshot_files": 21,
+          "concurrent_development_changes": []
+        },
+        "completes": "final15-lite-main-20261022",
+        "completion_start": "fresh identical S0; not a resumed RAM state",
+        "inherited_verified_stages": [
+          "Original ROM English controls, New and four body baselines",
+          "Font-only: native Roman metadata, automatic Chinese routing, canonical font and About",
+          "Region installation, Chinese locale/date/currency APIs, English labels, 712000 and real font picker",
+          "Native Quick people/place, exact saved record references",
+          "Native pen Styles: seven families whole/partial, four sizes, five faces; three note formats/reopen",
+          "Exact Unicode saved/reopened, Calls fixed-style Chinese name without manual switching",
+          "Find five/three mixed sources, Chinese query, result jump and empty results",
+          "Person/company/group/worksite, 256-character address, five selectors, Repeat Other and cleanup date",
+          "Nonempty Agenda, To Do, Day/Week/Month/Year, seven title weekdays and native Text menu"
+        ],
+        "checkpoint_flash_sha256": "7be1cb6c5df40fda499fd88a178bd35aafaf7e09c4b472bd9e41f0ce380d116b",
+        "classification": "QA probe compiler rejected reserved identifier; no product install reached"
+      }
+    ],
+    "product_failed_runs": [
+      {
+        "profile": "final15-lite-main-completion2-20261022",
+        "variant": "lite",
+        "kind": "main",
+        "started_at": 1792680606.758801,
+        "passed": false,
+        "stages": [
+          "Fresh identical S0: original ROM/New baseline, font+Region, exact saved Unicode; earlier9 main stages linked separately",
+          "Extended Latin/symbols in four Roman families, six shared bitmap sizes, settled overview and About"
+        ],
+        "error": "Package did not activate: packages/milestone52r2-display/artifacts/dev15/Font-Lite.pkg",
+        "ended_at": 1792681092.063391,
+        "launch_completed": true,
+        "protected_after": {
+          "frozen_53e_files": 254,
+          "protected_52_files": 432,
+          "development_snapshot_files": 21,
+          "concurrent_development_changes": []
+        },
+        "completes": "final15-lite-main-20261022",
+        "completion_start": "fresh identical S0; not a resumed RAM state",
+        "inherited_verified_stages": [
+          "Original ROM English controls, New and four body baselines",
+          "Font-only: native Roman metadata, automatic Chinese routing, canonical font and About",
+          "Region installation, Chinese locale/date/currency APIs, English labels, 712000 and real font picker",
+          "Native Quick people/place, exact saved record references",
+          "Native pen Styles: seven families whole/partial, four sizes, five faces; three note formats/reopen",
+          "Exact Unicode saved/reopened, Calls fixed-style Chinese name without manual switching",
+          "Find five/three mixed sources, Chinese query, result jump and empty results",
+          "Person/company/group/worksite, 256-character address, five selectors, Repeat Other and cleanup date",
+          "Nonempty Agenda, To Do, Day/Week/Month/Year, seven title weekdays and native Text menu"
+        ],
+        "checkpoint_flash_sha256": "7be1cb6c5df40fda499fd88a178bd35aafaf7e09c4b472bd9e41f0ce380d116b",
+        "classification": "Real hot reinstallation activation failure; original code not yet captured; not a QA pass",
+        "resolved": true,
+        "resolution": {
+          "candidate": "dev15-attempt35",
+          "change": "styledTextDrawing returns EnsureInternal(pieces), owning the complete drawing list independently of removable font package. Native exception reporting preserves error/message/data.",
+          "verification_profiles": [
+            "final15-lite-main-completion8-20261022",
+            "final15-full-main-20261022"
+          ],
+          "evidence": "Both final35 same-S0 ordinary removal/reinstall cases passed, followed by actual IME and soft/cold restart. Historical failed runs remain failed.",
+          "original_code_limit": "Original error code unavailable for completion2/3; no retroactive error code assigned. Later four runs captured -48221; no claim to fix -10061.",
+          "verified_at": 1792691910.2305331
+        }
+      },
+      {
+        "profile": "final15-lite-main-completion3-20261022",
+        "variant": "lite",
+        "kind": "main",
+        "started_at": 1792681255.4291918,
+        "passed": false,
+        "stages": [
+          "Fresh identical S0: original ROM/New baseline, font+Region, exact saved Unicode; earlier9 main stages linked separately",
+          "Extended Latin/symbols in four Roman families, six shared bitmap sizes, settled overview and About"
+        ],
+        "error": "Package did not activate: packages/milestone52r2-display/artifacts/dev15/Font-Lite.pkg",
+        "ended_at": 1792681739.470676,
+        "launch_completed": true,
+        "protected_after": {
+          "frozen_53e_files": 254,
+          "protected_52_files": 432,
+          "development_snapshot_files": 21,
+          "concurrent_development_changes": []
+        },
+        "completes": "final15-lite-main-20261022",
+        "completion_start": "fresh identical S0; not a resumed RAM state",
+        "inherited_verified_stages": [
+          "Original ROM English controls, New and four body baselines",
+          "Font-only: native Roman metadata, automatic Chinese routing, canonical font and About",
+          "Region installation, Chinese locale/date/currency APIs, English labels, 712000 and real font picker",
+          "Native Quick people/place, exact saved record references",
+          "Native pen Styles: seven families whole/partial, four sizes, five faces; three note formats/reopen",
+          "Exact Unicode saved/reopened, Calls fixed-style Chinese name without manual switching",
+          "Find five/three mixed sources, Chinese query, result jump and empty results",
+          "Person/company/group/worksite, 256-character address, five selectors, Repeat Other and cleanup date",
+          "Nonempty Agenda, To Do, Day/Week/Month/Year, seven title weekdays and native Text menu"
+        ],
+        "checkpoint_flash_sha256": "7be1cb6c5df40fda499fd88a178bd35aafaf7e09c4b472bd9e41f0ce380d116b",
+        "classification": "Real hot reinstallation activation failure; original code not yet captured; not a QA pass",
+        "resolved": true,
+        "resolution": {
+          "candidate": "dev15-attempt35",
+          "change": "styledTextDrawing returns EnsureInternal(pieces), owning the complete drawing list independently of removable font package. Native exception reporting preserves error/message/data.",
+          "verification_profiles": [
+            "final15-lite-main-completion8-20261022",
+            "final15-full-main-20261022"
+          ],
+          "evidence": "Both final35 same-S0 ordinary removal/reinstall cases passed, followed by actual IME and soft/cold restart. Historical failed runs remain failed.",
+          "original_code_limit": "Original error code unavailable for completion2/3; no retroactive error code assigned. Later four runs captured -48221; no claim to fix -10061.",
+          "verified_at": 1792691910.2305338
+        }
+      },
+      {
+        "profile": "final15-lite-main-completion4-20261022",
+        "variant": "lite",
+        "kind": "main",
+        "started_at": 1792681837.4566631,
+        "passed": false,
+        "stages": [
+          "Fresh identical S0: original ROM/New baseline, font+Region, exact saved Unicode; earlier9 main stages linked separately",
+          "Extended Latin/symbols in four Roman families, six shared bitmap sizes, settled overview and About"
+        ],
+        "error": "Captured font activation failure: UBX NS UBXLOC\tINSTALLFAIL\tfont\tname\tevt.ex.fr\nUBX NS UBXLOC\tINSTALLFAIL\tfont\tcode\t-48221\nUBX NS D52ACK 18e0e2d1154921f0\n",
+        "ended_at": 1792682039.792037,
+        "launch_completed": true,
+        "protected_after": {
+          "frozen_53e_files": 254,
+          "protected_52_files": 432,
+          "development_snapshot_files": 21,
+          "concurrent_development_changes": []
+        },
+        "completes": "final15-lite-main-20261022",
+        "completion_start": "fresh identical S0; not a resumed RAM state",
+        "inherited_verified_stages": [
+          "Original ROM English controls, New and four body baselines",
+          "Font-only: native Roman metadata, automatic Chinese routing, canonical font and About",
+          "Region installation, Chinese locale/date/currency APIs, English labels, 712000 and real font picker",
+          "Native Quick people/place, exact saved record references",
+          "Native pen Styles: seven families whole/partial, four sizes, five faces; three note formats/reopen",
+          "Exact Unicode saved/reopened, Calls fixed-style Chinese name without manual switching",
+          "Find five/three mixed sources, Chinese query, result jump and empty results",
+          "Person/company/group/worksite, 256-character address, five selectors, Repeat Other and cleanup date",
+          "Nonempty Agenda, To Do, Day/Week/Month/Year, seven title weekdays and native Text menu"
+        ],
+        "checkpoint_flash_sha256": "7be1cb6c5df40fda499fd88a178bd35aafaf7e09c4b472bd9e41f0ce380d116b",
+        "classification": "Real hot reinstallation activation failure; not a QA pass",
+        "captured_error_code": -48221,
+        "resolved": true,
+        "resolution": {
+          "candidate": "dev15-attempt35",
+          "change": "styledTextDrawing returns EnsureInternal(pieces), owning the complete drawing list independently of removable font package. Native exception reporting preserves error/message/data.",
+          "verification_profiles": [
+            "final15-lite-main-completion8-20261022",
+            "final15-full-main-20261022"
+          ],
+          "evidence": "Both final35 same-S0 ordinary removal/reinstall cases passed, followed by actual IME and soft/cold restart. Historical failed runs remain failed.",
+          "original_code_limit": "Original error code unavailable for completion2/3; no retroactive error code assigned. Later four runs captured -48221; no claim to fix -10061.",
+          "verified_at": 1792691910.230535
+        }
+      },
+      {
+        "profile": "final15-lite-main-completion5-20261022",
+        "variant": "lite",
+        "kind": "main",
+        "started_at": 1792682297.896704,
+        "passed": false,
+        "stages": [
+          "Fresh identical S0: original ROM/New baseline, font+Region, exact saved Unicode; earlier9 main stages linked separately",
+          "Extended Latin/symbols in four Roman families, six shared bitmap sizes, settled overview and About"
+        ],
+        "error": "Captured font activation failure: UBX NS UBXLOC\tINSTALLFAIL\tfont\tname\tevt.ex.fr\nUBX NS UBXLOC\tINSTALLFAIL\tfont\tcode\t-48221\nUBX NS UBXLOC\tINSTALLFAIL\tfont\tphase\tDisplay\nUBX NS D52ACK 18e0e33ce2e5e308\n",
+        "ended_at": 1792682502.783612,
+        "launch_completed": true,
+        "protected_after": {
+          "frozen_53e_files": 254,
+          "protected_52_files": 432,
+          "development_snapshot_files": 21,
+          "concurrent_development_changes": []
+        },
+        "completes": "final15-lite-main-20261022",
+        "completion_start": "fresh identical S0; not a resumed RAM state",
+        "inherited_verified_stages": [
+          "Original ROM English controls, New and four body baselines",
+          "Font-only: native Roman metadata, automatic Chinese routing, canonical font and About",
+          "Region installation, Chinese locale/date/currency APIs, English labels, 712000 and real font picker",
+          "Native Quick people/place, exact saved record references",
+          "Native pen Styles: seven families whole/partial, four sizes, five faces; three note formats/reopen",
+          "Exact Unicode saved/reopened, Calls fixed-style Chinese name without manual switching",
+          "Find five/three mixed sources, Chinese query, result jump and empty results",
+          "Person/company/group/worksite, 256-character address, five selectors, Repeat Other and cleanup date",
+          "Nonempty Agenda, To Do, Day/Week/Month/Year, seven title weekdays and native Text menu"
+        ],
+        "checkpoint_flash_sha256": "7be1cb6c5df40fda499fd88a178bd35aafaf7e09c4b472bd9e41f0ce380d116b",
+        "classification": "Real hot reinstallation activation failure; not a QA pass",
+        "captured_error_code": -48221,
+        "resolved": true,
+        "resolution": {
+          "candidate": "dev15-attempt35",
+          "change": "styledTextDrawing returns EnsureInternal(pieces), owning the complete drawing list independently of removable font package. Native exception reporting preserves error/message/data.",
+          "verification_profiles": [
+            "final15-lite-main-completion8-20261022",
+            "final15-full-main-20261022"
+          ],
+          "evidence": "Both final35 same-S0 ordinary removal/reinstall cases passed, followed by actual IME and soft/cold restart. Historical failed runs remain failed.",
+          "original_code_limit": "Original error code unavailable for completion2/3; no retroactive error code assigned. Later four runs captured -48221; no claim to fix -10061.",
+          "verified_at": 1792691910.230535
+        }
+      },
+      {
+        "profile": "final15-lite-main-completion6-20261022",
+        "variant": "lite",
+        "kind": "main",
+        "started_at": 1792682611.258955,
+        "passed": false,
+        "stages": [
+          "Fresh identical S0: original ROM/New baseline, font+Region, exact saved Unicode; earlier9 main stages linked separately",
+          "Extended Latin/symbols in four Roman families, six shared bitmap sizes, settled overview and About"
+        ],
+        "error": "Captured font activation failure: UBX NS UBXLOC\tINSTALLFAIL\tfont\tname\tevt.ex.fr\nUBX NS UBXLOC\tINSTALLFAIL\tfont\tcode\t-48221\nUBX NS UBXLOC\tINSTALLFAIL\tfont\tphase\tsharedText\nUBX NS D52ACK 18e0e3860f08ef40\n",
+        "ended_at": 1792682817.078614,
+        "launch_completed": true,
+        "protected_after": {
+          "frozen_53e_files": 254,
+          "protected_52_files": 432,
+          "development_snapshot_files": 21,
+          "concurrent_development_changes": []
+        },
+        "completes": "final15-lite-main-20261022",
+        "completion_start": "fresh identical S0; not a resumed RAM state",
+        "inherited_verified_stages": [
+          "Original ROM English controls, New and four body baselines",
+          "Font-only: native Roman metadata, automatic Chinese routing, canonical font and About",
+          "Region installation, Chinese locale/date/currency APIs, English labels, 712000 and real font picker",
+          "Native Quick people/place, exact saved record references",
+          "Native pen Styles: seven families whole/partial, four sizes, five faces; three note formats/reopen",
+          "Exact Unicode saved/reopened, Calls fixed-style Chinese name without manual switching",
+          "Find five/three mixed sources, Chinese query, result jump and empty results",
+          "Person/company/group/worksite, 256-character address, five selectors, Repeat Other and cleanup date",
+          "Nonempty Agenda, To Do, Day/Week/Month/Year, seven title weekdays and native Text menu"
+        ],
+        "checkpoint_flash_sha256": "7be1cb6c5df40fda499fd88a178bd35aafaf7e09c4b472bd9e41f0ce380d116b",
+        "classification": "Real hot reinstallation activation failure; not a QA pass",
+        "captured_error_code": -48221,
+        "resolved": true,
+        "resolution": {
+          "candidate": "dev15-attempt35",
+          "change": "styledTextDrawing returns EnsureInternal(pieces), owning the complete drawing list independently of removable font package. Native exception reporting preserves error/message/data.",
+          "verification_profiles": [
+            "final15-lite-main-completion8-20261022",
+            "final15-full-main-20261022"
+          ],
+          "evidence": "Both final35 same-S0 ordinary removal/reinstall cases passed, followed by actual IME and soft/cold restart. Historical failed runs remain failed.",
+          "original_code_limit": "Original error code unavailable for completion2/3; no retroactive error code assigned. Later four runs captured -48221; no claim to fix -10061.",
+          "verified_at": 1792691910.230535
+        }
+      },
+      {
+        "profile": "final15-lite-main-completion7-20261022",
+        "variant": "lite",
+        "kind": "main",
+        "started_at": 1792682975.072787,
+        "passed": false,
+        "stages": [
+          "Fresh identical S0: original ROM/New baseline, font+Region, exact saved Unicode; earlier9 main stages linked separately",
+          "Extended Latin/symbols in four Roman families, six shared bitmap sizes, settled overview and About"
+        ],
+        "error": "Captured font activation failure: UBX NS UBXLOC\tINSTALLFAIL\tfont\tname\tevt.ex.fr\nUBX NS UBXLOC\tINSTALLFAIL\tfont\tcode\t-48221\nUBX NS UBXLOC\tINSTALLFAIL\tfont\tphase\tsharedText\nUBX NS UBXLOC\tINSTALLFAIL\tfont\tviewClass\t74\nUBX NS UBXLOC\tINSTALLFAIL\tfont\toperation\tpieces\nUBX NS UBXLOC\tINSTALLFAIL\tfont\tviewIndex\t4\nUBX NS D52ACK 18e0e3dac2c835f0\n",
+        "ended_at": 1792683180.8563771,
+        "launch_completed": true,
+        "protected_after": {
+          "frozen_53e_files": 254,
+          "protected_52_files": 432,
+          "development_snapshot_files": 21,
+          "concurrent_development_changes": []
+        },
+        "completes": "final15-lite-main-20261022",
+        "completion_start": "fresh identical S0; not a resumed RAM state",
+        "inherited_verified_stages": [
+          "Original ROM English controls, New and four body baselines",
+          "Font-only: native Roman metadata, automatic Chinese routing, canonical font and About",
+          "Region installation, Chinese locale/date/currency APIs, English labels, 712000 and real font picker",
+          "Native Quick people/place, exact saved record references",
+          "Native pen Styles: seven families whole/partial, four sizes, five faces; three note formats/reopen",
+          "Exact Unicode saved/reopened, Calls fixed-style Chinese name without manual switching",
+          "Find five/three mixed sources, Chinese query, result jump and empty results",
+          "Person/company/group/worksite, 256-character address, five selectors, Repeat Other and cleanup date",
+          "Nonempty Agenda, To Do, Day/Week/Month/Year, seven title weekdays and native Text menu"
+        ],
+        "checkpoint_flash_sha256": "7be1cb6c5df40fda499fd88a178bd35aafaf7e09c4b472bd9e41f0ce380d116b",
+        "classification": "Real hot reinstallation activation failure; not a QA pass",
+        "captured_error_code": -48221,
+        "resolved": true,
+        "resolution": {
+          "candidate": "dev15-attempt35",
+          "change": "styledTextDrawing returns EnsureInternal(pieces), owning the complete drawing list independently of removable font package. Native exception reporting preserves error/message/data.",
+          "verification_profiles": [
+            "final15-lite-main-completion8-20261022",
+            "final15-full-main-20261022"
+          ],
+          "evidence": "Both final35 same-S0 ordinary removal/reinstall cases passed, followed by actual IME and soft/cold restart. Historical failed runs remain failed.",
+          "original_code_limit": "Original error code unavailable for completion2/3; no retroactive error code assigned. Later four runs captured -48221; no claim to fix -10061.",
+          "verified_at": 1792691910.230536
+        }
+      }
+    ],
+    "accepted_readable_boundaries": {
+      "accepted": true,
+      "classification": "User-approved readable extreme boundary; old strict geometric assertion is outside current acceptance",
+      "user_instruction": "长文件夹标题之类的极端边界，只要可读就可以认为成功。",
+      "source": "final15-lite-final35-20261022-long_folder.json",
+      "actual_screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-20261022/Long-folder-title.png",
+      "visual_review": "Readable Chinese with ellipsis; clock readable. Native snapshot at image capture has title.left85, clock.right82. Later separate geometric reads are not the user criterion.",
+      "preserved_original_failure": true
+    },
+    "native_input_retest": {
+      "completed": true,
+      "original_profile": "final15-full-final35-20261022",
+      "phase": "country_native",
+      "original_result": "First native pen tap left the visible Country menu open and locale unchanged; no guest exception captured. Original operation is not a pass.",
+      "raw_result": "final15-full-final35-20261022-country_native.json",
+      "raw_input": [
+        158,
+        207
+      ],
+      "native_menu_bounds": [
+        133,
+        195,
+        223,
+        342
+      ],
+      "root_cause": "unconfirmed input registration/timing; no product cause claimed",
+      "retest_profile": "final15-full-final35-tail-20261023",
+      "qa_change": "Require two native menu viewCObject ready observations before picking an item; same fixed S0 and candidate35.",
+      "retest_result": "China-USA-China actual native selection, two ready observations before taps, original Roman and CJK font assertions passed; original failed input retained without cause attribution.",
+      "actual_evidence": [
+        "experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Country-native-China.png",
+        "experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Country-native-menu-to-USA.png",
+        "experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Country-native-USA.png",
+        "experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Country-native-menu-to-China.png",
+        "experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Country-native-China-again.png"
+      ]
+    },
+    "candidate_change_impact_review": {
+      "candidate": "dev15-attempt35",
+      "reviewed_at": 1792691096.0834281,
+      "source_comparison": "candidate30-to35-source.diff",
+      "sources": [
+        {
+          "path": "packages/milestone52r2-display/font-full/About.newt",
+          "candidate30_sha256": "4d2b073b15e15d7d40887cd57f9ba77431fbaa91046076aeb1c543b84f5b06b8",
+          "candidate35_sha256": "4d2b073b15e15d7d40887cd57f9ba77431fbaa91046076aeb1c543b84f5b06b8",
+          "unchanged": true
+        },
+        {
+          "path": "packages/milestone52r2-display/font-full/Font.newt",
+          "candidate30_sha256": "1d74663a88774d810fb82b3761d63565cc310fc58283b7e971fb3fea410fc297",
+          "candidate35_sha256": "34b81f54468b11378e4d319895f50d1bfd9a61e82df3e5832b91ff5000862f92",
+          "unchanged": false
+        },
+        {
+          "path": "packages/milestone52r2-display/font-full/Icon.newt",
+          "candidate30_sha256": "ff80980d44b4fca035752e40886fb01c6c170242e955c907a218738a470aa68a",
+          "candidate35_sha256": "ff80980d44b4fca035752e40886fb01c6c170242e955c907a218738a470aa68a",
+          "unchanged": true
+        },
+        {
+          "path": "packages/milestone52r2-display/font-lite/About.newt",
+          "candidate30_sha256": "d74c1a60ce9a8d820668cca79805992a971e697514a92cf498da3b1f96b0e2a9",
+          "candidate35_sha256": "d74c1a60ce9a8d820668cca79805992a971e697514a92cf498da3b1f96b0e2a9",
+          "unchanged": true
+        },
+        {
+          "path": "packages/milestone52r2-display/font-lite/Font.newt",
+          "candidate30_sha256": "1d74663a88774d810fb82b3761d63565cc310fc58283b7e971fb3fea410fc297",
+          "candidate35_sha256": "34b81f54468b11378e4d319895f50d1bfd9a61e82df3e5832b91ff5000862f92",
+          "unchanged": false
+        },
+        {
+          "path": "packages/milestone52r2-display/font-lite/Icon.newt",
+          "candidate30_sha256": "ff80980d44b4fca035752e40886fb01c6c170242e955c907a218738a470aa68a",
+          "candidate35_sha256": "ff80980d44b4fca035752e40886fb01c6c170242e955c907a218738a470aa68a",
+          "unchanged": true
+        },
+        {
+          "path": "packages/milestone52r2-display/shared/AboutView.newt",
+          "candidate30_sha256": "a2fa9750b75f2400cc8acfdbff7ab04616a86564699a40d27066ae4b4411e756",
+          "candidate35_sha256": "a2fa9750b75f2400cc8acfdbff7ab04616a86564699a40d27066ae4b4411e756",
+          "unchanged": true
+        },
+        {
+          "path": "packages/milestone52r2-display/shared/ContentDisplay.newt",
+          "candidate30_sha256": "c5e8679a31ccafb53f675462c3c547e20554dc25ce0a8b244ccbe3a63dcf43d9",
+          "candidate35_sha256": "2534ba4f2bbebb592610b1eca4aa5b1fbca4d4868cee4e6b016fc401d9df06c4",
+          "unchanged": false
+        },
+        {
+          "path": "packages/milestone52r2-display/shared/ContentFont.newt",
+          "candidate30_sha256": "8c15604e54cd38bd7276fce0bb4c745ccd0701bda56412db82fa913843b54f40",
+          "candidate35_sha256": "8c15604e54cd38bd7276fce0bb4c745ccd0701bda56412db82fa913843b54f40",
+          "unchanged": true
+        }
+      ],
+      "reviewed_changes": [
+        "Font.newt normal exception reporting now preserves CurrentException.error/message/data and diagnostic phase",
+        "ContentDisplay.newt adds failure-phase context and shared-view operation/index/class diagnostics",
+        "styledTextDrawing returns EnsureInternal(pieces), owning the complete generated list; text construction, glyph lookup, font routing, metrics and geometry calculations are unchanged"
+      ],
+      "limits": "Object ownership is a functional lifecycle change. Historical Lite main stages are explicitly identified as candidate30 evidence; final35 adds fresh 20-phase Lite matrix, 28 pixel controls, ordinary hot reinstall and restart cases. Full main uses final35 from S0. This is a change-impact review, not a claim that every historical test was rerun."
+    },
+    "completed_at": 1792691951.812373,
+    "protected_files_unchanged": 93
+  },
+  "protection": {
+    "frozen_53e_files": 254,
+    "protected_52_files": 432,
+    "development_snapshot_files": 21,
+    "concurrent_development_changes": []
+  }
+}

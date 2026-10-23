@@ -1,0 +1,45 @@
+{
+  "phase": "system_roots",
+  "profile": "final15-lite-final18-20261022",
+  "started": 1792665219.120762,
+  "states": [
+    {
+      "state": "System-WorldClock",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final18-20261022/System-WorldClock.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "System-Formulas",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final18-20261022/System-Formulas.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "System-Prefs",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final18-20261022/System-Prefs.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "System-Calculator",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final18-20261022/System-Calculator.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "System-InOut",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final18-20261022/System-InOut.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "System-Assist",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final18-20261022/System-Assist.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "System-Connection",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final18-20261022/System-Connection.png",
+      "adapter_errors": 0
+    }
+  ],
+  "passed": true,
+  "runner_sha256": "5801db5280999f01be624cb5fbc7b090ae8e9f65848a0149e2e639a9837bb099",
+  "ended": 1792665236.678359
+}

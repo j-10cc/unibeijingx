@@ -1,0 +1,30 @@
+{
+  "phase": "clock_modes",
+  "profile": "final15-lite-final30-20261022",
+  "started": 1792678284.790829,
+  "states": [
+    {
+      "state": "Clock-Daily-Alarm",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Clock-Daily-Alarm.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Clock-Minute-Timer",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Clock-Minute-Timer.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Clock-Time-Date",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Clock-Time-Date.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Clock-Options",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Clock-Options.png",
+      "adapter_errors": 0
+    }
+  ],
+  "passed": true,
+  "runner_sha256": "96ab4ff01f67efcca167d248fecae6680d3b5ee65007fde5b11126651b451587",
+  "ended": 1792678324.097547
+}

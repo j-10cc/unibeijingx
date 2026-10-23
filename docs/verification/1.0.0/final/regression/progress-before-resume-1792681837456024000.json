@@ -1,0 +1,223 @@
+{
+  "candidate": "dev15",
+  "version": "1.0.0",
+  "started_at": 1792678569.038434,
+  "product_read_only": false,
+  "10061": "paused",
+  "8h": "excluded",
+  "protected_before": {
+    "frozen_53e_files": 254,
+    "protected_52_files": 432,
+    "development_snapshot_files": 21,
+    "concurrent_development_changes": []
+  },
+  "cases": [
+    {
+      "profile": "final15-lite-main-completion3-20261022",
+      "variant": "lite",
+      "kind": "main",
+      "started_at": 1792681255.4291918,
+      "passed": false,
+      "stages": [
+        "Fresh identical S0: original ROM/New baseline, font+Region, exact saved Unicode; earlier9 main stages linked separately",
+        "Extended Latin/symbols in four Roman families, six shared bitmap sizes, settled overview and About"
+      ],
+      "error": "Package did not activate: /Users/chengyiqun/Documents/UniBeijingX/packages/milestone52r2-display/artifacts/dev15/Font-Lite.pkg",
+      "ended_at": 1792681739.470676,
+      "launch_completed": true,
+      "protected_after": {
+        "frozen_53e_files": 254,
+        "protected_52_files": 432,
+        "development_snapshot_files": 21,
+        "concurrent_development_changes": []
+      },
+      "completes": "final15-lite-main-20261022",
+      "completion_start": "fresh identical S0; not a resumed RAM state",
+      "inherited_verified_stages": [
+        "Original ROM English controls, New and four body baselines",
+        "Font-only: native Roman metadata, automatic Chinese routing, canonical font and About",
+        "Region installation, Chinese locale/date/currency APIs, English labels, 712000 and real font picker",
+        "Native Quick people/place, exact saved record references",
+        "Native pen Styles: seven families whole/partial, four sizes, five faces; three note formats/reopen",
+        "Exact Unicode saved/reopened, Calls fixed-style Chinese name without manual switching",
+        "Find five/three mixed sources, Chinese query, result jump and empty results",
+        "Person/company/group/worksite, 256-character address, five selectors, Repeat Other and cleanup date",
+        "Nonempty Agenda, To Do, Day/Week/Month/Year, seven title weekdays and native Text menu"
+      ],
+      "checkpoint_flash_sha256": "7be1cb6c5df40fda499fd88a178bd35aafaf7e09c4b472bd9e41f0ce380d116b"
+    }
+  ],
+  "excluded": [
+    "-10061 investigation and stress triggering",
+    "8-hour soak (removed)",
+    "loading first-frame boxes if readable after settling",
+    "readable bottom crop of 周",
+    "old Notes compatibility",
+    "address lengths greater than 256"
+  ],
+  "source_of_qa_methods": "experiments/qa/display52r2/font-menu-dev14-20261022",
+  "ended_at": 1792681739.564165,
+  "last_variant_completed": false,
+  "qa_aborted_cases": [
+    {
+      "profile": "final15-lite-main-20261022",
+      "variant": "lite",
+      "kind": "main",
+      "started_at": 1792678569.038667,
+      "passed": false,
+      "stages": [
+        "Original ROM English controls, New and four body baselines",
+        "Font-only: native Roman metadata, automatic Chinese routing, canonical font and About",
+        "Region installation, Chinese locale/date/currency APIs, English labels, 712000 and real font picker",
+        "Native Quick people/place, exact saved record references",
+        "Native pen Styles: seven families whole/partial, four sizes, five faces; three note formats/reopen",
+        "Exact Unicode saved/reopened, Calls fixed-style Chinese name without manual switching",
+        "Find five/three mixed sources, Chinese query, result jump and empty results",
+        "Person/company/group/worksite, 256-character address, five selectors, Repeat Other and cleanup date",
+        "Nonempty Agenda, To Do, Day/Week/Month/Year, seven title weekdays and native Text menu"
+      ],
+      "error": "Guest error or unexpected boot: UBX NS D52ASSERT\toverview-settled\tnative-overview\tPASS\nUBX NS D52ASSERT\toverview-settled\tactual-page-draw-hook\tPASS\nUBX NS D52ASSERT\toverview-settled\tsummary-ready\tFAIL\nUBX NS UBXLOC\tM52ERROR\texception\tname\tevt.ex.msg\nUBX NS UBXLOC\tM52ERROR\texception\tmessage\toverview-settled summary-ready\nUBX NS D52ACK 18e0e0e6b5615078\n",
+      "ended_at": 1792679934.097713,
+      "launch_completed": true,
+      "protected_after": {
+        "frozen_53e_files": 254,
+        "protected_52_files": 432,
+        "development_snapshot_files": 21,
+        "concurrent_development_changes": []
+      },
+      "classification": "obsolete QA assertion requiring whole-title CJK frame; final design preserves native Roman font",
+      "continuation": "final15-lite-main-continue-20261022"
+    },
+    {
+      "profile": "final15-lite-main-continue-20261022",
+      "variant": "lite",
+      "kind": "main",
+      "started_at": 1792680265.471453,
+      "passed": false,
+      "stages": [],
+      "error": "Guest error or unexpected boot: UBX NS UBXLOC\tM52ERROR\texception\tname\tevt.ex.fr.intrp;type.ref.frame\nUBX NS UBXLOC\tM52ERROR\tdata\terrorCode\t-48808\nUBX NS UBXLOC\tM52ERROR\tdata\tsymbol\tD52L\nUBX NS D52ACK 18e0e13503fed4f0\n",
+      "ended_at": 1792680270.032568,
+      "launch_completed": true,
+      "protected_after": {
+        "frozen_53e_files": 254,
+        "protected_52_files": 432,
+        "development_snapshot_files": 21,
+        "concurrent_development_changes": []
+      },
+      "continued_from": "final15-lite-main-20261022",
+      "inherited_verified_stages": [
+        "Original ROM English controls, New and four body baselines",
+        "Font-only: native Roman metadata, automatic Chinese routing, canonical font and About",
+        "Region installation, Chinese locale/date/currency APIs, English labels, 712000 and real font picker",
+        "Native Quick people/place, exact saved record references",
+        "Native pen Styles: seven families whole/partial, four sizes, five faces; three note formats/reopen",
+        "Exact Unicode saved/reopened, Calls fixed-style Chinese name without manual switching",
+        "Find five/three mixed sources, Chinese query, result jump and empty results",
+        "Person/company/group/worksite, 256-character address, five selectors, Repeat Other and cleanup date",
+        "Nonempty Agenda, To Do, Day/Week/Month/Year, seven title weekdays and native Text menu"
+      ],
+      "checkpoint_flash_sha256": "7be1cb6c5df40fda499fd88a178bd35aafaf7e09c4b472bd9e41f0ce380d116b",
+      "classification": "QA cold-start logger D52L was not rebound before clean; no product operation reached"
+    },
+    {
+      "profile": "final15-lite-main-continue2-20261022",
+      "variant": "lite",
+      "kind": "main",
+      "started_at": 1792680335.766614,
+      "passed": false,
+      "stages": [],
+      "error": "Guest error or unexpected boot: UBX NS D52ASSERT\tresume\texisting-QA\tFAIL\nUBX NS UBXLOC\tM52ERROR\texception\tname\tevt.ex.msg\nUBX NS UBXLOC\tM52ERROR\texception\tmessage\tresume existing-QA\nUBX NS D52ACK 18e0e1459d77f598\n",
+      "ended_at": 1792680341.260536,
+      "launch_completed": true,
+      "protected_after": {
+        "frozen_53e_files": 254,
+        "protected_52_files": 432,
+        "development_snapshot_files": 21,
+        "concurrent_development_changes": []
+      },
+      "continued_from": "final15-lite-main-20261022",
+      "inherited_verified_stages": [
+        "Original ROM English controls, New and four body baselines",
+        "Font-only: native Roman metadata, automatic Chinese routing, canonical font and About",
+        "Region installation, Chinese locale/date/currency APIs, English labels, 712000 and real font picker",
+        "Native Quick people/place, exact saved record references",
+        "Native pen Styles: seven families whole/partial, four sizes, five faces; three note formats/reopen",
+        "Exact Unicode saved/reopened, Calls fixed-style Chinese name without manual switching",
+        "Find five/three mixed sources, Chinese query, result jump and empty results",
+        "Person/company/group/worksite, 256-character address, five selectors, Repeat Other and cleanup date",
+        "Nonempty Agenda, To Do, Day/Week/Month/Year, seven title weekdays and native Text menu"
+      ],
+      "checkpoint_flash_sha256": "7be1cb6c5df40fda499fd88a178bd35aafaf7e09c4b472bd9e41f0ce380d116b",
+      "classification": "QA cold-resume bootstrap lacked logger or install-only probe globals; no product operation reached"
+    },
+    {
+      "profile": "final15-lite-main-completion-20261022",
+      "variant": "lite",
+      "kind": "main",
+      "started_at": 1792680501.025789,
+      "passed": false,
+      "stages": [],
+      "error": "Command '['/Users/chengyiqun/Documents/UniBeijingX/experiments/toolchain/bin/tntk', '-P', '/Users/chengyiqun/Documents/UniBeijingX/experiments/toolchain/platform', '-c', 'AuditProbe.nprj']' died with <Signals.SIGBUS: 10>.",
+      "ended_at": 1792680532.789238,
+      "launch_completed": true,
+      "protected_after": {
+        "frozen_53e_files": 254,
+        "protected_52_files": 432,
+        "development_snapshot_files": 21,
+        "concurrent_development_changes": []
+      },
+      "completes": "final15-lite-main-20261022",
+      "completion_start": "fresh identical S0; not a resumed RAM state",
+      "inherited_verified_stages": [
+        "Original ROM English controls, New and four body baselines",
+        "Font-only: native Roman metadata, automatic Chinese routing, canonical font and About",
+        "Region installation, Chinese locale/date/currency APIs, English labels, 712000 and real font picker",
+        "Native Quick people/place, exact saved record references",
+        "Native pen Styles: seven families whole/partial, four sizes, five faces; three note formats/reopen",
+        "Exact Unicode saved/reopened, Calls fixed-style Chinese name without manual switching",
+        "Find five/three mixed sources, Chinese query, result jump and empty results",
+        "Person/company/group/worksite, 256-character address, five selectors, Repeat Other and cleanup date",
+        "Nonempty Agenda, To Do, Day/Week/Month/Year, seven title weekdays and native Text menu"
+      ],
+      "checkpoint_flash_sha256": "7be1cb6c5df40fda499fd88a178bd35aafaf7e09c4b472bd9e41f0ce380d116b",
+      "classification": "QA probe compiler rejected reserved identifier; no product install reached"
+    }
+  ],
+  "product_failed_cases": [
+    {
+      "profile": "final15-lite-main-completion2-20261022",
+      "variant": "lite",
+      "kind": "main",
+      "started_at": 1792680606.758801,
+      "passed": false,
+      "stages": [
+        "Fresh identical S0: original ROM/New baseline, font+Region, exact saved Unicode; earlier9 main stages linked separately",
+        "Extended Latin/symbols in four Roman families, six shared bitmap sizes, settled overview and About"
+      ],
+      "error": "Package did not activate: /Users/chengyiqun/Documents/UniBeijingX/packages/milestone52r2-display/artifacts/dev15/Font-Lite.pkg",
+      "ended_at": 1792681092.063391,
+      "launch_completed": true,
+      "protected_after": {
+        "frozen_53e_files": 254,
+        "protected_52_files": 432,
+        "development_snapshot_files": 21,
+        "concurrent_development_changes": []
+      },
+      "completes": "final15-lite-main-20261022",
+      "completion_start": "fresh identical S0; not a resumed RAM state",
+      "inherited_verified_stages": [
+        "Original ROM English controls, New and four body baselines",
+        "Font-only: native Roman metadata, automatic Chinese routing, canonical font and About",
+        "Region installation, Chinese locale/date/currency APIs, English labels, 712000 and real font picker",
+        "Native Quick people/place, exact saved record references",
+        "Native pen Styles: seven families whole/partial, four sizes, five faces; three note formats/reopen",
+        "Exact Unicode saved/reopened, Calls fixed-style Chinese name without manual switching",
+        "Find five/three mixed sources, Chinese query, result jump and empty results",
+        "Person/company/group/worksite, 256-character address, five selectors, Repeat Other and cleanup date",
+        "Nonempty Agenda, To Do, Day/Week/Month/Year, seven title weekdays and native Text menu"
+      ],
+      "checkpoint_flash_sha256": "7be1cb6c5df40fda499fd88a178bd35aafaf7e09c4b472bd9e41f0ce380d116b",
+      "classification": "Real hot reinstallation activation failure; original code not yet captured; not a QA pass"
+    }
+  ]
+}

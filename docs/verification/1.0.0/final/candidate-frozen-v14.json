@@ -1,0 +1,59 @@
+{
+  "candidate": "dev15",
+  "attempt": 35,
+  "accepted": true,
+  "packages": {
+    "Font-Lite.pkg": {
+      "path": "packages/milestone52r2-display/artifacts/Font-Lite.pkg",
+      "bytes": 812096,
+      "sha256": "58f6bd9a0d5a8504b94d3bb1430153b767bc99ac6c1db2de42b20d794a77962a"
+    },
+    "Font-Full.pkg": {
+      "path": "packages/milestone52r2-display/artifacts/Font-Full.pkg",
+      "bytes": 1571768,
+      "sha256": "c63ad1c567cd224564afb4cceec45a19533645f80ca1bd60dfa5c6fed02b3c20"
+    }
+  },
+  "sources": [
+    {
+      "path": "packages/milestone52r2-display/font-full/About.newt",
+      "sha256": "4d2b073b15e15d7d40887cd57f9ba77431fbaa91046076aeb1c543b84f5b06b8"
+    },
+    {
+      "path": "packages/milestone52r2-display/font-full/Font.newt",
+      "sha256": "34b81f54468b11378e4d319895f50d1bfd9a61e82df3e5832b91ff5000862f92"
+    },
+    {
+      "path": "packages/milestone52r2-display/font-full/Icon.newt",
+      "sha256": "ff80980d44b4fca035752e40886fb01c6c170242e955c907a218738a470aa68a"
+    },
+    {
+      "path": "packages/milestone52r2-display/font-lite/About.newt",
+      "sha256": "d74c1a60ce9a8d820668cca79805992a971e697514a92cf498da3b1f96b0e2a9"
+    },
+    {
+      "path": "packages/milestone52r2-display/font-lite/Font.newt",
+      "sha256": "34b81f54468b11378e4d319895f50d1bfd9a61e82df3e5832b91ff5000862f92"
+    },
+    {
+      "path": "packages/milestone52r2-display/font-lite/Icon.newt",
+      "sha256": "ff80980d44b4fca035752e40886fb01c6c170242e955c907a218738a470aa68a"
+    },
+    {
+      "path": "packages/milestone52r2-display/shared/AboutView.newt",
+      "sha256": "a2fa9750b75f2400cc8acfdbff7ab04616a86564699a40d27066ae4b4411e756"
+    },
+    {
+      "path": "packages/milestone52r2-display/shared/ContentDisplay.newt",
+      "sha256": "2534ba4f2bbebb592610b1eca4aa5b1fbca4d4868cee4e6b016fc401d9df06c4"
+    },
+    {
+      "path": "packages/milestone52r2-display/shared/ContentFont.newt",
+      "sha256": "8c15604e54cd38bd7276fce0bb4c745ccd0701bda56412db82fa913843b54f40"
+    }
+  ],
+  "delta": "Current final-round candidate; see source diff and failure records",
+  "acceptance": "final-qualification.json",
+  "release": "release/UniBeijingX-1.0.0",
+  "accepted_at": 1792691985.56703
+}

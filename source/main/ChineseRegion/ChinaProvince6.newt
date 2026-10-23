@@ -1,0 +1,20 @@
+// Generated China Post outlet atlas; do not edit.
+DefGlobalVar('ubxChinaProvince6,'{name:"天津市",cities:[
+{name:"天津市",areas:[
+{name:"东丽区",codesOffset:21504,codesCount:9},
+{name:"北辰区",codesOffset:21531,codesCount:10},
+{name:"南开区",codesOffset:21561,codesCount:16},
+{name:"和平区",codesOffset:21609,codesCount:10},
+{name:"大港区",codesOffset:21639,codesCount:2},
+{name:"宁河区",codesOffset:21645,codesCount:11},
+{name:"宝坻区",codesOffset:21678,codesCount:21},
+{name:"武清区",codesOffset:21741,codesCount:28},
+{name:"河东区",codesOffset:21825,codesCount:15},
+{name:"河北区",codesOffset:21870,codesCount:13},
+{name:"河西区",codesOffset:21909,codesCount:10},
+{name:"津南区",codesOffset:21939,codesCount:6},
+{name:"滨海新区",codesOffset:21957,codesCount:26},
+{name:"红桥区",codesOffset:22035,codesCount:8},
+{name:"蓟州区",codesOffset:22059,codesCount:25},
+{name:"西青区",codesOffset:22134,codesCount:8},
+{name:"静海区",codesOffset:22158,codesCount:18}]}]});

@@ -1,0 +1,404 @@
+fontPart := {
+    contentModule: ubx52ContentProto,
+    displayScheduler: "52r1-observers",
+    displayRevision: "5.2r2-display-dev15",
+    productVersion: "1.0.0",
+    app: '|UniBeijingX:UBX|,
+    // Only the companion About form publishes an Extras icon.
+    fontInfo: {
+        name: "UniBeijingX",
+        encoding: 0,
+        macFontID: 4112,
+        screenSym: 'beijing,
+        psName: 'beijing,
+        psScale: 288356,
+        plainData: SetClass(LoadBinary("UniBeijingX.sfnt"), 'sfnt),
+        boldData: nil,
+        italicData: nil,
+        boldItalicData: nil,
+    },
+    installScript: func(partFrame) begin
+        if GlobalVarExists('|ubxFontInstallFailure:UBX|) then UnDefGlobalVar('|ubxFontInstallFailure:UBX|);
+        local failure:=nil;local result:=nil;
+        try result:=partFrame:activate(partFrame)
+        onexception |evt.ex| do failure:=CurrentException();
+        if failure then begin
+            // Activation either completes with its remover or releases all
+            // font/content state before reporting the original failure.
+            local code:=if HasSlot(failure,'error) then failure.error
+                else if IsFrame(failure.data) then failure.data.errorCode else failure.data;
+            local observer:=GetGlobalVar('|ubxNamesContent:UBX|);
+            local phase:=if observer then observer.phase else 'fontSetup;
+            if not phase then phase:='observerSetup;
+            local detail:=EnsureInternal({name:failure.name,code:code,phase:phase});
+            if observer then begin
+                detail.viewClass:=observer.sharedClass;detail.operation:=observer.sharedOperation;
+                detail.viewIndex:=observer.sharedIndex;
+                detail.rootRole:=observer.sharedRootRole;
+            end;
+            detail:=EnsureInternal(detail);
+            partFrame:removeScript(nil);
+            DefGlobalVar('|ubxFontInstallFailure:UBX|,detail);
+            local value:=if HasSlot(failure,'error) then failure.error
+                else if HasSlot(failure,'message) then failure.message else failure.data;
+            Throw(failure.name,value);
+        end;
+        return result;
+    end,
+    activate: func(partFrame) begin
+        // Keep the ROM font prototype available for the package removal script.
+        DefGlobalVar('|ubxFontPrototype:UBX|, fonts._proto);
+        DefGlobalVar('|ubxFontPart:UBX|, partFrame);
+        fonts.(EnsureInternal('hand)) := Clone(fonts.handwriting);
+        fonts.hand.name := "Hand";
+        fonts.hand.screenSym := 'hand;
+        if HasSlot(fonts.hand, 'tsid) then RemoveSlot(fonts.hand, 'tsid);
+        fonts.(EnsureInternal('USA)) := Clone(fonts.newyork);
+        fonts.USA.name := "USA";
+        fonts.USA.screenSym := 'USA;
+        if HasSlot(fonts.USA, 'tsid) then RemoveSlot(fonts.USA, 'tsid);
+        fonts.(EnsureInternal('switzerland)) := Clone(fonts.geneva);
+        fonts.switzerland.name := "Switzerland";
+        fonts.switzerland.screenSym := 'switzerland;
+        if HasSlot(fonts.switzerland, 'tsid) then RemoveSlot(fonts.switzerland, 'tsid);
+        // A native frame descriptor also resolves these entries. Substituting
+        // the CJK bitmap here degrades Text/Styles/Find and every other native
+        // English control. Keep each original ROM family, including its tsID.
+        foreach family in '[espy,newyork,geneva,handwriting] do
+            fonts.(EnsureInternal(family)):=Clone(fonts.(family));
+        RemoveSlot(fonts, '_proto);
+        fonts.(EnsureInternal('beijing)) := Clone(partFrame.fontInfo);
+        // Native font metadata caches can outlive the NS registry entries.
+        // Internalize small metadata and its symbols, as the regional font
+        // already does. Keep sfnt binaries in their package, never in the heap.
+        foreach family in '[beijing,espy,newyork,geneva,handwriting,hand,USA,switzerland] do begin
+            local metadata:=Clone(fonts.(family));
+            local bitmap:=metadata.plainData;
+            metadata.plainData:=nil;
+            metadata:=EnsureInternal(metadata);
+            metadata.plainData:=bitmap;
+            fonts.(EnsureInternal(family)):=metadata;
+        end;
+        psfonts.(EnsureInternal('beijing)) := fonts.beijing;
+        local prefs := GetAppPrefs('|UniBeijingX:UBX|,
+            {enabled: nil, savedFont: nil, notesEpoch: 0});
+        if not prefs.enabled then prefs.savedFont := GetUserConfig('userFont);
+        prefs.enabled := true;
+        if prefs.notesEpoch = nil then prefs.notesEpoch := 0;
+        prefs.notesEpoch := prefs.notesEpoch + 1;
+        EntryChange(prefs);
+        local nextFont:=GetUserConfig('userFont);
+        if IsFrame(nextFont) then nextFont:=Clone(nextFont);
+        // Keep English-only new text on the user's native ROM font. Chinese
+        // input is resolved automatically by the integrated content adapter.
+        local family:=GetFontFamilySym(nextFont);local index:=0;
+        foreach name in '[espy,newyork,geneva,handwriting] do begin
+            if family=name then SetUserConfig('userFont,
+                index+1024*GetFontSize(nextFont)+1048576*GetFontFace(nextFont));
+            index:=index+1;
+        end;
+        local notes := GetRoot().paperroll;
+        if notes then SetValue(notes,EnsureInternal('ubxNotesEpoch), prefs.notesEpoch);
+        AddDelayedCall(partFrame.watchDates, nil, 750);
+        partFrame.contentModule:installScript(partFrame.contentModule);
+        nil;
+        local r:=Clone(partFrame.removeScript);r.argFrame:=nil;
+        EnsureInternal({removeScript:r});
+    end,
+    // Packed ROM fonts use the original Mac Roman repertoire. Keep those
+    // characters together, including accents and typographic punctuation.
+    // The Euro was added to Mac Roman after this ROM; use our bitmap for it.
+    romanCodes:[
+        160,161,162,163,165,167,168,169,170,171,172,174,
+        175,176,177,180,181,182,183,184,186,187,191,192,
+        193,194,195,196,197,198,199,200,201,202,203,204,
+        205,206,207,209,210,211,212,213,214,216,217,218,
+        219,220,223,224,225,226,227,228,229,230,231,232,
+        233,234,235,236,237,238,239,241,242,243,244,245,
+        246,247,248,249,250,251,252,255,305,338,339,376,
+        402,710,711,728,729,730,731,732,733,937,960,8211,
+        8212,8216,8217,8218,8220,8221,8222,8224,8225,8226,8230,8240,
+        8249,8250,8260,8482,8706,8710,8719,8721,8730,8734,8747,8776,
+        8800,8804,8805,9674,63743,64257,64258],
+    displayCode:func(code) begin
+        if code<128 then return nil;
+        // Newton's native phone formatter uses FCxx characters for its ROM
+        // icons (FC01 is the phone-type diamond), not Arabic text. None of
+        // these control glyphs belongs to our cmap; keep them on the ROM font.
+        if code>=64512 and code<=64767 then return nil;
+        if code>=11904 and code<=55295 then return true;
+        local low:=0;local high:=Length(self.romanCodes)-1;
+        while low<=high do begin
+            local middle:=(low+high) div 2;local cp:=self.romanCodes[middle];
+            if code=cp then return nil;
+            if code<cp then high:=middle-1 else low:=middle+1;
+        end;
+        return true;
+    end,
+    containsChinese: func(value) begin
+        if not IsString(value) then return nil;
+        local i := 0;
+        while i < StrLen(value) do begin
+            if self:displayCode(Ord(value[i])) then return true;
+            i := i + 1;
+        end;
+        nil;
+    end,
+    watchDates: func() begin
+        if GlobalVarExists('|ubxFontPart:UBX|) then begin
+            local part := GetGlobalVar('|ubxFontPart:UBX|);
+            local dates := GetRoot().calendar;
+            if dates then begin
+                SetValue(dates,EnsureInternal('ubxDatesApply), part.applyDatesFont);
+                SetValue(dates,EnsureInternal('ubxDatesHookInstalled), true);
+                local watcher := BuildContext({
+                    _proto: protoStaticText,
+                    viewBounds: {left: -4, top: -4, right: -3, bottom: -3},
+                    viewFlags: 0,
+                    ViewIdleScript: part.datesIdle,
+                });
+                watcher:Open();
+                watcher:SetupIdle(500);
+                SetValue(dates,EnsureInternal('ubxDatesWatcher), watcher);
+            end else
+                AddDelayedCall(part.watchDates, nil, 750);
+        end;
+    end,
+    datesIdle: func() begin
+        local dates := GetRoot().calendar;
+        if GlobalVarExists('|ubxFontPart:UBX|) then begin
+            // Names may retain its root view when another app comes forward.
+            // Newly rebuilt card children then miss ViewSetupDoneScript, so
+            // revisit them while the package is installed.
+            local part := GetGlobalVar('|ubxFontPart:UBX|);
+            part:applyNotesFont();
+            dates:ubxDatesApply();
+        end;
+        return 500;
+    end,
+    applyNotesFont: func() begin
+        local notes := GetRoot().paperroll;
+        if notes and notes.viewCObject and
+                HasSlot(notes, 'ubxNotesEpoch) then begin
+            local queue := [notes];
+            local i := 0;
+            local changed := nil;
+            while i < Length(queue) and i < 300 do begin
+                local view := queue[i];
+                local children := nil;
+                local j := 0;
+                try begin
+                    children := view:ChildViewFrames();
+                    if IsString(view.text) and view.viewFont exists and
+                            GetFontFamilySym(view.viewFont) = 'beijing and
+                            (not HasSlot(view, 'ubxNotesFontEpoch) or
+                             view.ubxNotesFontEpoch <> notes.ubxNotesEpoch) then begin
+                        // Rebind an existing paragraph to the current sfnt.
+                        // Keep its size and face; soup text stays untouched.
+                        // Auto parts execute in place. A heap frame can still
+                        // contain a family symbol in this removable package.
+                        // The backdrop reopens cached paragraphs on removal.
+                        local rebound:=if IsFrame(view.viewFont) then Clone(view.viewFont) else
+                            {face:GetFontFace(view.viewFont),size:GetFontSize(view.viewFont)};
+                        rebound.family:=EnsureInternal('beijing);
+                        SetValue(view,EnsureInternal('viewFont),EnsureInternal(rebound));
+                        SetValue(view,EnsureInternal('ubxNotesFontEpoch), notes.ubxNotesEpoch);
+                        view:Dirty();
+                        changed := true;
+                    end;
+                end onexception |evt.ex| do begin end;
+                if children then while j < Length(children) do begin
+                    AddArraySlot(queue, children[j]);
+                    j := j + 1;
+                end;
+                i := i + 1;
+            end;
+            if changed then notes:Dirty();
+        end;
+    end,
+    applyDatesFont: func() begin
+        local dates := GetRoot().calendar;
+        local part := if GlobalVarExists('|ubxFontPart:UBX|) then
+            GetGlobalVar('|ubxFontPart:UBX|) else nil;
+        if dates and part and HasSlot(dates, 'ubxDatesHookInstalled) then begin
+            if HasSlot(dates, 'viewCObject) and dates.viewCObject then begin
+                local queue := [];
+                // Do not enumerate the children of an editor slip. The To Do
+                // title is a valid text field, but its child enumeration
+                // raises a Newton error while the slip is opening.
+                local focused := GetKeyView();
+                local top := focused;
+                local depth := 0;
+                while top and top <> GetRoot() and depth < 20 do begin
+                    local parent := top:Parent();
+                    if parent = GetRoot() then break;
+                    top := parent;
+                    depth := depth + 1;
+                end;
+                local content:=GetGlobalVar('|ubxNamesContent:UBX|);
+                if top and top <> dates and top <> GetRoot() then begin
+                    // The integrated quick-entry adapter owns these fields.
+                    // Do not mutate its equivalent descriptor or save it as a
+                    // second undo baseline in the legacy Dates adapter.
+                    if not (content and content.displayEnabled and content:quickScope(top)) and focused and focused.viewFont exists and
+                            part:containsChinese(focused.text) and not
+                            HasSlot(focused, 'ubxDatesFontSaved) then begin
+                        local family := GetFontFamilySym(focused.viewFont);
+                        if family = 'handwriting or family = 'newyork then begin
+                            SetValue(focused,EnsureInternal('ubxDatesFontSaved),
+                                focused.viewFont);
+                            if not HasSlot(dates, 'ubxDatesChanged) then
+                                SetValue(dates,EnsureInternal('ubxDatesChanged), []);
+                            AddArraySlot(dates.ubxDatesChanged, focused);
+                            SetValue(focused,EnsureInternal('viewFont),
+                                EnsureInternal({family:'beijing,size:GetFontSize(focused.viewFont),face:GetFontFace(focused.viewFont)}));
+                            focused:Dirty();
+                        end;
+                    end;
+                end else
+                    AddArraySlot(queue, dates);
+                local i := 0;
+                local changed := nil;
+                while i < Length(queue) and i < 250 do begin
+                    local view := queue[i];
+                    local children := view:ChildViewFrames();
+                    local j := 0;
+                    if view.viewFont exists and
+                            part:containsChinese(view.text) and not
+                            HasSlot(view, 'ubxDatesFontSaved) then begin
+                        local family := GetFontFamilySym(view.viewFont);
+                        if family = 'handwriting or family = 'newyork then begin
+                            SetValue(view,EnsureInternal('ubxDatesFontSaved), view.viewFont);
+                            if not HasSlot(dates, 'ubxDatesChanged) then
+                                SetValue(dates,EnsureInternal('ubxDatesChanged), []);
+                            AddArraySlot(dates.ubxDatesChanged, view);
+                            SetValue(view,EnsureInternal('viewFont),
+                                EnsureInternal({family:'beijing,size:GetFontSize(view.viewFont),face:GetFontFace(view.viewFont)}));
+                            view:Dirty();
+                            changed := true;
+                        end;
+                    end;
+                    if children then while j < Length(children) do begin
+                        AddArraySlot(queue, children[j]);
+                        j := j + 1;
+                    end;
+                    i := i + 1;
+                end;
+                if changed then dates:Dirty();
+            end;
+        end;
+    end,
+    removeScript: func(removeFrame) begin
+        local part:=GetGlobalVar('|ubxFontPart:UBX|);
+        if not part then return nil;
+        part.contentModule:removeScript(nil);
+        if GlobalVarExists('|ubxFontPart:UBX|) then
+            UnDefGlobalVar('|ubxFontPart:UBX|);
+        // Notes can keep live text views bound to this package's sfnt data.
+        // Release those views before the font slots are removed, so a same-
+        // session reinstall cannot redraw the old note with blank glyphs.
+        local notes := GetRoot().paperroll;
+        if notes then begin
+            if notes.viewCObject then notes:Close();
+            if HasSlot(notes, 'ubxNotesEpoch) then
+                RemoveSlot(notes, 'ubxNotesEpoch);
+            local queue := [notes];
+            local i := 0;
+            while i < Length(queue) and i < 300 do begin
+                local view := queue[i];
+                local children := nil;
+                local j := 0;
+                try begin
+                    children := view:ChildViewFrames();
+                    if HasSlot(view, 'ubxNotesFontEpoch) then
+                        RemoveSlot(view, 'ubxNotesFontEpoch);
+                end onexception |evt.ex| do begin end;
+                if children then while j < Length(children) do begin
+                    AddArraySlot(queue, children[j]);
+                    j := j + 1;
+                end;
+                i := i + 1;
+            end;
+        end;
+        local dates := GetRoot().calendar;
+        if dates then begin
+            if HasSlot(dates, 'ubxDatesWatcher) then begin
+                dates.ubxDatesWatcher:SetupIdle(0);
+                dates.ubxDatesWatcher:Close();
+                RemoveSlot(dates, 'ubxDatesWatcher);
+            end;
+            if HasSlot(dates, 'ubxDatesChanged) then begin
+                foreach view in dates.ubxDatesChanged do
+                    if HasSlot(view, 'ubxDatesFontSaved) then begin
+                        SetValue(view,EnsureInternal('viewFont), view.ubxDatesFontSaved);
+                        RemoveSlot(view, 'ubxDatesFontSaved);
+                    end;
+                RemoveSlot(dates, 'ubxDatesChanged);
+            end;
+            if HasSlot(dates, 'viewCObject) and dates.viewCObject then
+                dates:Close();
+            if HasSlot(dates, 'ubxDatesHookInstalled) then begin
+                RemoveSlot(dates, 'ubxDatesApply);
+                RemoveSlot(dates, 'ubxDatesHookInstalled);
+            end;
+        end;
+        local names := GetRoot().cardfile;
+        if names then begin
+            // Restore card fonts while the child views are still accessible.
+            local queue := [names];
+            local i := 0;
+            while i < Length(queue) and i < 250 do begin
+                local view := queue[i];
+                local children := nil;
+                local j := 0;
+                try begin
+                    children := view:ChildViewFrames();
+                    if HasSlot(view, 'ubxNamesFontSaved) then begin
+                        SetValue(view,EnsureInternal('viewFont), view.ubxNamesFontSaved);
+                        RemoveSlot(view, 'ubxNamesFontSaved);
+                    end;
+                end onexception |evt.ex| do begin end;
+                if children then while j < Length(children) do begin
+                    AddArraySlot(queue, children[j]);
+                    j := j + 1;
+                end;
+                i := i + 1;
+            end;
+            if names.viewCObject then names:Close();
+            if HasSlot(names, 'ubxNamesHookInstalled) then begin
+                if names.ubxNamesOldSetupOwn then names.ViewSetupDoneScript:=names.ubxNamesOldSetup
+                else RemoveSlot(names, 'ViewSetupDoneScript);
+                RemoveSlot(names, 'ubxNamesOldSetup);
+                RemoveSlot(names, 'ubxNamesOldSetupOwn);
+                RemoveSlot(names, 'ubxNamesApply);
+                RemoveSlot(names, 'ubxNamesHookInstalled);
+            end;
+        end;
+        local prefs := GetAppPrefs('|UniBeijingX:UBX|,
+            {enabled: nil, savedFont: nil, notesEpoch: 0});
+        local current := GetUserConfig('userFont);
+        if prefs.enabled and current and prefs.savedFont and
+                GetFontFamilySym(current) = 'beijing then
+            SetUserConfig('userFont, prefs.savedFont);
+        prefs.enabled := nil;
+        prefs.savedFont := nil;
+        EntryChange(prefs);
+        if HasSlot(fonts, 'espy) then RemoveSlot(fonts, 'espy);
+        if HasSlot(fonts, 'newyork) then RemoveSlot(fonts, 'newyork);
+        if HasSlot(fonts, 'geneva) then RemoveSlot(fonts, 'geneva);
+        if HasSlot(fonts, 'handwriting) then RemoveSlot(fonts, 'handwriting);
+        if HasSlot(fonts, 'hand) then RemoveSlot(fonts, 'hand);
+        if HasSlot(fonts, 'USA) then RemoveSlot(fonts, 'USA);
+        if HasSlot(fonts, 'switzerland) then RemoveSlot(fonts, 'switzerland);
+        if HasSlot(fonts, 'beijing) then RemoveSlot(fonts, 'beijing);
+        if HasSlot(psfonts, 'beijing) then RemoveSlot(psfonts, 'beijing);
+        fonts._proto := GetGlobalVar('|ubxFontPrototype:UBX|);
+        UnDefGlobalVar('|ubxFontPrototype:UBX|);
+    end,
+};
+fontPart.activate.argFrame := nil;
+fontPart.installScript.argFrame := nil;
+fontPart.removeScript.argFrame := nil;
+// Keep the first part rooted while TNTK compiles the companion form part.
+DefGlobalVar('ubxFontBuildPart,fontPart);
+fontPart;

@@ -1,0 +1,35 @@
+{
+  "phase": "extras_states",
+  "profile": "final15-lite-final30-20261022",
+  "started": 1792678324.23584,
+  "states": [
+    {
+      "state": "Extras-Card",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Extras-Card.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Extras-Owner",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Extras-Owner.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Extras-Region",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Extras-Region.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Extras-Setup",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Extras-Setup.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Extras-WritingPractice",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Extras-WritingPractice.png",
+      "adapter_errors": 0
+    }
+  ],
+  "passed": true,
+  "runner_sha256": "96ab4ff01f67efcca167d248fecae6680d3b5ee65007fde5b11126651b451587",
+  "ended": 1792678347.294923
+}

@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "comparison": "frozen30 vs31",
+  "sources": [
+    {
+      "source": "font-full/About.newt",
+      "normal_code_identical": true,
+      "exception_handler_only": false
+    },
+    {
+      "source": "font-full/Font.newt",
+      "normal_code_identical": true,
+      "exception_handler_only": true
+    },
+    {
+      "source": "font-full/Icon.newt",
+      "normal_code_identical": true,
+      "exception_handler_only": false
+    },
+    {
+      "source": "font-lite/About.newt",
+      "normal_code_identical": true,
+      "exception_handler_only": false
+    },
+    {
+      "source": "font-lite/Font.newt",
+      "normal_code_identical": true,
+      "exception_handler_only": true
+    },
+    {
+      "source": "font-lite/Icon.newt",
+      "normal_code_identical": true,
+      "exception_handler_only": false
+    },
+    {
+      "source": "shared/AboutView.newt",
+      "normal_code_identical": true,
+      "exception_handler_only": false
+    },
+    {
+      "source": "shared/ContentDisplay.newt",
+      "normal_code_identical": true,
+      "exception_handler_only": false
+    },
+    {
+      "source": "shared/ContentFont.newt",
+      "normal_code_identical": true,
+      "exception_handler_only": false
+    }
+  ],
+  "lite_extended_evidence": "final15-lite-final30-20261022; final31 normal install/overview/NativeNew/lifecycle rechecked fromsameS0",
+  "both_sfnt_unchanged": true
+}

@@ -1,0 +1,30 @@
+{
+  "phase": "routing",
+  "profile": "final15-lite-final22-20261022",
+  "started": 1792670301.439122,
+  "states": [
+    {
+      "state": "Routing-initial",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final22-20261022/Routing-initial.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Routing-formats",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final22-20261022/Routing-formats.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Routing-Chinese-Address",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final22-20261022/Routing-Chinese-Address.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Routing-Preview-first",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final22-20261022/Routing-Preview-first.png",
+      "adapter_errors": 0
+    }
+  ],
+  "passed": true,
+  "runner_sha256": "94c9b80fa7f2a6eb10fb505b06de19d385af52b956aa3efb5c167bc5069331f7",
+  "ended": 1792670327.120626
+}

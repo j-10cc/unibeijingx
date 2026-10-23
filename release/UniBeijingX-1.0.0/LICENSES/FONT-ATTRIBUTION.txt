@@ -1,0 +1,5 @@
+UniBeijingX font data was derived from Noto Sans CJK SC Regular.
+Original font copyright notice: © 2014-2021 Adobe (http://www.adobe.com/).
+The source font is licensed under the SIL Open Font License, Version 1.1.
+UniBeijingX adds Newton-compatible bitmap strikes and a GB2312 repertoire subset.
+See OFL.txt for the license text.

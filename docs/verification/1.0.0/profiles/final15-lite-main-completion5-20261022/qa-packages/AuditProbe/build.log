@@ -1,0 +1,9 @@
+Reading project file AuditProbe.nprj
+Reading platform file Newton 2.1
+Parts: 1
+Building package F15 QA:UBX
+Building part 0
+Reading platform file /Users/chengyiqun/Documents/UniBeijingX/experiments/toolchain/platform/Newton 2.1
+Compiling AuditProbe.newt
+Encoding Part 0...
+Package AuditProbe.pkg created.

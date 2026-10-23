@@ -1,0 +1,65 @@
+{
+  "phase": "preferences",
+  "profile": "final15-full-final35-20261022",
+  "started": 1792688424.82321,
+  "states": [
+    {
+      "state": "Prefs-Security",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Prefs-Security.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Prefs-Locale",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Prefs-Locale.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Prefs-Sound",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Prefs-Sound.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Prefs-Recording",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Prefs-Recording.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Prefs-Alarm",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Prefs-Alarm.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Prefs-Sleep",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Prefs-Sleep.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Prefs-Recognition",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Prefs-Recognition.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Prefs-Modem",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Prefs-Modem.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Prefs-AutoDock",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Prefs-AutoDock.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Help-index",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Help-index.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Clock-main",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Clock-main.png",
+      "adapter_errors": 0
+    }
+  ],
+  "passed": true,
+  "runner_sha256": "7b5878902c401ed5a5455d24d2cb6b6f9de852f7ec949ec3d9498d65a6cdc1d8",
+  "ended": 1792688484.128442
+}

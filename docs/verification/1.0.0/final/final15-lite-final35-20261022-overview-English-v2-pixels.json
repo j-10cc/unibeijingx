@@ -1,0 +1,23 @@
+{
+  "profile": "final15-lite-final35-20261022",
+  "control": "selected Repair ABCD TFHIW WWWiiii title; Chinese date excluded",
+  "crop": [
+    30,
+    213,
+    320,
+    229
+  ],
+  "comparisons": [
+    {
+      "image": "/Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-final35-20261022/English-overview-v2-adapter-on.png",
+      "different_pixels": 0,
+      "bounds": null
+    },
+    {
+      "image": "/Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-final35-20261022/English-overview-v2-adapter-on-again.png",
+      "different_pixels": 0,
+      "bounds": null
+    }
+  ],
+  "passed": true
+}

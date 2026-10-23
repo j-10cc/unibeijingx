@@ -1,0 +1,75 @@
+{
+  "phase": "formulas",
+  "profile": "final15-lite-final30-20261022",
+  "started": 1792677559.148258,
+  "states": [
+    {
+      "state": "Formula-Loan-filled",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Formula-Loan-filled.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Formula-NPV-filled",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Formula-NPV-filled.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Formula-Currency-filled",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Formula-Currency-filled.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Formula-DateCalc-picker",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Formula-DateCalc-picker.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Formula-DateCalc-filled",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Formula-DateCalc-filled.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Formula-Conversion-picker",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Formula-Conversion-picker.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Formula-Conversion-filled",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Formula-Conversion-filled.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Formula-Metric-length",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Formula-Metric-length.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Formula-Metric-area",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Formula-Metric-area.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Formula-Metric-weight",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Formula-Metric-weight.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Formula-Metric-US-liquid",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Formula-Metric-US-liquid.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Formula-Metric-UK-liquid",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Formula-Metric-UK-liquid.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Formula-Metric-temperature",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Formula-Metric-temperature.png",
+      "adapter_errors": 0
+    }
+  ],
+  "passed": true,
+  "runner_sha256": "1ca980d924d55e28f22e6cd299aa31cfea2f1bf859b2bb21e3bd48ae4b0ae04a",
+  "ended": 1792677667.398293
+}

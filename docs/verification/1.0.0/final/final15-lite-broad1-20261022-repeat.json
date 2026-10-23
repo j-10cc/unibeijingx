@@ -1,0 +1,59 @@
+{
+  "phase": "repeat",
+  "profile": "final15-lite-broad1-20261022",
+  "started": 1792653454.459991,
+  "states": [
+    {
+      "state": "Rule-none",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-broad1-20261022/Rule-none.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Rule-day",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-broad1-20261022/Rule-day.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Rule-week",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-broad1-20261022/Rule-week.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Rule-other-week",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-broad1-20261022/Rule-other-week.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Rule-month",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-broad1-20261022/Rule-month.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Rule-year",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-broad1-20261022/Rule-year.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Rule-week-month",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-broad1-20261022/Rule-week-month.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Rule-week-year",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-broad1-20261022/Rule-week-year.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Rule-month-menu",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-broad1-20261022/Rule-month-menu.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Rule-month-Today",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-broad1-20261022/Rule-month-Today.png",
+      "adapter_errors": 0
+    }
+  ],
+  "passed": true,
+  "ended": 1792653497.707486
+}

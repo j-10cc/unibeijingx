@@ -1,0 +1,109 @@
+{
+  "phase": "popups",
+  "profile": "final15-lite-final15-20261022",
+  "started": 1792662863.536056,
+  "states": [
+    {
+      "state": "Popup-date-Chinese",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final15-20261022/Popup-date-Chinese.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Popup-date-months",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final15-20261022/Popup-date-months.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Popup-date-month-selected",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final15-20261022/Popup-date-month-selected.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Popup-date-USA",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final15-20261022/Popup-date-USA.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Popup-date-China-again",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final15-20261022/Popup-date-China-again.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Popup-time-Chinese",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final15-20261022/Popup-time-Chinese.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Popup-time-months",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final15-20261022/Popup-time-months.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Popup-time-month-selected",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final15-20261022/Popup-time-month-selected.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Popup-time-USA",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final15-20261022/Popup-time-USA.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Popup-time-China-again",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final15-20261022/Popup-time-China-again.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Popup-interval-Chinese",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final15-20261022/Popup-interval-Chinese.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Popup-interval-months",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final15-20261022/Popup-interval-months.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Popup-interval-month-selected",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final15-20261022/Popup-interval-month-selected.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Popup-interval-USA",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final15-20261022/Popup-interval-USA.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Popup-interval-China-again",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final15-20261022/Popup-interval-China-again.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Popup-multi-Chinese",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final15-20261022/Popup-multi-Chinese.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Popup-multi-months",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final15-20261022/Popup-multi-months.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Popup-multi-month-selected",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final15-20261022/Popup-multi-month-selected.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Popup-multi-USA",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final15-20261022/Popup-multi-USA.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Popup-multi-China-again",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final15-20261022/Popup-multi-China-again.png",
+      "adapter_errors": 0
+    }
+  ],
+  "passed": true,
+  "ended": 1792662955.0869272
+}

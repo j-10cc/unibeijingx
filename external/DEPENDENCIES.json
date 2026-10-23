@@ -1,0 +1,106 @@
+{
+  "upstreams": [
+    {
+      "original": "experiments/toolchain/tntk",
+      "upstream": "https://github.com/ekoeppen/tntk.git",
+      "commit": "f9f3f5dd2444997f1febd5648f60ec71a3a08afd",
+      "local_changes": "",
+      "path": "external/toolchain/tntk"
+    },
+    {
+      "original": "experiments/toolchain/newt64",
+      "upstream": "https://github.com/MatthiasWM/NEWT64.git",
+      "commit": "0f1af40a847e2e6d5a620e9f9cfcd65cf45491b6",
+      "local_changes": "",
+      "path": "external/toolchain/newt64"
+    },
+    {
+      "original": "experiments/toolchain/pkgdump",
+      "upstream": "https://github.com/RobertSundling/Newton-PKGDUMP.git",
+      "commit": "20198e25a9c9ca4adddf4f4f8edff80e14b527cf",
+      "local_changes": "?? pkgdump",
+      "path": "external/toolchain/pkgdump"
+    },
+    {
+      "original": "experiments/emulator/source/Einstein",
+      "upstream": "https://github.com/pguyot/Einstein.git",
+      "commit": "ce9b25b9caa1affae3979aad84a6b129e7fa85aa",
+      "local_changes": "M Emulator/Printer/TFLPrinterManager.cpp\n M Emulator/Printer/TFLPrinterManager.h\n M Emulator/Screen/TFLScreenManager.cpp\n M Emulator/TEmulator.cpp\n M Emulator/TNativePrimitives.cpp\n M app/FLTK/TFLApp.cpp",
+      "path": "external/emulator/source/Einstein"
+    },
+    {
+      "original": "experiments/emulator/build-pen/_deps/fltk-src",
+      "upstream": "https://github.com/fltk/fltk",
+      "commit": "9c70ea95a176933ffd575022d145c284d1fc9ef7",
+      "local_changes": "",
+      "path": "external/emulator/deps/fltk"
+    },
+    {
+      "path": "external/toolchain/newt0",
+      "upstream": "https://github.com/ekoeppen/NEWT0.git",
+      "commit": "025bc268742c493fb1ce2dcea10ebeb4846652cf",
+      "patch": "external/toolchain/patches/newt0-utf8.patch",
+      "patch_applied": true
+    },
+    {
+      "path": "external/emulator/deps/googletest",
+      "upstream": "https://github.com/google/googletest",
+      "version": "v1.15.2"
+    }
+  ],
+  "system_prerequisites": [
+    "macOS",
+    "Apple Command Line Tools (clang, git, SDK)",
+    "Python 3",
+    "CMake",
+    "FontForge (only when regenerating base SFNT)"
+  ],
+  "host_tools": {
+    "python": {
+      "executable": "/usr/bin/python3",
+      "version": [
+        "Python 3.9.6"
+      ]
+    },
+    "resource_python": {
+      "executable": "/opt/homebrew/bin/python3.14",
+      "version": [
+        "Python 3.14.8"
+      ]
+    },
+    "clang": {
+      "executable": "/usr/bin/clang",
+      "version": [
+        "Apple clang version 21.0.0 (clang-2100.3.34.2)",
+        "Target: arm64-apple-darwin27.0.0"
+      ]
+    },
+    "cmake": {
+      "executable": "/opt/homebrew/bin/cmake",
+      "version": [
+        "cmake version 4.4.4",
+        ""
+      ]
+    },
+    "fontforge": {
+      "executable": "/opt/homebrew/bin/fontforge",
+      "version": [
+        "fontforge 20251009",
+        "build date: 2025-10-09 19:02 UTC"
+      ]
+    }
+  },
+  "emulator_runtime": {
+    "path": "external/emulator/runtime/EinsteinDisplay52.app/Contents/MacOS/Einstein",
+    "sha256": "173591c6f27f2bd74f941c978df513ada41cb1e9afd520cd0f349968347195e8",
+    "rebuild_verified": true,
+    "settings_patch": "source/test/emulator/patches/isolated-runtime.patch"
+  },
+  "resource_environment": {
+    "python": "3.14",
+    "unicode": "16.0.0",
+    "pillow": "13.0.0",
+    "freetype": "2.14.3",
+    "note": "Used to validate migrated generators in scratch. Outline re-rasterization can differ from frozen SFNT; accepted package rebuilds use the unchanged SFNT."
+  }
+}

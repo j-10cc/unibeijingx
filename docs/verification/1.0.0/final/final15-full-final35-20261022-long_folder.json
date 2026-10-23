@@ -1,0 +1,30 @@
+{
+  "phase": "long_folder",
+  "profile": "final15-full-final35-20261022",
+  "started": 1792687952.61504,
+  "states": [
+    {
+      "state": "Long-folder-radio",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Long-folder-radio.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Long-folder-menu",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Long-folder-menu.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Long-folder-title",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Long-folder-title.png",
+      "adapter_errors": 0
+    }
+  ],
+  "passed": true,
+  "runner_sha256": "7b5878902c401ed5a5455d24d2cb6b6f9de852f7ec949ec3d9498d65a6cdc1d8",
+  "title_gap": {
+    "frameGap": 3,
+    "inkGap": 12,
+    "paintWidth": 215
+  },
+  "ended": 1792687985.7425091
+}

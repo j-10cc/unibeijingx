@@ -1,0 +1,144 @@
+--- font-full/Font.newt@30
++++ font-full/Font.newt@35
+@@ -25,10 +25,23 @@
+         if failure then begin
+             // Activation either completes with its remover or releases all
+             // font/content state before reporting the original failure.
+-            local detail:=EnsureInternal({name:failure.name,code:if IsFrame(failure.data) then failure.data.errorCode else failure.data});
++            local code:=if HasSlot(failure,'error) then failure.error
++                else if IsFrame(failure.data) then failure.data.errorCode else failure.data;
++            local observer:=GetGlobalVar('|ubxNamesContent:UBX|);
++            local phase:=if observer then observer.phase else 'fontSetup;
++            if not phase then phase:='observerSetup;
++            local detail:=EnsureInternal({name:failure.name,code:code,phase:phase});
++            if observer then begin
++                detail.viewClass:=observer.sharedClass;detail.operation:=observer.sharedOperation;
++                detail.viewIndex:=observer.sharedIndex;
++                detail.rootRole:=observer.sharedRootRole;
++            end;
++            detail:=EnsureInternal(detail);
+             partFrame:removeScript(nil);
+             DefGlobalVar('|ubxFontInstallFailure:UBX|,detail);
+-            Throw(failure.name,failure.data);
++            local value:=if HasSlot(failure,'error) then failure.error
++                else if HasSlot(failure,'message) then failure.message else failure.data;
++            Throw(failure.name,value);
+         end;
+         return result;
+     end,
+
+--- font-lite/Font.newt@30
++++ font-lite/Font.newt@35
+@@ -25,10 +25,23 @@
+         if failure then begin
+             // Activation either completes with its remover or releases all
+             // font/content state before reporting the original failure.
+-            local detail:=EnsureInternal({name:failure.name,code:if IsFrame(failure.data) then failure.data.errorCode else failure.data});
++            local code:=if HasSlot(failure,'error) then failure.error
++                else if IsFrame(failure.data) then failure.data.errorCode else failure.data;
++            local observer:=GetGlobalVar('|ubxNamesContent:UBX|);
++            local phase:=if observer then observer.phase else 'fontSetup;
++            if not phase then phase:='observerSetup;
++            local detail:=EnsureInternal({name:failure.name,code:code,phase:phase});
++            if observer then begin
++                detail.viewClass:=observer.sharedClass;detail.operation:=observer.sharedOperation;
++                detail.viewIndex:=observer.sharedIndex;
++                detail.rootRole:=observer.sharedRootRole;
++            end;
++            detail:=EnsureInternal(detail);
+             partFrame:removeScript(nil);
+             DefGlobalVar('|ubxFontInstallFailure:UBX|,detail);
+-            Throw(failure.name,failure.data);
++            local value:=if HasSlot(failure,'error) then failure.error
++                else if HasSlot(failure,'message) then failure.message else failure.data;
++            Throw(failure.name,value);
+         end;
+         return result;
+     end,
+
+--- shared/ContentDisplay.newt@30
++++ shared/ContentDisplay.newt@35
+@@ -261,7 +261,10 @@
+             AddArraySlot(pieces,MakeText(run.text,x,bounds.top,x+run.width+1,bounds.bottom));x:=x+run.width;
+         end;
+         local restore:=Clone(style);restore.font:=roman;AddArraySlot(pieces,restore);
+-        return pieces;
++        // Native containers may clone/cache this drawing list after our undo
++        // record was taken. Own every style key, symbol and shape independently
++        // of the removable package, not only the font descriptors.
++        return EnsureInternal(pieces);
+     end,
+     contentScope:func(view) begin
+         local depth:=0;
+@@ -987,8 +990,15 @@
+         local queue:=GetRoot():ChildViewFrames();local i:=0;
+         while i<Length(queue) and i<700 do begin
+             local view:=queue[i];i:=i+1;
++            self.sharedIndex:=i;self.sharedClass:=nil;self.sharedOperation:='liveness;
++            self.sharedRootRole:=if view=GetRoot().calendar then 'calendarRoot
++                else if view=GetRoot().paperroll then 'notesRoot
++                else if view=GetRoot().paperroll.layout then 'notesLayout
++                else if view=GetRoot().buttons then 'buttons
++                else if view=GetRoot().notifyIcon then 'notifyIcon else 'other;
+             if view.viewCObject then begin
+                 local kind:=view.viewClass mod 65536;
++                self.sharedClass:=kind;self.sharedOperation:='paragraph;
+                 if kind=81 then begin
+                     self:paragraphFonts(view);
+                     // Compound labels (Country in Locale, for example) are
+@@ -998,8 +1008,11 @@
+                         if view.RebuildIndexes and IsArray(view.configPath) then self:configValueFonts(view.entryLine)
+                         else self:paragraphFonts(view.entryLine);
+                 end else begin
++                    self.sharedOperation:='folderTitle;
+                     if kind=98 then self:folderTitleFont(view);
++                    self.sharedOperation:='radio;
+                     if kind=76 then self:radioTextFont(view);
++                    self.sharedOperation:='textFont;
+                     if kind=98 and IsString(view.text) and view.ViewDrawScript<>self.folderTitleFn and
+                         not (view.preallocatedContext='title and view.viewTransferMode=modeBIC) then begin
+                         if GetGlobalVar('|ubxFontPart:UBX|):containsChinese(view.text) then self:fontSlot(view,'viewFont)
+@@ -1008,10 +1021,14 @@
+                                 else self:romanFont({family:view.viewFont.ubxRomanFamily,
+                                     size:GetFontSize(view.viewFont),face:GetFontFace(view.viewFont)}));
+                     end;
+-                    foreach slot in '[pieces,shapeArray,pix] do if IsArray(view.(slot)) then begin
+-                        local pieces:=self:drawingFonts(view.(slot),0,view.viewFont,nil);
+-                        if pieces then self:rememberDisplay(view,slot,pieces);
++                    foreach slot in '[pieces,shapeArray,pix] do begin
++                        self.sharedOperation:=slot;
++                        if IsArray(view.(slot)) then begin
++                            local pieces:=self:drawingFonts(view.(slot),0,view.viewFont,nil);
++                            if pieces then self:rememberDisplay(view,slot,pieces);
++                        end;
+                     end;
++                    self.sharedOperation:='children;
+                     foreach child in view:ChildViewFrames() do if child.viewCObject then AddArraySlot(queue,child);
+                 end;
+             end;
+@@ -1049,9 +1066,13 @@
+     end,
+     applyDisplay:func() begin
+         if not self.displayEnabled then return nil;
++        self.phase:='closePickers;
+         self:closeBitmapPickers(nil);
++        self.phase:='sharedText;
+         self:sharedTextFonts();
++        self.phase:='datePickers;
+         self:datePickerFonts();
++        self.phase:='rootDisplay;
+         foreach root in GetRoot():ChildViewFrames() do if root.viewCObject then begin
+             self:pickerFonts(root);
+             self:quickFonts(root);
+@@ -1061,7 +1082,10 @@
+                 if pieces then self:rememberDisplay(view,'pieces,pieces);
+             end;
+         end;
+-        self:noteFonts();self:callFonts();self:titleFonts(GetRoot());
++        self.phase:='notes;self:noteFonts();
++        self.phase:='calls;self:callFonts();
++        self.phase:='titles;self:titleFonts(GetRoot());
++        self.phase:='agenda;
+         local calendar:=GetRoot().calendar;
+         if not calendar or not calendar.viewCObject then return nil;
+         local agenda:=calendar.AgendaView;

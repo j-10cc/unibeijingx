@@ -1,0 +1,16 @@
+VERIFIED STATE Dates-reopened-multi-settled3
+VERIFIED STATE Dates-reopened-multi-settled10
+VERIFIED STATE Dates-reopened-multi-redraw
+VERIFIED STATE Dates-reopened-annual-settled3
+VERIFIED STATE Dates-reopened-annual-settled10
+VERIFIED STATE Dates-reopened-annual-redraw
+VERIFIED STATE Address-0-AllInfo
+ADDRESS {'characters': 0, 'seed_seconds': 0.4798633330501616, 'menu_select_and_settle_seconds': 3.8983463750919327}
+VERIFIED STATE Address-1-AllInfo
+ADDRESS {'characters': 1, 'seed_seconds': 0.4774622089462355, 'menu_select_and_settle_seconds': 3.8024434170220047}
+VERIFIED STATE Address-64-AllInfo
+ADDRESS {'characters': 64, 'seed_seconds': 0.47984883305616677, 'menu_select_and_settle_seconds': 3.8128643749514595}
+VERIFIED STATE Address-255-AllInfo
+ADDRESS {'characters': 255, 'seed_seconds': 0.6494167499477044, 'menu_select_and_settle_seconds': 3.8096245829947293}
+VERIFIED STATE Address-256-AllInfo
+ADDRESS {'characters': 256, 'seed_seconds': 0.7416385000105947, 'menu_select_and_settle_seconds': 3.825093708001077}

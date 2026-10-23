@@ -1,0 +1,23 @@
+full main Original ROM English controls, New and four body baselines
+full main Font-only: native Roman metadata, automatic Chinese routing, canonical font and About
+full main Region installation, Chinese locale/date/currency APIs, English labels, 712000 and real font picker
+full main Native Quick people/place, exact saved record references
+full main Native pen Styles: seven families whole/partial, four sizes, five faces; three note formats/reopen
+full main Exact Unicode saved/reopened, Calls fixed-style Chinese name without manual switching
+full main Find five/three mixed sources, Chinese query, result jump and empty results
+full main Person/company/group/worksite, 256-character address, five selectors, Repeat Other and cleanup date
+full main Nonempty Agenda, To Do, Day/Week/Month/Year, seven title weekdays and native Text menu
+full main Extended Latin/symbols in four Roman families, six shared bitmap sizes, settled overview and About
+full main Single ordinary removal/reinstall: About closure, native enumerator and New restored
+full main Official Pinyin keyboard ni -> candidate -> actual input object and exact saved Unicode; all components
+full main Normal soft restart: exact note/IME data, package activation, canonical font, About and English UI
+STOPPED final15-full-main-20261022
+full cold Independent cold process, original 712000, canonical font and exact saved Unicode
+STOPPED final15-full-cold-20261022
+full region-first Independent S0 Region-before-Font, live Unicode, shared sfnt, unique font and original Roman metadata
+STOPPED final15-full-order-20261022
+full support Region date/currency/parser and complete31-province postal data
+full support Native Country menu China-USA-China, original Roman registry and defaults
+full support Optional IME/Region/font ordinary removal and locale/default/enumerator restoration
+STOPPED final15-full-support-20261022
+FINAL REGRESSION full True

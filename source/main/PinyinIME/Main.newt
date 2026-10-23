@@ -1,0 +1,547 @@
+{
+    app: '|Pinyin IME:UBX|,
+    text: "Pinyin IME",
+    icon: ubxPinyinIcon,
+    installScript: func(partFrame) begin
+        DefGlobalVar('|ubxPinyinPart:UBX|, partFrame);
+        partFrame:showPanel();
+        // Notes' built-in Find misses a CJK character adjacent to Latin text.
+        // Keep the ROM method for Latin searches and as an index fallback.
+        try begin
+            local notes := GetRoot().paperroll;
+            if notes and not HasSlot(notes, 'ubxFindOld) then begin
+                SetValue(notes, 'ubxFindOld, notes.Find);
+                notes.(EnsureInternal('Find)) := partFrame.findChinese;
+            end;
+        end onexception |evt.ex| do begin end;
+    end,
+    showPanel: func() begin
+        local current := GetGlobalVar('|ubxPanel:UBX|);
+        if current then begin
+            if current.viewCObject then begin
+                current:MoveBehind(nil);
+                return current;
+            end;
+            UnDefGlobalVar('|ubxPanel:UBX|);
+        end;
+        local panel := Clone(self.theForm);
+        local view := BuildContext(panel);
+        view:Open();
+        DefGlobalVar('|ubxPanel:UBX|, view);
+        view:SetupIdle(400);
+        return view;
+    end,
+    removeScript: func(removeFrame) begin
+        local notes := GetRoot().paperroll;
+        if notes and HasSlot(notes, 'ubxFindOld) then begin
+            RemoveSlot(notes, 'Find);
+            RemoveSlot(notes, 'ubxFindOld);
+        end;
+        local panel := GetGlobalVar('|ubxPanel:UBX|);
+        if panel then begin
+            panel:SetupIdle(0);
+            if panel.viewCObject then panel:Close();
+        end;
+        if GetGlobalVar('|ubxPanel:UBX|) then
+            UnDefGlobalVar('|ubxPanel:UBX|);
+        UnDefGlobalVar('|ubxPinyinPart:UBX|);
+    end,
+    findChinese: func(what, results, scope, statusView) begin
+        local cjk := nil;
+        if IsString(what) then begin
+            local i := 0;
+            while i < StrLen(what) do begin
+                if Ord(what[i]) > 127 then cjk := true;
+                i := i + 1;
+            end;
+        end;
+        if cjk then
+            try begin
+                local cursor := GetUnionSoup("Notes"):Query({words: [what]});
+                if cursor:Entry() then begin
+                    AddArraySlot(results, {
+                        _proto: ROM_SoupFinder,
+                        owner: self,
+                        title: StrConcat("", "Notepad"),
+                        findType: 'text,
+                        findWords: [what],
+                        cursor: cursor,
+                    });
+                    return nil;
+                end;
+            end onexception |evt.ex| do begin end;
+        self:ubxFindOld(what, results, scope, statusView);
+    end,
+    theForm: {
+        _proto: protoFloater,
+        appSymbol: '|Pinyin IME:UBX|,
+        viewBounds: {left: 8, top: 220, right: 312, bottom: 283},
+        ButtonToggleScript: func(frontmostApp) begin
+            local part := GetGlobalVar('|ubxPinyinPart:UBX|);
+            if part then part:showPanel();
+            return true;
+        end,
+        ViewQuitScript: func() begin
+            if GetGlobalVar('|ubxPanel:UBX|) = self then begin
+                self:SetupIdle(0);
+                UnDefGlobalVar('|ubxPanel:UBX|);
+            end;
+            inherited:?ViewQuitScript();
+        end,
+        composition: "",
+        compositionStart: nil,
+        compositionEnd: nil,
+        candidatePage: 0,
+        englishMode: nil,
+        imeDict: pinyinData,
+        statusLine: nil,
+        modeButton: nil,
+        candidateButton: nil,
+        candidateGap: "  ",
+        candidateAltGap: nil,
+        candidatePageSize: 10,
+        targetView: nil,
+        targetBox: nil,
+        trackedText: nil,
+        captureNextFieldChange: nil,
+        pendingActivate: nil,
+
+        ViewIdleScript: func() begin
+            local stage := "key";
+            try begin
+                local target := GetKeyView();
+                stage := "target";
+                if target and target <> self.targetView and
+                        (IsString(target.text) or target.text = nil) then
+                    :useTarget(target);
+                stage := "activate";
+                if self.pendingActivate and target then begin
+                    self.pendingActivate := nil;
+                    :activateKeyboard(self);
+                end;
+                stage := "sync";
+                :syncNativeText();
+            end onexception |evt.ex| do begin
+                self.composition := "";
+                self.candidatePage := 0;
+                if self.statusLine then
+                    SetValue(self.statusLine, 'text, "输入错误 " & stage);
+            end;
+            return 400;
+        end,
+
+        slice: func(value, start, length) begin
+            if length <= 0 then return "";
+            return SubStr(value, start, length);
+        end,
+
+        useTarget: func(target) begin
+            if not target then return nil;
+            local panelTop := 220;
+            local targetBox := nil;
+            try begin
+                targetBox := target:GlobalBox();
+                if targetBox and targetBox.top >= 300 then
+                    panelTop := 130;
+            end onexception |evt.ex| do begin end;
+            if self.viewBounds.top <> panelTop then
+                SetValue(self, 'viewBounds,
+                    {left: 8, top: panelTop, right: 312,
+                        bottom: panelTop + 63});
+            local sameField := self.targetBox and targetBox and
+                self.targetBox.left = targetBox.left and
+                self.targetBox.top = targetBox.top and
+                self.targetBox.right = targetBox.right and
+                self.targetBox.bottom = targetBox.bottom;
+            // A new Notes record can reuse exactly the same screen rectangle.
+            // Only carry composition across a replacement view when its text
+            // is unchanged or differs by one edit made in that same field.
+            local continuous := nil;
+            if sameField and self.trackedText <> nil then begin
+                local oldText := self.trackedText;
+                local newText := if IsString(target.text) then
+                    StrConcat("", target.text) else "";
+                local oldLength := StrLen(oldText);
+                local newLength := StrLen(newText);
+                local offset := 0;
+                while offset < oldLength and offset < newLength and
+                        oldText[offset] = newText[offset] do
+                    offset := offset + 1;
+                local oldEnd := oldLength;
+                local newEnd := newLength;
+                while oldEnd > offset and newEnd > offset and
+                        oldText[oldEnd - 1] = newText[newEnd - 1] do begin
+                    oldEnd := oldEnd - 1;
+                    newEnd := newEnd - 1;
+                end;
+                if oldEnd - offset <= 1 and newEnd - offset <= 1 then
+                    continuous := true;
+            end;
+            self.targetBox := targetBox;
+            self.targetView := target;
+            if continuous then begin
+                :syncNativeText();
+                return true;
+            end;
+            local previousText := self.trackedText;
+            self.trackedText := if IsString(target.text) then
+                StrConcat("", target.text) else "";
+            self.composition := "";
+            self.compositionStart := if self.trackedText then
+                StrLen(self.trackedText) else nil;
+            self.compositionEnd := self.compositionStart;
+            self.candidatePage := 0;
+            // A paragraph editor may replace its key view on the first
+            // keystroke.  In that case the new view already contains the
+            // first letter before the idle observer can see the empty view.
+            local firstKeyInNewView :=
+                StrLen(if previousText then previousText else "") = 0 and
+                StrLen(self.trackedText) = 1;
+            if (self.captureNextFieldChange or firstKeyInNewView) and
+                    IsString(target.text) and
+                    StrLen(target.text) > 0 and StrLen(target.text) <= 24 then begin
+                local allLetters := true;
+                local k := 0;
+                while k < StrLen(target.text) do begin
+                    if StrPos("abcdefghijklmnopqrstuvwxyz",
+                            :slice(target.text, k, 1), 0) = nil then
+                        allLetters := nil;
+                    k := k + 1;
+                end;
+                if allLetters then begin
+                    self.composition := self.trackedText;
+                    self.compositionStart := 0;
+                    self.compositionEnd := StrLen(self.trackedText);
+                end;
+                self.captureNextFieldChange := nil;
+            end;
+            :refresh();
+            return true;
+        end,
+        ensureChineseFont: func(target) begin
+            if target and target.viewFont exists and HasSlot(fonts, 'beijing) then begin
+                local family := GetFontFamilySym(target.viewFont);
+                if family = 'handwriting or family = 'newyork or
+                        family = 'espy or family = 'geneva then
+                    SetValue(target, 'viewFont,
+                        SetFontFamily(target.viewFont, 'beijing));
+            end;
+        end,
+        choices: func() begin
+            if StrLen(self.composition) > 0 and
+                    HasSlot(self.imeDict, Intern(self.composition)) then
+                return GetSlot(self.imeDict, Intern(self.composition));
+            return nil;
+        end,
+        candidateLine: func(choices, pageSize, gap, alternate) begin
+            local line := "";
+            local i := 0;
+            while i < pageSize do begin
+                local index := self.candidatePage * pageSize + i;
+                if choices and index < Length(choices) then begin
+                    if StrLen(line) > 0 then
+                        line := line &
+                            (if alternate and i div 2 * 2 <> i then "  " else gap);
+                    line := line & choices[index];
+                end;
+                i := i + 1;
+            end;
+            return line;
+        end,
+        refresh: func() begin
+            local choices := :choices();
+            local pageSize := 10;
+            if choices then foreach choice in choices do
+                if StrLen(choice) > 1 then pageSize := 7;
+            self.candidatePageSize := pageSize;
+            local label := if self.englishMode then "English" else
+                if StrLen(self.composition) > 0 then self.composition else "拼音";
+            if self.statusLine then SetValue(self.statusLine, 'text, label);
+            if self.modeButton then
+                SetValue(self.modeButton, 'text,
+                    if self.englishMode then "英" else "中");
+            local gap := "  ";
+            local font := {family: 'beijing, face: 0, size: 14};
+            local line := :candidateLine(choices, pageSize, gap, nil);
+            self.candidateAltGap := nil;
+            if StrFontWidth(line, font) > 202 then begin
+                gap := " ";
+                line := :candidateLine(choices, pageSize, gap, nil);
+                if StrFontWidth(line, font) < 184 then begin
+                    local wider := :candidateLine(choices, pageSize, gap, true);
+                    if StrFontWidth(wider, font) <= 202 then begin
+                        line := wider;
+                        self.candidateAltGap := true;
+                    end;
+                end;
+            end;
+            if StrFontWidth(line, font) > 202 then
+                font := {family: 'beijing, face: 0, size: 12};
+            self.candidateGap := gap;
+            if self.candidateButton then begin
+                SetValue(self.candidateButton, 'viewFont, font);
+                SetValue(self.candidateButton, 'text,
+                    if StrLen(line) > 0 then "   " & line else "");
+            end;
+        end,
+        resetComposition: func() begin
+            self.composition := "";
+            self.compositionStart := nil;
+            self.compositionEnd := nil;
+            self.candidatePage := 0;
+            :refresh();
+        end,
+        syncNativeText: func() begin
+            local target := self.targetView;
+            if not target or not IsString(target.text) then return nil;
+            local current := StrConcat("", target.text);
+            if self.trackedText = nil then begin
+                self.trackedText := current;
+                self.compositionStart := StrLen(current);
+                return nil;
+            end;
+            if StrEqual(current, self.trackedText) then return nil;
+            self.captureNextFieldChange := nil;
+            local previous := self.trackedText;
+            self.trackedText := current;
+            local length := StrLen(current);
+            local oldLength := StrLen(previous);
+            local offset := 0;
+            while offset < oldLength and offset < length and
+                    previous[offset] = current[offset] do
+                offset := offset + 1;
+            local oldEnd := oldLength;
+            local newEnd := length;
+            while oldEnd > offset and newEnd > offset and
+                    previous[oldEnd - 1] = current[newEnd - 1] do begin
+                oldEnd := oldEnd - 1;
+                newEnd := newEnd - 1;
+            end;
+            local inserted := :slice(current, offset, newEnd - offset);
+            local insertedLength := StrLen(inserted);
+            if self.englishMode then begin
+                self.compositionStart := length;
+                self.compositionEnd := length;
+                return nil;
+            end;
+            local start := self.compositionStart;
+            local compEnd := self.compositionEnd;
+            if start = nil or compEnd = nil or start > length or
+                    offset < start or oldEnd > compEnd or
+                    (insertedLength > 0 and offset <> compEnd) then begin
+                :resetComposition();
+                start := offset;
+                compEnd := offset;
+            end;
+            local newCompositionEnd := compEnd + newEnd - oldEnd;
+            if newCompositionEnd < start or newCompositionEnd > length then begin
+                :resetComposition();
+                start := offset;
+                newCompositionEnd := newEnd;
+            end;
+            local raw := :slice(current, start, newCompositionEnd - start);
+            local rawLength := StrLen(raw);
+            if self.composition <> "" and offset = compEnd and
+                    insertedLength = 1 then begin
+                local last := inserted;
+                if StrEqual(last, " ") or
+                        StrPos("1234567890", last, 0) <> nil then begin
+                    if :choices() then begin
+                        local position := if StrEqual(last, " ") then 0
+                            else if StrEqual(last, "0") then 9
+                            else Ord(last[0]) - Ord($1);
+                        return :commitCandidate(position, target, 1);
+                    end;
+                end;
+            end;
+            local allLetters := rawLength <= 24;
+            local k := 0;
+            while k < rawLength do begin
+                if StrPos("abcdefghijklmnopqrstuvwxyz",
+                        :slice(raw, k, 1), 0) = nil then
+                    allLetters := nil;
+                k := k + 1;
+            end;
+            if allLetters then begin
+                self.composition := raw;
+                self.compositionStart := start;
+                self.compositionEnd := newCompositionEnd;
+                self.candidatePage := 0;
+                :refresh();
+                return true;
+            end;
+            :resetComposition();
+            self.compositionStart := length;
+            self.compositionEnd := length;
+            nil;
+        end,
+        commitCandidate: func(position, target, trailingLength) begin
+            local choices := :choices();
+            local index := self.candidatePage * self.candidatePageSize + position;
+            if not target then target := self.targetView;
+            if not target or not IsString(target.text) or not choices or
+                    position >= self.candidatePageSize or
+                    index >= Length(choices) or
+                    self.compositionStart = nil then return nil;
+            local current := target.text;
+            local start := self.compositionStart;
+            local length := StrLen(self.composition);
+            if not StrEqual(:slice(current, start, length),
+                    self.composition) then return nil;
+            local extra := if trailingLength then trailingLength else 0;
+            local next := :slice(current, 0, start) & choices[index] &
+                :slice(current, start + length + extra,
+                    StrLen(current) - start - length - extra);
+            :ensureChineseFont(target);
+            SetValue(target, 'text, next);
+            target:Dirty();
+            try begin
+                SetKeyView(target, start + StrLen(choices[index]));
+            end onexception |evt.ex| do begin end;
+            self.trackedText := StrConcat("", next);
+            :resetComposition();
+            self.compositionStart := StrLen(next);
+            self.compositionEnd := self.compositionStart;
+            return true;
+        end,
+        toggleMode: func() begin
+            self.englishMode := if self.englishMode then nil else true;
+            if self.targetView and IsString(self.targetView.text) then
+                self.trackedText := StrConcat("", self.targetView.text);
+            :resetComposition();
+            if self.trackedText then
+                self.compositionStart := StrLen(self.trackedText);
+            self.compositionEnd := self.compositionStart;
+        end,
+        embeddedKeyboardVisible: func(target) begin
+            local ancestor := if target then target:Parent() else nil;
+            while ancestor and ancestor <> GetRoot() do begin
+                local queue := [];
+                local siblings := ancestor:ChildViewFrames();
+                if siblings then foreach sibling in siblings do
+                    AddArraySlot(queue, sibling);
+                local index := 0;
+                while index < Length(queue) and index < 300 do begin
+                    local view := queue[index];
+                    if HasVariable(view, 'keyDefinitions) and
+                            view.viewBounds exists then return true;
+                    local children := view:ChildViewFrames();
+                    if children then foreach child in children do
+                        AddArraySlot(queue, child);
+                    index := index + 1;
+                end;
+                ancestor := ancestor:Parent();
+            end;
+            nil;
+        end,
+        activateKeyboard: func(panel) begin
+            local target := GetKeyView();
+            if target and panel:useTarget(target) then begin
+                panel.captureNextFieldChange :=
+                    target.text = nil or
+                    (IsString(target.text) and StrLen(target.text) = 0);
+                if not panel:embeddedKeyboardVisible(target) then
+                    OpenKeyPadFor(target);
+            end;
+        end,
+        turnPage: func(direction) begin
+            local choices := :choices();
+            if direction < 0 then begin
+                if self.candidatePage > 0 then
+                    self.candidatePage := self.candidatePage - 1;
+            end else if choices and
+                    (self.candidatePage + 1) * self.candidatePageSize < Length(choices) then
+                self.candidatePage := self.candidatePage + 1;
+            :refresh();
+        end,
+        stepChildren: [
+            {
+                _proto: protoTextButton,
+                viewBounds: {left: 4, top: 32, right: 221, bottom: 58},
+                viewFont: {family: 'beijing, face: 0, size: 14},
+                viewJustify: vjLeftH + vjCenterV,
+                text: "",
+                candidateIndex: nil,
+                viewSetupDoneScript: func() begin
+                    self:Parent().candidateButton := self;
+                end,
+                ViewClickScript: func(unit) begin
+                    local panel := self:Parent();
+                    local choices := panel:choices();
+                    if not choices or StrLen(self.text) = 0 then return true;
+                    local bounds := self:GlobalBox();
+                    local x := GetPoint(firstX, unit) - bounds.left;
+                    local left := StrFontWidth("   ", self.viewFont) + 2;
+                    local edge := left;
+                    local i := 0;
+                    while i < panel.candidatePageSize do begin
+                        local index := panel.candidatePage * panel.candidatePageSize + i;
+                        if index >= Length(choices) then break;
+                        edge := edge + StrFontWidth(choices[index], self.viewFont);
+                        local gap := if panel.candidateAltGap and
+                                i div 2 * 2 = i then "  " else panel.candidateGap;
+                        local gapWidth := StrFontWidth(gap, self.viewFont);
+                        if x < edge + (gapWidth div 2) then break;
+                        edge := edge + gapWidth;
+                        i := i + 1;
+                    end;
+                    if i < panel.candidatePageSize and
+                            panel.candidatePage * panel.candidatePageSize + i < Length(choices) then begin
+                        self.candidateIndex := i;
+                        self:TrackButton(unit);
+                    end;
+                    return true;
+                end,
+                buttonClickScript: func() begin
+                    self:Parent():commitCandidate(self.candidateIndex, nil, 0);
+                end,
+            },
+            {
+                _proto: protoTextButton,
+                viewBounds: {left: 4, top: 4, right: 35, bottom: 30},
+                viewFont: {family: 'beijing, face: 0, size: 12},
+                text: "中",
+                viewSetupDoneScript: func() begin
+                    self:Parent().modeButton := self;
+                end,
+                buttonClickScript: func() begin self:Parent():toggleMode(); end,
+            },
+            {
+                _proto: protoStaticText,
+                viewBounds: {left: 41, top: 6, right: 213, bottom: 27},
+                viewFont: {family: 'beijing, face: 0, size: 14},
+                text: "拼音",
+                viewSetupDoneScript: func() begin
+                    self:Parent().statusLine := self;
+                end,
+            },
+            {
+                _proto: protoTextButton,
+                viewBounds: {left: 226, top: 4, right: 259, bottom: 30},
+                viewFont: {family: 'espy, face: 1, size: 14},
+                text: "X",
+                buttonClickScript: func() begin self:Parent():Close(); end,
+            },
+            {
+                _proto: protoTextButton,
+                viewBounds: {left: 263, top: 4, right: 296, bottom: 30},
+                text: "ABC",
+                buttonClickScript: func() begin
+                    self:Parent().pendingActivate := true;
+                end,
+            },
+            {
+                _proto: protoTextButton,
+                viewBounds: {left: 226, top: 32, right: 259, bottom: 58},
+                text: "<",
+                buttonClickScript: func() begin self:Parent():turnPage(-1); end,
+            },
+            {
+                _proto: protoTextButton,
+                viewBounds: {left: 263, top: 32, right: 296, bottom: 58},
+                text: ">",
+                buttonClickScript: func() begin self:Parent():turnPage(1); end,
+            },
+        ],
+    },
+};

@@ -1,0 +1,155 @@
+// Public StringToDate/StringToDateFrame adapters, active only for our Locale.
+// No ROM bytecode or shared Locale parser/recognition templates are modified.
+DefGlobalVar('ubxRegionDateParser, {
+    cnDateNumbers: ["一","二","三","四","五","六","七","八","九","十",
+        "十一","十二","十三","十四","十五","十六","十七","十八","十九","二十",
+        "二十一","二十二","二十三","二十四","二十五","二十六","二十七","二十八","二十九","三十","三十一"],
+    dateDigits: func(s) begin
+        if StrLen(s) = 0 then return nil;
+        local n := 0;
+        for i := 0 to StrLen(s)-1 do begin
+            local d := Ord(s[i])-48;
+            if d < 0 or d > 9 then return nil;
+            n := n*10+d;
+        end;
+        return n;
+    end,
+    dateYear: func(s) begin
+        if StrLen(s) <> 4 then return nil;
+        local n := self:dateDigits(s);
+        if n <> nil then return n;
+        n := 0;
+        for i := 0 to 3 do begin
+            local d := StrPos("零一二三四五六七八九",SubStr(s,i,1),0);
+            if StrEqual(SubStr(s,i,1),"〇") then d := 0;
+            if d = nil then return nil;
+            n := n*10+d;
+        end;
+        return n;
+    end,
+    dateSmallNumber: func(s) begin
+        if StrLen(s) > 0 and StrLen(s) <= 2 then begin
+            local n := self:dateDigits(s);
+            if n <> nil then return n;
+        end;
+        foreach i,x in self.cnDateNumbers do if StrEqual(s,x) then return i+1;
+        return nil;
+    end,
+    parseLocalDate: func(input) begin
+        if not IsString(input) then return nil;
+        local s := TrimString(Clone(input)); // TrimString mutates its argument.
+        local yend := StrPos(s,"年",0);
+        local iso := StrLen(s) >= 5 and s[4] = $- and self:dateDigits(SubStr(s,0,4)) <> nil;
+        if not yend and not iso then return nil; // Preserve all native formats.
+        local answer := {frame:nil}; // Recognized syntax: never fall back on invalid dates.
+        if StrLen(s) > 128 then return answer;
+        local y := nil; local m := nil; local d := nil; local suffix := "";
+        if iso then begin
+            if StrLen(s)<10 or s[7] <> $- then return answer;
+            y := self:dateDigits(SubStr(s,0,4));
+            m := self:dateDigits(SubStr(s,5,2)); d := self:dateDigits(SubStr(s,8,2));
+            suffix := SubStr(s,10,StrLen(s)-10);
+            if StrLen(suffix)>0 and suffix[0] = $T then begin
+                if StrLen(suffix) <> 6 then return answer;
+                suffix := SubStr(suffix,1,StrLen(suffix)-1);
+            end
+            else if StrLen(suffix)>0 and Ord(suffix[0]) <> 32 then return answer;
+        end else begin
+            local mend := StrPos(s,"月",yend+1); local dend := StrPos(s,"日",yend+1);
+            if yend <> 4 or not mend or not dend or mend <= yend+1 or dend <= mend+1 then return answer;
+            y := self:dateYear(SubStr(s,0,yend));
+            m := self:dateSmallNumber(SubStr(s,yend+1,mend-yend-1));
+            d := self:dateSmallNumber(SubStr(s,mend+1,dend-mend-1));
+            suffix := SubStr(s,dend+1,StrLen(s)-dend-1);
+        end;
+        if y = nil or m = nil or d = nil or y < 1 or y > 9999 or m < 1 or m > 12 or d < 1 then return answer;
+        local days := [31,28,31,30,31,30,31,31,30,31,30,31];
+        if y mod 4 = 0 and (y mod 100 <> 0 or y mod 400 = 0) then days[1] := 29;
+        if d > days[m-1] then return answer;
+        local t := nil; local actual := nil;
+        try begin
+            t := TotalMinutes({year:y,month:m,date:d,hour:0,minute:0,second:0});
+            if IsInteger(t) then actual := Date(t);
+        end onexception |evt.ex| do return answer;
+        if not actual or actual.year <> y or actual.month <> m or actual.date <> d then return answer;
+        suffix := TrimString(suffix);
+        local weekday := nil;
+        if not iso and StrLen(suffix)>0 then begin
+            local count := if BeginsWith(suffix,"星期") then 3 else if BeginsWith(suffix,"周") then 2 else 0;
+            if count > 0 then begin
+                if StrLen(suffix)<count then return answer;
+                local last := SubStr(suffix,count-1,1);
+                weekday := StrPos("日一二三四五六",last,0);
+                if StrEqual(last,"天") then weekday := 0;
+                if weekday = nil or weekday <> actual.dayOfWeek then return answer;
+                suffix := TrimString(SubStr(suffix,count,StrLen(suffix)-count));
+            end;
+        end;
+        local h := nil; local minute := nil;
+        if StrLen(suffix)>0 then begin
+            if StrLen(suffix) <> 5 or suffix[2] <> $: then return answer;
+            h := self:dateDigits(SubStr(suffix,0,2)); minute := self:dateDigits(SubStr(suffix,3,2));
+            if h = nil or minute = nil or h > 23 or minute > 59 then return answer;
+        end;
+        answer.frame := {year:y,month:m,date:d,dayOfWeek:weekday,hour:h,minute:minute,
+            second:nil,daysInMonth:nil,status:0};
+        return answer;
+    end,
+    nativeDateCall: func(name,s) begin
+        // Save the actual original function objects, including ROM/native
+        // functions. Call them directly, preserving their result and exception.
+        if self.parserHooks then foreach h in self.parserHooks do
+            if h.name = name then return call h.original with (s);
+        local original := GetGlobalFn(name);
+        return call original with (s);
+    end,
+    dateFromText: func(s,asFrame) begin
+        local parsed := if GetLocale().localeSym = self.localeSymbol then self:parseLocalDate(s) else nil;
+        if parsed then begin
+            local f := parsed.frame;
+            if not f then return if asFrame then {
+                year:nil,month:nil,date:nil,dayOfWeek:nil,hour:nil,minute:nil,
+                second:nil,daysInMonth:nil,status:-1,
+            } else nil;
+            if asFrame then return f;
+            local filled := Clone(f);
+            // Match StringToDate's defaults for omitted time components.
+            local now := Date(Time());
+            if filled.hour = nil then filled.hour := now.hour;
+            if filled.minute = nil then filled.minute := now.minute;
+            filled.second := 0;
+            return TotalMinutes(filled);
+        end;
+        return self:nativeDateCall(if asFrame then 'StringToDateFrame else 'StringToDate,s);
+    end,
+    dateGlobal: func(s) GetGlobalVar('|ubxRegion:UBX|):dateFromText(s,nil),
+    dateFrameGlobal: func(s) GetGlobalVar('|ubxRegion:UBX|):dateFromText(s,true),
+    dateValidGlobal: func(s) begin
+        local state := GetGlobalVar('|ubxRegion:UBX|);
+        local parsed := if GetLocale().localeSym = state.localeSymbol then state:parseLocalDate(s) else nil;
+        if parsed then begin
+            if parsed.frame then return true;
+            return nil;
+        end;
+        return state:nativeDateCall('IsValidDate,s);
+    end,
+    syncDateParser: func(enabled) begin
+        if enabled then begin
+            if self.parserHooks then return nil;
+            self.parserHooks := [];
+            local names := '[StringToDate,StringToDateFrame,IsValidDate];
+            local callbacks := [self.dateGlobal,self.dateFrameGlobal,self.dateValidGlobal];
+            foreach i,name in names do begin
+                local f := Clone(callbacks[i]); f.argFrame := nil; f := EnsureInternal(f);
+                local hook := {name:EnsureInternal(name),original:GetGlobalFn(name),replacement:f};
+                AddArraySlot(self.parserHooks,hook);
+                DefGlobalFn(name,f);
+            end;
+        end else if self.parserHooks then begin
+            foreach hook in self.parserHooks do if GetGlobalFn(hook.name) = hook.replacement then begin
+                if hook.original then DefGlobalFn(hook.name,hook.original) else UnDefGlobalFn(hook.name);
+            end;
+            self.parserHooks := nil;
+        end;
+    end,
+});

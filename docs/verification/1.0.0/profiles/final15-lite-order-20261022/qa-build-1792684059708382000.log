@@ -1,0 +1,9 @@
+Reading project file DisplayQA.nprj
+Reading platform file Newton 2.1
+Parts: 1
+Building package Display 5.2r2 QA:UBX
+Building part 0
+Reading platform file /Users/chengyiqun/Documents/UniBeijingX/experiments/toolchain/platform/Newton 2.1
+Compiling DisplayQA.newt
+Encoding Part 0...
+Package DisplayQA.pkg created.

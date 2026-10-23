@@ -1,0 +1,169 @@
+DefGlobalVar('ubx52ContentProto,{
+    _proto:ubx52DisplayProto,
+    installScript: func(p) begin
+        local s := {_proto:p,changes:[],pollToken:EnsureInternal(Clone({})),polls:0,removing:nil,displayEnabled:true};
+        DefGlobalVar('|ubxNamesContent:UBX|,s);
+        s:installFamilyMenu();
+        local clock:=Clone(p.clockCallback);clock.argFrame:=nil;s.clockFn:=EnsureInternal(clock);
+        local cancel:=Clone(p.pickerCancel);cancel.argFrame:=nil;s.pickerCancelFn:=EnsureInternal(cancel);
+        local folder:=Clone(p.folderTitleCallback);folder.argFrame:=nil;s.folderTitleFn:=EnsureInternal(folder);
+        local setup:=Clone(p.folderSetupCallback);setup.argFrame:=nil;s.folderSetupFn:=EnsureInternal(setup);
+        local regional:=Clone(p.regionalSetFont);regional.argFrame:=nil;s.regionalSetFontFn:=EnsureInternal(regional);
+        local abstract:=Clone(p.overviewAbstractCallback);abstract.argFrame:=nil;s.overviewAbstractFn:=EnsureInternal(abstract);
+        local width:=Clone(p.overviewWidthCallback);width.argFrame:=nil;s.overviewWidthFn:=EnsureInternal(width);
+        s.overviewWidthOriginal:=GetGlobalFn('|ubxOverviewWidth:UBX|);
+        DefGlobalFn(EnsureInternal('|ubxOverviewWidth:UBX|),s.overviewWidthFn);
+        s:installOverviewHook();
+        // Startup can close transient root views after package activation.
+        // A delayed system callback does not depend on a surviving view.
+        // Internalize only the tiny callback, with no installation closure;
+        // a queued call remains safe after package removal. Tokens prevent an
+        // old installation from starting a second loop after hot reinstall.
+        local poll:=Clone(p.poll);poll.argFrame:=nil;s.pollFn:=EnsureInternal(poll);
+        s:apply();AddDelayedCall(s.pollFn,[s.pollToken],300);
+        local remover:=Clone(p.removeScript);remover.argFrame:=nil;
+        return EnsureInternal({removeScript:remover});
+    end,
+    poll: func(token) begin
+        local s := GetGlobalVar('|ubxNamesContent:UBX|);
+        if not s or s.removing or s.pollToken<>token then return nil;
+        s.polls:=s.polls+1;
+        try s:apply();
+            onexception |evt.ex| do begin
+                local error:=CurrentException();s.errorCount:=(if s.errorCount then s.errorCount else 0)+1;
+                s.lastError:=EnsureInternal({phase:s.phase,name:error.name,
+                    errorCode:if IsFrame(error.data) then error.data.errorCode else nil});
+            end;
+        AddDelayedCall(s.pollFn,[token],300);
+    end,
+    setSlot: func(v,slot,value) begin
+        local text:=nil; local selection:=nil;
+        if slot='viewFont and v.viewCObject and v.viewClass=81 and IsString(v.text) then begin
+            text:=Clone(v.text);
+            local hilites:=GetHiliteOffsets();
+            if hilites then foreach h in hilites do if h[0]=v then selection:=h;
+        end;
+        SetValue(v,slot,value);
+        // clParagraphView can retain a blank native text cache after changing
+        // a live font. Rebind the same text, without committing soup data.
+        if text then begin
+            SetValue(v,EnsureInternal('text),text);
+            if selection then v:SetHilite(selection[1],selection[2],nil);
+        end;
+        if v.viewCObject then v:Dirty();
+    end,
+    remember: func(v,slot,value) begin
+        local record:=nil;
+        foreach c in self.changes do if c.view=v and c.slot=slot then record:=c;
+        if record then begin
+            record.original:=v.(slot); record.own:=HasSlot(v,slot); record.replacement:=value;
+        end else
+            AddArraySlot(self.changes,{view:v,slot:EnsureInternal(slot),own:HasSlot(v,slot),original:v.(slot),replacement:value});
+        self:setSlot(v,slot,value);
+    end,
+    restore: func() begin
+        for i:=Length(self.changes)-1 to 0 by -1 do begin
+            local c:=self.changes[i];
+            if c.display then self:restoreChange(c,nil)
+            else if c.view.(c.slot)=c.replacement then begin
+                self:setSlot(c.view,c.slot,c.original);
+                if not c.own then RemoveSlot(c.view,c.slot);
+            end;
+        end;
+        self.changes:=[];
+    end,
+    selectorClass:func(kind) begin
+        foreach c in '[|nameRef.people|,|nameRef.meetingPlace|,|nameRef.phone|,|nameRef.fax|,|nameRef.email|] do
+            if c=kind then return true;
+        return nil;
+    end,
+    apply: func() begin
+        if self.removing then return nil;
+        if not GlobalVarExists('|ubxFontPart:UBX|) or not fonts.beijing then begin
+            self:restore(); return nil;
+        end;
+        self.phase:='nativeKeys;self:nativeKeyFonts();
+        self.phase:='regionalFont;self:shareRegionalFont();
+        self.phase:='regionalNames;self:prepareRegionalNames();
+        self.phase:='prune;
+        for i:=Length(self.changes)-1 to 0 by -1 do
+            if not self.changes[i].view.viewCObject then begin
+                if self.changes[i].display then self:restoreChange(self.changes[i],nil);
+                RemoveSlot(self.changes,i);
+            end;
+        self.phase:='selectors;
+        local q:=[]; local root:=GetRoot();
+        // The native People popup is nested under a different slip than the
+        // Group editor. Find the picker itself, rather than assuming pickBase
+        // is a direct child of the root or that listBase has an _parent slot.
+        local selectors:=[root];local si:=0;
+        while si<Length(selectors) and si<450 do begin
+            local picker:=selectors[si];
+            if picker.pickerDef and self:selectorClass(picker.pickerDef.class) and picker.listBase then begin
+                local list:=picker.listBase;
+                // Keep native English rows and phone icons intact. CJK alone
+                // retains the readable 12pt plain style of the original fix.
+                local fallback:=EnsureInternal({family:'beijing,size:12,face:0});
+                local pieces:=self:drawingFonts(list.pieces,0,list.viewStyle.font,fallback);
+                if pieces then self:rememberDisplay(list,'pieces,pieces);
+            end;
+            local children:=picker:ChildViewFrames();
+            if children then foreach child in children do if child.viewCObject then AddArraySlot(selectors,child);
+            si:=si+1;
+        end;
+        if root.cardfile and root.cardfile.viewCObject then AddArraySlot(q,root.cardfile);
+        foreach v in root:ChildViewFrames() do
+            if v<>root.cardfile and v.viewCObject then begin
+                if v.appSymbol='cardfile then AddArraySlot(q,v);
+                // Native Invitees and Location share a list picker. Keep its
+                // cursor, pieces, check marks and callbacks; change draw style only.
+                if v.pickBase and v.pickBase.pickerDef and
+                   self:selectorClass(v.pickBase.pickerDef.class) then
+                    AddArraySlot(q,v.pickBase);
+            end;
+        // Selected Invitees/Location text belongs to the appointment data.
+        local dates:=if root.calendar and root.calendar.viewCObject then [root.calendar] else [];
+        local di:=0;
+        while di<Length(dates) and di<180 do begin
+            local dv:=dates[di];
+            if IsString(dv.debug) and (StrEqual(dv.debug,"Invitees") or StrEqual(dv.debug,"Location")) and
+               dv.entryLine and dv.entryLine.viewCObject then self:paragraphFonts(dv.entryLine);
+            local dk:=dv:ChildViewFrames();if dk then foreach c in dk do if c.viewCObject then AddArraySlot(dates,c);
+            di:=di+1;
+        end;
+        self.phase:='names;
+        local i:=0;
+        while i<Length(q) and i<200 do begin
+            local v:=q[i];
+            if v.viewCObject then begin
+                if v.viewClass mod 65536=81 then self:paragraphFonts(v);
+                if IsArray(v.shapeArray) and v.hitArray then begin
+                    local shapes:=self:drawingFonts(v.shapeArray,0,v.viewFont,nil);
+                    if shapes then self:rememberDisplay(v,'shapeArray,shapes);
+                end;
+                local more:=v:ChildViewFrames();
+                if more then foreach child in more do if child.viewCObject then AddArraySlot(q,child);
+                if v.entryView and v.entryView.viewCObject then begin
+                    local found:=nil; foreach seen in q do if seen=v.entryView then found:=true;
+                    if not found then AddArraySlot(q,v.entryView);
+                end;
+            end;
+            i:=i+1;
+        end;
+        self.phase:='display;self:applyDisplay();self.phase:=nil;
+    end,
+    removeScript: func(r) begin
+        local s:=GetGlobalVar('|ubxNamesContent:UBX|);
+        if s then begin
+            s.removing:=true;
+            s:closeBitmapPickers(true);
+            s:removeFamilyMenu();
+            s:removeOverviewHook();
+            s.pollToken:=nil;
+            s:restore();s:restoreRegionalNames();s:restoreRegionalFont(); UnDefGlobalVar('|ubxNamesContent:UBX|);
+            if GetGlobalFn('|ubxOverviewWidth:UBX|)=s.overviewWidthFn then
+                if s.overviewWidthOriginal then DefGlobalFn('|ubxOverviewWidth:UBX|,s.overviewWidthOriginal)
+                else UnDefGlobalFn('|ubxOverviewWidth:UBX|);
+        end;
+    end,
+});

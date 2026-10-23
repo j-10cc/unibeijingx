@@ -1,0 +1,42 @@
+{
+  "candidate": "dev15-attempt35",
+  "version": "1.0.0",
+  "started_at": 1792684343.7984629,
+  "product_read_only": false,
+  "10061": "paused",
+  "8h": "excluded",
+  "protected_before": {
+    "frozen_53e_files": 254,
+    "protected_52_files": 432,
+    "development_snapshot_files": 21,
+    "concurrent_development_changes": []
+  },
+  "cases": [
+    {
+      "profile": "final15-lite-cold-visual-20261022",
+      "variant": "lite",
+      "kind": "cold-visual",
+      "started_at": 1792684343.805544,
+      "passed": true,
+      "stages": [
+        "Settled native cold About actual pixels,9 fields, saved aliases and original712000"
+      ],
+      "ended_at": 1792684426.468697,
+      "launch_completed": true,
+      "protected_after": {
+        "frozen_53e_files": 254,
+        "protected_52_files": 432,
+        "development_snapshot_files": 21,
+        "concurrent_development_changes": []
+      }
+    }
+  ],
+  "excluded": [
+    "-10061 investigation / stress triggering",
+    "8-hour soak (removed from acceptance criteria)",
+    "loading first frame when readable after settling",
+    "readable bottom crop of 周",
+    "old Notes compatibility"
+  ],
+  "source_of_qa_methods": "experiments/qa/display52r2/font-menu-dev14-20261022"
+}

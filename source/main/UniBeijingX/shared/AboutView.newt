@@ -1,0 +1,41 @@
+// A standard form part in the same font package owns this view and its Extras
+// entry. The OS closes and removes it together with the package; no font hooks,
+// observers, soup records or global UI registrations are needed here.
+DefGlobalFn('ubxAboutPart,func(edition) begin
+    return {
+        app: '|UniBeijingXAbout:UBX|,
+        text: "UniBeijingX",
+        icon: ubxFontIcon,
+        version: "1.0.0",
+        theForm: {
+            _proto: protoFloatNGo,
+            appSymbol: '|UniBeijingXAbout:UBX|,
+            title: "About UniBeijingX",
+            version: "1.0.0",
+            // Packed Roman fonts keep the About page independent of CJK aliases.
+            viewFont: 12288,
+            viewJustify: vjParentCenterH+vjParentCenterV,
+            viewBounds: {left:0,top:0,right:280,bottom:302},
+            stepChildren: [
+                {_proto:protoStaticText,viewBounds:{left:14,top:20,right:266,bottom:48},
+                    viewFont:1067008,text:"UniBeijingX"},
+                {_proto:protoStaticText,viewBounds:{left:14,top:52,right:266,bottom:72},
+                    viewFont:12288,text:edition&" / Version 1.0.0"},
+                {_proto:protoStaticText,viewBounds:{left:14,top:86,right:266,bottom:106},
+                    viewFont:12288,text:"Developed by j10cc"},
+                {_proto:protoStaticText,viewBounds:{left:14,top:108,right:266,bottom:128},
+                    viewFont:12288,text:"j10cc.site"},
+                {_proto:protoStaticText,viewBounds:{left:14,top:136,right:266,bottom:156},
+                    viewFont:12288,text:"Powered by GPT6.1-Sol"},
+                {_proto:protoStaticText,viewBounds:{left:14,top:164,right:266,bottom:184},
+                    viewFont:10240,text:"© 2026 j10cc"},
+                {_proto:protoStaticText,viewBounds:{left:14,top:206,right:266,bottom:224},
+                    viewFont:1058816,text:"Font credits & licenses"},
+                {_proto:protoStaticText,viewBounds:{left:14,top:228,right:266,bottom:246},
+                    viewFont:10240,text:"Noto Sans CJK / Noto Sans"},
+                {_proto:protoStaticText,viewBounds:{left:14,top:248,right:266,bottom:266},
+                    viewFont:10240,text:"SIL Open Font License 1.1"},
+            ],
+        },
+    };
+end);

@@ -1,0 +1,26 @@
+[
+  {
+    "phase": "country_native",
+    "returncode": 0
+  },
+  {
+    "phase": "date_types",
+    "returncode": 0
+  },
+  {
+    "phase": "popups",
+    "returncode": 0
+  },
+  {
+    "phase": "formulas",
+    "returncode": 0
+  },
+  {
+    "phase": "repeat_native3",
+    "returncode": 0
+  },
+  {
+    "phase": "address_roman",
+    "returncode": 0
+  }
+]

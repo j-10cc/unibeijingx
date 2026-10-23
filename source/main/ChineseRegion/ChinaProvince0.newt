@@ -1,0 +1,19 @@
+// Generated China Post outlet atlas; do not edit.
+DefGlobalVar('ubxChinaProvince0,'{name:"上海市",cities:[
+{name:"上海市",areas:[
+{name:"嘉定区",codesOffset:0,codesCount:19},
+{name:"奉贤区",codesOffset:57,codesCount:21},
+{name:"宝山区",codesOffset:120,codesCount:17},
+{name:"崇明区",codesOffset:171,codesCount:26},
+{name:"徐汇区",codesOffset:249,codesCount:10},
+{name:"普陀区",codesOffset:279,codesCount:7},
+{name:"杨浦区",codesOffset:300,codesCount:6},
+{name:"松江区",codesOffset:318,codesCount:19},
+{name:"浦东新区",codesOffset:375,codesCount:48},
+{name:"虹口区",codesOffset:519,codesCount:9},
+{name:"金山区",codesOffset:546,codesCount:15},
+{name:"长宁区",codesOffset:591,codesCount:5},
+{name:"闵行区",codesOffset:606,codesCount:17},
+{name:"青浦区",codesOffset:657,codesCount:20},
+{name:"静安区",codesOffset:717,codesCount:9},
+{name:"黄浦区",codesOffset:744,codesCount:9}]}]});

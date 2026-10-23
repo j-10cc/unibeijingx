@@ -1,0 +1,21 @@
+{
+  "phase": "country_native",
+  "profile": "final15-full-final35-20261022",
+  "started": 1792689230.845668,
+  "states": [
+    {
+      "state": "Country-native-China",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Country-native-China.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Country-native-menu-to-USA",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Country-native-menu-to-USA.png",
+      "adapter_errors": 0
+    }
+  ],
+  "passed": false,
+  "runner_sha256": "a799aec2e29c9652725aa60484ab670390ca2214119e91295f5829ae0763ce5a",
+  "error": "Native UI did not become ready: Country-native-USA",
+  "ended": 1792689278.717186
+}

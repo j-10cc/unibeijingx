@@ -1,0 +1,25 @@
+{
+  "phase": "address_roman",
+  "profile": "final15-lite-final18-20261022",
+  "started": 1792664810.3148658,
+  "states": [
+    {
+      "state": "Address-Roman-China",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final18-20261022/Address-Roman-China.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Address-Roman-USA",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final18-20261022/Address-Roman-USA.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Address-Roman-China-again",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final18-20261022/Address-Roman-China-again.png",
+      "adapter_errors": 0
+    }
+  ],
+  "passed": true,
+  "runner_sha256": "5801db5280999f01be624cb5fbc7b090ae8e9f65848a0149e2e639a9837bb099",
+  "ended": 1792664822.932003
+}

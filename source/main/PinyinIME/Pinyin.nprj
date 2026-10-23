@@ -1,0 +1,8 @@
+{
+    name: "Pinyin IME:UBX",
+    copyright: "Copyright 2026 UniBeijingX contributors; dictionary data under MIT licenses",
+    platform: "Newton 2.1",
+    parts: [
+        { main: "Main.newt", files: ["Dictionary.newt", "Icon.newt"] }
+    ]
+}

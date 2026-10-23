@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Local third-party dependencies, SDK and ROMs are inventoried separately.
+/external/*
+!/external/README.md
+!/external/DEPENDENCIES.json
+!/external/FILES.sha256
+!/external/requirements.txt
+
+# Disposable outputs; accepted releases remain tracked.
+/release/build/
+/source/test/.runtime/

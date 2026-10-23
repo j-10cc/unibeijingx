@@ -1,0 +1,70 @@
+{
+  "phase": "repeat_reopen",
+  "profile": "final15-full-final35-20261022",
+  "started": 1792687985.870605,
+  "states": [
+    {
+      "state": "Repeat-final-settled3",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Repeat-final-settled3.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Repeat-final-settled10",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Repeat-final-settled10.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Rule-none",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Rule-none.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Rule-day",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Rule-day.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Rule-week",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Rule-week.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Rule-other-week",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Rule-other-week.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Rule-month",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Rule-month.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Rule-year",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Rule-year.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Rule-week-month",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Rule-week-month.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Rule-week-year",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Rule-week-year.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Rule-month-menu",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Rule-month-menu.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Rule-month-Today-confirmed",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-full-final35-20261022/Rule-month-Today-confirmed.png",
+      "adapter_errors": 0
+    }
+  ],
+  "passed": true,
+  "runner_sha256": "7b5878902c401ed5a5455d24d2cb6b6f9de852f7ec949ec3d9498d65a6cdc1d8",
+  "ended": 1792688129.845344
+}

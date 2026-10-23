@@ -1,0 +1,42 @@
+START lite30-extra-repeat_reopen
+END lite30-extra-repeat_reopen
+START lite30-extra-formulas
+END lite30-extra-formulas
+START lite30-extra-system_roots
+END lite30-extra-system_roots
+START lite30-extra-preferences
+END lite30-extra-preferences
+START lite30-extra-date_types
+END lite30-extra-date_types
+START lite30-extra-address
+END lite30-extra-address
+START lite30-extra-style_state
+END lite30-extra-style_state
+START lite30-extra-routing
+END lite30-extra-routing
+START lite30-extra-clock_set
+END lite30-extra-clock_set
+START lite30-extra-clock_modes
+END lite30-extra-clock_modes
+START lite30-extra-extras_states
+END lite30-extra-extras_states
+START lite30-extra-calls_states
+END lite30-extra-calls_states
+START lite-overview
+END lite-overview
+START lite-regression
+END lite-regression
+Traceback (most recent call last):
+  File "<stdin>", line 9, in <module>
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "experiments/qa/display52r2/final-dev15-20261022/run-remaining.py", line 53, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "experiments/qa/display52r2/final-dev15-20261022/run-remaining.py", line 34, in main
+    regression('lite')
+  File "experiments/qa/display52r2/final-dev15-20261022/run-remaining.py", line 14, in regression
+    assert len(rows)==4 and all(c['passed'] and c['launch_completed'] for c in rows),rows
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: [{'profile': 'final15-lite-main-20261022', 'variant': 'lite', 'kind': 'main', 'started_at': 1792678569.038667, 'passed': False, 'stages': ['Original ROM English controls, New and four body baselines', 'Font-only: native Roman metadata, automatic Chinese routing, canonical font and About', 'Region installation, Chinese locale/date/currency APIs, English labels, 712000 and real font picker', 'Native Quick people/place, exact saved record references', 'Native pen Styles: seven families whole/partial, four sizes, five faces; three note formats/reopen', 'Exact Unicode saved/reopened, Calls fixed-style Chinese name without manual switching', 'Find five/three mixed sources, Chinese query, result jump and empty results', 'Person/company/group/worksite, 256-character address, five selectors, Repeat Other and cleanup date', 'Nonempty Agenda, To Do, Day/Week/Month/Year, seven title weekdays and native Text menu'], 'error': 'Guest error or unexpected boot: UBX NS D52ASSERT\toverview-settled\tnative-overview\tPASS\nUBX NS D52ASSERT\toverview-settled\tactual-page-draw-hook\tPASS\nUBX NS D52ASSERT\toverview-settled\tsummary-ready\tFAIL\nUBX NS UBXLOC\tM52ERROR\texception\tname\tevt.ex.msg\nUBX NS UBXLOC\tM52ERROR\texception\tmessage\toverview-settled summary-ready\nUBX NS D52ACK 18e0e0e6b5615078\n', 'ended_at': 1792679934.097713, 'launch_completed': True, 'protected_after': {'frozen_53e_files': 254, 'protected_52_files': 432, 'development_snapshot_files': 21, 'concurrent_development_changes': []}}]

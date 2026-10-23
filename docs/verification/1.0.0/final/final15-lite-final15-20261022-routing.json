@@ -1,0 +1,25 @@
+{
+  "phase": "routing",
+  "profile": "final15-lite-final15-20261022",
+  "started": 1792663304.585481,
+  "states": [
+    {
+      "state": "Long-folder-radio",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final15-20261022/Long-folder-radio.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Long-folder-menu",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final15-20261022/Long-folder-menu.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Long-folder-title",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final15-20261022/Long-folder-title.png",
+      "adapter_errors": 0
+    }
+  ],
+  "passed": false,
+  "error": "Guest error or unexpected boot: UBX NS UBXLOC\tM52ERROR\texception\tname\tevt.ex.fr.intrp;type.ref.frame\nUBX NS UBXLOC\tM52ERROR\tdata\terrorCode\t-48807\nUBX NS UBXLOC\tM52ERROR\tdata\tsymbol\tmodeBIC\nUBX NS D52ACK 18e0d1cdec752f08\n",
+  "ended": 1792663334.459997
+}

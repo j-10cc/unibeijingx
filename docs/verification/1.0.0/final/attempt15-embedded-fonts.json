@@ -1,0 +1,18 @@
+[
+  {
+    "variant": "lite",
+    "package": "packages/milestone52r2-display/artifacts/dev15-attempt15/Font-Lite.pkg",
+    "embedded_sfnt_offset": 45588,
+    "sfnt_bytes": 745836,
+    "sfnt_sha256": "194b806a15ce96c8229d4ceace1294aa5b2c5c8acc2a160f276c4400caf4adbc",
+    "identical_to_dev14_source": true
+  },
+  {
+    "variant": "full",
+    "package": "packages/milestone52r2-display/artifacts/dev15-attempt15/Font-Full.pkg",
+    "embedded_sfnt_offset": 45588,
+    "sfnt_bytes": 1505508,
+    "sfnt_sha256": "7957b8bac6c88e2ed3dec89f09d7cc893a1744ff0d0c12e51969f662474c354e",
+    "identical_to_dev14_source": true
+  }
+]

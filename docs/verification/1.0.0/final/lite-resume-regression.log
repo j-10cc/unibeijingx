@@ -1,0 +1,15 @@
+lite main Fresh identical S0: original ROM/New baseline, font+Region, exact saved Unicode; earlier9 main stages linked separately
+lite main Extended Latin/symbols in four Roman families, six shared bitmap sizes, settled overview and About
+lite main Single ordinary removal/reinstall: About closure, native enumerator and New restored
+lite main Official Pinyin keyboard ni -> candidate -> actual input object and exact saved Unicode; all components
+lite main Normal soft restart: exact note/IME data, package activation, canonical font, About and English UI
+STOPPED final15-lite-main-completion8-20261022
+lite cold Independent cold process, original 712000, canonical font and exact saved Unicode
+STOPPED final15-lite-cold-20261022
+lite region-first Independent S0 Region-before-Font, live Unicode, shared sfnt, unique font and original Roman metadata
+STOPPED final15-lite-order-20261022
+lite support Region date/currency/parser and complete31-province postal data
+lite support Native Country menu China-USA-China, original Roman registry and defaults
+lite support Optional IME/Region/font ordinary removal and locale/default/enumerator restoration
+STOPPED final15-lite-support-20261022
+LITE MAIN COMPLETION AND4 REQUIRED CASES PASSED

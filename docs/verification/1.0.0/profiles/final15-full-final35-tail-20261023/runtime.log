@@ -1,0 +1,3097 @@
+Cannot open symbol files '/Users/chengyiqun/Documents/UniBeijingX/experiments/emulator/runtime/mp2000-rom/mp2000.symbols'
+UBX NS LIFE52b activation 4 locale USA
+UBX NS UBXM52 QA ready
+UBX NS LIFE52b heartbeat 4/1
+UBX NS LIFE52b heartbeat 4/2
+UBX NS LIFE52b heartbeat 4/3
+UBX NS D52ACK 18e0e991ee6b46b8
+UBX NS D52ACK 18e0e99202580f80
+UBX NS D52ACK 18e0e9921458b400
+UBX NS D52ACK 18e0e992266bdac8
+UBX NS D52ACK 18e0e992384c1280
+UBX NS NATIVE_ABSENT
+UBX NS D52ACK 18e0e9924a2cb3b0
+UBX NS D52ACK 18e0e9925c146d48
+UBX NS D52ACK 18e0e992802ea900
+UBX NS D52ACK 18e0e99291aeee38
+UBX NS NATIVE_ABSENT
+UBX NS D52ACK 18e0e992a3375578
+UBX NS D52ACK 18e0e992b54459f0
+UBX NS D52ACK 18e0e992e53cced0
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/qa-packages/DisplayQA.pkg
+UBX NS D52 QA ready
+UBX NS PACKAGE READY
+UBX NS D52ACK 18e0e9936e839598
+UBX NS D52ACK 18e0e993800ecf80
+UBX NS D52ACK 18e0e993922aa108
+UBX NS NATIVE_ACTIVE
+UBX NS D52ACK 18e0e993a33a4a20
+UBX NS D52ACK 18e0e993b4b89b58
+UBX NS PACKAGE READY
+UBX NS D52ACK 18e0e993e4d63fc0
+UBX NS D52ACK 18e0e993f6c28180
+UBX NS D52ACK 18e0e99408755420
+UBX NS NATIVE_ACTIVE
+UBX NS D52ACK 18e0e9941a6a9a78
+UBX NS D52ACK 18e0e9942c3e9d30
+UBX NS D52ACK 18e0e9943dd49130
+UBX NS D52ACK 18e0e99452224e48
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/qa-packages/ContentRepairQA.pkg
+UBX NS D52ACK 18e0e994dc186010
+UBX NS D52ACK 18e0e994ed0978f0
+UBX NS D52ASSERT	repair	QA-active	PASS
+UBX NS D52ACK 18e0e994fe651f28
+UBX NS D52ACK 18e0e99511cc0680
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/qa-packages/LatinDev11QA.pkg
+UBX NS D52ACK 18e0e9959acaa4a0
+UBX NS D52ACK 18e0e995ac3060e0
+UBX NS D52ACK 18e0e995c08d5868
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/qa-packages/TypographyDev9QA.pkg
+UBX NS D52ACK 18e0e9964a006b08
+UBX NS D52ACK 18e0e9965b9baa80
+UBX NS D52ACK 18e0e9966e446e10
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/qa-packages/MenuQA/MenuQA.pkg
+UBX NS UBXLOC	IME-TYPES	expected	Chr	char
+UBX NS UBXLOC	IME-TYPES	expected	literal	string
+UBX NS D52ACK 18e0e996f7f35518
+UBX NS D52ACK 18e0e99709fa4eb0
+UBX NS D52ACK 18e0e9971d6bccf8
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/qa-packages/NewQA/NewQA.pkg
+UBX NS D52ACK 18e0e997a64b32e8
+UBX NS D52ACK 18e0e997b9ca12f8
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/qa-packages/AboutQA/AboutQA.pkg
+UBX NS D52ACK 18e0e99842fd4dd8
+UBX NS D52ACK 18e0e998610cc100
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/qa-packages/AuditProbe/AuditProbe.pkg
+UBX NS D52ACK 18e0e998f4f0c8f8
+UBX NS D52ACK 18e0e9992fcda9c8
+UBX NS D52ACK 18e0e99941c82fe0
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/packages/milestone52r2-display/artifacts/dev15-attempt35/Font-Full.pkg
+UBX NS PACKAGE READY
+UBX NS D52ACK 18e0e999d5b92470
+UBX NS D52ACK 18e0e9a53efd6558
+UBX NS D52ACK 18e0e9a55b5e9fc8
+UBX NS NATIVE_ACTIVE
+UBX NS D52ACK 18e0e9a577c72568
+UBX NS D52ACK 18e0e9a5893e7990
+UBX NS SETTLED
+UBX NS D52ACK 18e0e9a5a0852f40
+UBX NS PACKAGE READY
+UBX NS D52ACK 18e0e9a5d08d05a0
+UBX NS D52ACK 18e0e9a5e7c37740
+UBX NS D52ACK 18e0e9a5f9051180
+UBX NS NATIVE_ACTIVE
+UBX NS D52ACK 18e0e9a60ad40740
+UBX NS D52ACK 18e0e9a61c76ad40
+UBX NS SETTLED
+UBX NS D52ACK 18e0e9a63360df58
+UBX NS D52ACK 18e0e9a644dfa9a8
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/packages/milestone52r1/region/Region.pkg
+UBX NS PACKAGE READY
+UBX NS D52ACK 18e0e9a7691b7210
+UBX NS D52ACK 18e0e9b2347e5f08
+UBX NS D52ACK 18e0e9b24bfb3fe8
+UBX NS NATIVE_ACTIVE
+UBX NS D52ACK 18e0e9b25d99dea8
+UBX NS D52ACK 18e0e9b26f28f0f0
+UBX NS SETTLED
+UBX NS D52ACK 18e0e9b28bda9938
+UBX NS PACKAGE READY
+UBX NS D52ACK 18e0e9b2c0c93e10
+UBX NS D52ACK 18e0e9b2d2555a88
+UBX NS D52ACK 18e0e9b2eeb335b0
+UBX NS NATIVE_ACTIVE
+UBX NS D52ACK 18e0e9b30069a230
+UBX NS D52ACK 18e0e9b311f19ff8
+UBX NS SETTLED
+UBX NS D52ACK 18e0e9b32e4132e0
+UBX NS D52ACK 18e0e9b34a903d10
+UBX NS D52ASSERT	setup	no-Regional-family	PASS
+UBX NS D52ASSERT	setup	no-Regional-caption	PASS
+UBX NS D52ASSERT	setup	no-Regional-family	PASS
+UBX NS D52ASSERT	setup	no-Regional-caption	PASS
+UBX NS D52ASSERT	setup	no-Regional-family	PASS
+UBX NS D52ASSERT	setup	no-Regional-caption	PASS
+UBX NS D52ASSERT	setup	no-Regional-family	PASS
+UBX NS D52ASSERT	setup	no-Regional-caption	PASS
+UBX NS D52ASSERT	setup	no-Regional-family	PASS
+UBX NS D52ASSERT	setup	no-Regional-caption	PASS
+UBX NS D52ASSERT	setup	no-Regional-family	PASS
+UBX NS D52ASSERT	setup	no-Regional-caption	PASS
+UBX NS D52ASSERT	setup	no-Regional-family	PASS
+UBX NS D52ASSERT	setup	no-Regional-caption	PASS
+UBX NS D52ASSERT	setup	canonical-family	PASS
+UBX NS D52ASSERT	setup	no-Regional-family	PASS
+UBX NS D52ASSERT	setup	no-Regional-caption	PASS
+UBX NS D52ASSERT	setup	exactly-one-UniBeijingX	PASS
+UBX NS D52ASSERT	setup	one-bitmap	PASS
+UBX NS D52ASSERT	setup	espy-encoding	PASS
+UBX NS D52ASSERT	setup	espy-macFontID	PASS
+UBX NS D52ASSERT	setup	espy-screenSym	PASS
+UBX NS D52ASSERT	setup	espy-psName	PASS
+UBX NS D52ASSERT	setup	espy-psScale	PASS
+UBX NS D52ASSERT	setup	espy-tsID	PASS
+UBX NS D52ASSERT	setup	espy-badFontMap	PASS
+UBX NS D52ASSERT	setup	espy-native-data	PASS
+UBX NS D52ASSERT	setup	newyork-encoding	PASS
+UBX NS D52ASSERT	setup	newyork-macFontID	PASS
+UBX NS D52ASSERT	setup	newyork-screenSym	PASS
+UBX NS D52ASSERT	setup	newyork-psName	PASS
+UBX NS D52ASSERT	setup	newyork-psScale	PASS
+UBX NS D52ASSERT	setup	newyork-tsID	PASS
+UBX NS D52ASSERT	setup	newyork-badFontMap	PASS
+UBX NS D52ASSERT	setup	newyork-native-data	PASS
+UBX NS D52ASSERT	setup	geneva-encoding	PASS
+UBX NS D52ASSERT	setup	geneva-macFontID	PASS
+UBX NS D52ASSERT	setup	geneva-screenSym	PASS
+UBX NS D52ASSERT	setup	geneva-psName	PASS
+UBX NS D52ASSERT	setup	geneva-psScale	PASS
+UBX NS D52ASSERT	setup	geneva-tsID	PASS
+UBX NS D52ASSERT	setup	geneva-badFontMap	PASS
+UBX NS D52ASSERT	setup	geneva-native-data	PASS
+UBX NS D52ASSERT	setup	handwriting-encoding	PASS
+UBX NS D52ASSERT	setup	handwriting-macFontID	PASS
+UBX NS D52ASSERT	setup	handwriting-screenSym	PASS
+UBX NS D52ASSERT	setup	handwriting-psName	PASS
+UBX NS D52ASSERT	setup	handwriting-psScale	PASS
+UBX NS D52ASSERT	setup	handwriting-tsID	PASS
+UBX NS D52ASSERT	setup	handwriting-badFontMap	PASS
+UBX NS D52ASSERT	setup	handwriting-native-data	PASS
+UBX NS D52ACK 18e0e9b3b4746490
+UBX NS D52ACK 18e0e9b3db4c7c10
+UBX NS D52ACK 18e0e9b3fa04d580
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/qa-packages/RepeatProbe/RepeatProbe.pkg
+UBX NS D52ACK 18e0e9b4889ed4a8
+UBX NS FINAL_CLEAN
+UBX NS D52ACK 18e0e9b4be2884e8
+UBX NS D52ACK 18e0e9b4cffc7418
+UBX NS D52ACK 18e0e9b4fb2046d8
+UBX NS D52ACK 18e0e9b50cf13868
+UBX NS FINAL_CLEAN
+UBX NS D52ACK 18e0e9b523caefc0
+UBX NS D52ACK 18e0e9b53a67c528
+UBX pen down 110 321
+UBX pen up
+UBX NS D52ACK 18e0e9b5c8783960
+UBX NS D52ACK 18e0e9b5da6de930
+UBX NS D52ACK 18e0e9b5ec434f60
+UBX NS UBXLOC	FOCUSPICK	view	index	8
+UBX NS UBXLOC	FOCUSPICK	view	count	9
+UBX NS D52ACK 18e0e9b6183acda0
+UBX NS UBXLOC	FOCUSBOX	view	left	103
+UBX NS UBXLOC	FOCUSBOX	view	top	315
+UBX NS UBXLOC	FOCUSBOX	view	right	258
+UBX NS UBXLOC	FOCUSBOX	view	bottom	432
+UBX NS D52ACK 18e0e9b63f9c8b68
+UBX pen down 113 419
+UBX pen up
+UBX NS D52ACK 18e0e9b6d90163a0
+UBX pen down 65 305
+UBX pen up
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Repeat-year-3s.png result 0
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Repeat-year-10s.png result 0
+UBX NS UBXLOC	REPEATVIEW	RepeatOther/3/0	class	80
+UBX NS UBXLOC	REPEATVIEW	RepeatOther/3/0	context	datepicker
+UBX NS UBXLOC	REPEATBOX	RepeatOther/3/0	left	152
+UBX NS UBXLOC	REPEATBOX	RepeatOther/3/0	top	232
+UBX NS UBXLOC	REPEATBOX	RepeatOther/3/0	right	262
+UBX NS UBXLOC	REPEATBOX	RepeatOther/3/0	bottom	294
+UBX NS UBXLOC	REPEATVIEW	RepeatOther/3/4	class	74
+UBX NS UBXLOC	REPEATVIEW	RepeatOther/3/4	context	DateAndMonthPicker
+UBX NS UBXLOC	REPEATBOX	RepeatOther/3/4	left	152
+UBX NS UBXLOC	REPEATBOX	RepeatOther/3/4	top	232
+UBX NS UBXLOC	REPEATBOX	RepeatOther/3/4	right	262
+UBX NS UBXLOC	REPEATBOX	RepeatOther/3/4	bottom	314
+UBX NS UBXLOC	REPEATFONT	RepeatOther/3/4/labelFont	family	beijing
+UBX NS UBXLOC	REPEATFONT	RepeatOther/3/4/labelFont	size	9
+UBX NS UBXLOC	REPEATFONT	RepeatOther/3/4/labelFont	face	0
+UBX NS UBXLOC	REPEATVIEW	RepeatOther/3/4/1	class	80
+UBX NS UBXLOC	REPEATVIEW	RepeatOther/3/4/1	context	monthView
+UBX NS UBXLOC	REPEATVIEW	RepeatOther/3/4/1	year	2026
+UBX NS UBXLOC	REPEATVIEW	RepeatOther/3/4/1	month	10
+UBX NS UBXLOC	REPEATBOX	RepeatOther/3/4/1	left	152
+UBX NS UBXLOC	REPEATBOX	RepeatOther/3/4/1	top	245
+UBX NS UBXLOC	REPEATBOX	RepeatOther/3/4/1	right	262
+UBX NS UBXLOC	REPEATBOX	RepeatOther/3/4/1	bottom	314
+UBX NS UBXLOC	REPEATFONT	RepeatOther/3/4/1/labelFont	family	beijing
+UBX NS UBXLOC	REPEATFONT	RepeatOther/3/4/1/labelFont	size	9
+UBX NS UBXLOC	REPEATFONT	RepeatOther/3/4/1/labelFont	face	0
+UBX NS UBXLOC	REPEATLOCALE	content.months	0	\u4e00\u6708
+UBX NS UBXLOC	REPEATLOCALE	content.months	1	\u4e8c\u6708
+UBX NS UBXLOC	REPEATLOCALE	content.months	2	\u4e09\u6708
+UBX NS UBXLOC	REPEATLOCALE	content.months	3	\u56db\u6708
+UBX NS UBXLOC	REPEATLOCALE	content.months	4	\u4e94\u6708
+UBX NS UBXLOC	REPEATLOCALE	content.months	5	\u516d\u6708
+UBX NS UBXLOC	REPEATLOCALE	content.months	6	\u4e03\u6708
+UBX NS UBXLOC	REPEATLOCALE	content.months	7	\u516b\u6708
+UBX NS UBXLOC	REPEATLOCALE	content.months	8	\u4e5d\u6708
+UBX NS UBXLOC	REPEATLOCALE	content.months	9	\u5341\u6708
+UBX NS UBXLOC	REPEATLOCALE	content.months	10	\u5341\u4e00\u6708
+UBX NS UBXLOC	REPEATLOCALE	content.months	11	\u5341\u4e8c\u6708
+UBX NS UBXLOC	REPEATLOCALE	content.weekdays	0	\u65e5
+UBX NS UBXLOC	REPEATLOCALE	content.weekdays	1	\u4e00
+UBX NS UBXLOC	REPEATLOCALE	content.weekdays	2	\u4e8c
+UBX NS UBXLOC	REPEATLOCALE	content.weekdays	3	\u4e09
+UBX NS UBXLOC	REPEATLOCALE	content.weekdays	4	\u56db
+UBX NS UBXLOC	REPEATLOCALE	content.weekdays	5	\u4e94
+UBX NS UBXLOC	REPEATLOCALE	content.weekdays	6	\u516d
+UBX NS D52ACK 18e0e9b9c4f839a8
+UBX NS UBXLOC	repeat-year	v0	Debug	646
+UBX NS UBXLOC	repeat-year	v1	title	Notepad
+UBX NS UBXLOC	repeat-year	v1	appSymbol	paperroll
+UBX NS UBXLOC	repeat-year	v1	preallocatedContext	paperroll
+UBX NS UBXLOC	repeat-year	v2	title	Button Bar
+UBX NS UBXLOC	repeat-year	v2	Debug	5075
+UBX NS UBXLOC	repeat-year	v2	appSymbol	buttons
+UBX NS UBXLOC	repeat-year	v2	preallocatedContext	buttons
+UBX NS UBXLOC	repeat-year	v4	title	Dates
+UBX NS UBXLOC	repeat-year	v4	Debug	8256
+UBX NS UBXLOC	repeat-year	v4	appSymbol	calendar
+UBX NS UBXLOC	repeat-year	v4	preallocatedContext	calendar
+UBX NS UBXLOC	repeat-year	v7	Debug	90529
+UBX NS UBXLOC	repeat-year	v7	preallocatedContext	status
+UBX NS UBXLOC	repeat-year	v16	preallocatedContext	monthController
+UBX NS UBXLOC	repeat-year	v17	Debug	9385
+UBX NS UBXLOC	repeat-year	v17	preallocatedContext	cribView
+UBX NS UBXLOC	repeat-year	v18	text	10\u670823\u65e5 \u661f\u671f\u4e94
+UBX NS UBXLOC	repeat-year	v18	Debug	8249
+UBX NS UBXLOC	repeat-year	v18	preallocatedContext	DateView
+UBX NS UBXLOC	repeat-year	v18	class	98
+UBX NS UBXLOC	repeat-year	v19	Debug	4384
+UBX NS UBXLOC	repeat-year	v20	Debug	46632
+UBX NS UBXLOC	repeat-year	v20	preallocatedContext	statusbar
+UBX NS UBXLOC	repeat-year	v21	Debug	165689
+UBX NS UBXLOC	repeat-year	v21	appSymbol	calendar
+UBX NS UBXLOC	repeat-year	v21	preallocatedContext	scheduleView
+UBX NS UBXLOC	repeat-year	v22	Debug	759704
+UBX NS UBXLOC	repeat-year	v22	preallocatedContext	upDownScroller
+UBX NS UBXLOC	repeat-year	v23	Debug	78458
+UBX NS UBXLOC	repeat-year	v23	preallocatedContext	MeetingNotes
+UBX NS UBXLOC	repeat-year	v25	text	\ufc01Unfiled Notes
+UBX NS UBXLOC	repeat-year	v25	Debug	1444304
+UBX NS UBXLOC	repeat-year	v25	preallocatedContext	showBarText
+UBX NS UBXLOC	repeat-year	v25	class	98
+UBX NS UBXLOC	repeat-year	v26	text	1:20 \u5468\u4e94 10-23
+UBX NS UBXLOC	repeat-year	v26	preallocatedContext	title
+UBX NS UBXLOC	repeat-year	v26	class	98
+UBX NS UBXLOC	repeat-year	v27	Debug	11538576
+UBX NS UBXLOC	repeat-year	v28	Debug	1444304
+UBX NS UBXLOC	repeat-year	v29	Debug	11538576
+UBX NS UBXLOC	repeat-year	v30	text	  New
+UBX NS UBXLOC	repeat-year	v30	Debug	1444304
+UBX NS UBXLOC	repeat-year	v30	keyButton	_newKeyButton
+UBX NS UBXLOC	repeat-year	v30	class	98
+UBX NS UBXLOC	repeat-year	v31	Debug	574352
+UBX NS UBXLOC	repeat-year	v32	Debug	714576
+UBX NS UBXLOC	repeat-year	v33	Debug	2862800
+UBX NS UBXLOC	repeat-year	v34	Debug	2574
+UBX NS UBXLOC	repeat-year	v34	preallocatedContext	titleBar
+UBX NS UBXLOC	repeat-year	v35	preallocatedContext	monthView
+UBX NS UBXLOC	repeat-year	v36	Debug	72801
+UBX NS UBXLOC	repeat-year	v37	Debug	11538576
+UBX NS UBXLOC	repeat-year	v38	Debug	1444304
+UBX NS UBXLOC	repeat-year	v39	Debug	11538576
+UBX NS UBXLOC	repeat-year	v40	text	  New
+UBX NS UBXLOC	repeat-year	v40	Debug	8205
+UBX NS UBXLOC	repeat-year	v40	preallocatedContext	newButton
+UBX NS UBXLOC	repeat-year	v40	class	98
+UBX NS UBXLOC	repeat-year	v41	text	  Show
+UBX NS UBXLOC	repeat-year	v41	Debug	16513
+UBX NS UBXLOC	repeat-year	v41	preallocatedContext	ShowButton
+UBX NS UBXLOC	repeat-year	v41	class	98
+UBX NS UBXLOC	repeat-year	v42	Debug	11538576
+UBX NS UBXLOC	repeat-year	v43	Debug	2888314
+UBX NS UBXLOC	repeat-year	v43	preallocatedContext	actionButton
+UBX NS UBXLOC	repeat-year	v44	Debug	8221
+UBX NS UBXLOC	repeat-year	v44	preallocatedContext	DayTable
+UBX NS UBXLOC	repeat-year	v45	Debug	153023
+UBX NS UBXLOC	repeat-year	v45	preallocatedContext	HeaderLabels
+UBX NS UBXLOC	repeat-year	v48	Debug	5019632
+UBX NS UBXLOC	repeat-year	v48	preallocatedContext	Header
+UBX NS UBXLOC	repeat-year	v50	text	Add Notes
+UBX NS UBXLOC	repeat-year	v50	Debug	79248
+UBX NS UBXLOC	repeat-year	v50	preallocatedContext	notesButton
+UBX NS UBXLOC	repeat-year	v50	class	98
+UBX NS UBXLOC	repeat-year	v51	Debug	2888314
+UBX NS UBXLOC	repeat-year	v51	preallocatedContext	actionButton
+UBX NS UBXLOC	repeat-year	v52	Debug	11538576
+UBX NS UBXLOC	repeat-year	v52	preallocatedContext	filingButton
+UBX NS UBXLOC	repeat-year	v53	Debug	72912
+UBX NS UBXLOC	repeat-year	v54	Debug	346713
+UBX NS UBXLOC	repeat-year	v54	preallocatedContext	RepeatingView
+UBX NS UBXLOC	repeat-year	v57	Debug	11538576
+UBX NS UBXLOC	repeat-year	v58	Debug	11538576
+UBX NS UBXLOC	repeat-year	v60	Debug	4121
+UBX NS UBXLOC	repeat-year	v61	text	Meeting
+UBX NS UBXLOC	repeat-year	v61	title	Meeting
+UBX NS UBXLOC	repeat-year	v61	Debug	45061
+UBX NS UBXLOC	repeat-year	v61	class	98
+UBX NS UBXLOC	repeat-year	v63	text	Repair \u5317\u4eac\u4f1a\u8bae
+UBX NS UBXLOC	repeat-year	v63	label	Title
+UBX NS UBXLOC	repeat-year	v63	Debug	MeetingTitle
+UBX NS UBXLOC	repeat-year	v63	preallocatedContext	meetingTitle
+UBX NS UBXLOC	repeat-year	v63	class	74
+UBX NS UBXLOC	repeat-year	v65	label	\ufc01Date
+UBX NS UBXLOC	repeat-year	v65	Debug	DateValue
+UBX NS UBXLOC	repeat-year	v65	preallocatedContext	DateValue
+UBX NS UBXLOC	repeat-year	v65	class	74
+UBX NS UBXLOC	repeat-year	v66	label	\ufc01Time
+UBX NS UBXLOC	repeat-year	v66	Debug	StartStopValue
+UBX NS UBXLOC	repeat-year	v66	class	74
+UBX NS UBXLOC	repeat-year	v67	label	\ufc01Dates
+UBX NS UBXLOC	repeat-year	v67	Debug	FirstLastDateValue
+UBX NS UBXLOC	repeat-year	v67	class	74
+UBX NS UBXLOC	repeat-year	v75	Debug	362838
+UBX NS UBXLOC	repeat-year	v76	text	Repeat Other
+UBX NS UBXLOC	repeat-year	v76	title	Repeat Other
+UBX NS UBXLOC	repeat-year	v76	Debug	45061
+UBX NS UBXLOC	repeat-year	v76	class	98
+UBX NS UBXLOC	repeat-year	v77	Debug	5775968
+UBX NS UBXLOC	repeat-year	v78	preallocatedContext	repeatPickers
+UBX NS UBXLOC	repeat-year	v81	Debug	2888314
+UBX NS UBXLOC	repeat-year	v81	keyButton	_actionKeyButton
+UBX NS UBXLOC	repeat-year	v82	Debug	11538576
+UBX NS UBXLOC	repeat-year	v82	keyButton	_filingKeyButton
+UBX NS UBXLOC	repeat-year	v89	text	Don't repeat
+UBX NS UBXLOC	repeat-year	v89	Debug	2887824
+UBX NS UBXLOC	repeat-year	v89	class	76
+UBX NS UBXLOC	repeat-year	v90	text	Every day
+UBX NS UBXLOC	repeat-year	v90	Debug	2887824
+UBX NS UBXLOC	repeat-year	v90	class	76
+UBX NS UBXLOC	repeat-year	v91	text	Every week
+UBX NS UBXLOC	repeat-year	v91	Debug	2887824
+UBX NS UBXLOC	repeat-year	v91	class	76
+UBX NS UBXLOC	repeat-year	v92	text	Every other week
+UBX NS UBXLOC	repeat-year	v92	Debug	2887824
+UBX NS UBXLOC	repeat-year	v92	class	76
+UBX NS UBXLOC	repeat-year	v93	text	Every month
+UBX NS UBXLOC	repeat-year	v93	Debug	2887824
+UBX NS UBXLOC	repeat-year	v93	class	76
+UBX NS UBXLOC	repeat-year	v94	text	Every year
+UBX NS UBXLOC	repeat-year	v94	Debug	2887824
+UBX NS UBXLOC	repeat-year	v94	class	76
+UBX NS UBXLOC	repeat-year	v95	text	Week in month
+UBX NS UBXLOC	repeat-year	v95	Debug	2887824
+UBX NS UBXLOC	repeat-year	v95	class	76
+UBX NS UBXLOC	repeat-year	v96	text	Week in year
+UBX NS UBXLOC	repeat-year	v96	Debug	2887824
+UBX NS UBXLOC	repeat-year	v96	class	76
+UBX NS UBXLOC	repeat-year	v97	preallocatedContext	datepicker
+UBX NS UBXLOC	repeat-year	v98	Debug	5775968
+UBX NS UBXLOC	repeat-year	v98	preallocatedContext	LastWeekPicker
+UBX NS UBXLOC	repeat-year	v99	preallocatedContext	DayPicker
+UBX NS UBXLOC	repeat-year	v100	preallocatedContext	WeekPicker
+UBX NS UBXLOC	repeat-year	v101	preallocatedContext	DateAndMonthPicker
+UBX NS UBXLOC	repeat-year	v111	text	fourth week
+UBX NS UBXLOC	repeat-year	v111	Debug	2887824
+UBX NS UBXLOC	repeat-year	v111	class	76
+UBX NS UBXLOC	repeat-year	v112	text	last week
+UBX NS UBXLOC	repeat-year	v112	Debug	2887824
+UBX NS UBXLOC	repeat-year	v112	class	76
+UBX NS UBXLOC	repeat-year	v113	text	m
+UBX NS UBXLOC	repeat-year	v113	Debug	1444304
+UBX NS UBXLOC	repeat-year	v113	class	98
+UBX NS UBXLOC	repeat-year	v114	text	t
+UBX NS UBXLOC	repeat-year	v114	Debug	1444304
+UBX NS UBXLOC	repeat-year	v114	class	98
+UBX NS UBXLOC	repeat-year	v115	text	w
+UBX NS UBXLOC	repeat-year	v115	Debug	1444304
+UBX NS UBXLOC	repeat-year	v115	class	98
+UBX NS UBXLOC	repeat-year	v116	text	t
+UBX NS UBXLOC	repeat-year	v116	Debug	1444304
+UBX NS UBXLOC	repeat-year	v116	class	98
+UBX NS UBXLOC	repeat-year	v117	text	f
+UBX NS UBXLOC	repeat-year	v117	Debug	1444304
+UBX NS UBXLOC	repeat-year	v117	class	98
+UBX NS UBXLOC	repeat-year	v118	text	s
+UBX NS UBXLOC	repeat-year	v118	Debug	1444304
+UBX NS UBXLOC	repeat-year	v118	class	98
+UBX NS UBXLOC	repeat-year	v119	text	s
+UBX NS UBXLOC	repeat-year	v119	Debug	1444304
+UBX NS UBXLOC	repeat-year	v119	class	98
+UBX NS UBXLOC	repeat-year	v120	text	first
+UBX NS UBXLOC	repeat-year	v120	Debug	5800980
+UBX NS UBXLOC	repeat-year	v120	class	76
+UBX NS UBXLOC	repeat-year	v121	text	second
+UBX NS UBXLOC	repeat-year	v121	Debug	5800980
+UBX NS UBXLOC	repeat-year	v121	class	76
+UBX NS UBXLOC	repeat-year	v122	text	third
+UBX NS UBXLOC	repeat-year	v122	Debug	5800980
+UBX NS UBXLOC	repeat-year	v122	class	76
+UBX NS UBXLOC	repeat-year	v123	text	fourth
+UBX NS UBXLOC	repeat-year	v123	Debug	5800980
+UBX NS UBXLOC	repeat-year	v123	class	76
+UBX NS UBXLOC	repeat-year	v124	text	last
+UBX NS UBXLOC	repeat-year	v124	Debug	5800980
+UBX NS UBXLOC	repeat-year	v124	class	76
+UBX NS UBXLOC	repeat-year	v125	Debug	2574
+UBX NS UBXLOC	repeat-year	v125	preallocatedContext	titleBar
+UBX NS UBXLOC	repeat-year	v126	preallocatedContext	monthView
+UBX NS UBXLOC	repeat-year	v134	Debug	11538576
+UBX NS UBXLOC	repeat-year	v135	Debug	11538576
+UBX NS D52ACK 18e0e9ba0598a4c0
+UBX pen down 257 238
+UBX pen up
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Repeat-year-next.png result 0
+UBX NS UBXLOC	REPEATVIEW	RepeatOther/3/0	class	80
+UBX NS UBXLOC	REPEATVIEW	RepeatOther/3/0	context	datepicker
+UBX NS UBXLOC	REPEATBOX	RepeatOther/3/0	left	152
+UBX NS UBXLOC	REPEATBOX	RepeatOther/3/0	top	232
+UBX NS UBXLOC	REPEATBOX	RepeatOther/3/0	right	262
+UBX NS UBXLOC	REPEATBOX	RepeatOther/3/0	bottom	294
+UBX NS UBXLOC	REPEATVIEW	RepeatOther/3/4	class	74
+UBX NS UBXLOC	REPEATVIEW	RepeatOther/3/4	context	DateAndMonthPicker
+UBX NS UBXLOC	REPEATBOX	RepeatOther/3/4	left	152
+UBX NS UBXLOC	REPEATBOX	RepeatOther/3/4	top	232
+UBX NS UBXLOC	REPEATBOX	RepeatOther/3/4	right	262
+UBX NS UBXLOC	REPEATBOX	RepeatOther/3/4	bottom	314
+UBX NS UBXLOC	REPEATFONT	RepeatOther/3/4/labelFont	family	beijing
+UBX NS UBXLOC	REPEATFONT	RepeatOther/3/4/labelFont	size	9
+UBX NS UBXLOC	REPEATFONT	RepeatOther/3/4/labelFont	face	0
+UBX NS UBXLOC	REPEATVIEW	RepeatOther/3/4/1	class	80
+UBX NS UBXLOC	REPEATVIEW	RepeatOther/3/4/1	context	monthView
+UBX NS UBXLOC	REPEATVIEW	RepeatOther/3/4/1	year	2026
+UBX NS UBXLOC	REPEATVIEW	RepeatOther/3/4/1	month	11
+UBX NS UBXLOC	REPEATBOX	RepeatOther/3/4/1	left	152
+UBX NS UBXLOC	REPEATBOX	RepeatOther/3/4/1	top	245
+UBX NS UBXLOC	REPEATBOX	RepeatOther/3/4/1	right	262
+UBX NS UBXLOC	REPEATBOX	RepeatOther/3/4/1	bottom	314
+UBX NS UBXLOC	REPEATFONT	RepeatOther/3/4/1/labelFont	family	beijing
+UBX NS UBXLOC	REPEATFONT	RepeatOther/3/4/1/labelFont	size	9
+UBX NS UBXLOC	REPEATFONT	RepeatOther/3/4/1/labelFont	face	0
+UBX NS UBXLOC	REPEATLOCALE	content.months	0	\u4e00\u6708
+UBX NS UBXLOC	REPEATLOCALE	content.months	1	\u4e8c\u6708
+UBX NS UBXLOC	REPEATLOCALE	content.months	2	\u4e09\u6708
+UBX NS UBXLOC	REPEATLOCALE	content.months	3	\u56db\u6708
+UBX NS UBXLOC	REPEATLOCALE	content.months	4	\u4e94\u6708
+UBX NS UBXLOC	REPEATLOCALE	content.months	5	\u516d\u6708
+UBX NS UBXLOC	REPEATLOCALE	content.months	6	\u4e03\u6708
+UBX NS UBXLOC	REPEATLOCALE	content.months	7	\u516b\u6708
+UBX NS UBXLOC	REPEATLOCALE	content.months	8	\u4e5d\u6708
+UBX NS UBXLOC	REPEATLOCALE	content.months	9	\u5341\u6708
+UBX NS UBXLOC	REPEATLOCALE	content.months	10	\u5341\u4e00\u6708
+UBX NS UBXLOC	REPEATLOCALE	content.months	11	\u5341\u4e8c\u6708
+UBX NS UBXLOC	REPEATLOCALE	content.weekdays	0	\u65e5
+UBX NS UBXLOC	REPEATLOCALE	content.weekdays	1	\u4e00
+UBX NS UBXLOC	REPEATLOCALE	content.weekdays	2	\u4e8c
+UBX NS UBXLOC	REPEATLOCALE	content.weekdays	3	\u4e09
+UBX NS UBXLOC	REPEATLOCALE	content.weekdays	4	\u56db
+UBX NS UBXLOC	REPEATLOCALE	content.weekdays	5	\u4e94
+UBX NS UBXLOC	REPEATLOCALE	content.weekdays	6	\u516d
+UBX NS D52ACK 18e0e9bb4545f068
+UBX NS FINAL_CLEAN
+UBX NS D52ACK 18e0e9bb738c7370
+UBX NS D52ACK 18e0e9bb99edebc0
+UBX pen down 95 152
+UBX pen up
+UBX NS D52ACK 18e0e9bc2cf30568
+UBX NS D52ACK 18e0e9bc3effa838
+UBX NS D52ASSERT	Country-China	main-font	PASS
+UBX NS D52ACK 18e0e9bc5af11d60
+UBX NS UBXLOC	F15BOX	Country-native-China/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-China/0	top	0
+UBX NS UBXLOC	F15BOX	Country-native-China/0	right	320
+UBX NS UBXLOC	F15BOX	Country-native-China/0	bottom	434
+UBX NS UBXLOC	F15VIEW	Country-native-China/0	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-China/0	context	paperroll
+UBX NS UBXLOC	F15VIEW	Country-native-China/0	app	paperroll
+UBX NS UBXLOC	F15TEXT	Country-native-China/0	title	Notepad
+UBX NS UBXLOC	F15BOX	Country-native-China/1	left	0
+UBX NS UBXLOC	F15BOX	Country-native-China/1	top	434
+UBX NS UBXLOC	F15BOX	Country-native-China/1	right	320
+UBX NS UBXLOC	F15BOX	Country-native-China/1	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-China/1	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-China/1	context	buttons
+UBX NS UBXLOC	F15VIEW	Country-native-China/1	app	buttons
+UBX NS UBXLOC	F15VIEW	Country-native-China/1	Debug	5075
+UBX NS UBXLOC	F15TEXT	Country-native-China/1	title	Button Bar
+UBX NS UBXLOC	F15BOX	Country-native-China/2	left	-4
+UBX NS UBXLOC	F15BOX	Country-native-China/2	top	-4
+UBX NS UBXLOC	F15BOX	Country-native-China/2	right	-3
+UBX NS UBXLOC	F15BOX	Country-native-China/2	bottom	-3
+UBX NS UBXLOC	F15VIEW	Country-native-China/2	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-China/2	Debug	1448480
+UBX NS UBXLOC	F15TEXT	Country-native-China/2	text	
+UBX NS UBXLOC	F15FONT	Country-native-China/2/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-China/2/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-China/2/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-China/3	left	48
+UBX NS UBXLOC	F15BOX	Country-native-China/3	top	105
+UBX NS UBXLOC	F15BOX	Country-native-China/3	right	272
+UBX NS UBXLOC	F15BOX	Country-native-China/3	bottom	329
+UBX NS UBXLOC	F15VIEW	Country-native-China/3	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-China/3	context	preferenceRoll
+UBX NS UBXLOC	F15VIEW	Country-native-China/3	Debug	181520
+UBX NS UBXLOC	F15BOX	Country-native-China/4	left	48
+UBX NS UBXLOC	F15BOX	Country-native-China/4	top	170
+UBX NS UBXLOC	F15BOX	Country-native-China/4	right	272
+UBX NS UBXLOC	F15BOX	Country-native-China/4	bottom	264
+UBX NS UBXLOC	F15VIEW	Country-native-China/4	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-China/4	Debug	363081
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0	top	21
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0	right	320
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Country-native-China/0/0	class	74
+UBX NS UBXLOC	F15BOX	Country-native-China/0/1	left	0
+UBX NS UBXLOC	F15BOX	Country-native-China/0/1	top	0
+UBX NS UBXLOC	F15BOX	Country-native-China/0/1	right	320
+UBX NS UBXLOC	F15BOX	Country-native-China/0/1	bottom	21
+UBX NS UBXLOC	F15VIEW	Country-native-China/0/1	class	74
+UBX NS UBXLOC	F15BOX	Country-native-China/0/2	left	0
+UBX NS UBXLOC	F15BOX	Country-native-China/0/2	top	416
+UBX NS UBXLOC	F15BOX	Country-native-China/0/2	right	320
+UBX NS UBXLOC	F15BOX	Country-native-China/0/2	bottom	434
+UBX NS UBXLOC	F15VIEW	Country-native-China/0/2	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-China/0/2	context	status
+UBX NS UBXLOC	F15VIEW	Country-native-China/0/2	Debug	90529
+UBX NS UBXLOC	F15BOX	Country-native-China/1/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-China/1/0	top	438
+UBX NS UBXLOC	F15BOX	Country-native-China/1/0	right	40
+UBX NS UBXLOC	F15BOX	Country-native-China/1/0	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-China/1/0	class	74
+UBX NS UBXLOC	F15BOX	Country-native-China/1/1	left	40
+UBX NS UBXLOC	F15BOX	Country-native-China/1/1	top	438
+UBX NS UBXLOC	F15BOX	Country-native-China/1/1	right	80
+UBX NS UBXLOC	F15BOX	Country-native-China/1/1	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-China/1/1	class	74
+UBX NS UBXLOC	F15BOX	Country-native-China/1/2	left	80
+UBX NS UBXLOC	F15BOX	Country-native-China/1/2	top	438
+UBX NS UBXLOC	F15BOX	Country-native-China/1/2	right	120
+UBX NS UBXLOC	F15BOX	Country-native-China/1/2	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-China/1/2	class	74
+UBX NS UBXLOC	F15BOX	Country-native-China/1/3	left	120
+UBX NS UBXLOC	F15BOX	Country-native-China/1/3	top	438
+UBX NS UBXLOC	F15BOX	Country-native-China/1/3	right	160
+UBX NS UBXLOC	F15BOX	Country-native-China/1/3	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-China/1/3	class	74
+UBX NS UBXLOC	F15BOX	Country-native-China/1/4	left	160
+UBX NS UBXLOC	F15BOX	Country-native-China/1/4	top	438
+UBX NS UBXLOC	F15BOX	Country-native-China/1/4	right	200
+UBX NS UBXLOC	F15BOX	Country-native-China/1/4	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-China/1/4	class	74
+UBX NS UBXLOC	F15BOX	Country-native-China/1/5	left	200
+UBX NS UBXLOC	F15BOX	Country-native-China/1/5	top	438
+UBX NS UBXLOC	F15BOX	Country-native-China/1/5	right	240
+UBX NS UBXLOC	F15BOX	Country-native-China/1/5	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-China/1/5	class	74
+UBX NS UBXLOC	F15BOX	Country-native-China/1/6	left	240
+UBX NS UBXLOC	F15BOX	Country-native-China/1/6	top	438
+UBX NS UBXLOC	F15BOX	Country-native-China/1/6	right	280
+UBX NS UBXLOC	F15BOX	Country-native-China/1/6	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-China/1/6	class	74
+UBX NS UBXLOC	F15BOX	Country-native-China/1/7	left	280
+UBX NS UBXLOC	F15BOX	Country-native-China/1/7	top	434
+UBX NS UBXLOC	F15BOX	Country-native-China/1/7	right	320
+UBX NS UBXLOC	F15BOX	Country-native-China/1/7	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-China/1/7	class	74
+UBX NS UBXLOC	F15BOX	Country-native-China/3/0	left	125
+UBX NS UBXLOC	F15BOX	Country-native-China/3/0	top	102
+UBX NS UBXLOC	F15BOX	Country-native-China/3/0	right	194
+UBX NS UBXLOC	F15BOX	Country-native-China/3/0	bottom	121
+UBX NS UBXLOC	F15VIEW	Country-native-China/3/0	class	98
+UBX NS UBXLOC	F15VIEW	Country-native-China/3/0	Debug	45061
+UBX NS UBXLOC	F15TEXT	Country-native-China/3/0	text	Preferences
+UBX NS UBXLOC	F15TEXT	Country-native-China/3/0	title	Preferences
+UBX NS UBXLOC	F15FONT	Country-native-China/3/0/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-China/3/0/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-China/3/0/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-China/3/1	left	48
+UBX NS UBXLOC	F15BOX	Country-native-China/3/1	top	129
+UBX NS UBXLOC	F15BOX	Country-native-China/3/1	right	272
+UBX NS UBXLOC	F15BOX	Country-native-China/3/1	bottom	321
+UBX NS UBXLOC	F15VIEW	Country-native-China/3/1	class	74
+UBX NS UBXLOC	F15FONT	Country-native-China/3/1/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-China/3/1/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-China/3/1/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-China/3/2	left	258
+UBX NS UBXLOC	F15BOX	Country-native-China/3/2	top	314
+UBX NS UBXLOC	F15BOX	Country-native-China/3/2	right	271
+UBX NS UBXLOC	F15BOX	Country-native-China/3/2	bottom	327
+UBX NS UBXLOC	F15VIEW	Country-native-China/3/2	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-China/3/2	Debug	362838
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0	left	48
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0	top	170
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0	right	272
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0	bottom	264
+UBX NS UBXLOC	F15VIEW	Country-native-China/4/0	class	74
+UBX NS UBXLOC	F15BOX	Country-native-China/4/1	left	258
+UBX NS UBXLOC	F15BOX	Country-native-China/4/1	top	249
+UBX NS UBXLOC	F15BOX	Country-native-China/4/1	right	271
+UBX NS UBXLOC	F15BOX	Country-native-China/4/1	bottom	262
+UBX NS UBXLOC	F15VIEW	Country-native-China/4/1	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-China/4/1	Debug	362838
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0/0	top	21
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0/0	right	320
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Country-native-China/0/0/0	class	74
+UBX NS UBXLOC	F15BOX	Country-native-China/0/1/0	left	212
+UBX NS UBXLOC	F15BOX	Country-native-China/0/1/0	top	3
+UBX NS UBXLOC	F15BOX	Country-native-China/0/1/0	right	316
+UBX NS UBXLOC	F15BOX	Country-native-China/0/1/0	bottom	17
+UBX NS UBXLOC	F15VIEW	Country-native-China/0/1/0	class	98
+UBX NS UBXLOC	F15VIEW	Country-native-China/0/1/0	context	showBarText
+UBX NS UBXLOC	F15VIEW	Country-native-China/0/1/0	Debug	1444304
+UBX NS UBXLOC	F15TEXT	Country-native-China/0/1/0	text	\ufc01Unfiled Notes
+UBX NS UBXLOC	F15FONT	Country-native-China/0/1/0/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-China/0/1/0/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-China/0/1/0/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-China/0/1/1	left	4
+UBX NS UBXLOC	F15BOX	Country-native-China/0/1/1	top	1
+UBX NS UBXLOC	F15BOX	Country-native-China/0/1/1	right	83
+UBX NS UBXLOC	F15BOX	Country-native-China/0/1/1	bottom	15
+UBX NS UBXLOC	F15VIEW	Country-native-China/0/1/1	class	98
+UBX NS UBXLOC	F15VIEW	Country-native-China/0/1/1	context	title
+UBX NS UBXLOC	F15TEXT	Country-native-China/0/1/1	text	1:20 \u5468\u4e94 10-23
+UBX NS UBXLOC	F15FONT	Country-native-China/0/1/1/viewFont	family	BeijingRegion:UBX
+UBX NS UBXLOC	F15FONT	Country-native-China/0/1/1/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-China/0/1/1/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Country-native-China/0/2/0	left	6
+UBX NS UBXLOC	F15BOX	Country-native-China/0/2/0	top	418
+UBX NS UBXLOC	F15BOX	Country-native-China/0/2/0	right	19
+UBX NS UBXLOC	F15BOX	Country-native-China/0/2/0	bottom	431
+UBX NS UBXLOC	F15VIEW	Country-native-China/0/2/0	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-China/0/2/0	Debug	11538576
+UBX NS UBXLOC	F15BOX	Country-native-China/0/2/1	left	26
+UBX NS UBXLOC	F15BOX	Country-native-China/0/2/1	top	418
+UBX NS UBXLOC	F15BOX	Country-native-China/0/2/1	right	44
+UBX NS UBXLOC	F15BOX	Country-native-China/0/2/1	bottom	431
+UBX NS UBXLOC	F15VIEW	Country-native-China/0/2/1	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-China/0/2/1	Debug	1444304
+UBX NS UBXLOC	F15FONT	Country-native-China/0/2/1/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-China/0/2/1/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-China/0/2/1/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-China/0/2/2	left	51
+UBX NS UBXLOC	F15BOX	Country-native-China/0/2/2	top	418
+UBX NS UBXLOC	F15BOX	Country-native-China/0/2/2	right	74
+UBX NS UBXLOC	F15BOX	Country-native-China/0/2/2	bottom	431
+UBX NS UBXLOC	F15VIEW	Country-native-China/0/2/2	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-China/0/2/2	Debug	11538576
+UBX NS UBXLOC	F15BOX	Country-native-China/0/2/3	left	81
+UBX NS UBXLOC	F15BOX	Country-native-China/0/2/3	top	418
+UBX NS UBXLOC	F15BOX	Country-native-China/0/2/3	right	113
+UBX NS UBXLOC	F15BOX	Country-native-China/0/2/3	bottom	431
+UBX NS UBXLOC	F15VIEW	Country-native-China/0/2/3	class	98
+UBX NS UBXLOC	F15VIEW	Country-native-China/0/2/3	Debug	1444304
+UBX NS UBXLOC	F15TEXT	Country-native-China/0/2/3	text	  New
+UBX NS UBXLOC	F15FONT	Country-native-China/0/2/3/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-China/0/2/3/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-China/0/2/3/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-China/1/7/0	left	280
+UBX NS UBXLOC	F15BOX	Country-native-China/1/7/0	top	449
+UBX NS UBXLOC	F15BOX	Country-native-China/1/7/0	right	297
+UBX NS UBXLOC	F15BOX	Country-native-China/1/7/0	bottom	465
+UBX NS UBXLOC	F15VIEW	Country-native-China/1/7/0	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-China/1/7/0	Debug	574352
+UBX NS UBXLOC	F15BOX	Country-native-China/1/7/1	left	300
+UBX NS UBXLOC	F15BOX	Country-native-China/1/7/1	top	438
+UBX NS UBXLOC	F15BOX	Country-native-China/1/7/1	right	318
+UBX NS UBXLOC	F15BOX	Country-native-China/1/7/1	bottom	455
+UBX NS UBXLOC	F15VIEW	Country-native-China/1/7/1	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-China/1/7/1	Debug	714576
+UBX NS UBXLOC	F15BOX	Country-native-China/1/7/2	left	300
+UBX NS UBXLOC	F15BOX	Country-native-China/1/7/2	top	459
+UBX NS UBXLOC	F15BOX	Country-native-China/1/7/2	right	318
+UBX NS UBXLOC	F15BOX	Country-native-China/1/7/2	bottom	476
+UBX NS UBXLOC	F15VIEW	Country-native-China/1/7/2	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-China/1/7/2	Debug	2862800
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0/0	left	133
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0/0	top	167
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0/0	right	186
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0/0	bottom	186
+UBX NS UBXLOC	F15VIEW	Country-native-China/4/0/0	class	98
+UBX NS UBXLOC	F15VIEW	Country-native-China/4/0/0	Debug	45061
+UBX NS UBXLOC	F15TEXT	Country-native-China/4/0/0	text	Locale
+UBX NS UBXLOC	F15TEXT	Country-native-China/4/0/0	title	Locale
+UBX NS UBXLOC	F15FONT	Country-native-China/4/0/0/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-China/4/0/0/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-China/4/0/0/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0/1	left	58
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0/1	top	195
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0/1	right	268
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0/1	bottom	210
+UBX NS UBXLOC	F15VIEW	Country-native-China/4/0/1	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-China/4/0/1	Debug	16845
+UBX NS UBXLOC	F15TEXT	Country-native-China/4/0/1	text	\ufc01Country
+UBX NS UBXLOC	F15FONT	Country-native-China/4/0/1/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-China/4/0/1/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-China/4/0/1/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0/2	left	58
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0/2	top	215
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0/2	right	228
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0/2	bottom	230
+UBX NS UBXLOC	F15VIEW	Country-native-China/4/0/2	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-China/4/0/2	Debug	20235
+UBX NS UBXLOC	F15TEXT	Country-native-China/4/0/2	text	\ufc01Keyboard
+UBX NS UBXLOC	F15FONT	Country-native-China/4/0/2/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-China/4/0/2/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-China/4/0/2/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0/3	left	58
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0/3	top	235
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0/3	right	213
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0/3	bottom	250
+UBX NS UBXLOC	F15VIEW	Country-native-China/4/0/3	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-China/4/0/3	context	paper
+UBX NS UBXLOC	F15VIEW	Country-native-China/4/0/3	Debug	21933
+UBX NS UBXLOC	F15TEXT	Country-native-China/4/0/3	text	\ufc01Paper Size
+UBX NS UBXLOC	F15FONT	Country-native-China/4/0/3/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-China/4/0/3/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-China/4/0/3/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0/0/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0/0/0	top	36
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0/0/0	right	320
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Country-native-China/0/0/0/0	class	74
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0/0/1	left	0
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0/0/1	top	21
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0/0/1	right	320
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0/0/1	bottom	36
+UBX NS UBXLOC	F15VIEW	Country-native-China/0/0/0/1	class	74
+UBX NS UBXLOC	F15TEXT	Country-native-China/0/0/0/1	headerText	Note
+UBX NS UBXLOC	F15FONT	Country-native-China/0/0/0/1/viewFont	family	BeijingRegion:UBX
+UBX NS UBXLOC	F15FONT	Country-native-China/0/0/0/1/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-China/0/0/0/1/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0/1/entryLine	left	133
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0/1/entryLine	top	195
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0/1/entryLine	right	268
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0/1/entryLine	bottom	210
+UBX NS UBXLOC	F15VIEW	Country-native-China/4/0/1/entryLine	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-China/4/0/1/entryLine	context	entryLine
+UBX NS UBXLOC	F15VIEW	Country-native-China/4/0/1/entryLine	Debug	1448480
+UBX NS UBXLOC	F15TEXT	Country-native-China/4/0/1/entryLine	text	\u4e2d\u56fd
+UBX NS UBXLOC	F15FONT	Country-native-China/4/0/1/entryLine/viewFont	family	beijing
+UBX NS UBXLOC	F15FONT	Country-native-China/4/0/1/entryLine/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-China/4/0/1/entryLine/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0/2/entryLine	left	133
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0/2/entryLine	top	215
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0/2/entryLine	right	228
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0/2/entryLine	bottom	230
+UBX NS UBXLOC	F15VIEW	Country-native-China/4/0/2/entryLine	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-China/4/0/2/entryLine	context	entryLine
+UBX NS UBXLOC	F15VIEW	Country-native-China/4/0/2/entryLine	Debug	1448480
+UBX NS UBXLOC	F15TEXT	Country-native-China/4/0/2/entryLine	text	U.S.
+UBX NS UBXLOC	F15FONT	Country-native-China/4/0/2/entryLine/viewFont	family	handwriting
+UBX NS UBXLOC	F15FONT	Country-native-China/4/0/2/entryLine/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-China/4/0/2/entryLine/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0/3/entryLine	left	133
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0/3/entryLine	top	235
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0/3/entryLine	right	213
+UBX NS UBXLOC	F15BOX	Country-native-China/4/0/3/entryLine	bottom	250
+UBX NS UBXLOC	F15VIEW	Country-native-China/4/0/3/entryLine	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-China/4/0/3/entryLine	context	entryLine
+UBX NS UBXLOC	F15VIEW	Country-native-China/4/0/3/entryLine	Debug	1448480
+UBX NS UBXLOC	F15TEXT	Country-native-China/4/0/3/entryLine	text	A4 Letter
+UBX NS UBXLOC	F15FONT	Country-native-China/4/0/3/entryLine/viewFont	family	handwriting
+UBX NS UBXLOC	F15FONT	Country-native-China/4/0/3/entryLine/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-China/4/0/3/entryLine/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0/0/0/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0/0/0/0	top	36
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0/0/0/0	right	320
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0/0/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Country-native-China/0/0/0/0/0	class	77
+UBX NS UBXLOC	F15FONT	Country-native-China/0/0/0/0/0/viewFont	family	handwriting
+UBX NS UBXLOC	F15FONT	Country-native-China/0/0/0/0/0/viewFont	size	18
+UBX NS UBXLOC	F15FONT	Country-native-China/0/0/0/0/0/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0/0/1/0	left	302
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0/0/1/0	top	21
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0/0/1/0	right	319
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0/0/1/0	bottom	35
+UBX NS UBXLOC	F15VIEW	Country-native-China/0/0/0/1/0	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-China/0/0/0/1/0	Debug	2888314
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0/0/1/1	left	284
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0/0/1/1	top	21
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0/0/1/1	right	301
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0/0/1/1	bottom	35
+UBX NS UBXLOC	F15VIEW	Country-native-China/0/0/0/1/1	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-China/0/0/0/1/1	Debug	11538576
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0/0/0/0/0	left	18
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0/0/0/0/0	top	31
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0/0/0/0/0	right	36
+UBX NS UBXLOC	F15BOX	Country-native-China/0/0/0/0/0/0	bottom	58
+UBX NS UBXLOC	F15VIEW	Country-native-China/0/0/0/0/0/0	class	65617
+UBX NS UBXLOC	F15VIEW	Country-native-China/0/0/0/0/0/0	Debug	21708
+UBX NS UBXLOC	F15TEXT	Country-native-China/0/0/0/0/0/0	text	\u4f60
+UBX NS UBXLOC	F15FONT	Country-native-China/0/0/0/0/0/0/viewFont	family	beijing
+UBX NS UBXLOC	F15FONT	Country-native-China/0/0/0/0/0/0/viewFont	size	18
+UBX NS UBXLOC	F15FONT	Country-native-China/0/0/0/0/0/0/viewFont	face	0
+UBX NS F15END	Country-native-China	44/44
+UBX NS D52ACK 18e0e9bc6d0a9170
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Country-native-China.png result 0
+UBX NS D52ASSERT	Country-native-China	adapter-no-errors	PASS
+UBX NS D52ACK 18e0e9bd083dd490
+UBX NS D52ACK 18e0e9bd19942b68
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0	top	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0	right	320
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0	bottom	434
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0	context	paperroll
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0	app	paperroll
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-USA/0	title	Notepad
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1	left	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1	top	434
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1	right	320
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/1	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/1	context	buttons
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/1	app	buttons
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/1	Debug	5075
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-USA/1	title	Button Bar
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/2	left	-4
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/2	top	-4
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/2	right	-3
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/2	bottom	-3
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/2	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/2	Debug	1448480
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-USA/2	text	
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/2/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/2/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/2/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/3	left	48
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/3	top	105
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/3	right	272
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/3	bottom	329
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/3	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/3	context	preferenceRoll
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/3	Debug	181520
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4	left	48
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4	top	170
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4	right	272
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4	bottom	264
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/4	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/4	Debug	363081
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/5	left	133
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/5	top	195
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/5	right	223
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/5	bottom	342
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/5	class	91
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/5	Debug	90204
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/5/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/5/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/5/viewFont	face	0
+UBX NS F15PICK	Country-native-menu-to-USA/5	0	U.S.
+UBX NS F15PICK	Country-native-menu-to-USA/5	1	Canada
+UBX NS F15PICK	Country-native-menu-to-USA/5	2	Canada (French)
+UBX NS F15PICK	Country-native-menu-to-USA/5	3	United Kingdom
+UBX NS F15PICK	Country-native-menu-to-USA/5	4	Australia
+UBX NS F15PICK	Country-native-menu-to-USA/5	5	Sweden
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0	top	21
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0	right	320
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0/0	class	74
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/1	left	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/1	top	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/1	right	320
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/1	bottom	21
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0/1	class	74
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/2	left	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/2	top	416
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/2	right	320
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/2	bottom	434
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0/2	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0/2	context	status
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0/2	Debug	90529
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/0	top	438
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/0	right	40
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/0	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/1/0	class	74
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/1	left	40
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/1	top	438
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/1	right	80
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/1	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/1/1	class	74
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/2	left	80
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/2	top	438
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/2	right	120
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/2	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/1/2	class	74
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/3	left	120
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/3	top	438
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/3	right	160
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/3	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/1/3	class	74
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/4	left	160
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/4	top	438
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/4	right	200
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/4	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/1/4	class	74
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/5	left	200
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/5	top	438
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/5	right	240
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/5	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/1/5	class	74
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/6	left	240
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/6	top	438
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/6	right	280
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/6	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/1/6	class	74
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/7	left	280
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/7	top	434
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/7	right	320
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/7	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/1/7	class	74
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/3/0	left	125
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/3/0	top	102
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/3/0	right	194
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/3/0	bottom	121
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/3/0	class	98
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/3/0	Debug	45061
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-USA/3/0	text	Preferences
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-USA/3/0	title	Preferences
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/3/0/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/3/0/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/3/0/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/3/1	left	48
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/3/1	top	129
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/3/1	right	272
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/3/1	bottom	321
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/3/1	class	74
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/3/1/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/3/1/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/3/1/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/3/2	left	258
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/3/2	top	314
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/3/2	right	271
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/3/2	bottom	327
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/3/2	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/3/2	Debug	362838
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0	left	48
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0	top	170
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0	right	272
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0	bottom	264
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/4/0	class	74
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/1	left	258
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/1	top	249
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/1	right	271
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/1	bottom	262
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/4/1	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/4/1	Debug	362838
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0/0	top	21
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0/0	right	320
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0/0/0	class	74
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/1/0	left	212
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/1/0	top	3
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/1/0	right	316
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/1/0	bottom	17
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0/1/0	class	98
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0/1/0	context	showBarText
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0/1/0	Debug	1444304
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-USA/0/1/0	text	\ufc01Unfiled Notes
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/0/1/0/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/0/1/0/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/0/1/0/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/1/1	left	4
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/1/1	top	1
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/1/1	right	83
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/1/1	bottom	15
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0/1/1	class	98
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0/1/1	context	title
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-USA/0/1/1	text	1:20 \u5468\u4e94 10-23
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/0/1/1/viewFont	family	BeijingRegion:UBX
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/0/1/1/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/0/1/1/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/2/0	left	6
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/2/0	top	418
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/2/0	right	19
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/2/0	bottom	431
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0/2/0	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0/2/0	Debug	11538576
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/2/1	left	26
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/2/1	top	418
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/2/1	right	44
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/2/1	bottom	431
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0/2/1	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0/2/1	Debug	1444304
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/0/2/1/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/0/2/1/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/0/2/1/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/2/2	left	51
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/2/2	top	418
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/2/2	right	74
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/2/2	bottom	431
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0/2/2	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0/2/2	Debug	11538576
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/2/3	left	81
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/2/3	top	418
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/2/3	right	113
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/2/3	bottom	431
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0/2/3	class	98
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0/2/3	Debug	1444304
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-USA/0/2/3	text	  New
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/0/2/3/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/0/2/3/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/0/2/3/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/7/0	left	280
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/7/0	top	449
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/7/0	right	297
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/7/0	bottom	465
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/1/7/0	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/1/7/0	Debug	574352
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/7/1	left	300
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/7/1	top	438
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/7/1	right	318
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/7/1	bottom	455
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/1/7/1	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/1/7/1	Debug	714576
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/7/2	left	300
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/7/2	top	459
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/7/2	right	318
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/1/7/2	bottom	476
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/1/7/2	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/1/7/2	Debug	2862800
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0/0	left	133
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0/0	top	167
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0/0	right	186
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0/0	bottom	186
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/4/0/0	class	98
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/4/0/0	Debug	45061
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-USA/4/0/0	text	Locale
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-USA/4/0/0	title	Locale
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/4/0/0/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/4/0/0/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/4/0/0/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0/1	left	58
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0/1	top	195
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0/1	right	268
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0/1	bottom	210
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/4/0/1	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/4/0/1	Debug	16845
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-USA/4/0/1	text	\ufc01Country
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/4/0/1/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/4/0/1/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/4/0/1/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0/2	left	58
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0/2	top	215
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0/2	right	228
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0/2	bottom	230
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/4/0/2	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/4/0/2	Debug	20235
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-USA/4/0/2	text	\ufc01Keyboard
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/4/0/2/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/4/0/2/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/4/0/2/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0/3	left	58
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0/3	top	235
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0/3	right	213
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0/3	bottom	250
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/4/0/3	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/4/0/3	context	paper
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/4/0/3	Debug	21933
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-USA/4/0/3	text	\ufc01Paper Size
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/4/0/3/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/4/0/3/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/4/0/3/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0/0/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0/0/0	top	36
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0/0/0	right	320
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0/0/0/0	class	74
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0/0/1	left	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0/0/1	top	21
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0/0/1	right	320
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0/0/1	bottom	36
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0/0/0/1	class	74
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-USA/0/0/0/1	headerText	Note
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/0/0/0/1/viewFont	family	BeijingRegion:UBX
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/0/0/0/1/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/0/0/0/1/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0/1/entryLine	left	133
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0/1/entryLine	top	195
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0/1/entryLine	right	268
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0/1/entryLine	bottom	210
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/4/0/1/entryLine	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/4/0/1/entryLine	context	entryLine
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/4/0/1/entryLine	Debug	1448480
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-USA/4/0/1/entryLine	text	\u4e2d\u56fd
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/4/0/1/entryLine/viewFont	family	beijing
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/4/0/1/entryLine/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/4/0/1/entryLine/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0/2/entryLine	left	133
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0/2/entryLine	top	215
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0/2/entryLine	right	228
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0/2/entryLine	bottom	230
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/4/0/2/entryLine	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/4/0/2/entryLine	context	entryLine
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/4/0/2/entryLine	Debug	1448480
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-USA/4/0/2/entryLine	text	U.S.
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/4/0/2/entryLine/viewFont	family	handwriting
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/4/0/2/entryLine/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/4/0/2/entryLine/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0/3/entryLine	left	133
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0/3/entryLine	top	235
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0/3/entryLine	right	213
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/4/0/3/entryLine	bottom	250
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/4/0/3/entryLine	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/4/0/3/entryLine	context	entryLine
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/4/0/3/entryLine	Debug	1448480
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-USA/4/0/3/entryLine	text	A4 Letter
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/4/0/3/entryLine/viewFont	family	handwriting
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/4/0/3/entryLine/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/4/0/3/entryLine/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0/0/0/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0/0/0/0	top	36
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0/0/0/0	right	320
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0/0/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0/0/0/0/0	class	77
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/0/0/0/0/0/viewFont	family	handwriting
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/0/0/0/0/0/viewFont	size	18
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/0/0/0/0/0/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0/0/1/0	left	302
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0/0/1/0	top	21
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0/0/1/0	right	319
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0/0/1/0	bottom	35
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0/0/0/1/0	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0/0/0/1/0	Debug	2888314
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0/0/1/1	left	284
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0/0/1/1	top	21
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0/0/1/1	right	301
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0/0/1/1	bottom	35
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0/0/0/1/1	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0/0/0/1/1	Debug	11538576
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0/0/0/0/0	left	18
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0/0/0/0/0	top	31
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0/0/0/0/0	right	36
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-USA/0/0/0/0/0/0	bottom	58
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0/0/0/0/0/0	class	65617
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-USA/0/0/0/0/0/0	Debug	21708
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-USA/0/0/0/0/0/0	text	\u4f60
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/0/0/0/0/0/0/viewFont	family	beijing
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/0/0/0/0/0/0/viewFont	size	18
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-USA/0/0/0/0/0/0/viewFont	face	0
+UBX NS F15END	Country-native-menu-to-USA	45/45
+UBX NS D52ACK 18e0e9bd49887db0
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Country-native-menu-to-USA.png result 0
+UBX NS D52ASSERT	Country-native-menu-to-USA	adapter-no-errors	PASS
+UBX NS D52ACK 18e0e9be0a392e38
+UBX NS D52ACK 18e0e9be1bc32000
+UBX NS D52ACK 18e0e9be32c7db10
+UBX NS UI_READY
+UBX NS D52ACK 18e0e9be4a44a098
+UBX NS UI_READY
+UBX NS D52ACK 18e0e9be7d0a4320
+UBX NS D52ACK 18e0e9be8f05ea48
+UBX NS D52ACK 18e0e9bea66f2fa0
+UBX NS D52ACK 18e0e9beb8793e48
+UBX NS D52ACK 18e0e9beca0af070
+UBX NS UBXLOC	MENUHIT	one	offset	2
+UBX NS UBXLOC	MENUHIT	one	height	21
+UBX NS D52ACK 18e0e9bee0974348
+UBX NS UBXLOC	FOCUSBOX	view	left	133
+UBX NS UBXLOC	FOCUSBOX	view	top	195
+UBX NS UBXLOC	FOCUSBOX	view	right	223
+UBX NS UBXLOC	FOCUSBOX	view	bottom	342
+UBX NS D52ACK 18e0e9befd5d3ac8
+UBX pen down 158 207
+UBX pen up
+UBX NS D52ACK 18e0e9bf91195030
+UBX NS UI_READY
+UBX NS D52ACK 18e0e9bfa2873a30
+UBX NS UI_READY
+UBX NS D52ACK 18e0e9bfc6428920
+UBX NS UBXLOC	F15BOX	Country-native-USA/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-USA/0	top	0
+UBX NS UBXLOC	F15BOX	Country-native-USA/0	right	320
+UBX NS UBXLOC	F15BOX	Country-native-USA/0	bottom	434
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0	context	paperroll
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0	app	paperroll
+UBX NS UBXLOC	F15TEXT	Country-native-USA/0	title	Notepad
+UBX NS UBXLOC	F15BOX	Country-native-USA/1	left	0
+UBX NS UBXLOC	F15BOX	Country-native-USA/1	top	434
+UBX NS UBXLOC	F15BOX	Country-native-USA/1	right	320
+UBX NS UBXLOC	F15BOX	Country-native-USA/1	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-USA/1	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-USA/1	context	buttons
+UBX NS UBXLOC	F15VIEW	Country-native-USA/1	app	buttons
+UBX NS UBXLOC	F15VIEW	Country-native-USA/1	Debug	5075
+UBX NS UBXLOC	F15TEXT	Country-native-USA/1	title	Button Bar
+UBX NS UBXLOC	F15BOX	Country-native-USA/2	left	-4
+UBX NS UBXLOC	F15BOX	Country-native-USA/2	top	-4
+UBX NS UBXLOC	F15BOX	Country-native-USA/2	right	-3
+UBX NS UBXLOC	F15BOX	Country-native-USA/2	bottom	-3
+UBX NS UBXLOC	F15VIEW	Country-native-USA/2	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-USA/2	Debug	1448480
+UBX NS UBXLOC	F15TEXT	Country-native-USA/2	text	
+UBX NS UBXLOC	F15FONT	Country-native-USA/2/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-USA/2/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-USA/2/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-USA/3	left	48
+UBX NS UBXLOC	F15BOX	Country-native-USA/3	top	105
+UBX NS UBXLOC	F15BOX	Country-native-USA/3	right	272
+UBX NS UBXLOC	F15BOX	Country-native-USA/3	bottom	329
+UBX NS UBXLOC	F15VIEW	Country-native-USA/3	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-USA/3	context	preferenceRoll
+UBX NS UBXLOC	F15VIEW	Country-native-USA/3	Debug	181520
+UBX NS UBXLOC	F15BOX	Country-native-USA/4	left	48
+UBX NS UBXLOC	F15BOX	Country-native-USA/4	top	170
+UBX NS UBXLOC	F15BOX	Country-native-USA/4	right	272
+UBX NS UBXLOC	F15BOX	Country-native-USA/4	bottom	264
+UBX NS UBXLOC	F15VIEW	Country-native-USA/4	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-USA/4	Debug	363081
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0	top	21
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0	right	320
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0/0	class	74
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/1	left	0
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/1	top	0
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/1	right	320
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/1	bottom	21
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0/1	class	74
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/2	left	0
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/2	top	416
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/2	right	320
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/2	bottom	434
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0/2	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0/2	context	status
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0/2	Debug	90529
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/0	top	438
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/0	right	40
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/0	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-USA/1/0	class	74
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/1	left	40
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/1	top	438
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/1	right	80
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/1	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-USA/1/1	class	74
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/2	left	80
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/2	top	438
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/2	right	120
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/2	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-USA/1/2	class	74
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/3	left	120
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/3	top	438
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/3	right	160
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/3	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-USA/1/3	class	74
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/4	left	160
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/4	top	438
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/4	right	200
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/4	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-USA/1/4	class	74
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/5	left	200
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/5	top	438
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/5	right	240
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/5	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-USA/1/5	class	74
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/6	left	240
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/6	top	438
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/6	right	280
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/6	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-USA/1/6	class	74
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/7	left	280
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/7	top	434
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/7	right	320
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/7	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-USA/1/7	class	74
+UBX NS UBXLOC	F15BOX	Country-native-USA/3/0	left	125
+UBX NS UBXLOC	F15BOX	Country-native-USA/3/0	top	102
+UBX NS UBXLOC	F15BOX	Country-native-USA/3/0	right	194
+UBX NS UBXLOC	F15BOX	Country-native-USA/3/0	bottom	121
+UBX NS UBXLOC	F15VIEW	Country-native-USA/3/0	class	98
+UBX NS UBXLOC	F15VIEW	Country-native-USA/3/0	Debug	45061
+UBX NS UBXLOC	F15TEXT	Country-native-USA/3/0	text	Preferences
+UBX NS UBXLOC	F15TEXT	Country-native-USA/3/0	title	Preferences
+UBX NS UBXLOC	F15FONT	Country-native-USA/3/0/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-USA/3/0/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-USA/3/0/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-USA/3/1	left	48
+UBX NS UBXLOC	F15BOX	Country-native-USA/3/1	top	129
+UBX NS UBXLOC	F15BOX	Country-native-USA/3/1	right	272
+UBX NS UBXLOC	F15BOX	Country-native-USA/3/1	bottom	321
+UBX NS UBXLOC	F15VIEW	Country-native-USA/3/1	class	74
+UBX NS UBXLOC	F15FONT	Country-native-USA/3/1/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-USA/3/1/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-USA/3/1/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-USA/3/2	left	258
+UBX NS UBXLOC	F15BOX	Country-native-USA/3/2	top	314
+UBX NS UBXLOC	F15BOX	Country-native-USA/3/2	right	271
+UBX NS UBXLOC	F15BOX	Country-native-USA/3/2	bottom	327
+UBX NS UBXLOC	F15VIEW	Country-native-USA/3/2	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-USA/3/2	Debug	362838
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0	left	48
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0	top	170
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0	right	272
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0	bottom	264
+UBX NS UBXLOC	F15VIEW	Country-native-USA/4/0	class	74
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/1	left	258
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/1	top	249
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/1	right	271
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/1	bottom	262
+UBX NS UBXLOC	F15VIEW	Country-native-USA/4/1	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-USA/4/1	Debug	362838
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0/0	top	21
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0/0	right	320
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0/0/0	class	74
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/1/0	left	212
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/1/0	top	3
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/1/0	right	316
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/1/0	bottom	17
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0/1/0	class	98
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0/1/0	context	showBarText
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0/1/0	Debug	1444304
+UBX NS UBXLOC	F15TEXT	Country-native-USA/0/1/0	text	\ufc01Unfiled Notes
+UBX NS UBXLOC	F15FONT	Country-native-USA/0/1/0/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-USA/0/1/0/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-USA/0/1/0/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/1/1	left	4
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/1/1	top	1
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/1/1	right	83
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/1/1	bottom	15
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0/1/1	class	98
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0/1/1	context	title
+UBX NS UBXLOC	F15TEXT	Country-native-USA/0/1/1	text	1:20 Fri 10/23
+UBX NS UBXLOC	F15FONT	Country-native-USA/0/1/1/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-USA/0/1/1/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-USA/0/1/1/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/2/0	left	6
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/2/0	top	418
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/2/0	right	19
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/2/0	bottom	431
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0/2/0	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0/2/0	Debug	11538576
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/2/1	left	26
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/2/1	top	418
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/2/1	right	44
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/2/1	bottom	431
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0/2/1	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0/2/1	Debug	1444304
+UBX NS UBXLOC	F15FONT	Country-native-USA/0/2/1/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-USA/0/2/1/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-USA/0/2/1/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/2/2	left	51
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/2/2	top	418
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/2/2	right	74
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/2/2	bottom	431
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0/2/2	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0/2/2	Debug	11538576
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/2/3	left	81
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/2/3	top	418
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/2/3	right	113
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/2/3	bottom	431
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0/2/3	class	98
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0/2/3	Debug	1444304
+UBX NS UBXLOC	F15TEXT	Country-native-USA/0/2/3	text	  New
+UBX NS UBXLOC	F15FONT	Country-native-USA/0/2/3/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-USA/0/2/3/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-USA/0/2/3/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/7/0	left	280
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/7/0	top	449
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/7/0	right	297
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/7/0	bottom	465
+UBX NS UBXLOC	F15VIEW	Country-native-USA/1/7/0	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-USA/1/7/0	Debug	574352
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/7/1	left	300
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/7/1	top	438
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/7/1	right	318
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/7/1	bottom	455
+UBX NS UBXLOC	F15VIEW	Country-native-USA/1/7/1	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-USA/1/7/1	Debug	714576
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/7/2	left	300
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/7/2	top	459
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/7/2	right	318
+UBX NS UBXLOC	F15BOX	Country-native-USA/1/7/2	bottom	476
+UBX NS UBXLOC	F15VIEW	Country-native-USA/1/7/2	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-USA/1/7/2	Debug	2862800
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0/0	left	133
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0/0	top	167
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0/0	right	186
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0/0	bottom	186
+UBX NS UBXLOC	F15VIEW	Country-native-USA/4/0/0	class	98
+UBX NS UBXLOC	F15VIEW	Country-native-USA/4/0/0	Debug	45061
+UBX NS UBXLOC	F15TEXT	Country-native-USA/4/0/0	text	Locale
+UBX NS UBXLOC	F15TEXT	Country-native-USA/4/0/0	title	Locale
+UBX NS UBXLOC	F15FONT	Country-native-USA/4/0/0/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-USA/4/0/0/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-USA/4/0/0/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0/1	left	58
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0/1	top	195
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0/1	right	268
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0/1	bottom	210
+UBX NS UBXLOC	F15VIEW	Country-native-USA/4/0/1	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-USA/4/0/1	Debug	16845
+UBX NS UBXLOC	F15TEXT	Country-native-USA/4/0/1	text	\ufc01Country
+UBX NS UBXLOC	F15FONT	Country-native-USA/4/0/1/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-USA/4/0/1/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-USA/4/0/1/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0/2	left	58
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0/2	top	215
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0/2	right	228
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0/2	bottom	230
+UBX NS UBXLOC	F15VIEW	Country-native-USA/4/0/2	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-USA/4/0/2	Debug	20235
+UBX NS UBXLOC	F15TEXT	Country-native-USA/4/0/2	text	\ufc01Keyboard
+UBX NS UBXLOC	F15FONT	Country-native-USA/4/0/2/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-USA/4/0/2/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-USA/4/0/2/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0/3	left	58
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0/3	top	235
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0/3	right	213
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0/3	bottom	250
+UBX NS UBXLOC	F15VIEW	Country-native-USA/4/0/3	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-USA/4/0/3	context	paper
+UBX NS UBXLOC	F15VIEW	Country-native-USA/4/0/3	Debug	21933
+UBX NS UBXLOC	F15TEXT	Country-native-USA/4/0/3	text	\ufc01Paper Size
+UBX NS UBXLOC	F15FONT	Country-native-USA/4/0/3/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-USA/4/0/3/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-USA/4/0/3/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0/0/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0/0/0	top	36
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0/0/0	right	320
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0/0/0/0	class	74
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0/0/1	left	0
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0/0/1	top	21
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0/0/1	right	320
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0/0/1	bottom	36
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0/0/0/1	class	74
+UBX NS UBXLOC	F15TEXT	Country-native-USA/0/0/0/1	headerText	Note
+UBX NS UBXLOC	F15FONT	Country-native-USA/0/0/0/1/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-USA/0/0/0/1/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-USA/0/0/0/1/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0/1/entryLine	left	133
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0/1/entryLine	top	195
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0/1/entryLine	right	268
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0/1/entryLine	bottom	210
+UBX NS UBXLOC	F15VIEW	Country-native-USA/4/0/1/entryLine	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-USA/4/0/1/entryLine	context	entryLine
+UBX NS UBXLOC	F15VIEW	Country-native-USA/4/0/1/entryLine	Debug	1448480
+UBX NS UBXLOC	F15TEXT	Country-native-USA/4/0/1/entryLine	text	U.S.
+UBX NS UBXLOC	F15FONT	Country-native-USA/4/0/1/entryLine/viewFont	family	handwriting
+UBX NS UBXLOC	F15FONT	Country-native-USA/4/0/1/entryLine/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-USA/4/0/1/entryLine/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0/2/entryLine	left	133
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0/2/entryLine	top	215
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0/2/entryLine	right	228
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0/2/entryLine	bottom	230
+UBX NS UBXLOC	F15VIEW	Country-native-USA/4/0/2/entryLine	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-USA/4/0/2/entryLine	context	entryLine
+UBX NS UBXLOC	F15VIEW	Country-native-USA/4/0/2/entryLine	Debug	1448480
+UBX NS UBXLOC	F15TEXT	Country-native-USA/4/0/2/entryLine	text	U.S.
+UBX NS UBXLOC	F15FONT	Country-native-USA/4/0/2/entryLine/viewFont	family	handwriting
+UBX NS UBXLOC	F15FONT	Country-native-USA/4/0/2/entryLine/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-USA/4/0/2/entryLine/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0/3/entryLine	left	133
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0/3/entryLine	top	235
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0/3/entryLine	right	213
+UBX NS UBXLOC	F15BOX	Country-native-USA/4/0/3/entryLine	bottom	250
+UBX NS UBXLOC	F15VIEW	Country-native-USA/4/0/3/entryLine	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-USA/4/0/3/entryLine	context	entryLine
+UBX NS UBXLOC	F15VIEW	Country-native-USA/4/0/3/entryLine	Debug	1448480
+UBX NS UBXLOC	F15TEXT	Country-native-USA/4/0/3/entryLine	text	U.S. Letter
+UBX NS UBXLOC	F15FONT	Country-native-USA/4/0/3/entryLine/viewFont	family	handwriting
+UBX NS UBXLOC	F15FONT	Country-native-USA/4/0/3/entryLine/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-USA/4/0/3/entryLine/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0/0/0/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0/0/0/0	top	36
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0/0/0/0	right	320
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0/0/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0/0/0/0/0	class	77
+UBX NS UBXLOC	F15FONT	Country-native-USA/0/0/0/0/0/viewFont	family	handwriting
+UBX NS UBXLOC	F15FONT	Country-native-USA/0/0/0/0/0/viewFont	size	18
+UBX NS UBXLOC	F15FONT	Country-native-USA/0/0/0/0/0/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0/0/1/0	left	302
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0/0/1/0	top	21
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0/0/1/0	right	319
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0/0/1/0	bottom	35
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0/0/0/1/0	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0/0/0/1/0	Debug	2888314
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0/0/1/1	left	284
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0/0/1/1	top	21
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0/0/1/1	right	301
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0/0/1/1	bottom	35
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0/0/0/1/1	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0/0/0/1/1	Debug	11538576
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0/0/0/0/0	left	18
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0/0/0/0/0	top	31
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0/0/0/0/0	right	36
+UBX NS UBXLOC	F15BOX	Country-native-USA/0/0/0/0/0/0	bottom	58
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0/0/0/0/0/0	class	65617
+UBX NS UBXLOC	F15VIEW	Country-native-USA/0/0/0/0/0/0	Debug	21708
+UBX NS UBXLOC	F15TEXT	Country-native-USA/0/0/0/0/0/0	text	\u4f60
+UBX NS UBXLOC	F15FONT	Country-native-USA/0/0/0/0/0/0/viewFont	family	beijing
+UBX NS UBXLOC	F15FONT	Country-native-USA/0/0/0/0/0/0/viewFont	size	18
+UBX NS UBXLOC	F15FONT	Country-native-USA/0/0/0/0/0/0/viewFont	face	0
+UBX NS F15END	Country-native-USA	44/44
+UBX NS D52ACK 18e0e9bfd81b2b70
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Country-native-USA.png result 0
+UBX NS D52ASSERT	Country-native-USA	adapter-no-errors	PASS
+UBX NS D52ACK 18e0e9c073c9d468
+UBX NS D52ACK 18e0e9c085c6c3b0
+UBX NS D52ACK 18e0e9c09cf51b18
+UBX NS D52ASSERT	Country-USA	ROM-font	PASS
+UBX NS D52ACK 18e0e9c0aecf3080
+UBX NS D52ACK 18e0e9c0cb685f28
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0	top	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0	right	320
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0	bottom	434
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0	context	paperroll
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0	app	paperroll
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-China/0	title	Notepad
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1	left	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1	top	434
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1	right	320
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/1	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/1	context	buttons
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/1	app	buttons
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/1	Debug	5075
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-China/1	title	Button Bar
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/2	left	-4
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/2	top	-4
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/2	right	-3
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/2	bottom	-3
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/2	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/2	Debug	1448480
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-China/2	text	
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/2/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/2/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/2/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/3	left	48
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/3	top	105
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/3	right	272
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/3	bottom	329
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/3	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/3	context	preferenceRoll
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/3	Debug	181520
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4	left	48
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4	top	170
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4	right	272
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4	bottom	264
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/4	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/4	Debug	363081
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/5	left	133
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/5	top	195
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/5	right	223
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/5	bottom	342
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/5	class	91
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/5	Debug	90204
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/5/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/5/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/5/viewFont	face	0
+UBX NS F15PICK	Country-native-menu-to-China/5	0	U.S.
+UBX NS F15PICK	Country-native-menu-to-China/5	1	Canada
+UBX NS F15PICK	Country-native-menu-to-China/5	2	Canada (French)
+UBX NS F15PICK	Country-native-menu-to-China/5	3	United Kingdom
+UBX NS F15PICK	Country-native-menu-to-China/5	4	Australia
+UBX NS F15PICK	Country-native-menu-to-China/5	5	Sweden
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0	top	21
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0	right	320
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0/0	class	74
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/1	left	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/1	top	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/1	right	320
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/1	bottom	21
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0/1	class	74
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/2	left	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/2	top	416
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/2	right	320
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/2	bottom	434
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0/2	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0/2	context	status
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0/2	Debug	90529
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/0	top	438
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/0	right	40
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/0	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/1/0	class	74
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/1	left	40
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/1	top	438
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/1	right	80
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/1	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/1/1	class	74
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/2	left	80
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/2	top	438
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/2	right	120
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/2	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/1/2	class	74
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/3	left	120
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/3	top	438
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/3	right	160
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/3	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/1/3	class	74
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/4	left	160
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/4	top	438
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/4	right	200
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/4	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/1/4	class	74
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/5	left	200
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/5	top	438
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/5	right	240
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/5	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/1/5	class	74
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/6	left	240
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/6	top	438
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/6	right	280
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/6	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/1/6	class	74
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/7	left	280
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/7	top	434
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/7	right	320
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/7	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/1/7	class	74
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/3/0	left	125
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/3/0	top	102
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/3/0	right	194
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/3/0	bottom	121
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/3/0	class	98
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/3/0	Debug	45061
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-China/3/0	text	Preferences
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-China/3/0	title	Preferences
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/3/0/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/3/0/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/3/0/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/3/1	left	48
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/3/1	top	129
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/3/1	right	272
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/3/1	bottom	321
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/3/1	class	74
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/3/1/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/3/1/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/3/1/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/3/2	left	258
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/3/2	top	314
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/3/2	right	271
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/3/2	bottom	327
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/3/2	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/3/2	Debug	362838
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0	left	48
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0	top	170
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0	right	272
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0	bottom	264
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/4/0	class	74
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/1	left	258
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/1	top	249
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/1	right	271
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/1	bottom	262
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/4/1	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/4/1	Debug	362838
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0/0	top	21
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0/0	right	320
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0/0/0	class	74
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/1/0	left	212
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/1/0	top	3
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/1/0	right	316
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/1/0	bottom	17
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0/1/0	class	98
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0/1/0	context	showBarText
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0/1/0	Debug	1444304
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-China/0/1/0	text	\ufc01Unfiled Notes
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/0/1/0/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/0/1/0/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/0/1/0/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/1/1	left	4
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/1/1	top	1
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/1/1	right	83
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/1/1	bottom	15
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0/1/1	class	98
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0/1/1	context	title
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-China/0/1/1	text	1:20 Fri 10/23
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/0/1/1/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/0/1/1/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/0/1/1/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/2/0	left	6
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/2/0	top	418
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/2/0	right	19
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/2/0	bottom	431
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0/2/0	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0/2/0	Debug	11538576
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/2/1	left	26
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/2/1	top	418
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/2/1	right	44
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/2/1	bottom	431
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0/2/1	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0/2/1	Debug	1444304
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/0/2/1/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/0/2/1/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/0/2/1/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/2/2	left	51
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/2/2	top	418
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/2/2	right	74
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/2/2	bottom	431
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0/2/2	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0/2/2	Debug	11538576
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/2/3	left	81
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/2/3	top	418
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/2/3	right	113
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/2/3	bottom	431
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0/2/3	class	98
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0/2/3	Debug	1444304
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-China/0/2/3	text	  New
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/0/2/3/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/0/2/3/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/0/2/3/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/7/0	left	280
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/7/0	top	449
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/7/0	right	297
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/7/0	bottom	465
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/1/7/0	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/1/7/0	Debug	574352
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/7/1	left	300
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/7/1	top	438
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/7/1	right	318
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/7/1	bottom	455
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/1/7/1	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/1/7/1	Debug	714576
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/7/2	left	300
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/7/2	top	459
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/7/2	right	318
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/1/7/2	bottom	476
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/1/7/2	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/1/7/2	Debug	2862800
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0/0	left	133
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0/0	top	167
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0/0	right	186
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0/0	bottom	186
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/4/0/0	class	98
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/4/0/0	Debug	45061
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-China/4/0/0	text	Locale
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-China/4/0/0	title	Locale
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/4/0/0/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/4/0/0/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/4/0/0/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0/1	left	58
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0/1	top	195
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0/1	right	268
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0/1	bottom	210
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/4/0/1	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/4/0/1	Debug	16845
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-China/4/0/1	text	\ufc01Country
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/4/0/1/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/4/0/1/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/4/0/1/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0/2	left	58
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0/2	top	215
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0/2	right	228
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0/2	bottom	230
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/4/0/2	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/4/0/2	Debug	20235
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-China/4/0/2	text	\ufc01Keyboard
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/4/0/2/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/4/0/2/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/4/0/2/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0/3	left	58
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0/3	top	235
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0/3	right	213
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0/3	bottom	250
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/4/0/3	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/4/0/3	context	paper
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/4/0/3	Debug	21933
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-China/4/0/3	text	\ufc01Paper Size
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/4/0/3/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/4/0/3/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/4/0/3/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0/0/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0/0/0	top	36
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0/0/0	right	320
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0/0/0/0	class	74
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0/0/1	left	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0/0/1	top	21
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0/0/1	right	320
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0/0/1	bottom	36
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0/0/0/1	class	74
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-China/0/0/0/1	headerText	Note
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/0/0/0/1/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/0/0/0/1/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/0/0/0/1/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0/1/entryLine	left	133
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0/1/entryLine	top	195
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0/1/entryLine	right	268
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0/1/entryLine	bottom	210
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/4/0/1/entryLine	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/4/0/1/entryLine	context	entryLine
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/4/0/1/entryLine	Debug	1448480
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-China/4/0/1/entryLine	text	U.S.
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/4/0/1/entryLine/viewFont	family	handwriting
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/4/0/1/entryLine/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/4/0/1/entryLine/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0/2/entryLine	left	133
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0/2/entryLine	top	215
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0/2/entryLine	right	228
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0/2/entryLine	bottom	230
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/4/0/2/entryLine	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/4/0/2/entryLine	context	entryLine
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/4/0/2/entryLine	Debug	1448480
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-China/4/0/2/entryLine	text	U.S.
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/4/0/2/entryLine/viewFont	family	handwriting
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/4/0/2/entryLine/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/4/0/2/entryLine/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0/3/entryLine	left	133
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0/3/entryLine	top	235
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0/3/entryLine	right	213
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/4/0/3/entryLine	bottom	250
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/4/0/3/entryLine	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/4/0/3/entryLine	context	entryLine
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/4/0/3/entryLine	Debug	1448480
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-China/4/0/3/entryLine	text	U.S. Letter
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/4/0/3/entryLine/viewFont	family	handwriting
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/4/0/3/entryLine/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/4/0/3/entryLine/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0/0/0/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0/0/0/0	top	36
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0/0/0/0	right	320
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0/0/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0/0/0/0/0	class	77
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/0/0/0/0/0/viewFont	family	handwriting
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/0/0/0/0/0/viewFont	size	18
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/0/0/0/0/0/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0/0/1/0	left	302
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0/0/1/0	top	21
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0/0/1/0	right	319
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0/0/1/0	bottom	35
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0/0/0/1/0	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0/0/0/1/0	Debug	2888314
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0/0/1/1	left	284
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0/0/1/1	top	21
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0/0/1/1	right	301
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0/0/1/1	bottom	35
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0/0/0/1/1	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0/0/0/1/1	Debug	11538576
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0/0/0/0/0	left	18
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0/0/0/0/0	top	31
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0/0/0/0/0	right	36
+UBX NS UBXLOC	F15BOX	Country-native-menu-to-China/0/0/0/0/0/0	bottom	58
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0/0/0/0/0/0	class	65617
+UBX NS UBXLOC	F15VIEW	Country-native-menu-to-China/0/0/0/0/0/0	Debug	21708
+UBX NS UBXLOC	F15TEXT	Country-native-menu-to-China/0/0/0/0/0/0	text	\u4f60
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/0/0/0/0/0/0/viewFont	family	beijing
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/0/0/0/0/0/0/viewFont	size	18
+UBX NS UBXLOC	F15FONT	Country-native-menu-to-China/0/0/0/0/0/0/viewFont	face	0
+UBX NS F15END	Country-native-menu-to-China	45/45
+UBX NS D52ACK 18e0e9c102771d10
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Country-native-menu-to-China.png result 0
+UBX NS D52ASSERT	Country-native-menu-to-China	adapter-no-errors	PASS
+UBX NS D52ACK 18e0e9c1cc5b6ca8
+UBX NS D52ACK 18e0e9c1e90ac330
+UBX NS D52ACK 18e0e9c2052e21b0
+UBX NS UI_READY
+UBX NS D52ACK 18e0e9c22657b5b8
+UBX NS UI_READY
+UBX NS D52ACK 18e0e9c2504a28b0
+UBX NS D52ACK 18e0e9c2619def48
+UBX NS D52ACK 18e0e9c2791d02a8
+UBX NS D52ACK 18e0e9c28b3a7628
+UBX NS D52ACK 18e0e9c2b1fddcc8
+UBX NS UBXLOC	MENUHIT	one	offset	128
+UBX NS UBXLOC	MENUHIT	one	height	21
+UBX NS D52ACK 18e0e9c2cecf5d68
+UBX NS UBXLOC	FOCUSBOX	view	left	133
+UBX NS UBXLOC	FOCUSBOX	view	top	195
+UBX NS UBXLOC	FOCUSBOX	view	right	223
+UBX NS UBXLOC	FOCUSBOX	view	bottom	342
+UBX NS D52ACK 18e0e9c2e9c3e490
+UBX pen down 158 333
+UBX pen up
+UBX NS D52ACK 18e0e9c37dc8e9d8
+UBX NS UI_READY
+UBX NS D52ACK 18e0e9c38fa0d490
+UBX NS UI_READY
+UBX NS D52ACK 18e0e9c3b43f01a0
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0	top	0
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0	right	320
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0	bottom	434
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0	context	paperroll
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0	app	paperroll
+UBX NS UBXLOC	F15TEXT	Country-native-China-again/0	title	Notepad
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1	left	0
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1	top	434
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1	right	320
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/1	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/1	context	buttons
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/1	app	buttons
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/1	Debug	5075
+UBX NS UBXLOC	F15TEXT	Country-native-China-again/1	title	Button Bar
+UBX NS UBXLOC	F15BOX	Country-native-China-again/2	left	-4
+UBX NS UBXLOC	F15BOX	Country-native-China-again/2	top	-4
+UBX NS UBXLOC	F15BOX	Country-native-China-again/2	right	-3
+UBX NS UBXLOC	F15BOX	Country-native-China-again/2	bottom	-3
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/2	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/2	Debug	1448480
+UBX NS UBXLOC	F15TEXT	Country-native-China-again/2	text	
+UBX NS UBXLOC	F15FONT	Country-native-China-again/2/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-China-again/2/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-China-again/2/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-China-again/3	left	48
+UBX NS UBXLOC	F15BOX	Country-native-China-again/3	top	105
+UBX NS UBXLOC	F15BOX	Country-native-China-again/3	right	272
+UBX NS UBXLOC	F15BOX	Country-native-China-again/3	bottom	329
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/3	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/3	context	preferenceRoll
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/3	Debug	181520
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4	left	48
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4	top	170
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4	right	272
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4	bottom	264
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/4	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/4	Debug	363081
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0	top	21
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0	right	320
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0/0	class	74
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/1	left	0
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/1	top	0
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/1	right	320
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/1	bottom	21
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0/1	class	74
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/2	left	0
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/2	top	416
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/2	right	320
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/2	bottom	434
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0/2	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0/2	context	status
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0/2	Debug	90529
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/0	top	438
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/0	right	40
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/0	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/1/0	class	74
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/1	left	40
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/1	top	438
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/1	right	80
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/1	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/1/1	class	74
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/2	left	80
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/2	top	438
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/2	right	120
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/2	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/1/2	class	74
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/3	left	120
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/3	top	438
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/3	right	160
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/3	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/1/3	class	74
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/4	left	160
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/4	top	438
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/4	right	200
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/4	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/1/4	class	74
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/5	left	200
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/5	top	438
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/5	right	240
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/5	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/1/5	class	74
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/6	left	240
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/6	top	438
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/6	right	280
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/6	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/1/6	class	74
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/7	left	280
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/7	top	434
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/7	right	320
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/7	bottom	480
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/1/7	class	74
+UBX NS UBXLOC	F15BOX	Country-native-China-again/3/0	left	125
+UBX NS UBXLOC	F15BOX	Country-native-China-again/3/0	top	102
+UBX NS UBXLOC	F15BOX	Country-native-China-again/3/0	right	194
+UBX NS UBXLOC	F15BOX	Country-native-China-again/3/0	bottom	121
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/3/0	class	98
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/3/0	Debug	45061
+UBX NS UBXLOC	F15TEXT	Country-native-China-again/3/0	text	Preferences
+UBX NS UBXLOC	F15TEXT	Country-native-China-again/3/0	title	Preferences
+UBX NS UBXLOC	F15FONT	Country-native-China-again/3/0/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-China-again/3/0/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-China-again/3/0/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-China-again/3/1	left	48
+UBX NS UBXLOC	F15BOX	Country-native-China-again/3/1	top	129
+UBX NS UBXLOC	F15BOX	Country-native-China-again/3/1	right	272
+UBX NS UBXLOC	F15BOX	Country-native-China-again/3/1	bottom	321
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/3/1	class	74
+UBX NS UBXLOC	F15FONT	Country-native-China-again/3/1/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-China-again/3/1/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-China-again/3/1/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-China-again/3/2	left	258
+UBX NS UBXLOC	F15BOX	Country-native-China-again/3/2	top	314
+UBX NS UBXLOC	F15BOX	Country-native-China-again/3/2	right	271
+UBX NS UBXLOC	F15BOX	Country-native-China-again/3/2	bottom	327
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/3/2	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/3/2	Debug	362838
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0	left	48
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0	top	170
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0	right	272
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0	bottom	264
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/4/0	class	74
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/1	left	258
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/1	top	249
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/1	right	271
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/1	bottom	262
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/4/1	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/4/1	Debug	362838
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0/0	top	21
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0/0	right	320
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0/0/0	class	74
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/1/0	left	212
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/1/0	top	3
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/1/0	right	316
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/1/0	bottom	17
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0/1/0	class	98
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0/1/0	context	showBarText
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0/1/0	Debug	1444304
+UBX NS UBXLOC	F15TEXT	Country-native-China-again/0/1/0	text	\ufc01Unfiled Notes
+UBX NS UBXLOC	F15FONT	Country-native-China-again/0/1/0/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-China-again/0/1/0/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-China-again/0/1/0/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/1/1	left	4
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/1/1	top	1
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/1/1	right	210
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/1/1	bottom	15
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0/1/1	class	98
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0/1/1	context	title
+UBX NS UBXLOC	F15TEXT	Country-native-China-again/0/1/1	text	1:21 \u5468\u4e94 10-23
+UBX NS UBXLOC	F15FONT	Country-native-China-again/0/1/1/viewFont	family	BeijingRegion:UBX
+UBX NS UBXLOC	F15FONT	Country-native-China-again/0/1/1/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-China-again/0/1/1/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/2/0	left	6
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/2/0	top	418
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/2/0	right	19
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/2/0	bottom	431
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0/2/0	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0/2/0	Debug	11538576
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/2/1	left	26
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/2/1	top	418
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/2/1	right	44
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/2/1	bottom	431
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0/2/1	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0/2/1	Debug	1444304
+UBX NS UBXLOC	F15FONT	Country-native-China-again/0/2/1/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-China-again/0/2/1/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-China-again/0/2/1/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/2/2	left	51
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/2/2	top	418
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/2/2	right	74
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/2/2	bottom	431
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0/2/2	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0/2/2	Debug	11538576
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/2/3	left	81
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/2/3	top	418
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/2/3	right	113
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/2/3	bottom	431
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0/2/3	class	98
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0/2/3	Debug	1444304
+UBX NS UBXLOC	F15TEXT	Country-native-China-again/0/2/3	text	  New
+UBX NS UBXLOC	F15FONT	Country-native-China-again/0/2/3/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-China-again/0/2/3/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-China-again/0/2/3/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/7/0	left	280
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/7/0	top	449
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/7/0	right	297
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/7/0	bottom	465
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/1/7/0	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/1/7/0	Debug	574352
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/7/1	left	300
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/7/1	top	438
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/7/1	right	318
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/7/1	bottom	455
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/1/7/1	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/1/7/1	Debug	714576
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/7/2	left	300
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/7/2	top	459
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/7/2	right	318
+UBX NS UBXLOC	F15BOX	Country-native-China-again/1/7/2	bottom	476
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/1/7/2	class	74
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/1/7/2	Debug	2862800
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0/0	left	133
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0/0	top	167
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0/0	right	186
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0/0	bottom	186
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/4/0/0	class	98
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/4/0/0	Debug	45061
+UBX NS UBXLOC	F15TEXT	Country-native-China-again/4/0/0	text	Locale
+UBX NS UBXLOC	F15TEXT	Country-native-China-again/4/0/0	title	Locale
+UBX NS UBXLOC	F15FONT	Country-native-China-again/4/0/0/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-China-again/4/0/0/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-China-again/4/0/0/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0/1	left	58
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0/1	top	195
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0/1	right	268
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0/1	bottom	210
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/4/0/1	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/4/0/1	Debug	16845
+UBX NS UBXLOC	F15TEXT	Country-native-China-again/4/0/1	text	\ufc01Country
+UBX NS UBXLOC	F15FONT	Country-native-China-again/4/0/1/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-China-again/4/0/1/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-China-again/4/0/1/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0/2	left	58
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0/2	top	215
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0/2	right	228
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0/2	bottom	230
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/4/0/2	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/4/0/2	Debug	20235
+UBX NS UBXLOC	F15TEXT	Country-native-China-again/4/0/2	text	\ufc01Keyboard
+UBX NS UBXLOC	F15FONT	Country-native-China-again/4/0/2/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-China-again/4/0/2/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-China-again/4/0/2/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0/3	left	58
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0/3	top	235
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0/3	right	213
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0/3	bottom	250
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/4/0/3	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/4/0/3	context	paper
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/4/0/3	Debug	21933
+UBX NS UBXLOC	F15TEXT	Country-native-China-again/4/0/3	text	\ufc01Paper Size
+UBX NS UBXLOC	F15FONT	Country-native-China-again/4/0/3/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Country-native-China-again/4/0/3/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Country-native-China-again/4/0/3/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0/0/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0/0/0	top	36
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0/0/0	right	320
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0/0/0/0	class	74
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0/0/1	left	0
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0/0/1	top	21
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0/0/1	right	320
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0/0/1	bottom	36
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0/0/0/1	class	74
+UBX NS UBXLOC	F15TEXT	Country-native-China-again/0/0/0/1	headerText	Note
+UBX NS UBXLOC	F15FONT	Country-native-China-again/0/0/0/1/viewFont	family	BeijingRegion:UBX
+UBX NS UBXLOC	F15FONT	Country-native-China-again/0/0/0/1/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-China-again/0/0/0/1/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0/1/entryLine	left	133
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0/1/entryLine	top	195
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0/1/entryLine	right	268
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0/1/entryLine	bottom	210
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/4/0/1/entryLine	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/4/0/1/entryLine	context	entryLine
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/4/0/1/entryLine	Debug	1448480
+UBX NS UBXLOC	F15TEXT	Country-native-China-again/4/0/1/entryLine	text	\u4e2d\u56fd
+UBX NS UBXLOC	F15FONT	Country-native-China-again/4/0/1/entryLine/viewFont	family	beijing
+UBX NS UBXLOC	F15FONT	Country-native-China-again/4/0/1/entryLine/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-China-again/4/0/1/entryLine/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0/2/entryLine	left	133
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0/2/entryLine	top	215
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0/2/entryLine	right	228
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0/2/entryLine	bottom	230
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/4/0/2/entryLine	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/4/0/2/entryLine	context	entryLine
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/4/0/2/entryLine	Debug	1448480
+UBX NS UBXLOC	F15TEXT	Country-native-China-again/4/0/2/entryLine	text	U.S.
+UBX NS UBXLOC	F15FONT	Country-native-China-again/4/0/2/entryLine/viewFont	family	handwriting
+UBX NS UBXLOC	F15FONT	Country-native-China-again/4/0/2/entryLine/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-China-again/4/0/2/entryLine/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0/3/entryLine	left	133
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0/3/entryLine	top	235
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0/3/entryLine	right	213
+UBX NS UBXLOC	F15BOX	Country-native-China-again/4/0/3/entryLine	bottom	250
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/4/0/3/entryLine	class	81
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/4/0/3/entryLine	context	entryLine
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/4/0/3/entryLine	Debug	1448480
+UBX NS UBXLOC	F15TEXT	Country-native-China-again/4/0/3/entryLine	text	A4 Letter
+UBX NS UBXLOC	F15FONT	Country-native-China-again/4/0/3/entryLine/viewFont	family	handwriting
+UBX NS UBXLOC	F15FONT	Country-native-China-again/4/0/3/entryLine/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Country-native-China-again/4/0/3/entryLine/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0/0/0/0	left	0
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0/0/0/0	top	36
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0/0/0/0	right	320
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0/0/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0/0/0/0/0	class	77
+UBX NS UBXLOC	F15FONT	Country-native-China-again/0/0/0/0/0/viewFont	family	handwriting
+UBX NS UBXLOC	F15FONT	Country-native-China-again/0/0/0/0/0/viewFont	size	18
+UBX NS UBXLOC	F15FONT	Country-native-China-again/0/0/0/0/0/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0/0/1/0	left	302
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0/0/1/0	top	21
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0/0/1/0	right	319
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0/0/1/0	bottom	35
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0/0/0/1/0	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0/0/0/1/0	Debug	2888314
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0/0/1/1	left	284
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0/0/1/1	top	21
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0/0/1/1	right	301
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0/0/1/1	bottom	35
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0/0/0/1/1	class	76
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0/0/0/1/1	Debug	11538576
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0/0/0/0/0	left	18
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0/0/0/0/0	top	31
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0/0/0/0/0	right	36
+UBX NS UBXLOC	F15BOX	Country-native-China-again/0/0/0/0/0/0	bottom	58
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0/0/0/0/0/0	class	65617
+UBX NS UBXLOC	F15VIEW	Country-native-China-again/0/0/0/0/0/0	Debug	21708
+UBX NS UBXLOC	F15TEXT	Country-native-China-again/0/0/0/0/0/0	text	\u4f60
+UBX NS UBXLOC	F15FONT	Country-native-China-again/0/0/0/0/0/0/viewFont	family	beijing
+UBX NS UBXLOC	F15FONT	Country-native-China-again/0/0/0/0/0/0/viewFont	size	18
+UBX NS UBXLOC	F15FONT	Country-native-China-again/0/0/0/0/0/0/viewFont	face	0
+UBX NS F15END	Country-native-China-again	44/44
+UBX NS D52ACK 18e0e9c3d5b0a6e0
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Country-native-China-again.png result 0
+UBX NS D52ASSERT	Country-native-China-again	adapter-no-errors	PASS
+UBX NS D52ACK 18e0e9c4744e1710
+UBX NS D52ACK 18e0e9c491066290
+UBX NS D52ASSERT	Country-China-again	main-font	PASS
+UBX NS D52ACK 18e0e9c4b6ab93a8
+UBX NS FINAL_CLEAN
+UBX NS D52ACK 18e0e9c4c898c798
+UBX NS FINAL_CLEAN
+UBX NS D52ACK 18e0e9c5091bf650
+UBX NS D52ACK 18e0e9c53aae2da0
+UBX NS FINAL_CLEAN
+UBX NS D52ACK 18e0e9c551b58890
+UBX NS D52ACK 18e0e9c56da16420
+UBX NS D52ACK 18e0e9c58a3f7c98
+UBX NS D52ACK 18e0e9c5ba7cab38
+UBX NS D52ACK 18e0e9c5d70dac20
+UBX NS D52ACK 18e0e9c5e8c22c70
+UBX NS UBXLOC	FOCUSPICK	view	index	0
+UBX NS UBXLOC	FOCUSPICK	view	count	4
+UBX NS D52ACK 18e0e9c5fa8110e8
+UBX NS UBXLOC	FOCUSBOX	view	left	115
+UBX NS UBXLOC	FOCUSBOX	view	top	355
+UBX NS UBXLOC	FOCUSBOX	view	right	204
+UBX NS UBXLOC	FOCUSBOX	view	bottom	431
+UBX NS D52ACK 18e0e9c60ca4a2d0
+UBX pen down 125 366
+UBX pen up
+UBX NS D52ACK 18e0e9c6a06868f8
+UBX pen down 35 66
+UBX pen up
+UBX NS D52ACK 18e0e9c72a7565f0
+UBX NS D52ASSERT	new-Note	exact-target	PASS
+UBX NS D52ACK 18e0e9c77807c420
+UBX NS D52ACK 18e0e9c789ad7378
+UBX NS UBXLOC	FOCUSBOX	view	left	35
+UBX NS UBXLOC	FOCUSBOX	view	top	43
+UBX NS UBXLOC	FOCUSBOX	view	right	97
+UBX NS UBXLOC	FOCUSBOX	view	bottom	59
+UBX NS D52ACK 18e0e9c7a09ed568
+UBX pen down 43 48
+UBX pen up
+UBX NS D52ACK 18e0e9c82f89e678
+UBX NS D52ACK 18e0e9c8416868b0
+UBX NS D52ACK 18e0e9c853275110
+UBX pen down 106 397
+UBX pen up
+UBX pen down 132 358
+UBX pen up
+UBX pen down 147 397
+UBX pen up
+UBX pen down 194 358
+UBX pen up
+UBX pen down 260 397
+UBX pen up
+UBX NS D52ACK 18e0e9cac60a68f0
+UBX NS FINAL_CLEAN
+UBX NS D52ACK 18e0e9cad7ff2690
+UBX NS D52ACK 18e0e9cae9f60710
+UBX NS D52ACK 18e0e9cb010a8548
+UBX NS D52ACK 18e0e9cb27893610
+UBX NS D52ACK 18e0e9cb393fecc8
+UBX NS D52ACK 18e0e9cb55d92728
+UBX NS UBXLOC	FOCUSPICK	view	index	0
+UBX NS UBXLOC	FOCUSPICK	view	count	4
+UBX NS D52ACK 18e0e9cb675165b0
+UBX NS UBXLOC	FOCUSBOX	view	left	115
+UBX NS UBXLOC	FOCUSBOX	view	top	355
+UBX NS UBXLOC	FOCUSBOX	view	right	204
+UBX NS UBXLOC	FOCUSBOX	view	bottom	431
+UBX NS D52ACK 18e0e9cb793f5cf0
+UBX pen down 125 366
+UBX pen up
+UBX NS D52ACK 18e0e9cc0260a610
+UBX pen down 35 66
+UBX pen up
+UBX NS D52ACK 18e0e9cc8b4fd310
+UBX NS D52ASSERT	new-Note	exact-target	PASS
+UBX NS D52ACK 18e0e9ccd98b3ab0
+UBX NS D52ACK 18e0e9ccf0c28328
+UBX NS UBXLOC	FOCUSBOX	view	left	35
+UBX NS UBXLOC	FOCUSBOX	view	top	41
+UBX NS UBXLOC	FOCUSBOX	view	right	228
+UBX NS UBXLOC	FOCUSBOX	view	bottom	59
+UBX NS D52ACK 18e0e9cd08461ac8
+UBX pen down 43 46
+UBX pen up
+UBX NS D52ACK 18e0e9cd96d0a4e8
+UBX NS D52ACK 18e0e9cda8905c50
+UBX NS D52ACK 18e0e9cdb9dc3790
+UBX pen down 67 397
+UBX pen up
+UBX NS D52ACK 18e0e9ce48b02e90
+UBX NS D52ACK 18e0e9ce5a9db0a0
+UBX NS D52ACK 18e0e9ce6c3273f0
+UBX NS UBXLOC	FOCUSPICK	view	index	1
+UBX NS UBXLOC	FOCUSPICK	view	count	8
+UBX NS D52ACK 18e0e9ce7e277010
+UBX NS UBXLOC	FOCUSBOX	view	left	88
+UBX NS UBXLOC	FOCUSBOX	view	top	299
+UBX NS UBXLOC	FOCUSBOX	view	right	164
+UBX NS UBXLOC	FOCUSBOX	view	bottom	403
+UBX NS D52ACK 18e0e9ce99f7c4c0
+UBX pen down 98 319
+UBX pen up
+UBX NS D52ACK 18e0e9cf2891cfa0
+UBX NS D52ASSERT	Fancy-settled	exact-Unicode	PASS
+UBX NS D52ACK 18e0e9cf3a4b7840
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0	top	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0	bottom	434
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0	class	74
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0	context	paperroll
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0	app	paperroll
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-settled3/0	title	Notepad
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1	top	434
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1	bottom	480
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/1	class	74
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/1	context	buttons
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/1	app	buttons
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/1	Debug	5075
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-settled3/1	title	Button Bar
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/2	left	48
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/2	top	385
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/2	right	272
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/2	bottom	408
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/2	class	74
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/2	context	stylePalette
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/2	Debug	3041
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0	top	21
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0/0	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/1	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/1	top	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/1	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/1	bottom	21
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0/1	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/2	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/2	top	416
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/2	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/2	bottom	434
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0/2	class	74
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0/2	context	status
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0/2	Debug	90529
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/0	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/0	top	438
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/0	right	40
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/0	bottom	480
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/1/0	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/1	left	40
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/1	top	438
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/1	right	80
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/1	bottom	480
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/1/1	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/2	left	80
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/2	top	438
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/2	right	120
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/2	bottom	480
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/1/2	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/3	left	120
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/3	top	438
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/3	right	160
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/3	bottom	480
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/1/3	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/4	left	160
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/4	top	438
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/4	right	200
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/4	bottom	480
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/1/4	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/5	left	200
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/5	top	438
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/5	right	240
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/5	bottom	480
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/1/5	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/6	left	240
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/6	top	438
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/6	right	280
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/6	bottom	480
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/1/6	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/7	left	280
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/7	top	434
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/7	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/7	bottom	480
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/1/7	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/2/0	left	254
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/2/0	top	390
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/2/0	right	267
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/2/0	bottom	403
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/2/0	class	76
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/2/0	Debug	11538576
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/2/1	left	53
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/2/1	top	390
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/2/1	right	86
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/2/1	bottom	403
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/2/1	class	98
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/2/1	Debug	1444304
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-settled3/2/1	text	  Font
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/2/1/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/2/1/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/2/1/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/2/2	left	93
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/2/2	top	390
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/2/2	right	123
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/2/2	bottom	403
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/2/2	class	98
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/2/2	Debug	1444304
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-settled3/2/2	text	  Size
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/2/2/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/2/2/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/2/2/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/2/3	left	130
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/2/3	top	390
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/2/3	right	167
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/2/3	bottom	403
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/2/3	class	98
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/2/3	Debug	1444304
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-settled3/2/3	text	  Style
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/2/3/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/2/3/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/2/3/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/2/4	left	192
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/2/4	top	390
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/2/4	right	221
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/2/4	bottom	403
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/2/4	class	98
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/2/4	Debug	1444304
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-settled3/2/4	text	  Pen
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/2/4/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/2/4/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/2/4/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0/0	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0/0	top	21
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0/0	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0/0/0	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/1/0	left	212
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/1/0	top	3
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/1/0	right	316
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/1/0	bottom	17
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0/1/0	class	98
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0/1/0	context	showBarText
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0/1/0	Debug	1444304
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-settled3/0/1/0	text	\ufc01Unfiled Notes
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/0/1/0/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/0/1/0/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/0/1/0/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/1/1	left	4
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/1/1	top	1
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/1/1	right	83
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/1/1	bottom	15
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0/1/1	class	98
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0/1/1	context	title
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-settled3/0/1/1	text	1:21 \u5468\u4e94 10-23
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/0/1/1/viewFont	family	BeijingRegion:UBX
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/0/1/1/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/0/1/1/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/2/0	left	6
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/2/0	top	418
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/2/0	right	19
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/2/0	bottom	431
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0/2/0	class	76
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0/2/0	Debug	11538576
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/2/1	left	26
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/2/1	top	418
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/2/1	right	44
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/2/1	bottom	431
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0/2/1	class	76
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0/2/1	Debug	1444304
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/0/2/1/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/0/2/1/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/0/2/1/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/2/2	left	51
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/2/2	top	418
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/2/2	right	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/2/2	bottom	431
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0/2/2	class	76
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0/2/2	Debug	11538576
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/2/3	left	81
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/2/3	top	418
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/2/3	right	113
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/2/3	bottom	431
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0/2/3	class	98
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0/2/3	Debug	1444304
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-settled3/0/2/3	text	  New
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/0/2/3/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/0/2/3/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/0/2/3/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/7/0	left	280
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/7/0	top	449
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/7/0	right	297
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/7/0	bottom	465
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/1/7/0	class	74
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/1/7/0	Debug	574352
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/7/1	left	300
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/7/1	top	438
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/7/1	right	318
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/7/1	bottom	455
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/1/7/1	class	74
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/1/7/1	Debug	714576
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/7/2	left	300
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/7/2	top	459
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/7/2	right	318
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/1/7/2	bottom	476
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/1/7/2	class	74
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/1/7/2	Debug	2862800
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0/0/0	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0/0/0	top	36
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0/0/0	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0/0/0/0	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0/0/1	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0/0/1	top	21
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0/0/1	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0/0/1	bottom	36
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0/0/0/1	class	74
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-settled3/0/0/0/1	headerText	Note
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/0/0/0/1/viewFont	family	BeijingRegion:UBX
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/0/0/0/1/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/0/0/0/1/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0/0/0/0	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0/0/0/0	top	36
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0/0/0/0	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0/0/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0/0/0/0/0	class	77
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/0/0/0/0/0/viewFont	family	handwriting
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/0/0/0/0/0/viewFont	size	18
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/0/0/0/0/0/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0/0/1/0	left	302
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0/0/1/0	top	21
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0/0/1/0	right	319
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0/0/1/0	bottom	35
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0/0/0/1/0	class	76
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0/0/0/1/0	Debug	2888314
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0/0/1/1	left	284
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0/0/1/1	top	21
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0/0/1/1	right	301
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0/0/1/1	bottom	35
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0/0/0/1/1	class	76
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0/0/0/1/1	Debug	11538576
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0/0/0/0/0	left	35
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0/0/0/0/0	top	41
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0/0/0/0/0	right	228
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled3/0/0/0/0/0/0	bottom	59
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0/0/0/0/0/0	class	65617
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled3/0/0/0/0/0/0	Debug	21708
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-settled3/0/0/0/0/0/0	text	\u5317\u4eac\u4f1a\u8bae caf\u00e9 \u0131\u0178\ufb01\ufb02 \u010d\u0160\u017d\u2212 \u4e2d\u6587\u6d4b\u8bd5
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/0/0/0/0/0/0/viewFont	family	handwriting
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/0/0/0/0/0/0/viewFont	size	18
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled3/0/0/0/0/0/0/viewFont	face	0
+UBX NS F15END	Style-history-Fancy-Mixed-settled3	35/35
+UBX NS D52ACK 18e0e9cfff38bd20
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Style-history-Fancy-Mixed-settled3.png result 0
+UBX NS D52ASSERT	Style-history-Fancy-Mixed-settled3	adapter-no-errors	PASS
+UBX NS D52ACK 18e0e9d080c75978
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0	top	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0	bottom	434
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0	class	74
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0	context	paperroll
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0	app	paperroll
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-settled10/0	title	Notepad
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1	top	434
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1	bottom	480
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/1	class	74
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/1	context	buttons
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/1	app	buttons
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/1	Debug	5075
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-settled10/1	title	Button Bar
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/2	left	48
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/2	top	385
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/2	right	272
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/2	bottom	408
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/2	class	74
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/2	context	stylePalette
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/2	Debug	3041
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0	top	21
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0/0	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/1	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/1	top	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/1	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/1	bottom	21
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0/1	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/2	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/2	top	416
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/2	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/2	bottom	434
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0/2	class	74
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0/2	context	status
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0/2	Debug	90529
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/0	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/0	top	438
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/0	right	40
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/0	bottom	480
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/1/0	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/1	left	40
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/1	top	438
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/1	right	80
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/1	bottom	480
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/1/1	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/2	left	80
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/2	top	438
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/2	right	120
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/2	bottom	480
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/1/2	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/3	left	120
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/3	top	438
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/3	right	160
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/3	bottom	480
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/1/3	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/4	left	160
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/4	top	438
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/4	right	200
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/4	bottom	480
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/1/4	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/5	left	200
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/5	top	438
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/5	right	240
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/5	bottom	480
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/1/5	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/6	left	240
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/6	top	438
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/6	right	280
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/6	bottom	480
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/1/6	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/7	left	280
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/7	top	434
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/7	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/7	bottom	480
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/1/7	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/2/0	left	254
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/2/0	top	390
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/2/0	right	267
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/2/0	bottom	403
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/2/0	class	76
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/2/0	Debug	11538576
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/2/1	left	53
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/2/1	top	390
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/2/1	right	86
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/2/1	bottom	403
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/2/1	class	98
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/2/1	Debug	1444304
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-settled10/2/1	text	  Font
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/2/1/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/2/1/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/2/1/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/2/2	left	93
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/2/2	top	390
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/2/2	right	123
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/2/2	bottom	403
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/2/2	class	98
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/2/2	Debug	1444304
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-settled10/2/2	text	  Size
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/2/2/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/2/2/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/2/2/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/2/3	left	130
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/2/3	top	390
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/2/3	right	167
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/2/3	bottom	403
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/2/3	class	98
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/2/3	Debug	1444304
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-settled10/2/3	text	  Style
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/2/3/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/2/3/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/2/3/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/2/4	left	192
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/2/4	top	390
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/2/4	right	221
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/2/4	bottom	403
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/2/4	class	98
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/2/4	Debug	1444304
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-settled10/2/4	text	  Pen
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/2/4/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/2/4/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/2/4/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0/0	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0/0	top	21
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0/0	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0/0/0	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/1/0	left	212
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/1/0	top	3
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/1/0	right	316
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/1/0	bottom	17
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0/1/0	class	98
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0/1/0	context	showBarText
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0/1/0	Debug	1444304
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-settled10/0/1/0	text	\ufc01Unfiled Notes
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/0/1/0/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/0/1/0/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/0/1/0/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/1/1	left	4
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/1/1	top	1
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/1/1	right	83
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/1/1	bottom	15
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0/1/1	class	98
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0/1/1	context	title
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-settled10/0/1/1	text	1:21 \u5468\u4e94 10-23
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/0/1/1/viewFont	family	BeijingRegion:UBX
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/0/1/1/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/0/1/1/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/2/0	left	6
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/2/0	top	418
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/2/0	right	19
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/2/0	bottom	431
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0/2/0	class	76
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0/2/0	Debug	11538576
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/2/1	left	26
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/2/1	top	418
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/2/1	right	44
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/2/1	bottom	431
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0/2/1	class	76
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0/2/1	Debug	1444304
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/0/2/1/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/0/2/1/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/0/2/1/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/2/2	left	51
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/2/2	top	418
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/2/2	right	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/2/2	bottom	431
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0/2/2	class	76
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0/2/2	Debug	11538576
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/2/3	left	81
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/2/3	top	418
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/2/3	right	113
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/2/3	bottom	431
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0/2/3	class	98
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0/2/3	Debug	1444304
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-settled10/0/2/3	text	  New
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/0/2/3/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/0/2/3/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/0/2/3/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/7/0	left	280
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/7/0	top	449
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/7/0	right	297
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/7/0	bottom	465
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/1/7/0	class	74
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/1/7/0	Debug	574352
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/7/1	left	300
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/7/1	top	438
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/7/1	right	318
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/7/1	bottom	455
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/1/7/1	class	74
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/1/7/1	Debug	714576
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/7/2	left	300
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/7/2	top	459
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/7/2	right	318
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/1/7/2	bottom	476
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/1/7/2	class	74
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/1/7/2	Debug	2862800
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0/0/0	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0/0/0	top	36
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0/0/0	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0/0/0/0	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0/0/1	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0/0/1	top	21
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0/0/1	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0/0/1	bottom	36
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0/0/0/1	class	74
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-settled10/0/0/0/1	headerText	Note
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/0/0/0/1/viewFont	family	BeijingRegion:UBX
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/0/0/0/1/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/0/0/0/1/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0/0/0/0	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0/0/0/0	top	36
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0/0/0/0	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0/0/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0/0/0/0/0	class	77
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/0/0/0/0/0/viewFont	family	handwriting
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/0/0/0/0/0/viewFont	size	18
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/0/0/0/0/0/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0/0/1/0	left	302
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0/0/1/0	top	21
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0/0/1/0	right	319
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0/0/1/0	bottom	35
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0/0/0/1/0	class	76
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0/0/0/1/0	Debug	2888314
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0/0/1/1	left	284
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0/0/1/1	top	21
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0/0/1/1	right	301
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0/0/1/1	bottom	35
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0/0/0/1/1	class	76
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0/0/0/1/1	Debug	11538576
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0/0/0/0/0	left	35
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0/0/0/0/0	top	41
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0/0/0/0/0	right	228
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-settled10/0/0/0/0/0/0	bottom	59
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0/0/0/0/0/0	class	65617
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-settled10/0/0/0/0/0/0	Debug	21708
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-settled10/0/0/0/0/0/0	text	\u5317\u4eac\u4f1a\u8bae caf\u00e9 \u0131\u0178\ufb01\ufb02 \u010d\u0160\u017d\u2212 \u4e2d\u6587\u6d4b\u8bd5
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/0/0/0/0/0/0/viewFont	family	handwriting
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/0/0/0/0/0/0/viewFont	size	18
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-settled10/0/0/0/0/0/0/viewFont	face	0
+UBX NS F15END	Style-history-Fancy-Mixed-settled10	35/35
+UBX NS D52ACK 18e0e9d2439c09e8
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Style-history-Fancy-Mixed-settled10.png result 0
+UBX NS D52ASSERT	Style-history-Fancy-Mixed-settled10	adapter-no-errors	PASS
+UBX NS D52ACK 18e0e9d2c4b2d660
+UBX NS D52ACK 18e0e9d2e18f95e8
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0	top	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0	bottom	434
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0	class	74
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0	context	paperroll
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0	app	paperroll
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-redraw/0	title	Notepad
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1	top	434
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1	bottom	480
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/1	class	74
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/1	context	buttons
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/1	app	buttons
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/1	Debug	5075
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-redraw/1	title	Button Bar
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/2	left	48
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/2	top	385
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/2	right	272
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/2	bottom	408
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/2	class	74
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/2	context	stylePalette
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/2	Debug	3041
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0	top	21
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0/0	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/1	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/1	top	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/1	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/1	bottom	21
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0/1	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/2	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/2	top	416
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/2	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/2	bottom	434
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0/2	class	74
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0/2	context	status
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0/2	Debug	90529
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/0	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/0	top	438
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/0	right	40
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/0	bottom	480
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/1/0	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/1	left	40
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/1	top	438
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/1	right	80
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/1	bottom	480
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/1/1	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/2	left	80
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/2	top	438
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/2	right	120
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/2	bottom	480
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/1/2	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/3	left	120
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/3	top	438
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/3	right	160
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/3	bottom	480
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/1/3	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/4	left	160
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/4	top	438
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/4	right	200
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/4	bottom	480
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/1/4	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/5	left	200
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/5	top	438
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/5	right	240
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/5	bottom	480
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/1/5	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/6	left	240
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/6	top	438
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/6	right	280
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/6	bottom	480
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/1/6	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/7	left	280
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/7	top	434
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/7	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/7	bottom	480
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/1/7	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/2/0	left	254
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/2/0	top	390
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/2/0	right	267
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/2/0	bottom	403
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/2/0	class	76
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/2/0	Debug	11538576
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/2/1	left	53
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/2/1	top	390
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/2/1	right	86
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/2/1	bottom	403
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/2/1	class	98
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/2/1	Debug	1444304
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-redraw/2/1	text	  Font
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/2/1/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/2/1/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/2/1/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/2/2	left	93
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/2/2	top	390
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/2/2	right	123
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/2/2	bottom	403
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/2/2	class	98
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/2/2	Debug	1444304
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-redraw/2/2	text	  Size
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/2/2/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/2/2/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/2/2/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/2/3	left	130
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/2/3	top	390
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/2/3	right	167
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/2/3	bottom	403
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/2/3	class	98
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/2/3	Debug	1444304
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-redraw/2/3	text	  Style
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/2/3/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/2/3/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/2/3/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/2/4	left	192
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/2/4	top	390
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/2/4	right	221
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/2/4	bottom	403
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/2/4	class	98
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/2/4	Debug	1444304
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-redraw/2/4	text	  Pen
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/2/4/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/2/4/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/2/4/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0/0	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0/0	top	21
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0/0	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0/0/0	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/1/0	left	212
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/1/0	top	3
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/1/0	right	316
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/1/0	bottom	17
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0/1/0	class	98
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0/1/0	context	showBarText
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0/1/0	Debug	1444304
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-redraw/0/1/0	text	\ufc01Unfiled Notes
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/0/1/0/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/0/1/0/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/0/1/0/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/1/1	left	4
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/1/1	top	1
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/1/1	right	83
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/1/1	bottom	15
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0/1/1	class	98
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0/1/1	context	title
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-redraw/0/1/1	text	1:22 \u5468\u4e94 10-23
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/0/1/1/viewFont	family	BeijingRegion:UBX
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/0/1/1/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/0/1/1/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/2/0	left	6
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/2/0	top	418
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/2/0	right	19
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/2/0	bottom	431
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0/2/0	class	76
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0/2/0	Debug	11538576
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/2/1	left	26
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/2/1	top	418
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/2/1	right	44
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/2/1	bottom	431
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0/2/1	class	76
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0/2/1	Debug	1444304
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/0/2/1/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/0/2/1/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/0/2/1/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/2/2	left	51
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/2/2	top	418
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/2/2	right	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/2/2	bottom	431
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0/2/2	class	76
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0/2/2	Debug	11538576
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/2/3	left	81
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/2/3	top	418
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/2/3	right	113
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/2/3	bottom	431
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0/2/3	class	98
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0/2/3	Debug	1444304
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-redraw/0/2/3	text	  New
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/0/2/3/viewFont	family	espy
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/0/2/3/viewFont	size	9
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/0/2/3/viewFont	face	1
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/7/0	left	280
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/7/0	top	449
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/7/0	right	297
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/7/0	bottom	465
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/1/7/0	class	74
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/1/7/0	Debug	574352
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/7/1	left	300
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/7/1	top	438
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/7/1	right	318
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/7/1	bottom	455
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/1/7/1	class	74
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/1/7/1	Debug	714576
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/7/2	left	300
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/7/2	top	459
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/7/2	right	318
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/1/7/2	bottom	476
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/1/7/2	class	74
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/1/7/2	Debug	2862800
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0/0/0	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0/0/0	top	36
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0/0/0	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0/0/0/0	class	74
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0/0/1	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0/0/1	top	21
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0/0/1	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0/0/1	bottom	36
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0/0/0/1	class	74
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-redraw/0/0/0/1	headerText	Note
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/0/0/0/1/viewFont	family	BeijingRegion:UBX
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/0/0/0/1/viewFont	size	10
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/0/0/0/1/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0/0/0/0	left	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0/0/0/0	top	36
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0/0/0/0	right	320
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0/0/0/0	bottom	412
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0/0/0/0/0	class	77
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/0/0/0/0/0/viewFont	family	handwriting
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/0/0/0/0/0/viewFont	size	18
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/0/0/0/0/0/viewFont	face	0
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0/0/1/0	left	302
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0/0/1/0	top	21
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0/0/1/0	right	319
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0/0/1/0	bottom	35
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0/0/0/1/0	class	76
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0/0/0/1/0	Debug	2888314
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0/0/1/1	left	284
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0/0/1/1	top	21
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0/0/1/1	right	301
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0/0/1/1	bottom	35
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0/0/0/1/1	class	76
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0/0/0/1/1	Debug	11538576
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0/0/0/0/0	left	35
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0/0/0/0/0	top	41
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0/0/0/0/0	right	228
+UBX NS UBXLOC	F15BOX	Style-history-Fancy-Mixed-redraw/0/0/0/0/0/0	bottom	59
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0/0/0/0/0/0	class	65617
+UBX NS UBXLOC	F15VIEW	Style-history-Fancy-Mixed-redraw/0/0/0/0/0/0	Debug	21708
+UBX NS UBXLOC	F15TEXT	Style-history-Fancy-Mixed-redraw/0/0/0/0/0/0	text	\u5317\u4eac\u4f1a\u8bae caf\u00e9 \u0131\u0178\ufb01\ufb02 \u010d\u0160\u017d\u2212 \u4e2d\u6587\u6d4b\u8bd5
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/0/0/0/0/0/0/viewFont	family	handwriting
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/0/0/0/0/0/0/viewFont	size	18
+UBX NS UBXLOC	F15FONT	Style-history-Fancy-Mixed-redraw/0/0/0/0/0/0/viewFont	face	0
+UBX NS F15END	Style-history-Fancy-Mixed-redraw	35/35
+UBX NS D52ACK 18e0e9d36ff7f5f0
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-full-final35-tail-20261023/Style-history-Fancy-Mixed-redraw.png result 0
+UBX NS D52ASSERT	Style-history-Fancy-Mixed-redraw	adapter-no-errors	PASS
+UBX NS D52ACK 18e0e9d3eb6991a8
+UBX NS FINAL_CLEAN
+UBX NS D52ACK 18e0e9d4027daa50

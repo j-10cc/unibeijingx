@@ -1,0 +1,1160 @@
+// Integrated content/title fonts; no translated captions, locale or record writes.
+DefGlobalVar('ubx52DisplayProto,{
+    installFamilyMenu:func() begin
+        self.familyMenuOriginal:=GetGlobalFn('GetAllFontFamilies);
+        local callback:=Clone(self.familyMenu);callback.argFrame:=nil;
+        self.familyMenuFn:=EnsureInternal(callback);
+        DefGlobalFn('GetAllFontFamilies,self.familyMenuFn);
+    end,
+    familyMenu:func() begin
+        local s:=GetGlobalVar('|ubxNamesContent:UBX|);
+        if not s then return [];
+        local families:=call s.familyMenuOriginal with ();
+        if not fonts.beijing then return families;
+        local result:=[];local system:=nil;
+        foreach family in families do
+            if family<>'|BeijingRegion:UBX| then begin
+                AddArraySlot(result,family);if family='espy then system:=true;
+            end;
+        // Retain the package's existing System choice. The ROM metadata marks
+        // Espy as an internal family, so its native enumerator omits it.
+        if not system and fonts.espy then AddArraySlot(result,'espy);
+        return result;
+    end,
+    removeFamilyMenu:func() begin
+        if self.familyMenuFn and GetGlobalFn('GetAllFontFamilies)=self.familyMenuFn then
+            DefGlobalFn('GetAllFontFamilies,self.familyMenuOriginal);
+        self.familyMenuFn:=nil;self.familyMenuOriginal:=nil;
+    end,
+    refreshRegionalFonts:func() begin
+        // A live view may cache the old private font independently of fonts.
+        // Rebind only its font, retaining text/selection through setSlot.
+        local queue:=GetRoot():ChildViewFrames();local index:=0;
+        while index<Length(queue) and index<450 do begin
+            local v:=queue[index];index:=index+1;
+            if v.viewCObject then begin
+                foreach slot in '[viewFont,entryFont] do begin
+                    local f:=v.(slot);
+                    if (IsFrame(f) or IsInteger(f)) and GetFontFamilySym(f)='|BeijingRegion:UBX| then begin
+                        local main:=EnsureInternal({family:'beijing,size:GetFontSize(f),face:GetFontFace(f)});
+                        self:setSlot(v,slot,main);self:setSlot(v,slot,f);
+                    end;
+                end;
+                v:Dirty();
+                if v.viewClass mod 65536<>81 then begin
+                    local children:=v:ChildViewFrames();
+                    if children then foreach c in children do if c.viewCObject then AddArraySlot(queue,c);
+                end;
+            end;
+        end;
+    end,
+    shareRegionalFont:func() begin
+        local owner:=GetGlobalVar('|ubxRegion:UBX|);
+        local current:=fonts.|BeijingRegion:UBX|;
+        if self.regionalOwner and self.regionalOwner<>owner then begin
+            // Never dereference a saved bitmap after its Region was removed.
+            self.regionalOwner:=nil;self.regionalOriginal:=nil;self.regionalShared:=nil;
+        end;
+        if not owner or owner.removing or not current or not fonts.beijing then return nil;
+        if current.plainData=fonts.beijing.plainData then return nil;
+        self.regionalOwner:=owner;self.regionalOriginal:=current;
+        local metadata:=Clone(current);metadata.plainData:=nil;metadata.name:="UniBeijingX";
+        if HasSlot(metadata,'tsid) then RemoveSlot(metadata,'tsid);
+        metadata:=EnsureInternal(metadata);metadata.plainData:=fonts.beijing.plainData;
+        self.regionalShared:=metadata;
+        fonts.(EnsureInternal('|BeijingRegion:UBX|)):=metadata;
+        self:refreshRegionalFonts();
+    end,
+    restoreRegionalFont:func() begin
+        // Restore only this installation's alias while its owner still lives.
+        if self.regionalOwner and self.regionalOwner=GetGlobalVar('|ubxRegion:UBX|) and
+            fonts.|BeijingRegion:UBX|=self.regionalShared then begin
+                fonts.(EnsureInternal('|BeijingRegion:UBX|)):=self.regionalOriginal;
+                self:refreshRegionalFonts();
+        end;
+        self.regionalOwner:=nil;self.regionalOriginal:=nil;self.regionalShared:=nil;
+    end,
+    namesScope:func(view) begin
+        local n:=0;
+        while IsFrame(view) and view<>GetRoot() and n<14 do begin
+            if view=GetRoot().cardfile or view.appSymbol='cardfile or
+                view.theApp='cardfile or view.theApp=GetRoot().cardfile then return true;
+            view:=view._parent;n:=n+1;
+        end;
+        return nil;
+    end,
+    nativeDateField:func(view) begin
+        return IsFrame(view) and IsFunction(view.TextSetup) and IsFunction(view.MakePickLine);
+    end,
+    regionalSetFont:func(view,slot,group) begin
+        local font:=GetGlobalVar('|ubxNamesContent:UBX|);
+        if font and not font.removing and not self.removing and
+            (font:namesScope(view) or slot='HourFont or (group='localeDisplay and slot='viewFont) or
+                (slot='entryFont and font:nativeDateField(view))) then return nil;
+        return self:|ubxNamesFontNative:UBX|(view,slot,group);
+    end,
+    nativeRegionalStyles:func(now,original,replacement,depth) begin
+        // Undo font styles only. Current text, graphics and hit models may
+        // already differ from the array saved by the Region package.
+        if depth>5 then return nil;
+        if IsArray(now) and IsArray(original) and IsArray(replacement) and
+            Length(now)=Length(original) and Length(now)=Length(replacement) then begin
+            local result:=nil;
+            foreach i,item in now do begin
+                local value:=self:nativeRegionalStyles(item,original[i],replacement[i],depth+1);
+                if value then begin if not result then result:=Clone(now);result[i]:=value;end;
+            end;
+            return result;
+        end;
+        if IsFrame(now) and IsFrame(original) and IsFrame(replacement) and
+            now.font and original.font and replacement.font and now.font=replacement.font then begin
+            local result:=Clone(now);result.font:=self:romanFont(original.font);return result;
+        end;
+        return nil;
+    end,
+    prepareRegionalNames:func() begin
+        local owner:=GetGlobalVar('|ubxRegion:UBX|);
+        if self.namesHooks and self.namesHooks.owner<>owner then self.namesHooks:=nil;
+        if not owner or owner.removing then return nil;
+        if self.namesHooks and self.namesHooks.prepared then return nil;
+        if not self.namesHooks then begin
+            // Keep the frozen Region's labels, country/date filters and postal
+            // callbacks. Its two font operations are superseded by our mixed
+            // run renderer, so English retains the actual ROM family/face.
+            local original:=owner.applyNames;
+            if not IsFunction(original) or not IsArray(original.literals) then return nil;
+            local method:=Clone(original);method.argFrame:=nil;method.literals:=Clone(original.literals);
+            local found:=nil;
+            foreach i,x in method.literals do if x='newyork then begin
+                method.literals[i]:=EnsureInternal('|ubxUnmatchedFont:UBX|);found:=true;
+            end;
+            if not found then return nil;
+            method:=EnsureInternal(method);
+            self.namesHooks:={owner:owner,setOwn:HasSlot(owner,'setFontIn),setOriginal:owner.setFontIn,
+                applyOwn:HasSlot(owner,'applyNames),applyOriginal:original,applyReplacement:method};
+            owner.(EnsureInternal('|ubxNamesFontNative:UBX|)):=owner.setFontIn;
+            owner.(EnsureInternal('setFontIn)):=self.regionalSetFontFn;
+            owner.(EnsureInternal('applyNames)):=method;
+        end;
+        // Region may have been installed first, or opened an editor before
+        // this font package. Restore its owned font replacements once, then
+        // let paragraphFonts/drawingFonts route Chinese by character.
+        for i:=Length(owner.changes)-1 to 0 by -1 do begin
+            local c:=owner.changes[i];local view:=c.view;
+            if view.viewCObject and (self:namesScope(view) or c.slot='HourFont or
+                (c.group='localeDisplay and c.slot='viewFont) or
+                (c.slot='entryFont and self:nativeDateField(view))) then begin
+                if (c.slot='viewFont or c.slot='labelFont or c.slot='entryFont) and owner:ownsChange(c) then begin
+                    self:setSlot(view,c.slot,self:romanFont(c.original));
+                    if not c.own then RemoveSlot(view,c.slot);
+                    if c.slot='entryFont and self:nativeDateField(view) then view:viewSetupChildrenScript();
+                    if c.slot='labelFont and IsString(view.label) and view.SetLabelText then begin
+                        SetValue(view,EnsureInternal('pix),nil);view:SetLabelText(view.label);
+                    end;
+                    RemoveSlot(owner.changes,i);
+                end else if c.slot='shapeArray then begin
+                    local value:=self:nativeRegionalStyles(view.shapeArray,c.original,c.replacement,0);
+                    if value then SetValue(view,EnsureInternal('shapeArray),value);
+                    RemoveSlot(owner.changes,i);
+                end;
+            end;
+        end;
+        self.namesHooks.prepared:=true;
+    end,
+    restoreRegionalNames:func() begin
+        local h:=self.namesHooks;local owner:=GetGlobalVar('|ubxRegion:UBX|);
+        if h and owner=h.owner and not owner.removing then begin
+            if owner.setFontIn=self.regionalSetFontFn then begin
+                if h.setOwn then owner.setFontIn:=h.setOriginal else RemoveSlot(owner,'setFontIn);
+            end;
+            if owner.applyNames=h.applyReplacement then begin
+                if h.applyOwn then owner.applyNames:=h.applyOriginal else RemoveSlot(owner,'applyNames);
+            end;
+            if owner.|ubxNamesFontNative:UBX|=h.setOriginal then RemoveSlot(owner,'|ubxNamesFontNative:UBX|);
+            owner:applyNames();
+        end;
+        self.namesHooks:=nil;
+    end,
+    baseFamily:func(family) begin
+        foreach name in '[handwriting,newyork,simple,geneva,espy] do
+            if family=name then return true;
+        return nil;
+    end,
+    descriptor:func(font) begin
+        if not IsInteger(font) and not IsFrame(font) then return nil;
+        if IsFrame(font) and not IsSymbol(font.family) then return nil;
+        local family:=GetFontFamilySym(font);
+        // The extra Styles menu entries use ROM-only aliases, including
+        // frame descriptors. Resolve those aliases only in content scopes;
+        // leave the Roman registry and English-only paragraphs unchanged.
+        if family='hand then family:='handwriting
+        else if family='switzerland then family:='geneva
+        else if family='USA then family:='newyork;
+        if not self:baseFamily(family) then return nil;
+        // Roman families retain their ROM registry metadata. Only fallback
+        // runs use our bitmap; native menu frame descriptors stay native too.
+        return EnsureInternal({family:'beijing,size:GetFontSize(font),face:GetFontFace(font),ubxRomanFamily:family});
+    end,
+    drawingFonts:func(pieces,depth,baseFont,fallbackFont) begin
+        return self:styledDrawingFonts(pieces,depth,{font:baseFont},fallbackFont);
+    end,
+    styledDrawingFonts:func(pieces,depth,style,fallbackFont) begin
+        if not IsArray(pieces) or depth>4 then return nil;
+        local result:=nil;local current:=style;
+        foreach i,piece in pieces do begin
+            local value:=nil;
+            if IsArray(piece) then value:=self:styledDrawingFonts(piece,depth+1,current,fallbackFont)
+            else if IsFrame(piece) then begin
+                if not piece.class and (piece.font or HasSlot(piece,'transferMode) or HasSlot(piece,'justification) or
+                    HasSlot(piece,'fillPattern) or HasSlot(piece,'penPattern)) then begin
+                    current:=Clone(style);foreach key,item in piece do current.(key):=item;
+                    if piece.font then begin
+                        local roman:=self:romanFont(piece.font);
+                        if roman<>piece.font then begin value:=Clone(piece);value.font:=roman;end;
+                    end;
+                end else if piece.class='text and current.font then
+                    value:=self:styledTextDrawing(piece,current.font,fallbackFont,current);
+            end;
+            if value then begin
+                if not result then result:=Clone(pieces);
+                result[i]:=value;
+            end;
+        end;
+        return result;
+    end,
+    textDrawing:func(shape,font,fallbackFont) begin
+        return self:styledTextDrawing(shape,font,fallbackFont,{font:font});
+    end,
+    styledTextDrawing:func(shape,font,fallbackFont,style) begin
+        local family:=GetFontFamilySym(font);
+        if family='beijing or family='|BeijingRegion:UBX| then return nil;
+        local fallback:=if fallbackFont then fallbackFont else self:uiFont(font,nil);
+        if not fallback then return nil;
+        local info:=GetShapeInfo(shape);local text:=info.text;
+        local part:=GetGlobalVar('|ubxFontPart:UBX|);
+        if not IsString(text) or not part:containsChinese(text) then return nil;
+        local roman:=self:romanFont(font);local bounds:=info.bounds;
+        if self.overviewRight and bounds.right>bounds.left then begin
+            if not fallbackFont then fallback:=self:uiFont(font,bounds.bottom-bounds.top);
+            local limit:=Min(bounds.right,self.overviewRight)-bounds.left;local cut:=StrLen(text);
+            local width:=self:mixedWidth(text,roman,fallback);
+            if EndsWith(text,"...") then cut:=cut-3;
+            while cut>0 and width>limit do begin
+                cut:=cut-1;text:=SubStr(info.text,0,cut)&"...";
+                width:=self:mixedWidth(text,roman,fallback);
+            end;
+        end;
+        local runs:=[];local offset:=0;local total:=0;
+        while offset<StrLen(text) do begin
+            local start:=offset;local chinese:=part:displayCode(Ord(text[offset]));offset:=offset+1;
+            while offset<StrLen(text) and (part:displayCode(Ord(text[offset])))=chinese do offset:=offset+1;
+            local run:=SubStr(text,start,offset-start);local f:=if chinese then fallback else roman;
+            local width:=StrFontWidth(run,f);AddArraySlot(runs,{text:run,font:f,width:width});total:=total+width;
+        end;
+        local x:=bounds.left;
+        if style.justification='center then x:=x+(bounds.right-bounds.left-total) div 2
+        else if style.justification='right then x:=bounds.right-total;
+        local pieces:=[];
+        foreach run in runs do begin
+            local drawing:=Clone(style);drawing.font:=run.font;drawing.justification:='left;
+            AddArraySlot(pieces,drawing);
+            AddArraySlot(pieces,MakeText(run.text,x,bounds.top,x+run.width+1,bounds.bottom));x:=x+run.width;
+        end;
+        local restore:=Clone(style);restore.font:=roman;AddArraySlot(pieces,restore);
+        // Native containers may clone/cache this drawing list after our undo
+        // record was taken. Own every style key, symbol and shape independently
+        // of the removable package, not only the font descriptors.
+        return EnsureInternal(pieces);
+    end,
+    contentScope:func(view) begin
+        local depth:=0;
+        while IsFrame(view) and view<>GetRoot() and depth<14 do begin
+            foreach app in '[cardfile,calendar,paperroll] do
+                if view=GetRoot().(app) or view.theApp=app or view.theApp=GetRoot().(app) or view.appSymbol=app then return true;
+            view:=view._parent;depth:=depth+1;
+        end;
+        return nil;
+    end,
+    quickScope:func(view) begin
+        if not view or view._parent<>GetRoot() or not view.headerText or not view.infoText or
+            not IsFrame(view.targetView) or not IsInteger(view.extraHeight) then return nil;
+        // Some ROMs expose a target belonging directly to the owning app.
+        local target:=view.targetView;
+        if self:quickOwnerScope(target) then return true;
+        // On 712000 targetView is a different NS wrapper for the quick slip's
+        // own native view, not the requesting picker. Require that exact native
+        // identity and the immediately preceding live, typed picker. An
+        // arbitrary Names picker elsewhere in the root list is insufficient.
+        if target.viewCObject<>view.viewCObject then return nil;
+        local previous:=nil;
+        foreach root in GetRoot():ChildViewFrames() do if root.viewCObject then begin
+            if root.viewCObject=view.viewCObject then begin
+                if previous and self:selectorClass(previous.dataClass) and IsFrame(previous.context) and
+                    self:quickOwnerScope(previous.context) then return true;
+                return nil;
+            end;
+            previous:=root;
+        end;
+        return nil;
+    end,
+    quickOwnerScope:func(view) begin
+        local depth:=0;
+        while IsFrame(view) and view<>GetRoot() and depth<14 do begin
+            foreach app in '[cardfile,calendar] do
+                if view=GetRoot().(app) or view.theApp=app or view.theApp=GetRoot().(app) or view.appSymbol=app then return true;
+            view:=view._parent;depth:=depth+1;
+        end;
+        return nil;
+    end,
+    rememberDisplay:func(view,slot,value) begin
+        local record:=nil;
+        foreach c in self.changes do if c.view=view and c.slot=slot then record:=c;
+        if record then begin
+            if view.(slot)<>record.replacement then begin record.original:=view.(slot);record.own:=HasSlot(view,slot);end;
+            record.replacement:=value;record.display:=true;
+        end else AddArraySlot(self.changes,{view:view,slot:EnsureInternal(slot),own:HasSlot(view,slot),
+            original:view.(slot),replacement:value,display:true});
+        // Native quick-entry filters must not receive a second text assignment
+        // merely because their renderer's font changed. Keep text and selection.
+        SetValue(view,EnsureInternal(slot),value);view:Dirty();
+    end,
+    fontSlot:func(view,slot) begin
+        if not view or not view.viewCObject then return nil;
+        local value:=if (view.viewClass mod 65536=98 or view.viewClass mod 65536=76) and slot='viewFont then
+            self:uiFont(view.(slot),view:LocalBox().bottom) else self:descriptor(view.(slot));
+        if value then self:rememberDisplay(view,slot,value);
+    end,
+    uiFont:func(font,height) begin
+        local f:=self:descriptor(font);if not f then return nil;
+        f:=Clone(f);f.ubxUIRomanFont:=self:romanFont(font);
+        // Synthetic one-pixel bold closes the gaps of 9/10px CJK glyphs.
+        // UI data stays readable in regular weight; Roman runs keep ROM bold.
+        if f.size<=10 then f.face:=f.face-f.face mod 2;
+        if height and FontHeight(f)>height then foreach point in [18,16,14,12,10,9] do
+            if point<f.size and FontHeight(f)>height then f.size:=point;
+        return EnsureInternal(f);
+    end,
+    quickFonts:func(root) begin
+        if not self:quickScope(root) then return nil;
+        local queue:=[root];local index:=0;
+        while index<Length(queue) and index<60 do begin
+            local view:=queue[index];
+            if view.viewCObject and view.viewClass=81 and view.preallocatedContext='entryLine then
+                self:paragraphFonts(view);
+            foreach child in view:ChildViewFrames() do if child.viewCObject then AddArraySlot(queue,child);
+            index:=index+1;
+        end;
+    end,
+    findScope:func(root) begin
+        if root.appSymbol<>'findOverview or not IsArray(root.findAllResults) then return nil;
+        // The native Find renderer is shared by all result owners. Resolve its
+        // draw styles even when Calls or another application joins the search;
+        // leave every owner's records, results and callbacks in place.
+        return true;
+    end,
+    findQueryFonts:func(root) begin
+        // Only the native global Find drawer's query, including when Calendar
+        // is closed. Do not discover unrelated controls by their English label.
+        if root.preallocatedContext='findDrawer and root.debug=33484 and
+            root.findInput and root.findInput.viewCObject and
+            root.findInput.preallocatedContext='findInput then
+                self:paragraphFonts(root.findInput.entryLine);
+    end,
+    romanFont:func(font) begin
+        if not IsFrame(font) or not IsSymbol(font.family) then return font;
+        local family:=font.family;local i:=0;
+        if family='hand then family:='handwriting
+        else if family='switzerland then family:='geneva
+        else if family='USA then family:='newyork;
+        foreach name in '[espy,newyork,geneva,handwriting] do begin
+            if family=name then return i+1024*GetFontSize(font)+1048576*GetFontFace(font);
+            i:=i+1;
+        end;
+        return font;
+    end,
+    nativeKeyFont:func(view) begin
+        if not IsFrame(view) or not view.viewCObject or view.viewClass mod 65536<>98 or
+            not view.ButtonClickScript or not IsString(view.text) or
+            GetGlobalVar('|ubxFontPart:UBX|):containsChinese(view.text) then return nil;
+        // Native New uses an Espy 9pt Bold frame. Its family lookup would
+        // otherwise follow our content bitmap alias. A packed ROM spec keeps
+        // the same family, size and face without changing caption or callback.
+        local font:=self:romanFont(view.viewFont);
+        if IsInteger(font) and font<>view.viewFont then begin
+            self:remember(view,EnsureInternal('viewFont),font);
+            // Standard key bars measure their children before they open.
+            // Recalculate the cached width with the native routine and the
+            // restored Roman font; sibling justification follows that width.
+            local bar:=view._parent;
+            if view.keyButton and bar and bar.CalcWidth then begin
+                local width:=bar:CalcWidth(view);local bounds:=view.viewBounds;
+                if IsInteger(width) and width>0 and bounds.right-bounds.left<>width then begin
+                    bounds:=Clone(bounds);bounds.right:=bounds.left+width;
+                    // This is a native layout cache, not a user setting.
+                    // Keep the ROM-measured cache when restoring the original
+                    // font; the replaced-font width would be stale on unload.
+                    self:setSlot(view,EnsureInternal('viewBounds),bounds);
+                end;
+            end;
+        end;
+    end,
+    nativeKeyFonts:func() begin
+        foreach name in '[paperroll,cardfile,calendar,callapp] do begin
+            local app:=GetRoot().(name);
+            if app and app.viewCObject then begin
+                if name='calendar then begin
+                    if app.statusBar then begin
+                        self:nativeKeyFont(app.statusBar.newButton);
+                        self:nativeKeyFont(app.statusBar.ShowButton);
+                    end;
+                end else begin
+                    // Standard key buttons belong directly to the app or to
+                    // its native status bar. Do not adapt arbitrary captions.
+                    foreach bar in app:ChildViewFrames() do if bar.viewCObject then begin
+                        foreach key in '[_newKeyButton,_addKeyButton,_showKeyButton] do
+                            if bar.keyButton=key then self:nativeKeyFont(bar);
+                        // Standard status bars contain the remaining keys.
+                        // Inspecting editor/layout children here can enter an
+                        // inactive native text view while another slip owns it.
+                        if bar.preallocatedContext='status or bar.preallocatedContext='statusBar then
+                            foreach button in bar:ChildViewFrames() do
+                                if button.viewCObject then
+                                    foreach key in '[_newKeyButton,_addKeyButton,_showKeyButton] do
+                                        if button.keyButton=key then self:nativeKeyFont(button);
+                    end;
+                end;
+            end;
+        end;
+    end,
+    runFonts:func(styles,text) begin
+        if not IsArray(styles) or Length(styles) mod 2<>0 then return nil;
+        local result:=nil;
+        if IsString(text) then begin
+            local runs:=[];local offset:=0;local changed:=nil;
+            local part:=GetGlobalVar('|ubxFontPart:UBX|);
+            for index:=0 to Length(styles)-2 by 2 do begin
+                local count:=styles[index];local original:=styles[index+1];
+                if not IsInteger(count) or count<0 or offset+count>StrLen(text) then return nil;
+                local after:=offset+count;
+                local automatic:=IsFrame(original) and original.family='beijing and original.ubxRomanFamily;
+                local display:=if automatic then original else self:descriptor(original);
+                local roman:=if automatic then self:romanFont({family:original.ubxRomanFamily,
+                    size:GetFontSize(original),face:GetFontFace(original)}) else self:romanFont(original);
+                if not display and roman=original then begin
+                    AddArraySlot(runs,count);AddArraySlot(runs,original);offset:=after;
+                end else begin
+                while offset<after do begin
+                    local start:=offset;local cjk:=part:displayCode(Ord(text[offset]));offset:=offset+1;
+                    while offset<after and (part:displayCode(Ord(text[offset])))=cjk do offset:=offset+1;
+                    local font:=if cjk then display else roman;
+                    if not font then font:=original;
+                    if font<>original or offset-start<>count then changed:=true;
+                    AddArraySlot(runs,offset-start);AddArraySlot(runs,font);
+                end;
+                if count=0 then begin AddArraySlot(runs,0);AddArraySlot(runs,original);end;
+                end;
+            end;
+            return if changed then runs else nil;
+        end;
+        // Native paragraph runs alternate character counts and fonts. Never
+        // interpret a character count as a font or flatten mixed formatting.
+        for index:=1 to Length(styles)-1 by 2 do begin
+            local font:=self:descriptor(styles[index]);
+            if font then begin
+                if not result then result:=Clone(styles);
+                result[index]:=font;
+            end;
+        end;
+        return result;
+    end,
+    paragraphFonts:func(root) begin
+        if not root or not root.viewCObject then return nil;
+        local queue:=[root];local index:=0;
+        while index<Length(queue) and index<300 do begin
+            local view:=queue[index];
+            if view.viewCObject then begin
+                if view.viewClass mod 65536=81 then begin
+                    if IsString(view.text) then begin
+                            // Setting a paragraph's default font can reformat
+                            // its explicit runs. With mixed text, resolve the
+                            // runs themselves and leave that default alone.
+                            if IsArray(view.styles) and Length(view.styles)>0 then begin
+                                local styles:=self:runFonts(view.styles,view.text);
+                                if styles then self:rememberDisplay(view,'styles,styles);
+                            end else if GetGlobalVar('|ubxFontPart:UBX|):containsChinese(view.text) and
+                                (not view.textFlags or view.textFlags mod 16<8) then begin
+                                // Fresh Notes paragraphs have no explicit run
+                                // array. Introduce display runs here as well,
+                                // keeping Roman glyphs on the original font.
+                                local styles:=self:runFonts([StrLen(view.text),view.viewFont],view.text);
+                                if styles then self:rememberDisplay(view,'styles,styles);
+                            end else if GetGlobalVar('|ubxFontPart:UBX|):containsChinese(view.text) then
+                                self:fontSlot(view,'viewFont)
+                            else if IsFrame(view.viewFont) and view.viewFont.ubxRomanFamily then
+                                self:rememberDisplay(view,'viewFont,self:romanFont({family:view.viewFont.ubxRomanFamily,
+                                    size:GetFontSize(view.viewFont),face:GetFontFace(view.viewFont)}));
+                        end;
+                end else begin
+                    local children:=view:ChildViewFrames();
+                    if children then foreach child in children do
+                        if child.viewCObject then AddArraySlot(queue,child);
+                end;
+            end;
+            index:=index+1;
+        end;
+    end,
+    overviewRomanFont:func(font) begin
+        if IsFrame(font) and font.family='beijing and font.ubxRomanFamily then
+            return self:romanFont({family:font.ubxRomanFamily,size:GetFontSize(font),face:GetFontFace(font)});
+        return self:romanFont(font);
+    end,
+    overviewNativeStyles:func(pieces,depth) begin
+        if not IsArray(pieces) or depth>4 then return pieces;
+        local result:=nil;
+        foreach i,piece in pieces do begin
+            local value:=piece;
+            if IsArray(piece) then value:=self:overviewNativeStyles(piece,depth+1)
+            else if IsFrame(piece) and not piece.class and piece.font then begin
+                local font:=self:overviewRomanFont(piece.font);
+                if font<>piece.font then begin value:=Clone(piece);value.font:=font;end;
+            end;
+            if value<>piece then begin if not result then result:=Clone(pieces);result[i]:=value;end;
+        end;
+        return if result then result else pieces;
+    end,
+    overviewWidthCallback:func(text,font) begin
+        local s:=GetGlobalVar('|ubxNamesContent:UBX|);
+        if not s or s.removing then return StrFontWidth(text,font);
+        local roman:=s:overviewRomanFont(font);local fallback:=s:uiFont(roman,nil);
+        if not fallback then return StrFontWidth(text,font);
+        return s:mixedWidth(text,roman,fallback);
+    end,
+    overviewAbstractCallback:func(entry,bbox) begin
+        local s:=GetGlobalVar('|ubxNamesContent:UBX|);
+        if not s or s.removing or not s.displayEnabled then return [];
+        local pieces:=self:|ubxOverviewNative:UBX|(entry,bbox);
+        pieces:=s:overviewNativeStyles(pieces,0);
+        local saved:=s.overviewRight;s.overviewRight:=bbox.right;
+        local value:=nil;local failure:=nil;
+        try value:=s:styledDrawingFonts(pieces,0,self.viewStyle,nil)
+        onexception |evt.ex| do failure:=CurrentException();
+        s.overviewRight:=saved;
+        if failure then Throw(failure.name,failure.data);
+        return if value then value else pieces;
+    end,
+    overviewFonts:func(view) begin
+        if not view or not view.viewCObject then return nil;
+        local method:=view.Abstract;
+        if not IsFunction(method) or not IsArray(method.literals) then return nil;
+        local literals:=method.literals;
+        // Keep the native extraction, icon, selection and geometry. Adapt the
+        // returned drawing list by character, rather than changing the whole
+        // title font and degrading Roman-only rows.
+        if Length(literals)<>31 or Length(method.instructions)<>461 or
+            method.numArgs<>458754 or literals[0]<>'hiliteEntry or
+            literals[12]<>'MakeText or literals[30]<>'StrTruncate then return nil;
+        local changed:=nil;
+        // This native renderer initializes {font:viewFont} in its first draw,
+        // after SetupAbstracts. Materialize that same baseline before adapting
+        // it, so the first draw and its undo state are both complete.
+        if not view.viewStyle then
+            view.(EnsureInternal('viewStyle)):=EnsureInternal({font:view.viewFont});
+        if not IsFrame(view.viewStyle) then return nil;
+        local font:=nil;
+        if IsFrame(literals[3]) and IsFrame(literals[18]) and
+            literals[3].font=9216 and literals[18].font=9216 and literals[26]=9216 then begin
+            local copy:=Clone(method);copy.literals:=Clone(literals);
+            font:=self:descriptor(9216);
+            foreach index in [3,18] do begin
+                local style:=Clone(literals[index]);style.font:=font;
+                copy.literals[index]:=style;
+            end;
+            copy.literals[26]:=font;
+            copy.literals[27]:=EnsureInternal('|ubxOverviewWidth:UBX|);
+            self:rememberDisplay(view,'|ubxOverviewNative:UBX|,copy);
+            self:rememberDisplay(view,'Abstract,self.overviewAbstractFn);changed:=true;
+        end;
+        if changed and view.cursor then begin
+            // Rebuild the current page with an independent cursor. Abstract
+            // increments hiliteCount, so restart that counter and preserve the
+            // native selection state rather than moving it to a phantom row.
+            local count:=view.hiliteCount;local index:=view.hilitedIndex;
+            view.hiliteCount:=0;
+            view:SetupAbstracts(view.cursor:Clone());
+            view.hiliteCount:=count;view.hilitedIndex:=index;view:Dirty();
+        end;
+    end,
+    noteFonts:func() begin
+        local notes:=GetRoot().paperroll;
+        if notes and notes.viewCObject then begin
+            if notes.currentLayout='overview then self:overviewFonts(notes.layout)
+            else self:paragraphFonts(notes.targetView);
+        end;
+    end,
+    titleFonts:func(root) begin
+        // Native title clocks are clTextView (98), not paragraph views.
+        // Match their context and actual Unicode content, never app captions.
+        local queue:=root:ChildViewFrames();local i:=0;
+        while i<Length(queue) and i<450 do begin
+            local v:=queue[i];i:=i+1;
+            if v.viewCObject then begin
+                if v.viewClass mod 65536=98 and v.preallocatedContext='title and
+                    v.viewTransferMode=modeBIC and IsInteger(v._proto.viewFont) and
+                    (IsInteger(v.viewFont) or GetFontFamilySym(v.viewFont)='|BeijingRegion:UBX|) and
+                    GetGlobalVar('|ubxFontPart:UBX|):containsChinese(v.text) and
+                    (not v.ViewDrawScript or v.ViewDrawScript=self.clockFn) then begin
+                        local opening:=v.ViewDrawScript<>self.clockFn;
+                        if opening then
+                            self:rememberDisplay(v,'ViewDrawScript,self.clockFn);
+                        local width:=self:clockRuns(v,nil)+1;
+                        if width>v.viewBounds.right-v.viewBounds.left then begin
+                            local bounds:=Clone(v.viewBounds);bounds.right:=bounds.left+width;
+                            self:rememberDisplay(v,'viewBounds,bounds);
+                        end;
+                        // clTextView caches its drawing callback when opened;
+                        // Dirty alone does not install a new script. Reopen
+                        // this display-only clock once, retaining its text and
+                        // original click handler, not the owning application.
+                        if opening then begin v:Close();v:Open();end;
+                end;
+                // Title clocks live in the app's top bar. Avoid walking input
+                // and editor subtrees just to discover an unrelated caption.
+                if v:GlobalBox().top<16 and v.viewClass mod 65536<>81 then begin
+                    local kids:=v:ChildViewFrames();
+                    if kids then foreach child in kids do if child.viewCObject then AddArraySlot(queue,child);
+                end;
+            end;
+        end;
+    end,
+    clockCallback:func() begin
+        local s:=GetGlobalVar('|ubxNamesContent:UBX|);
+        if s and not s.removing and s.displayEnabled then s:clockDraw(self);
+    end,
+    clockRuns:func(view,draw) begin
+        local text:=view.text;local x:=0;local i:=0;
+        local part:=GetGlobalVar('|ubxFontPart:UBX|);
+        // The formal Region package also adapts Notes' clock to its own font.
+        // Keep that registry state, but use the original title prototype for
+        // Roman glyphs. Otherwise the two observers would fight each other.
+        local roman:=view._proto.viewFont;
+        local chinese:=EnsureInternal({family:'beijing,size:GetFontSize(view.viewFont),face:GetFontFace(view.viewFont)});
+        while i<StrLen(text) do begin
+            local start:=i;local cjk:=part:displayCode(Ord(text[i]));i:=i+1;
+            while i<StrLen(text) and (part:displayCode(Ord(text[i])))=cjk do i:=i+1;
+            local run:=SubStr(text,start,i-start);local font:=if cjk then chinese else roman;
+            local width:=StrFontWidth(run,font);
+            if draw then view:DrawShape(MakeText(run,x,0,x+width,view:LocalBox().bottom),
+                {font:font,transferMode:modeBIC});
+            x:=x+width;
+        end;
+        return x;
+    end,
+    clockDraw:func(view) begin
+        if not IsString(view.text) or not IsInteger(view._proto.viewFont) then return nil;
+        local box:=view:LocalBox();
+        // clTextView's BIC drawing cannot erase old white glyphs on the black
+        // bar. Repaint this view's own rectangle before drawing mixed runs.
+        view:DrawShape(MakeRect(0,0,box.right,box.bottom),
+            {transferMode:modeCOPY,fillPattern:vfBlack,penPattern:vfNone});
+        self:clockRuns(view,true);
+    end,
+    installOverviewHook:func() begin
+        local notes:=GetRoot().paperroll;
+        if not notes or notes.ubxDisplayLayouts or not IsFrame(notes.allLayouts) or
+            not IsFrame(notes.allLayouts.overview) then return nil;
+        // ShowLayout defers RedoChildren. Adapt the actual page immediately
+        // before its native drawing, including its lazily created viewStyle.
+        notes.(EnsureInternal('ubxDisplayLayouts)):=notes.allLayouts;
+        notes.(EnsureInternal('ubxDisplayLayoutsOwn)):=HasSlot(notes,'allLayouts);
+        local hook:=Clone(self.overviewDraw);hook.argFrame:=nil;
+        self.overviewDrawFn:=EnsureInternal(hook);
+        local template:=EnsureInternal({ViewDrawScript:self.overviewDrawFn});
+        template.(EnsureInternal('_proto)):=notes.allLayouts.overview;
+        local layouts:=Clone(notes.allLayouts);layouts.(EnsureInternal('overview)):=template;
+        self.overviewLayouts:=layouts;
+        notes.(EnsureInternal('allLayouts)):=layouts;
+        notes.(EnsureInternal('ubxDisplaySetup)):=notes.ViewSetupDoneScript;
+        notes.(EnsureInternal('ubxDisplaySetupOwn)):=HasSlot(notes,'ViewSetupDoneScript);
+        hook:=Clone(self.notesOpened);hook.argFrame:=nil;
+        self.notesSetupFn:=EnsureInternal(hook);
+        notes.(EnsureInternal('ViewSetupDoneScript)):=self.notesSetupFn;
+    end,
+    notesOpened:func() begin
+        if self.ubxDisplaySetup then self:ubxDisplaySetup();
+        local s:=GetGlobalVar('|ubxNamesContent:UBX|);
+        if s and not s.removing then s:nativeKeyFonts();
+        if s and s.displayEnabled and not s.removing then begin
+            s:noteFonts();s:titleFonts(self);
+        end;
+    end,
+    overviewDraw:func() begin
+        local s:=GetGlobalVar('|ubxNamesContent:UBX|);
+        if s and s.displayEnabled and not s.removing then s:overviewFonts(self);
+        inherited:?ViewDrawScript();
+    end,
+    removeOverviewHook:func() begin
+        local notes:=GetRoot().paperroll;
+        if notes and notes.ubxDisplayLayouts then begin
+            if notes.allLayouts=self.overviewLayouts then begin
+                if notes.ubxDisplayLayoutsOwn then notes.allLayouts:=notes.ubxDisplayLayouts
+                else RemoveSlot(notes,'allLayouts);
+            end;
+            RemoveSlot(notes,'ubxDisplayLayouts);RemoveSlot(notes,'ubxDisplayLayoutsOwn);
+            if notes.ViewSetupDoneScript=self.notesSetupFn then begin
+                if notes.ubxDisplaySetupOwn then notes.ViewSetupDoneScript:=notes.ubxDisplaySetup
+                else RemoveSlot(notes,'ViewSetupDoneScript);
+            end;
+            RemoveSlot(notes,'ubxDisplaySetup);RemoveSlot(notes,'ubxDisplaySetupOwn);
+        end;
+    end,
+    callFonts:func() begin
+        local calls:=GetRoot().callapp;
+        if not calls or not calls.viewCObject then return nil;
+        local queue:=[calls];local index:=0;
+        while index<Length(queue) and index<100 do begin
+            local view:=queue[index];
+            // The label's child is the editable call-log name. Do not change
+            // the Name caption, phone controls, menus or reference callbacks.
+            if IsString(view.label) and StrEqual(view.label,"Name") then
+                self:paragraphFonts(view)
+            else if view.viewClass mod 65536<>81 then begin
+                local children:=view:ChildViewFrames();
+                if children then foreach child in children do
+                    if child.viewCObject then AddArraySlot(queue,child);
+            end;
+            index:=index+1;
+        end;
+    end,
+    datePickerSlot:func(view,slot) begin
+        local value:=self:uiFont(view.(slot),nil);
+        if value then begin
+            self:rememberDisplay(view,slot,value);
+            foreach change in self.changes do if change.view=view and change.slot=slot then change.datePicker:=true;
+        end;
+    end,
+    pickerBitmap:func(text,font,height) begin
+        local part:=GetGlobalVar('|ubxFontPart:UBX|);local roman:=self:romanFont(font);
+        local fallback:=self:uiFont(font,nil);if not fallback then return nil;
+        // MakeText's bottom coordinate is the baseline, not the bitmap edge.
+        // A shared font baseline leaves all descenders inside the bitmap.
+        local baseline:=Max(FontAscent(roman),FontAscent(fallback));
+        local pieces:=[];local offset:=0;local width:=0;
+        while offset<StrLen(text) do begin
+            local start:=offset;local cjk:=part:displayCode(Ord(text[offset]));offset:=offset+1;
+            while offset<StrLen(text) and (part:displayCode(Ord(text[offset])))=cjk do offset:=offset+1;
+            local run:=SubStr(text,start,offset-start);local f:=if cjk then fallback else roman;
+            local w:=StrFontWidth(run,f);local y:=baseline-FontAscent(f);
+            AddArraySlot(pieces,{font:f});AddArraySlot(pieces,MakeText(run,width,y,width+w+1,baseline));width:=width+w;
+        end;
+        local bitmap:=MakeBitmap(Max(1,width+1),height,nil);DrawIntoBitmap(pieces,{},bitmap);
+        local info:=GetShapeInfo(bitmap);local bytes:=info.rowbytes;
+        local bits:=MakeBinary(16+bytes*height,'bits);
+        for i:=0 to 15 do StuffByte(bits,i,0);
+        StuffByte(bits,4,bytes div 256);StuffByte(bits,5,bytes mod 256);
+        StuffByte(bits,12,height div 256);StuffByte(bits,13,height mod 256);
+        StuffByte(bits,14,(width+1) div 256);StuffByte(bits,15,(width+1) mod 256);
+        for i:=0 to bytes*height-1 do StuffByte(bits,16+i,ExtractByte(info.bits,info.scanOffset+i));
+        return {bits:bits,bounds:info.bounds};
+    end,
+    pickerFonts:func(view) begin
+        // Native clPickView has a single font for rows and private check-mark
+        // glyphs. Render only Chinese text items as bitmap items, leaving the
+        // Roman font, English rows, marks, indices and callback model intact.
+        if view.viewClass mod 65536<>91 or view.ubxBitmapPicker or not IsArray(view.pickItems) then return nil;
+        local context:=view.callbackContext;
+        local font:=view.viewFont;
+        local region:=GetGlobalVar('|ubxRegion:UBX|);
+        local owned:=region and (region.countryPicker=view or (context=region and region.geoPicker=view));
+        // Region's postal picker originally gives every row its CJK font,
+        // including the English paging commands. Composite only that owned
+        // picker with the ROM UI font; explicit user font choices stay intact.
+        if owned then
+            font:=1024*GetFontSize(font)+1048576*GetFontFace(font);
+        // Postcode-only pages still contain English paging commands. They
+        // need the same native Roman font even without a Chinese row.
+        local result:=if owned then Clone(view.pickItems) else nil;local height:=view.pickTextItemHeight;
+        if not IsInteger(height) or height<1 then height:=FontHeight(font);
+        local fallback:=self:uiFont(font,nil);
+        if fallback then begin
+            // Reserve room for native row margins and the bottom border too.
+            height:=Max(height,FontHeight(fallback)+6);
+        end;
+        foreach i,item in view.pickItems do begin
+            local text:=if IsString(item) then item else if IsFrame(item) then item.item else nil;
+            if IsString(text) and GetGlobalVar('|ubxFontPart:UBX|):containsChinese(text) then begin
+                local bitmap:=self:pickerBitmap(text,font,height);
+                if bitmap then begin
+                    if not result then result:=Clone(view.pickItems);
+                    local replacement:=if IsFrame(item) then Clone(item) else {pickable:true};
+                    replacement.item:=bitmap;replacement.fixedHeight:=height;
+                    result[i]:=EnsureInternal(replacement);
+                end;
+            end;
+        end;
+        if result then begin
+            // Own every displayed string, including English labels supplied
+            // by the removable Region, while retaining each item's metadata.
+            foreach i,item in result do
+                if IsString(item) then result[i]:=EnsureInternal(Clone(item))
+                else if IsFrame(item) and IsString(item.item) then begin
+                    local copy:=Clone(item);copy.item:=EnsureInternal(Clone(item.item));result[i]:=copy;
+                end;
+            // DoPopup's native-only view has no editable NS template. Writing
+            // pickItems into its wrapper does not rebuild the native row cache.
+            // Recreate that one popup with the public protoPicker, giving it
+            // the same rows, callback context, marks and font before Open.
+            local box:=view:GlobalBox();
+            local template:=EnsureInternal({_proto:protoPicker,ubxBitmapPicker:true,ubxTextItems:nil,
+                bounds:{left:box.left,top:box.top,right:box.left,bottom:box.top},
+                callbackContext:nil,pickItems:nil,viewFont:font,
+                pickTextItemHeight:height,pickAutoClose:true});
+            // Internalize metadata without cloning the live callback view.
+            template.callbackContext:=context;template.pickItems:=result;
+            // Retain a heap-owned text map for accessibility/inspection; never
+            // retain a removed locale package through its original row strings.
+            template.ubxTextItems:=[];
+            foreach item in view.pickItems do begin
+                local text:=if IsString(item) then item else if IsFrame(item) then item.item else nil;
+                AddArraySlot(template.ubxTextItems,if IsString(text) then EnsureInternal(Clone(text)) else nil);
+            end;
+            foreach key in '[pickLeftMargin,pickRightMargin,pickTopMargin,pickMarkWidth,pickItemsMarkable] do
+                if view.(key)<>nil then template.(key):=view.(key);
+            local picker:=BuildContext(template);
+            // Closing the old native month popup sends its cancel callback,
+            // which clears the label's source array. The original action reads
+            // that array's inc values; keep it for the replacement's callback.
+            local source:=if context then context.popup else nil;
+            local hilite:=if context then context.hilite else nil;
+            local cancel:=if context then context.PickCancelledScript else nil;
+            local ownCancel:=context and HasSlot(context,'PickCancelledScript);
+            if context then context.(EnsureInternal('PickCancelledScript)):=self.pickerCancelFn;
+            local failure:=nil;
+            try view:Close() onexception |evt.ex| do failure:=CurrentException();
+            if context and context.PickCancelledScript=self.pickerCancelFn then begin
+                if ownCancel then context.PickCancelledScript:=cancel else RemoveSlot(context,'PickCancelledScript);
+            end;
+            if failure then Throw(failure.name,failure.data);
+            if IsArray(source) and not context.popup then context.popup:=source;
+            if hilite then SetValue(context,'hilite,hilite);
+            picker:Open();
+            // Region's ordinary close/removal paths must close the actual
+            // replacement view before its callback owner can be deactivated.
+            if region and region.geoPicker=view then region.geoPicker:=picker;
+            if region and region.countryPicker=view then region.countryPicker:=picker;
+            if not self.bitmapPickers then self.bitmapPickers:=[];
+            AddArraySlot(self.bitmapPickers,{view:picker,locale:GetLocale().localeSym});
+        end;
+    end,
+    pickerCancel:func() nil,
+    closeBitmapPickers:func(all) begin
+        if not self.bitmapPickers then return nil;
+        for i:=Length(self.bitmapPickers)-1 to 0 by -1 do begin
+            local item:=self.bitmapPickers[i];
+            if all or not item.view.viewCObject or item.locale<>GetLocale().localeSym then begin
+                if item.view.viewCObject then item.view:Close();
+                RemoveSlot(self.bitmapPickers,i);
+            end;
+        end;
+    end,
+    folderTitleCallback:func() begin
+        local s:=GetGlobalVar('|ubxNamesContent:UBX|);
+        if s and not s.removing then
+            if self.preallocatedContext='showBarText then s:folderTitleDraw(self)
+            else s:radioTextDraw(self);
+    end,
+    folderSetupCallback:func() begin
+        self:|ubxFolderSetup:UBX|();
+        local s:=GetGlobalVar('|ubxNamesContent:UBX|);
+        if s and not s.removing then begin
+            local bounds:=Clone(self.viewBounds);
+            self.width:=s:folderTitleWidth(self,bounds.bottom-bounds.top);
+            bounds.left:=bounds.right-self.width;self.viewBounds:=bounds;
+        end;
+    end,
+    radioTextDraw:func(view) begin
+        local owner:=view:Parent();local box:=view:LocalBox();
+        local style:={font:self:romanFont(owner.viewFont)};
+        view:DrawShape(MakeRect(0,0,box.right,box.bottom),
+            {transferMode:modeCOPY,fillPattern:vfWhite,penPattern:vfNone});
+        local text:=MakeText(owner.text,0,0,box.right,box.bottom);
+        local pieces:=self:styledTextDrawing(text,owner.viewFont,self:uiFont(owner.viewFont,box.bottom),style);
+        view:DrawShape(if pieces then pieces else text,style);
+    end,
+    radioTextFont:func(view) begin
+        if not IsString(view.text) or not self:descriptor(view.viewFont) or
+            not GetGlobalVar('|ubxFontPart:UBX|):containsChinese(view.text) then return nil;
+        // The native radio owns its indicator and a single text-only child.
+        // Composite the label child, preserving the ROM indicator and Latin.
+        local children:=view:ChildViewFrames();
+        if Length(children)<>1 then return nil;
+        local label:=children[0];
+        if label.viewClass mod 65536=98 and not label.text and not label.ViewDrawScript then begin
+            self:rememberDisplay(label,'ViewDrawScript,self.folderTitleFn);
+            label:Close();label:Open();
+        end;
+    end,
+    folderTitleDraw:func(view) begin
+        local box:=view:LocalBox();local mode:=view.viewTransferMode;
+        local drawing:={font:view.viewFont,justification:'center,transferMode:mode};
+        view:DrawShape(MakeRect(0,0,box.right,box.bottom),{transferMode:modeCOPY,
+            fillPattern:if mode=modeBIC then vfBlack else vfWhite,penPattern:vfNone});
+        local display:=self:folderTitleInfo(view,box.bottom);
+        local text:=MakeText(display.text,0,0,box.right,box.bottom);
+        local pieces:=self:styledTextDrawing(text,view.viewFont,self:uiFont(view.viewFont,box.bottom),drawing);
+        view:DrawShape(if pieces then pieces else text,drawing);
+        // The native script draws only the rounded title's end caps.
+        view:|ubxFolderChrome:UBX|();
+    end,
+    folderTitleFont:func(view) begin
+        if view.preallocatedContext<>'showBarText or view.viewClass mod 65536<>98 or
+            not IsString(view.text) or not self:descriptor(view.viewFont) then return nil;
+        if view.ViewDrawScript<>self.folderTitleFn then begin
+            if not GetGlobalVar('|ubxFontPart:UBX|):containsChinese(view.text) then return nil;
+            local method:=view.ViewDrawScript;
+            // Keep the ROM's own end caps, click scripts and title model.
+            if not IsFunction(method) or not IsArray(method.literals) or Length(method.literals)<>5 or
+                method.literals[0]<>'leftBits or method.literals[1]<>'CopyBits or
+                method.literals[2]<>'rightBits or method.literals[3]<>'width then return nil;
+            self:rememberDisplay(view,'|ubxFolderChrome:UBX|,method);
+            self:rememberDisplay(view,'ubxFolderPadding,Max(0,view.width-StrFontWidth(view.text,view.viewFont)));
+            self:rememberDisplay(view,'|ubxFolderSetup:UBX|,view.ViewSetupFormScript);
+            self:rememberDisplay(view,'ViewSetupFormScript,self.folderSetupFn);
+            self:rememberDisplay(view,'ViewDrawScript,self.folderTitleFn);
+            view:Close();view:Open();
+        end;
+        // RedoText runs during native setup and owns the bounds cache. Resize
+        // during that setup, before the C view reads the new right anchor.
+        if view:LocalBox().right<>self:folderTitleWidth(view,view:LocalBox().bottom) then begin
+            view:Close();view:Open();
+        end;
+    end,
+    folderTitleWidth:func(view,height) begin
+        return self:folderTitleInfo(view,height).width;
+    end,
+    folderTitleInfo:func(view,height) begin
+        local parent:=view._parent;local parentWidth:=parent:LocalBox().right;
+        local right:=view.viewBounds.right;if right<=0 then right:=parentWidth+right;
+        local clock:=parent.title;local edge:=0;
+        if IsFrame(clock) and clock.preallocatedContext='title and clock.viewTransferMode=modeBIC then begin
+            edge:=if clock.viewCObject then clock:GlobalBox().right-parent:GlobalBox().left
+                else clock.viewBounds.right;
+            if edge<0 then edge:=parentWidth+edge;
+        end;
+        local limit:=Max(24,right-edge-2);local padding:=Max(12,view.ubxFolderPadding);
+        local fallback:=self:uiFont(view.viewFont,height);local text:=view.text;
+        local width:=self:mixedWidth(text,view.viewFont,fallback);local cut:=StrLen(text);
+        if EndsWith(text,"...") then cut:=cut-3;
+        while cut>1 and width+padding>limit do begin
+            cut:=cut-1;text:=SubStr(view.text,0,cut)&"...";
+            width:=self:mixedWidth(text,view.viewFont,fallback);
+        end;
+        return {text:text,width:width+padding};
+    end,
+    mixedWidth:func(text,font,fallback) begin
+        local part:=GetGlobalVar('|ubxFontPart:UBX|);local width:=0;local i:=0;
+        while i<StrLen(text) do begin
+            local start:=i;local chinese:=part:displayCode(Ord(text[i]));i:=i+1;
+            while i<StrLen(text) and part:displayCode(Ord(text[i]))=chinese do i:=i+1;
+            width:=width+StrFontWidth(SubStr(text,start,i-start),
+                if chinese then fallback else self:romanFont(font));
+        end;
+        // ROM fallback widths can leave no padding for an unsupported CJK
+        // title. Reserve both rounded caps independently of that estimate.
+        return width;
+    end,
+    configValueFonts:func(value) begin
+        if not value or not value.viewCObject or not IsString(value.text) then return nil;
+        if not GetGlobalVar('|ubxFontPart:UBX|):containsChinese(value.text) then begin
+            for i:=Length(self.changes)-1 to 0 by -1 do begin
+                local c:=self.changes[i];
+                if c.view=value and c.configValue then begin
+                    self:restoreChange(c,nil);RemoveSlot(self.changes,i);
+                end;
+            end;
+            return nil;
+        end;
+        // Read-only config values ignore paragraph run styles in their native
+        // text cache. Their entire value can use fallback when it is Chinese;
+        // native English is restored as soon as the config value changes.
+        local font:=self:uiFont(value.viewFont,value:LocalBox().bottom);
+        if font then begin
+            self:rememberDisplay(value,'viewFont,font);
+            foreach c in self.changes do if c.view=value and c.slot='viewFont then c.configValue:=true;
+            self:setSlot(value,'viewFont,font);
+        end;
+    end,
+    sharedTextFonts:func() begin
+        // User data also appears in shared system slips (notably Folder Name,
+        // filing rows and Owner Info), outside the three content app trees.
+        // Pure Roman text and captions keep their existing fonts and shapes.
+        local queue:=GetRoot():ChildViewFrames();local i:=0;
+        while i<Length(queue) and i<700 do begin
+            local view:=queue[i];i:=i+1;
+            self.sharedIndex:=i;self.sharedClass:=nil;self.sharedOperation:='liveness;
+            self.sharedRootRole:=if view=GetRoot().calendar then 'calendarRoot
+                else if view=GetRoot().paperroll then 'notesRoot
+                else if view=GetRoot().paperroll.layout then 'notesLayout
+                else if view=GetRoot().buttons then 'buttons
+                else if view=GetRoot().notifyIcon then 'notifyIcon else 'other;
+            if view.viewCObject then begin
+                local kind:=view.viewClass mod 65536;
+                self.sharedClass:=kind;self.sharedOperation:='paragraph;
+                if kind=81 then begin
+                    self:paragraphFonts(view);
+                    // Compound labels (Country in Locale, for example) are
+                    // paragraphs whose value is a separate entryLine. Inspect
+                    // that value explicitly without walking native text internals.
+                    if view.entryLine and view.entryLine<>view and view.entryLine.viewCObject then
+                        if view.RebuildIndexes and IsArray(view.configPath) then self:configValueFonts(view.entryLine)
+                        else self:paragraphFonts(view.entryLine);
+                end else begin
+                    self.sharedOperation:='folderTitle;
+                    if kind=98 then self:folderTitleFont(view);
+                    self.sharedOperation:='radio;
+                    if kind=76 then self:radioTextFont(view);
+                    self.sharedOperation:='textFont;
+                    if kind=98 and IsString(view.text) and view.ViewDrawScript<>self.folderTitleFn and
+                        not (view.preallocatedContext='title and view.viewTransferMode=modeBIC) then begin
+                        if GetGlobalVar('|ubxFontPart:UBX|):containsChinese(view.text) then self:fontSlot(view,'viewFont)
+                        else if IsFrame(view.viewFont) and view.viewFont.ubxRomanFamily then
+                            self:rememberDisplay(view,'viewFont,if view.viewFont.ubxUIRomanFont then view.viewFont.ubxUIRomanFont
+                                else self:romanFont({family:view.viewFont.ubxRomanFamily,
+                                    size:GetFontSize(view.viewFont),face:GetFontFace(view.viewFont)}));
+                    end;
+                    foreach slot in '[pieces,shapeArray,pix] do begin
+                        self.sharedOperation:=slot;
+                        if IsArray(view.(slot)) then begin
+                            local pieces:=self:drawingFonts(view.(slot),0,view.viewFont,nil);
+                            if pieces then self:rememberDisplay(view,slot,pieces);
+                        end;
+                    end;
+                    self.sharedOperation:='children;
+                    foreach child in view:ChildViewFrames() do if child.viewCObject then AddArraySlot(queue,child);
+                end;
+            end;
+        end;
+    end,
+    datePickerFonts:func() begin
+        // Month-view labels are drawn by native controls, not child text
+        // paragraphs. Repeat Other embeds the same picker inside Calendar;
+        // external-popup-only traversal misses its month and weekday labels.
+        // Keep day numbers, English captions, callbacks and date selection.
+        if GetLocale().localeSym<>'|zhCN:Beijing| then begin
+            for i:=Length(self.changes)-1 to 0 by -1 do if self.changes[i].datePicker then begin
+                self:restoreChange(self.changes[i],nil);RemoveSlot(self.changes,i);
+            end;
+            return nil;
+        end;
+        local queue:=GetRoot():ChildViewFrames();local index:=0;
+        while index<Length(queue) and index<450 do begin
+            local view:=queue[index];index:=index+1;
+            if view.viewCObject then begin
+                if view.viewClass mod 65536=clMonthView then self:datePickerSlot(view,'labelFont);
+                if view.monthView and view.monthView.viewCObject and
+                    view.monthView.viewClass mod 65536=clMonthView and view.monthYearLabel and view.SetTitle then begin
+                    self:datePickerSlot(view,'titleFont);self:datePickerSlot(view,'labelFont);
+                    if IsString(view.monthYearLabel.text) and
+                        GetGlobalVar('|ubxFontPart:UBX|):containsChinese(view.monthYearLabel.text) then
+                        self:datePickerSlot(view.monthYearLabel,'viewFont);
+                end;
+                if view.viewClass mod 65536<>81 then begin
+                    local children:=view:ChildViewFrames();
+                    if children then foreach child in children do if child.viewCObject then AddArraySlot(queue,child);
+                end;
+            end;
+        end;
+    end,
+    applyDisplay:func() begin
+        if not self.displayEnabled then return nil;
+        self.phase:='closePickers;
+        self:closeBitmapPickers(nil);
+        self.phase:='sharedText;
+        self:sharedTextFonts();
+        self.phase:='datePickers;
+        self:datePickerFonts();
+        self.phase:='rootDisplay;
+        foreach root in GetRoot():ChildViewFrames() do if root.viewCObject then begin
+            self:pickerFonts(root);
+            self:quickFonts(root);
+            self:findQueryFonts(root);
+            if self:findScope(root) and root.findAllList and root.findAllList.viewCObject then begin
+                local view:=root.findAllList;local pieces:=self:drawingFonts(view.pieces,0,view.viewFont,nil);
+                if pieces then self:rememberDisplay(view,'pieces,pieces);
+            end;
+        end;
+        self.phase:='notes;self:noteFonts();
+        self.phase:='calls;self:callFonts();
+        self.phase:='titles;self:titleFonts(GetRoot());
+        self.phase:='agenda;
+        local calendar:=GetRoot().calendar;
+        if not calendar or not calendar.viewCObject then return nil;
+        local agenda:=calendar.AgendaView;
+        if agenda and agenda.viewCObject then begin
+            local pieces:=self:drawingFonts(agenda.pieces,0,agenda.viewFont,nil);
+            if pieces then self:rememberDisplay(agenda,'pieces,pieces);
+        end;
+        local meeting:=calendar.MeetingNotes;
+        local ruleView:=if meeting then meeting.RepeatingView else nil;
+        if ruleView and ruleView.viewCObject and ruleView.MessageBox and
+            GetGlobalVar('|ubxFontPart:UBX|):containsChinese(ruleView.MessageBox.text) then
+                self:fontSlot(ruleView.MessageBox,'viewFont);
+        // Native date-field pix arrays are handled by sharedTextFonts.
+        // Keep entryFont native, so ISO digits and English suffixes such as
+        // ongoing retain their ROM face while Chinese is composited by run.
+    end,
+    // Restore only owned style elements when another native renderer or package
+    // has subsequently cloned an array. Never write an obsolete result model.
+    restoredValue:func(now,original,replacement,depth) begin
+        if now=replacement then return original;
+        if depth>5 then return now;
+        if IsArray(now) and IsArray(original) and IsArray(replacement) and
+            Length(now)=Length(original) and Length(now)=Length(replacement) then begin
+            local result:=nil;
+            foreach index,item in replacement do if item<>original[index] then begin
+                local value:=self:restoredValue(now[index],original[index],item,depth+1);
+                if value<>now[index] then begin if not result then result:=Clone(now);result[index]:=value;end;
+            end;
+            return if result then result else now;
+        end;
+        if IsFrame(now) and IsFrame(original) and IsFrame(replacement) and replacement.font and
+            now.font=replacement.font and original.font then begin
+            local value:=Clone(now);value.font:=original.font;return value;
+        end;
+        return now;
+    end,
+    restoreChange:func(change,keepBase) begin
+        local view:=change.view;local now:=view.(change.slot);
+        // Diagnostic deactivation keeps the base font installed. Retaining an
+        // equivalent heap descriptor here avoids reintroducing ROM-only fonts.
+        if keepBase and change.display and (change.slot='viewFont or change.slot='entryFont) and
+            now=change.replacement and self:descriptor(change.original) then return nil;
+        local value:=self:restoredValue(now,change.original,change.replacement,0);
+        if value<>now then begin
+            if view.viewCObject and change.configValue then self:setSlot(view,change.slot,value)
+            else if view.viewCObject and change.display then begin SetValue(view,change.slot,value);view:Dirty();end
+            else if view.viewCObject then self:setSlot(view,change.slot,value)
+            else view.(change.slot):=value;
+            if not change.own and value=change.original then RemoveSlot(view,change.slot);
+            // clTextView caches its drawing callback when opened. Recreate
+            // only this label after restoring the ROM callback on removal.
+            if view.viewCObject and change.slot='ViewDrawScript and now=self.folderTitleFn then begin
+                view:Close();view:Open();
+            end;
+        end;
+    end,
+    setDisplayEnabled:func(enabled) begin
+        // Internal diagnostic entry point; never a separate package or user UI.
+        self.displayEnabled:=enabled;
+        if enabled then self:apply()
+        else for index:=Length(self.changes)-1 to 0 by -1 do
+            if self.changes[index].display then begin
+                local change:=self.changes[index];
+                // Keep the undo record for a retained descriptor: a subsequent
+                // whole-font removal still has to reset its native font cache.
+                if not ((change.slot='viewFont or change.slot='entryFont) and
+                    change.view.(change.slot)=change.replacement and self:descriptor(change.original)) then begin
+                    self:restoreChange(change,true);RemoveSlot(self.changes,index);
+                end;
+            end;
+    end,
+});

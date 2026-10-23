@@ -1,0 +1,56 @@
+{
+  "candidate": "dev15",
+  "attempt": 34,
+  "accepted": false,
+  "packages": {
+    "Font-Lite.pkg": {
+      "path": "packages/milestone52r2-display/artifacts/Font-Lite.pkg",
+      "bytes": 811688,
+      "sha256": "e45b985e62c9ea7656940968acf66726f119f0ec5a164c4f29023be37457a01d"
+    },
+    "Font-Full.pkg": {
+      "path": "packages/milestone52r2-display/artifacts/Font-Full.pkg",
+      "bytes": 1571360,
+      "sha256": "3a0be3748291a5b7d071bc815f1e05534da0dfc177fc1c3d94b42150c18e582f"
+    }
+  },
+  "sources": [
+    {
+      "path": "packages/milestone52r2-display/font-full/About.newt",
+      "sha256": "4d2b073b15e15d7d40887cd57f9ba77431fbaa91046076aeb1c543b84f5b06b8"
+    },
+    {
+      "path": "packages/milestone52r2-display/font-full/Font.newt",
+      "sha256": "aea238b69934c8cda28ea86781abf8ab93d425850eb6d2a63b30bbe491d4a85f"
+    },
+    {
+      "path": "packages/milestone52r2-display/font-full/Icon.newt",
+      "sha256": "ff80980d44b4fca035752e40886fb01c6c170242e955c907a218738a470aa68a"
+    },
+    {
+      "path": "packages/milestone52r2-display/font-lite/About.newt",
+      "sha256": "d74c1a60ce9a8d820668cca79805992a971e697514a92cf498da3b1f96b0e2a9"
+    },
+    {
+      "path": "packages/milestone52r2-display/font-lite/Font.newt",
+      "sha256": "aea238b69934c8cda28ea86781abf8ab93d425850eb6d2a63b30bbe491d4a85f"
+    },
+    {
+      "path": "packages/milestone52r2-display/font-lite/Icon.newt",
+      "sha256": "ff80980d44b4fca035752e40886fb01c6c170242e955c907a218738a470aa68a"
+    },
+    {
+      "path": "packages/milestone52r2-display/shared/AboutView.newt",
+      "sha256": "a2fa9750b75f2400cc8acfdbff7ab04616a86564699a40d27066ae4b4411e756"
+    },
+    {
+      "path": "packages/milestone52r2-display/shared/ContentDisplay.newt",
+      "sha256": "759fd78d7e403a8052f557988cd5434188101bd5e240dd4330073838cdfeb2af"
+    },
+    {
+      "path": "packages/milestone52r2-display/shared/ContentFont.newt",
+      "sha256": "8c15604e54cd38bd7276fce0bb4c745ccd0701bda56412db82fa913843b54f40"
+    }
+  ],
+  "delta": "Current final-round candidate; see source diff and failure records"
+}

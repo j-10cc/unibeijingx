@@ -1,0 +1,15 @@
+Cannot open symbol files '/Users/chengyiqun/Documents/UniBeijingX/experiments/emulator/runtime/mp2000-rom/mp2000.symbols'
+UBX NS LIFE52b activation 5 locale zhCN:Beijing
+UBX NS UBXM52 QA ready
+UBX NS LIFE52b heartbeat 5/1
+UBX NS LIFE52b heartbeat 5/2
+UBX NS LIFE52b heartbeat 5/3
+UBX NS D52ACK 18e0e145623394b0
+UBX NS D52ACK 18e0e1457436a260
+UBX NS FINAL_CLEAN
+UBX NS D52ACK 18e0e145863362c8
+UBX NS D52ASSERT	resume	existing-QA	FAIL
+UBX NS UBXLOC	M52ERROR	exception	name	evt.ex.msg
+UBX NS UBXLOC	M52ERROR	exception	message	resume existing-QA
+UBX NS D52ACK 18e0e1459d77f598
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-continue2-20261022/audit-failure.png result 0

@@ -1,0 +1,35 @@
+{
+  "phase": "country_native",
+  "profile": "final15-lite-final35-rest-20261022",
+  "started": 1792687223.778189,
+  "states": [
+    {
+      "state": "Country-native-China",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Country-native-China.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Country-native-menu-to-USA",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Country-native-menu-to-USA.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Country-native-USA",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Country-native-USA.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Country-native-menu-to-China",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Country-native-menu-to-China.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Country-native-China-again",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final35-rest-20261022/Country-native-China-again.png",
+      "adapter_errors": 0
+    }
+  ],
+  "passed": true,
+  "runner_sha256": "7b5878902c401ed5a5455d24d2cb6b6f9de852f7ec949ec3d9498d65a6cdc1d8",
+  "ended": 1792687259.923062
+}

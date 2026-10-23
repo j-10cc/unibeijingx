@@ -1,0 +1,45 @@
+{
+  "phase": "clock_set",
+  "profile": "final15-lite-final30-20261022",
+  "started": 1792678210.229664,
+  "states": [
+    {
+      "state": "Dates-reopened-multi-settled3",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Dates-reopened-multi-settled3.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Dates-reopened-multi-settled10",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Dates-reopened-multi-settled10.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Dates-reopened-multi-redraw",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Dates-reopened-multi-redraw.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Dates-reopened-annual-settled3",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Dates-reopened-annual-settled3.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Dates-reopened-annual-settled10",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Dates-reopened-annual-settled10.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Dates-reopened-annual-redraw",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Dates-reopened-annual-redraw.png",
+      "adapter_errors": 0
+    },
+    {
+      "state": "Clock-Set-menu",
+      "screenshot": "experiments/qa/display52r2/profiles/final15-lite-final30-20261022/Clock-Set-menu.png",
+      "adapter_errors": 0
+    }
+  ],
+  "passed": true,
+  "runner_sha256": "96ab4ff01f67efcca167d248fecae6680d3b5ee65007fde5b11126651b451587",
+  "ended": 1792678284.655301
+}

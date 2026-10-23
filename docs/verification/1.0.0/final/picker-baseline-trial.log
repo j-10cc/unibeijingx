@@ -1,0 +1,17 @@
+UBX NS UBXLOC	PICKBASE	native	top	2
+UBX NS UBXLOC	PICKBASE	native	height	16
+UBX NS D52ACK 18e0da4a6f03a3d0
+
+UBX NS UBXLOC	PICKBASE	ascent	ascent	11
+UBX NS D52ACK 18e0da4a8bf0f588
+
+Traceback (most recent call last):
+  File "/Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/final-dev15-20261022/picker-baseline-trial.py", line 10, in <module>
+    q.ns('F15.pt:=EnsureInternal({_proto:protoPicker,ubxBitmapPicker:true,pickAutoClose:true});')
+  File "/Users/chengyiqun/Documents/UniBeijingX/scripts/display52_qa.py", line 87, in ns
+    raise RuntimeError('Guest error or unexpected boot: ' + chunk[-1800:])
+RuntimeError: Guest error or unexpected boot: UBX NS UBXLOC	M52ERROR	exception	name	evt.ex.fr.intrp;type.ref.frame
+UBX NS UBXLOC	M52ERROR	data	errorCode	-48807
+UBX NS UBXLOC	M52ERROR	data	symbol	protoPicker
+UBX NS D52ACK 18e0da4aa4cf4ac8
+

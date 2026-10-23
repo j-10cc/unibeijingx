@@ -1,0 +1,64 @@
+Cannot open symbol files '/Users/chengyiqun/Documents/UniBeijingX/experiments/emulator/runtime/mp2000-rom/mp2000.symbols'
+UBX NS LIFE52b activation 4 locale USA
+UBX NS UBXM52 QA ready
+UBX NS LIFE52b heartbeat 4/1
+UBX NS LIFE52b heartbeat 4/2
+UBX NS LIFE52b heartbeat 4/3
+UBX NS D52ACK 18e0e16bde220478
+UBX NS D52ACK 18e0e16bf11434e8
+UBX NS D52ACK 18e0e16c029cd6c0
+UBX NS D52ACK 18e0e16c141d0488
+UBX NS D52ACK 18e0e16c25b61950
+UBX NS NATIVE_ABSENT
+UBX NS D52ACK 18e0e16c370f42d0
+UBX NS D52ACK 18e0e16c48d9d778
+UBX NS D52ACK 18e0e16c6d26df18
+UBX NS D52ACK 18e0e16c7f304d98
+UBX NS NATIVE_ABSENT
+UBX NS D52ACK 18e0e16c907dedf8
+UBX NS D52ACK 18e0e16ca23e93a8
+UBX NS D52ACK 18e0e16cd2936128
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-completion-20261022/qa-packages/DisplayQA.pkg
+UBX NS D52 QA ready
+UBX NS PACKAGE READY
+UBX NS D52ACK 18e0e16d5bfc59d8
+UBX NS D52ACK 18e0e16d6d43a138
+UBX NS D52ACK 18e0e16d7f4ae8f0
+UBX NS NATIVE_ACTIVE
+UBX NS D52ACK 18e0e16d90d86cc8
+UBX NS D52ACK 18e0e16da24e9810
+UBX NS PACKAGE READY
+UBX NS D52ACK 18e0e16dd2a18900
+UBX NS D52ACK 18e0e16de4bc3590
+UBX NS D52ACK 18e0e16df6cfd958
+UBX NS NATIVE_ACTIVE
+UBX NS D52ACK 18e0e16e080d87b0
+UBX NS D52ACK 18e0e16e19c38ea0
+UBX NS D52ACK 18e0e16e2b6c5ec0
+UBX NS D52ACK 18e0e16e3e666ae8
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-completion-20261022/qa-packages/ContentRepairQA.pkg
+UBX NS D52ACK 18e0e16ec8624cf8
+UBX NS D52ACK 18e0e16eda44af60
+UBX NS D52ASSERT	repair	QA-active	PASS
+UBX NS D52ACK 18e0e16eebf5c0c8
+UBX NS D52ACK 18e0e16f00245938
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-completion-20261022/qa-packages/LatinDev11QA.pkg
+UBX NS D52ACK 18e0e16f89bac2b8
+UBX NS D52ACK 18e0e16f9bd1e120
+UBX NS D52ACK 18e0e16faf5acb80
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-completion-20261022/qa-packages/TypographyDev9QA.pkg
+UBX NS D52ACK 18e0e17038df6280
+UBX NS D52ACK 18e0e1704aad3b18
+UBX NS D52ACK 18e0e1705e6cd190
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-completion-20261022/qa-packages/MenuQA/MenuQA.pkg
+UBX NS UBXLOC	IME-TYPES	expected	Chr	char
+UBX NS UBXLOC	IME-TYPES	expected	literal	string
+UBX NS D52ACK 18e0e170e7d19fd8
+UBX NS D52ACK 18e0e170f9e1c518
+UBX NS D52ACK 18e0e1710d17a1c0
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-completion-20261022/qa-packages/NewQA/NewQA.pkg
+UBX NS D52ACK 18e0e17196da8dc8
+UBX NS D52ACK 18e0e171a9dca0a0
+UBX install package /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-completion-20261022/qa-packages/AboutQA/AboutQA.pkg
+UBX NS D52ACK 18e0e172332f8cc8
+UBX snapshot /Users/chengyiqun/Documents/UniBeijingX/experiments/qa/display52r2/profiles/final15-lite-main-completion-20261022/audit-failure.png result 0

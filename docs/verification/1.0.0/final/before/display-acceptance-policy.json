@@ -1,0 +1,24 @@
+{
+  "effective": "2026-10-21",
+  "user_accepted_exclusions": [
+    "加载过程首帧中文方框，稳定后可读不计问题",
+    "周字底行裁切不影响阅读，不计问题"
+  ],
+  "required": [
+    "扩展拉丁字母和符号需要修复",
+    "保持英文界面",
+    "不修改5.2r1正式版本和ROM",
+    "中文显示遗漏、原有字体和扩展字符质量、配套Region/Pinyin兼容性"
+  ],
+  "validation": "固定源闪存和原始MP2000 ROM＋712000更新环境，Lite完成并停止后串行验证Full；当前介质校验和归档ZIP完整性核对",
+  "deferred_by_user": {
+    "-10061": {
+      "status": "paused",
+      "reason": "User requested to set -10061 aside and finish New glyph repair first",
+      "historical_requirement": [
+        "验证-10061是否仍存在：原始712000环境、原生包状态门控、两版各25轮混合热装卸，发生错误即保留现场"
+      ]
+    }
+  },
+  "current_task": "dev12 New glyph repair and targeted serial Lite/Full regression; no complete release acceptance claim"
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "phase": "address_roman",
+    "returncode": 0
+  },
+  {
+    "phase": "geography",
+    "returncode": 0
+  },
+  {
+    "phase": "folders",
+    "returncode": 0
+  },
+  {
+    "phase": "mixed_folder",
+    "returncode": 0
+  },
+  {
+    "phase": "long_folder",
+    "returncode": 1
+  }
+]

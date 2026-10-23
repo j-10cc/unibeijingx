@@ -1,0 +1,9 @@
+{
+  "phase": "formulas",
+  "profile": "final15-lite-broad3-20261022",
+  "started": 1792660392.606066,
+  "states": [],
+  "passed": false,
+  "error": "Missing native ACK; preserve profile and log",
+  "ended": 1792660432.652307
+}
