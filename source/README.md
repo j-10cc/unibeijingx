@@ -33,6 +33,8 @@ python3 source/main/tools/build.py --check
 
 ## 准备发布介质
 
+`release/` 是被 Git 忽略的本地发布目录。首次克隆后，如需校验或重新打包，请先从 [GitHub Release v1.0.0](https://github.com/j-10cc/unibeijingx/releases/tag/v1.0.0) 下载正式 ZIP 并解压到 `release/`，保留其 `UniBeijingX-1.0.0/` 子目录。
+
 ```sh
 python3 source/main/tools/package_release.py
 python3 source/test/verify_release.py

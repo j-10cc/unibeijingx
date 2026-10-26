@@ -13,3 +13,6 @@ __pycache__/
 
 # Test sessions and local outputs.
 /source/test/.runtime/
+
+# Local release media are distributed through GitHub Releases.
+/release/
