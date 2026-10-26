@@ -26,7 +26,6 @@ UniBeijingX 为 Apple MessagePad 2000／2100、Newton OS 2.1 提供简体中文�
 | [source/test](source/test/README.md) | 发布校验、字库检查与隔离模拟器工具 |
 | [external](external/README.md) | 外部依赖、固定版本、获取方法及目录组织 |
 | docs | [用户使用手册](docs/USER_GUIDE_zh-CN.md)及 `image/` 中的模拟器截图 |
-| release | 本地发布介质，不进入 Git；正式下载通过 GitHub Releases 提供 |
 
 准备依赖后，先从上方 GitHub Release 下载正式 ZIP 并解压到本地 `release/`，形成 `release/UniBeijingX-1.0.0/` 目录，再在项目根目录执行校验或重新打包：
 
